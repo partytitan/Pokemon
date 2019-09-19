@@ -3,6 +3,8 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +13,9 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
-    <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.4" />
+    <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.9" />
     <PackageReference Include="MonoGame.Extended" Version="3.7.0" />
+    <PackageReference Include="MonoGame.Extended.Content.Pipeline" Version="3.7.0" />
     <PackageReference Include="MonoGame.Extended.Entities" Version="3.7.0" />
     <PackageReference Include="MonoGame.Extended.Gui" Version="3.7.0" />
     <PackageReference Include="MonoGame.Extended.Tiled" Version="3.7.0" />
@@ -20,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Collisions\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>
