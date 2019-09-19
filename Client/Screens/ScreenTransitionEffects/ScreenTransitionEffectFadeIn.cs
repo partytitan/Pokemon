@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework;
 
 namespace Client.Screens.ScreenTransitionEffects
 {
@@ -16,7 +17,7 @@ namespace Client.Screens.ScreenTransitionEffects
             IsDone = false;
         }
 
-        public override void Update(double gameTime)
+        public override void Update(GameTime gameTime)
         {
             Alpha -= FadeStepCount;
             if (Math.Abs(Alpha) < 1)

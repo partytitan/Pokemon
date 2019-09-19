@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework;
 
 namespace Client.Inputs
 {
@@ -23,12 +24,12 @@ namespace Client.Inputs
             cooldown = 0;
         }
 
-        public void Update(double gameTime)
+        public void Update(GameTime gameTime)
         {
             if (cooldown > 0)
             {
-                counter += gameTime;
-                if (counter > gameTime)
+                counter += gameTime.ElapsedGameTime.Milliseconds;
+                if (counter > gameTime.ElapsedGameTime.Milliseconds)
                 {
                     counter = 0;
                     cooldown = 0;
@@ -38,7 +39,7 @@ namespace Client.Inputs
                     return;
                 }
             }
-            CheckInput(gameTime);
+            CheckInput(gameTime.ElapsedGameTime.Milliseconds);
         }
 
         protected abstract void CheckInput(double gameTime);

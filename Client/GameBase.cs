@@ -1,32 +1,38 @@
 ﻿using Autofac;
+using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
 using Client.Services.Content;
 using Client.Services.Screens;
+using Client.Services.World;
 using Client.World;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonoGame.Extended;
+using MonoGame.Extended.ViewportAdapters;
 
 namespace Client
 {
     public class GameBase : Game
     {
+        RenderTarget2D backBuffer;
         GraphicsDeviceManager GraphicsDeviceManager;
         SpriteBatch spriteBatch;
         Entity entity;
         IContentLoader contentLoader;
         ScreenLoader screenLoader;
 
+        OrthographicCamera _camera;
+
+
         public GameBase(int width = 800, int height = 480)
         {
             GraphicsDeviceManager = new GraphicsDeviceManager(this);
-            GraphicsDeviceManager.PreferredBackBufferWidth = 240;
-            GraphicsDeviceManager.PreferredBackBufferHeight = 160;
             Content.RootDirectory = "Content";
             contentLoader = new ContentLoader(Content);
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 5),
                 new ScreenTransitionEffectFadeIn(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 3), contentLoader);
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader));
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new TileTestLoader(contentLoader), new EntityTestLoader()));
         }
 
         protected override void Initialize()
@@ -38,11 +44,12 @@ namespace Client
 
         protected override void LoadContent()
         {
-            backBuffer = new RenderTarget2D(GraphicsDevice, 240, 160);
+            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 400, 240);
+            _camera = new OrthographicCamera(viewportAdapter);
+
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            screenLoader.LoadContent();
-
+            screenLoader.LoadContent(GraphicsDevice);
         }
 
         protected override void UnloadContent()
@@ -52,17 +59,16 @@ namespace Client
 
         protected override void Update(GameTime gameTime)
         {
-            screenLoader.Update(gameTime.ElapsedGameTime.Milliseconds);
+            screenLoader.Update(gameTime, _camera);
             base.Update(gameTime);
         }
 
         protected override bool BeginDraw()
         {
-            GraphicsDevice.SetRenderTarget(backBuffer);
             GraphicsDevice.Clear(Color.Black);
 
-            spriteBatch.Begin();
-            screenLoader.Draw(spriteBatch);
+            spriteBatch.Begin(transformMatrix: _camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
+            screenLoader.Draw(spriteBatch, _camera);
             spriteBatch.End();
 
             return base.BeginDraw();
@@ -71,11 +77,6 @@ namespace Client
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.SetRenderTarget(null);
-            GraphicsDevice.Clear(Color.Black);
-            spriteBatch.Begin();
-            spriteBatch.Draw(backBuffer, new Rectangle(0, 0, GraphicsDevice.Viewport.Bounds.Width, GraphicsDevice.Viewport.Bounds.Height), Color.White);
-            spriteBatch.End();
             base.Draw(gameTime);
         }
     }

@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework;
+using MonoGame.Extended;
 
 namespace Client.World
 {
@@ -17,7 +19,7 @@ namespace Client.World
         }
 
         public virtual void LoadContent(IContentLoader contentLoader) { }
-        public virtual void Update(double gameTime) { }
+        public virtual void Update(GameTime gameTime, OrthographicCamera camera) { }
         public virtual void Draw(SpriteBatch spriteBatch) { }
     }
 }

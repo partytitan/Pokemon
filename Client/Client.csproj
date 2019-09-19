@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -23,7 +23,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="Content\bin\DesktopGL\Content\Maps\" />
+    <Folder Include="Content\bin\DesktopGL\Content\Players\" />
+    <Folder Include="Content\bin\DesktopGL\Content\Test\" />
+    <Folder Include="Content\bin\DesktopGL\Content\Textures\ScreenEffects\" />
+    <Folder Include="Content\bin\DesktopGL\Maps\" />
+    <Folder Include="Content\bin\DesktopGL\Test\" />
+    <Folder Include="Content\bin\DesktopGL\Textures\NPC\" />
+    <Folder Include="Content\bin\DesktopGL\Textures\ScreenEffects\" />
+    <Folder Include="Content\obj\DesktopGL\Content\Maps\" />
+    <Folder Include="Content\obj\DesktopGL\Content\Players\" />
+    <Folder Include="Content\obj\DesktopGL\Content\Test\" />
+    <Folder Include="Content\obj\DesktopGL\Content\Textures\ScreenEffects\" />
+    <Folder Include="Content\obj\DesktopGL\Maps\" />
+    <Folder Include="Content\obj\DesktopGL\Test\" />
+    <Folder Include="Content\obj\DesktopGL\Textures\NPC\" />
+    <Folder Include="Content\obj\DesktopGL\Textures\ScreenEffects\" />
   </ItemGroup>
 
 </Project>

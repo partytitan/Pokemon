@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using MonoGame.Extended.Tiled;
 
 namespace Client.Services.Content
 {
@@ -9,5 +10,7 @@ namespace Client.Services.Content
     {
         Texture2D LoadTexture(string textureName);
         SpriteFont LoadFont(string fontName);
+        TiledMap LoadMap(string mapName);
+
     }
 }

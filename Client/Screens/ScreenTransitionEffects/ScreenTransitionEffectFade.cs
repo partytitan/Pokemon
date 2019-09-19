@@ -27,7 +27,7 @@ namespace Client.Screens.ScreenTransitionEffects
         }
 
         public abstract void Start();
-        public abstract void Update(double gameTime);
+        public abstract void Update(GameTime gameTime);
 
         public void Draw(SpriteBatch spriteBatch)
         {

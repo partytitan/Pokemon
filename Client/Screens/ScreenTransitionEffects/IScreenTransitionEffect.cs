@@ -1,4 +1,5 @@
 ﻿using Client.Services.Content;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Screens.ScreenTransitionEffects
@@ -8,7 +9,7 @@ namespace Client.Screens.ScreenTransitionEffects
         bool IsDone { get; }
         void Start();
         void LoadContent(IContentLoader contentLoader);
-        void Update(double gameTime);
+        void Update(GameTime gameTime);
         void Draw(SpriteBatch spriteBatch);
     }
 }

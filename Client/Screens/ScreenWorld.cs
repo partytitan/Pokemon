@@ -1,64 +1,72 @@
 ﻿using Client.Services.Content;
 using Client.Services.Screens;
 using Client.World;
-using MonoGame.Extended.Sprites;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using Client.Inputs;
+using Client.Services.World;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Extended;
+using MonoGame.Extended.Animations;
+using MonoGame.Extended.Tiled;
+using MonoGame.Extended.Tiled.Renderers;
 
 namespace Client.Screens
 {
     class ScreenWorld : Screen
     {
-        private Entity entity;
-        private List<TileGraphic> tiles; //For test! 
+        private readonly ITileLoader tileLoader;
+        private readonly IEntityLoader entityLoader;
+        private List<IWorldObject> worldObjects;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:System.Object"/> class.
-        /// </summary>
-        public ScreenWorld(IScreenLoader screenLoader) : base(screenLoader)
+        private TiledMap map;
+        private TiledMapRenderer mapRenderer;
+
+        public ScreenWorld(IScreenLoader screenLoader, ITileLoader tileLoader, IEntityLoader entityLoader) : base(screenLoader)
         {
-            entity = new Entity("MyFirstEntity");
-            entity.AddComponent(new Sprite(entity, new SpriteData
-            {
-                Color = Color.White,
-                Height = 19,
-                Width = 15,
-                TextureName = "NPC/main_character",
-                XTilePosition = 2,
-                YTilePosition = 2
-            }, new Rectangle(0, 0, 16, 19)));
-            entity.AddComponent(new MovementPlayer(entity, 1, new InputKeyboard()));
-            entity.AddComponent(new Animation(entity));
-            tiles = TileGenerator.GenerateTiles();
+            this.tileLoader = tileLoader;
+            this.entityLoader = entityLoader;
         }
 
-        public override void LoadContent(IContentLoader contentLoader)
+        public override void LoadContent(IContentLoader contentLoader, GraphicsDevice graphicsDevice)
         {
-            entity.LoadContent(contentLoader);
-            foreach (var tileGraphic in tiles)
+            worldObjects = new List<IWorldObject>();
+
+            map = tileLoader.LoadGraphicTiles("0.0");
+
+            mapRenderer = new TiledMapRenderer(graphicsDevice, map);
+
+            worldObjects.AddRange(entityLoader.LoadEntities(""));
+            foreach (var worldObject in worldObjects)
             {
-                tileGraphic.LoadContent(contentLoader);
+                worldObject.LoadContent(contentLoader);
             }
         }
 
-        public override void Update(double gameTime)
+        public override void Update(GameTime gameTime, OrthographicCamera camera)
         {
-            entity.Update(gameTime);
-            foreach (var tileGraphic in tiles)
+            mapRenderer.Update(gameTime);
+            foreach (var worldObject in worldObjects)
             {
-                tileGraphic.Update(gameTime);
+                worldObject.Update(gameTime, camera);
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch, OrthographicCamera camera)
         {
-            foreach (var tileGraphic in tiles)
+
+            // map Should be the `TiledMap`
+            // Once again, the transform matrix is only needed if you have a Camera2D
+            mapRenderer.Draw(camera.GetViewMatrix());
+
+
+            foreach (var worldObject in worldObjects)
             {
-                tileGraphic.Draw(spriteBatch);
+                worldObject.Draw(spriteBatch);
             }
-            entity.Draw(spriteBatch);
         }
     }
 }

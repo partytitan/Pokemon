@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework;
+using MonoGame.Extended;
 
 namespace Client.Screens
 {
@@ -16,8 +18,8 @@ namespace Client.Screens
             this.ScreenLoader = screenLoader;
         }
 
-        public abstract void LoadContent(IContentLoader contentLoader);
-        public abstract void Update(double gameTime);
-        public abstract void Draw(SpriteBatch spriteBatch);
+        public abstract void LoadContent(IContentLoader contentLoader, GraphicsDevice graphicsDevice);
+        public abstract void Update(GameTime gameTime, OrthographicCamera camera);
+        public abstract void Draw(SpriteBatch spriteBatch, OrthographicCamera camera);
     }
 }

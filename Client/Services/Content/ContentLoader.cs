@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using MonoGame.Extended.Tiled;
 
 namespace Client.Services.Content
 {
@@ -11,9 +12,13 @@ namespace Client.Services.Content
     {
         private const string TextureNotFoundName = "NotFoundTexture";
         private const string FontNotFoundName = "NotFoundFont";
+        private const string MapNotFoundName = "NotFoundMap";
+
         private readonly ContentManager contentManager;
         private readonly Dictionary<string, Texture2D> textureByName;
         private readonly Dictionary<string, SpriteFont> fontByName;
+        private readonly Dictionary<string, TiledMap> mapByName;
+
 
 
         /// <summary>
@@ -24,6 +29,7 @@ namespace Client.Services.Content
             this.contentManager = contentManager;
             textureByName = new Dictionary<string, Texture2D>();
             fontByName = new Dictionary<string, SpriteFont>();
+            mapByName = new Dictionary<string, TiledMap>();
         }
 
         public Texture2D LoadTexture(string textureName)
@@ -60,6 +66,24 @@ namespace Client.Services.Content
                 }
             }
             return fontByName[fontName];
+        }
+
+        public TiledMap LoadMap(string mapName)
+        {
+            if (!mapByName.ContainsKey(mapName))
+            {
+                try
+                {
+                    var map = contentManager.Load<TiledMap>(Path.Combine("Maps", mapName));
+                    mapByName.Add(mapName, map);
+                    return map;
+                }
+                catch (Exception) when (mapName != MapNotFoundName)
+                {
+                    return LoadMap(MapNotFoundName);
+                }
+            }
+            return mapByName[mapName];
         }
     }
 }

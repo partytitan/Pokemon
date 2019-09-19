@@ -4,13 +4,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using MonoGame.Extended;
 
 namespace Client.World
 {
-    internal class Entity : IComponentOwner
+    internal class Entity : IComponentOwner, IWorldObject
     {
         private readonly IList<Component> components;
         public string Id { get; }
+        public int ZTilePosition => 2;
 
         public Entity(string id)
         {
@@ -40,7 +43,7 @@ namespace Client.World
             }
         }
 
-        public void Update(double gameTime)
+        public void Update(GameTime gameTime, OrthographicCamera camera)
         {
             var index = 0;
             while (index < components.Count)
@@ -51,7 +54,7 @@ namespace Client.World
                 }
                 else
                 {
-                    components[index].Update(gameTime);
+                    components[index].Update(gameTime, camera);
                     index++;
                 }
             }

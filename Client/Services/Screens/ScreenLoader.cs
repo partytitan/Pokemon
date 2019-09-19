@@ -5,6 +5,8 @@ using System.Text;
 using Client.Screens;
 using Microsoft.Xna.Framework.Graphics;
 using Client.Screens.ScreenTransitionEffects;
+using Microsoft.Xna.Framework;
+using MonoGame.Extended;
 
 namespace Client.Services.Screens
 {
@@ -19,6 +21,8 @@ namespace Client.Services.Screens
         private enum Phases { ClosingPreviousScreen, SettingUpNewScreen, Running }
         private Phases currentPhase;
 
+        private GraphicsDevice GraphicsDevice;
+
         public ScreenLoader(IScreenTransitionEffect previousScreenTransitionEffect,
             IScreenTransitionEffect newScreenTransitionEffect, IContentLoader contentLoader)
         {
@@ -28,13 +32,14 @@ namespace Client.Services.Screens
             currentPhase = Phases.Running;
         }
 
-        public void LoadContent()
+        public void LoadContent(GraphicsDevice graphicsDevice)
         {
+            this.GraphicsDevice = graphicsDevice;
             previousScreenTransitionEffect.LoadContent(contentLoader);
             newScreenTransitionEffect.LoadContent(contentLoader);
         }
 
-        public void Update(double gameTime)
+        public void Update(GameTime gameTime, OrthographicCamera camera)
         {
             switch (currentPhase)
             {
@@ -53,7 +58,7 @@ namespace Client.Services.Screens
                     }
                     break;
                 case Phases.Running:
-                    currentScreen?.Update(gameTime);
+                    currentScreen?.Update(gameTime, camera);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -71,14 +76,14 @@ namespace Client.Services.Screens
         {
             previousScreen = currentScreen;
             currentScreen = tempScreen;
-            currentScreen.LoadContent(contentLoader);
+            currentScreen.LoadContent(contentLoader, GraphicsDevice);
             newScreenTransitionEffect.Start();
             currentPhase = Phases.SettingUpNewScreen;
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(SpriteBatch spriteBatch, OrthographicCamera camera)
         {
-            currentScreen?.Draw(spriteBatch);
+            currentScreen?.Draw(spriteBatch, camera);
             previousScreenTransitionEffect.Draw(spriteBatch);
             newScreenTransitionEffect.Draw(spriteBatch);
         }
