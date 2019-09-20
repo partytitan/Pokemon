@@ -8,7 +8,6 @@ using Client.World;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using MonoGame.Extended;
 using MonoGame.Extended.ViewportAdapters;
 
 namespace Client
@@ -22,7 +21,7 @@ namespace Client
         IContentLoader contentLoader;
         ScreenLoader screenLoader;
 
-        OrthographicCamera _camera;
+        Camera _camera;
 
 
         public GameBase(int width = 800, int height = 480)
@@ -30,9 +29,6 @@ namespace Client
             GraphicsDeviceManager = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             contentLoader = new ContentLoader(Content);
-            screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 5),
-                new ScreenTransitionEffectFadeIn(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 3), contentLoader);
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new TileTestLoader(contentLoader), new EntityTestLoader()));
         }
 
         protected override void Initialize()
@@ -45,10 +41,14 @@ namespace Client
         protected override void LoadContent()
         {
             var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 400, 240);
-            _camera = new OrthographicCamera(viewportAdapter);
+            _camera = new Camera(viewportAdapter);
 
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 5),
+                new ScreenTransitionEffectFadeIn(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 3), contentLoader);
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new TileTestLoader(contentLoader), new EntityTestLoader(), GraphicsDevice, _camera));
             screenLoader.LoadContent(GraphicsDevice);
         }
 

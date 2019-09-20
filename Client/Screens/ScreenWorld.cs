@@ -1,16 +1,16 @@
 ﻿using Client.Services.Content;
 using Client.Services.Screens;
 using Client.World;
-using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+using System.Collections.ObjectModel;
+using Client.Data;
 using Client.Inputs;
 using Client.Services.World;
+using Client.World.Components;
+using Client.World.Components.Animations;
+using Client.World.Components.Movements;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MonoGame.Extended;
-using MonoGame.Extended.Animations;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
 
@@ -25,44 +25,40 @@ namespace Client.Screens
         private TiledMap map;
         private TiledMapRenderer mapRenderer;
 
-        public ScreenWorld(IScreenLoader screenLoader, ITileLoader tileLoader, IEntityLoader entityLoader) : base(screenLoader)
+        private GraphicsDevice _graphicsDevice;
+        private Camera _camera;
+
+        public ScreenWorld(IScreenLoader screenLoader, ITileLoader tileLoader, IEntityLoader entityLoader, GraphicsDevice graphicsDevice, Camera camera) : base(screenLoader)
         {
             this.tileLoader = tileLoader;
             this.entityLoader = entityLoader;
+            this._graphicsDevice = graphicsDevice;
+            this._camera = camera;
         }
 
-        public override void LoadContent(IContentLoader contentLoader, GraphicsDevice graphicsDevice)
+        public override void LoadContent(IContentLoader contentLoader)
         {
             worldObjects = new List<IWorldObject>();
+            
+            Level level = new Level("level", "0.0", _graphicsDevice, _camera, entityLoader);
+            worldObjects.Add(level);
 
-            map = tileLoader.LoadGraphicTiles("0.0");
-
-            mapRenderer = new TiledMapRenderer(graphicsDevice, map);
-
-            worldObjects.AddRange(entityLoader.LoadEntities(""));
             foreach (var worldObject in worldObjects)
             {
                 worldObject.LoadContent(contentLoader);
             }
         }
 
-        public override void Update(GameTime gameTime, OrthographicCamera camera)
+        public override void Update(GameTime gameTime)
         {
-            mapRenderer.Update(gameTime);
             foreach (var worldObject in worldObjects)
             {
-                worldObject.Update(gameTime, camera);
+                worldObject.Update(gameTime);
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatch, OrthographicCamera camera)
+        public override void Draw(SpriteBatch spriteBatch)
         {
-
-            // map Should be the `TiledMap`
-            // Once again, the transform matrix is only needed if you have a Camera2D
-            mapRenderer.Draw(camera.GetViewMatrix());
-
-
             foreach (var worldObject in worldObjects)
             {
                 worldObject.Draw(spriteBatch);

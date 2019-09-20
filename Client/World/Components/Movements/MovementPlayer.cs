@@ -4,6 +4,8 @@ using System.Text;
 using Client.Common;
 using Client.EventArg;
 using Client.Inputs;
+using Client.Screens;
+using Client.World.Components.Animations;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
 
@@ -13,7 +15,7 @@ namespace Client.World.Components.Movements
     {
         private readonly Input input;
 
-        public MovementPlayer(IComponentOwner owner, float speed, Input input) : base(owner, speed)
+        public MovementPlayer(IComponentOwner owner, float speed, Input input, Camera camera) : base(owner, speed, camera)
         {
             this.input = input;
             this.input.NewInput += OnNewInput;
@@ -44,10 +46,10 @@ namespace Client.World.Components.Movements
             }
         }
 
-        public override void Update(GameTime gameTime, OrthographicCamera camera)
+        public override void Update(GameTime gameTime)
         {
             input.Update(gameTime);
-            base.Update(gameTime, camera);
+            base.Update(gameTime);
         }
     }
 }

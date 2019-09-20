@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Client.Data;
+using Client.Screens;
 using Client.Services.Content;
 using Client.World.Tiles;
 using Microsoft.Xna.Framework;
@@ -37,7 +38,7 @@ namespace Client.World.Components
             base.LoadContent(contentLoader);
         }
 
-        public override void Update(GameTime gameTime, OrthographicCamera camera)
+        public override void Update(GameTime gameTime)
         {
 
         }

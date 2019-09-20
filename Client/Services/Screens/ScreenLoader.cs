@@ -39,7 +39,7 @@ namespace Client.Services.Screens
             newScreenTransitionEffect.LoadContent(contentLoader);
         }
 
-        public void Update(GameTime gameTime, OrthographicCamera camera)
+        public void Update(GameTime gameTime, Camera camera)
         {
             switch (currentPhase)
             {
@@ -58,7 +58,7 @@ namespace Client.Services.Screens
                     }
                     break;
                 case Phases.Running:
-                    currentScreen?.Update(gameTime, camera);
+                    currentScreen?.Update(gameTime);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -76,14 +76,14 @@ namespace Client.Services.Screens
         {
             previousScreen = currentScreen;
             currentScreen = tempScreen;
-            currentScreen.LoadContent(contentLoader, GraphicsDevice);
+            currentScreen.LoadContent(contentLoader);
             newScreenTransitionEffect.Start();
             currentPhase = Phases.SettingUpNewScreen;
         }
 
-        public void Draw(SpriteBatch spriteBatch, OrthographicCamera camera)
+        public void Draw(SpriteBatch spriteBatch, Camera camera)
         {
-            currentScreen?.Draw(spriteBatch, camera);
+            currentScreen?.Draw(spriteBatch);
             previousScreenTransitionEffect.Draw(spriteBatch);
             newScreenTransitionEffect.Draw(spriteBatch);
         }

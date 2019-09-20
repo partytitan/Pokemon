@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Client.Screens;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
 
@@ -16,7 +17,7 @@ namespace Client.World.Components.Animations
             counter = 0;
         }
 
-        public override void Update(GameTime gameTime, OrthographicCamera camera)
+        public override void Update(GameTime gameTime)
         {
             if (currentAnimation == null)
                 return;

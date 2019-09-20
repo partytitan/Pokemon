@@ -4,18 +4,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Client.Screens;
 using Microsoft.Xna.Framework;
-using MonoGame.Extended;
 
 namespace Client.World
 {
-    internal class Entity : IComponentOwner, IWorldObject
+    internal class Entity : Component, IComponentOwner
     {
         private readonly IList<Component> components;
         public string Id { get; }
-        public int ZTilePosition => 2;
 
-        public Entity(string id)
+        public Entity(IComponentOwner owner, string id) : base(owner)
         {
             components = new List<Component>();
             Id = id;
@@ -35,7 +34,7 @@ namespace Client.World
             return (T)component;
         }
 
-        public void LoadContent(IContentLoader contentLoader)
+        public override void LoadContent(IContentLoader contentLoader)
         {
             foreach (var component in components)
             {
@@ -43,7 +42,7 @@ namespace Client.World
             }
         }
 
-        public void Update(GameTime gameTime, OrthographicCamera camera)
+        public override void Update(GameTime gameTime)
         {
             var index = 0;
             while (index < components.Count)
@@ -54,13 +53,13 @@ namespace Client.World
                 }
                 else
                 {
-                    components[index].Update(gameTime, camera);
+                    components[index].Update(gameTime);
                     index++;
                 }
             }
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch)
         {
             foreach (var component in components)
             {

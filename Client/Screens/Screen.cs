@@ -18,8 +18,8 @@ namespace Client.Screens
             this.ScreenLoader = screenLoader;
         }
 
-        public abstract void LoadContent(IContentLoader contentLoader, GraphicsDevice graphicsDevice);
-        public abstract void Update(GameTime gameTime, OrthographicCamera camera);
-        public abstract void Draw(SpriteBatch spriteBatch, OrthographicCamera camera);
+        public abstract void LoadContent(IContentLoader contentLoader);
+        public abstract void Update(GameTime gameTime);
+        public abstract void Draw(SpriteBatch spriteBatch);
     }
 }
