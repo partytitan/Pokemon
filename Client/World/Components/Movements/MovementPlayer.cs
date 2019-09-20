@@ -41,6 +41,8 @@ namespace Client.World.Components.Movements
                     break;
                 case Common.Inputs.None:
                     break;
+                case Common.Inputs.A:
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

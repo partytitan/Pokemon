@@ -23,6 +23,7 @@ namespace Client.Inputs
             CheckKeyState(Keys.Up, Common.Inputs.Up);
             CheckKeyState(Keys.Right, Common.Inputs.Right);
             CheckKeyState(Keys.Down, Common.Inputs.Down);
+            CheckKeyState(Keys.A, Common.Inputs.A);
 
             lasKeyboardState = keyboardState;
         }

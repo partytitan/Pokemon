@@ -1,120 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.PortableExecutable;
-using System.Text;
-using Client.Screens;
+﻿using Client.Screens;
 using Client.Services.Content;
 using Client.Services.World;
-using Client.World.Components;
 using Client.World.Tiles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Client.World
 {
-    class Level : IComponentOwner, IWorldObject
+    internal class Level : IComponentOwner, IWorldObject
     {
-        private readonly IEntityLoader _entityLoader;
-
-        private readonly List<Component> _components;
-        public string Id { get; }
-
-        private TiledMap _map;
-        private TiledMapRenderer _mapRenderer;
-        private GraphicsDevice _graphicsDevice;
-        private Camera _camera;
-
-        public List<ICollisionObject> _collisionObjects;
-
-        private readonly string _mapName;
-
-        public int ZTilePosition => 2;
+        private readonly Camera camera;
+        private readonly List<Component> components;
+        private readonly IEntityLoader entityLoader;
+        private readonly GraphicsDevice graphicsDevice;
+        private readonly string mapName;
+        private List<ICollisionObject> collisionObjects;
+        private TiledMap map;
+        private TiledMapRenderer mapRenderer;
 
         public Level(string id, string mapName, GraphicsDevice graphicsDevice, Camera camera, IEntityLoader entityLoader)
         {
             Id = id;
-            this._components = new List<Component>();
-            this._mapName = mapName;
-            this._graphicsDevice = graphicsDevice;
-            this._camera = camera;
-            this._entityLoader = entityLoader;
+            this.components = new List<Component>();
+            this.mapName = mapName;
+            this.graphicsDevice = graphicsDevice;
+            this.camera = camera;
+            this.entityLoader = entityLoader;
         }
 
+        public string Id { get; }
+        public int ZTilePosition => 2;
         public void AddComponent(Component component)
         {
             if (component != null)
             {
-                _components.Add(component);
-            }
-        }
-
-        public T GetComponent<T>() where T : Component
-        {
-            var component = _components.FirstOrDefault(c => c.GetType() == typeof(T));
-            return (T)component;
-        }
-
-        public void LoadContent(IContentLoader contentLoader)
-        {
-            _map = contentLoader.LoadMap(_mapName);
-            _camera.SetScreenBounds(new Rectangle(0, 0, _map.WidthInPixels, _map.HeightInPixels));
-            _mapRenderer = new TiledMapRenderer(_graphicsDevice, _map);
-
-            SetCollisionObjects();
-
-            _components.AddRange(_entityLoader.LoadEntities(this, _camera, _collisionObjects));
-
-            foreach (var component in _components)
-            {
-                component.LoadContent(contentLoader);
-            }
-        }
-
-        private void SetCollisionObjects()
-        {
-            _collisionObjects = new List<ICollisionObject>();
-            foreach (var tileLayer in _map.TileLayers.Where(n => n.Name.Contains("Collision")))
-            {
-                foreach (var tile in tileLayer.Tiles)
-                {
-                    if (!tile.IsBlank)
-                    {
-                        _collisionObjects.Add(new TileCollision { XTilePosition = tile.X, YTilePosition = tile.Y });
-                    }
-                }
-            }
-        }
-
-        public void Update(GameTime gameTime)
-        {
-            _mapRenderer.Update(gameTime);
-
-            var index = 0;
-            while (index < _components.Count)
-            {
-                if (_components[index].Killed)
-                {
-                    _components.RemoveAt(index);
-                }
-                else
-                {
-                    _components[index].Update(gameTime);
-                    index++;
-                }
+                components.Add(component);
             }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            foreach (var tileLayer in _map.TileLayers.Where(n => !n.Name.Contains("WalkBehind")))
+            foreach (var tileLayer in map.TileLayers.Where(n => !n.Name.Contains("WalkBehind")))
             {
-                _mapRenderer.Draw(tileLayer, _camera.GetViewMatrix());
+                mapRenderer.Draw(tileLayer, camera.GetViewMatrix());
             }
 
-            foreach (var component in _components)
+            foreach (var component in components)
             {
                 component.Draw(spriteBatch);
             }
@@ -122,9 +57,65 @@ namespace Client.World
             spriteBatch.End();
             spriteBatch.Begin();
 
-            foreach (var tileLayer in _map.TileLayers.Where(n => n.Name.Contains("WalkBehind")))
+            foreach (var tileLayer in map.TileLayers.Where(n => n.Name.Contains("WalkBehind")))
             {
-                _mapRenderer.Draw(tileLayer, _camera.GetViewMatrix());
+                mapRenderer.Draw(tileLayer, camera.GetViewMatrix());
+            }
+        }
+
+        public T GetComponent<T>() where T : Component
+        {
+            var component = components.FirstOrDefault(c => c.GetType() == typeof(T));
+            return (T)component;
+        }
+
+        public void LoadContent(IContentLoader contentLoader)
+        {
+            map = contentLoader.LoadMap(mapName);
+            camera.SetScreenBounds(new Rectangle(0, 0, map.WidthInPixels, map.HeightInPixels));
+            mapRenderer = new TiledMapRenderer(graphicsDevice, map);
+
+            SetCollisionObjects();
+
+            components.AddRange(entityLoader.LoadEntities(this, camera, collisionObjects));
+
+            foreach (var component in components)
+            {
+                component.LoadContent(contentLoader);
+            }
+        }
+
+        public void Update(GameTime gameTime)
+        {
+            mapRenderer.Update(gameTime);
+
+            var index = 0;
+            while (index < components.Count)
+            {
+                if (components[index].Killed)
+                {
+                    components.RemoveAt(index);
+                }
+                else
+                {
+                    components[index].Update(gameTime);
+                    index++;
+                }
+            }
+        }
+
+        private void SetCollisionObjects()
+        {
+            collisionObjects = new List<ICollisionObject>();
+            foreach (var tileLayer in map.TileLayers.Where(n => n.Name.Contains("Collision")))
+            {
+                foreach (var tile in tileLayer.Tiles)
+                {
+                    if (!tile.IsBlank)
+                    {
+                        collisionObjects.Add(new TileCollision { XTilePosition = tile.X, YTilePosition = tile.Y });
+                    }
+                }
             }
         }
     }

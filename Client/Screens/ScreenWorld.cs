@@ -20,6 +20,7 @@ namespace Client.Screens
     {
         private readonly ITileLoader tileLoader;
         private readonly IEntityLoader entityLoader;
+        private readonly IEventRunner eventRunner;
         private List<IWorldObject> worldObjects;
 
         private TiledMap map;
@@ -28,10 +29,11 @@ namespace Client.Screens
         private GraphicsDevice _graphicsDevice;
         private Camera _camera;
 
-        public ScreenWorld(IScreenLoader screenLoader, ITileLoader tileLoader, IEntityLoader entityLoader, GraphicsDevice graphicsDevice, Camera camera) : base(screenLoader)
+        public ScreenWorld(IScreenLoader screenLoader, ITileLoader tileLoader, IEntityLoader entityLoader, IEventRunner eventRunner, GraphicsDevice graphicsDevice, Camera camera) : base(screenLoader)
         {
             this.tileLoader = tileLoader;
             this.entityLoader = entityLoader;
+            this.eventRunner = eventRunner;
             this._graphicsDevice = graphicsDevice;
             this._camera = camera;
         }

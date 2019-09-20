@@ -31,13 +31,6 @@ namespace Client
             contentLoader = new ContentLoader(Content);
         }
 
-        protected override void Initialize()
-        {
-            // TODO: Add your initialization logic here
-
-            base.Initialize();
-        }
-
         protected override void LoadContent()
         {
             var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 400, 240);
@@ -48,7 +41,7 @@ namespace Client
 
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 5),
                 new ScreenTransitionEffectFadeIn(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 3), contentLoader);
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new TileTestLoader(contentLoader), new EntityTestLoader(), GraphicsDevice, _camera));
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new TileTestLoader(contentLoader), new EntityTestLoader(), new EventRunner(contentLoader), GraphicsDevice, _camera));
             screenLoader.LoadContent(GraphicsDevice);
         }
 
@@ -72,12 +65,6 @@ namespace Client
             spriteBatch.End();
 
             return base.BeginDraw();
-        }
-
-
-        protected override void Draw(GameTime gameTime)
-        {
-            base.Draw(gameTime);
         }
     }
 }

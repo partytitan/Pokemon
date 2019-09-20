@@ -24,6 +24,9 @@ namespace Client.World.Components.Movements
             InMovement = false;
             animationWalking = new AnimationWalking(41, 51, 2, Directions.Down);
             this._camera = camera;
+
+            var sprite = Owner.GetComponent<Sprite>();
+            _camera.LookAt(sprite.CurrentPosition);
         }
 
         protected void Move(Directions direction)

@@ -17,9 +17,6 @@ namespace Client.World.Components.Animations
 
         public int AnimationSpeed { get; set; }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:System.Object"/> class.
-        /// </summary>
         public AnimationWalking(int width, int height, int animationFramesCount, Directions direction)
         {
             this.width = width;

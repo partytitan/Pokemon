@@ -10,7 +10,8 @@ namespace Client.Common
         Up,
         Right,
         Down,
-        None
+        None,
+        A
     }
 
     public enum Directions
