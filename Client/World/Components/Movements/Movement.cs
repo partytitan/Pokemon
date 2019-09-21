@@ -1,11 +1,11 @@
 ﻿using Client.Common;
 using Client.Services;
 using Client.World.Components.Animations;
-using Client.World.Tiles;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
 using System;
 using Client.Screens;
+using Client.World.Components.Tiles;
 
 namespace Client.World.Components.Movements
 {

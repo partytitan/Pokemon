@@ -1,13 +1,13 @@
 ﻿using Client.Screens;
 using Client.Services.Content;
 using Client.Services.World;
-using Client.World.Tiles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
 using System.Collections.Generic;
 using System.Linq;
+using Client.World.Components.Tiles;
 
 namespace Client.World
 {

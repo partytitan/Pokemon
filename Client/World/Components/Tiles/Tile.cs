@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using MonoGame.Extended.Tiled.Serialization;
-
-namespace Client.World.Tiles
+﻿namespace Client.World.Components.Tiles
 {
     public abstract class Tile
     {

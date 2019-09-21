@@ -39,7 +39,7 @@ namespace Client.Services.Screens
             newScreenTransitionEffect.LoadContent(contentLoader);
         }
 
-        public void Update(GameTime gameTime, Camera camera)
+        public void Update(GameTime gameTime)
         {
             switch (currentPhase)
             {
@@ -81,7 +81,7 @@ namespace Client.Services.Screens
             currentPhase = Phases.SettingUpNewScreen;
         }
 
-        public void Draw(SpriteBatch spriteBatch, Camera camera)
+        public void Draw(SpriteBatch spriteBatch)
         {
             currentScreen?.Draw(spriteBatch);
             previousScreenTransitionEffect.Draw(spriteBatch);

@@ -14,7 +14,6 @@ namespace Client
 {
     public class GameBase : Game
     {
-        RenderTarget2D backBuffer;
         GraphicsDeviceManager GraphicsDeviceManager;
         SpriteBatch spriteBatch;
         Entity entity;
@@ -52,7 +51,7 @@ namespace Client
 
         protected override void Update(GameTime gameTime)
         {
-            screenLoader.Update(gameTime, _camera);
+            screenLoader.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -61,7 +60,7 @@ namespace Client
             GraphicsDevice.Clear(Color.Black);
 
             spriteBatch.Begin(transformMatrix: _camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
-            screenLoader.Draw(spriteBatch, _camera);
+            screenLoader.Draw(spriteBatch);
             spriteBatch.End();
 
             return base.BeginDraw();

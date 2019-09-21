@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Client.World.Tiles
+﻿namespace Client.World.Components.Tiles
 {
     class TileCollision : Tile, ICollisionObject
     {

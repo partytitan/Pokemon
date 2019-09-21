@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Client.Services.Content;
 using Client.World;
-using Client.World.Tiles;
+using Client.World.Components.Tiles;
 using MonoGame.Extended.Tiled;
 
 namespace Client.Services.World

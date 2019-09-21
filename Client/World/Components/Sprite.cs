@@ -4,7 +4,7 @@ using System.Text;
 using Client.Data;
 using Client.Screens;
 using Client.Services.Content;
-using Client.World.Tiles;
+using Client.World.Components.Tiles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;

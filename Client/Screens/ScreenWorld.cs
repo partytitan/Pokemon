@@ -36,12 +36,11 @@ namespace Client.Screens
             this.eventRunner = eventRunner;
             this._graphicsDevice = graphicsDevice;
             this._camera = camera;
+            worldObjects = new List<IWorldObject>();
         }
 
         public override void LoadContent(IContentLoader contentLoader)
         {
-            worldObjects = new List<IWorldObject>();
-            
             Level level = new Level("level", "0.0", _graphicsDevice, _camera, entityLoader);
             worldObjects.Add(level);
 
