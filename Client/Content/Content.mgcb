@@ -21,6 +21,11 @@
 /processor:TiledMapProcessor
 /build:Maps/0.0.tmx
 
+#begin Maps/-1.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-1.0.tmx
+
 #begin Maps/-32.-31.tmx
 /importer:TiledMapImporter
 /processor:TiledMapProcessor
