@@ -9,18 +9,14 @@ using MonoGame.Extended;
 
 namespace Client.World
 {
-    internal abstract class Component
+    internal abstract class Component : IComponent
     {
-        protected IComponentOwner Owner;
+        protected readonly IComponentOwner Owner;
         public bool Killed { get; protected set; }
 
         protected Component(IComponentOwner owner)
         {
             Owner = owner;
         }
-
-        public virtual void LoadContent(IContentLoader contentLoader) { }
-        public virtual void Update(GameTime gameTime) { }
-        public virtual void Draw(SpriteBatch spriteBatch) { }
     }
 }

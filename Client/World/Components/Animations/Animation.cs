@@ -7,7 +7,7 @@ using MonoGame.Extended;
 
 namespace Client.World.Components.Animations
 {
-    internal class Animation : Component
+    internal class Animation : Component, IUpdateComponent
     {
         private IAnimation currentAnimation;
         private double counter;
@@ -17,7 +17,7 @@ namespace Client.World.Components.Animations
             counter = 0;
         }
 
-        public override void Update(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             if (currentAnimation == null)
                 return;

@@ -5,12 +5,14 @@ using System.Text;
 using Client.Inputs;
 using Client.Services.Content;
 using Client.World.Events;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Services.World
 {
     internal class EventRunner : IEventRunner
     {
+        private IWorldData worldData;
         private int currentIndex;
         private IReadOnlyList<IEvent> currentEvents;
         private readonly IContentLoader contentLoader;
@@ -18,6 +20,10 @@ namespace Client.Services.World
         public EventRunner(IContentLoader contentLoader)
         {
             this.contentLoader = contentLoader;
+        }
+        public void LoadContent(IWorldData worldData)
+        {
+            this.worldData = worldData;
         }
 
         public void RunEvents(IList<IEvent> events)
@@ -31,7 +37,7 @@ namespace Client.Services.World
             Input.LockInput = true;
         }
 
-        public void Update(double gameTime)
+        public void Update(GameTime gameTime)
         {
             if (currentEvents == null)
                 return;
@@ -44,6 +50,11 @@ namespace Client.Services.World
                     currentEvents = null;
                     Input.LockInput = false;
                 }
+                else
+                {
+                    currentEvents[currentIndex].Initialize(worldData);
+                }
+
             }
         }
 

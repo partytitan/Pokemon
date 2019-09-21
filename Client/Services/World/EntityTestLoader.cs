@@ -13,9 +13,9 @@ namespace Client.Services.World
 {
     internal class EntityTestLoader : IEntityLoader
     {
-        public IList<Entity> LoadEntities(IComponentOwner owner, Camera camera, IList<ICollisionObject> collisionObjects)
+        public IList<WorldObject> LoadEntities(IWorldData worldData, WarpData warpData)
         {
-            var entity = new Entity(owner,"MyFirstEntity");
+            var entity = new WorldObject("MyFirstEntity");
             entity.AddComponent(
                     new Sprite(
                         entity,
@@ -25,16 +25,17 @@ namespace Client.Services.World
                             Height = 20,
                             Width = 15,
                             TextureName = "NPC/main_character",
-                            XTilePosition = 10,
-                            YTilePosition = 18
+                            XTilePosition = warpData.XWarpPosition,
+                            YTilePosition = warpData.YWarpPosition
                         },
                         new Rectangle(0, 0, 41, 51)
                     )
                 );
-            entity.AddComponent(new MovementPlayer(entity, 1, new InputKeyboard(), camera));
+            entity.AddComponent(new MovementPlayer(entity, 1, new InputKeyboard(), worldData));
             entity.AddComponent(new Animation(entity));
-            entity.AddComponent(new Collision(entity, new ReadOnlyCollection<ICollisionObject>(collisionObjects)));
-            return new List<Entity> { entity };
+            entity.AddComponent(new Collision(entity, worldData));
+
+            return new List<WorldObject> { entity };
         }
     }
 }

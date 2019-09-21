@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Client.World
 {
-    interface ICollisionObject
+    interface IPostMoveCollisionComponent : ICollisionComponent
     {
-        bool Collide(int xTilePosition, int yTilePosition);
     }
 }

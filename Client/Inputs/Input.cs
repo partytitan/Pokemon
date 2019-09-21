@@ -9,14 +9,14 @@ namespace Client.Inputs
     internal abstract class Input
     {
         public static bool LockInput { get; set; }
-        private event EventHandler<NewInputEventArgs> newInput;
+        private event EventHandler<NewInputEventArgs> NewInput;
         private double counter;
         private double cooldown;
 
-        public event EventHandler<NewInputEventArgs> NewInput
+        public event EventHandler<NewInputEventArgs> NewInputEvent
         {
-            add { newInput += value; }
-            remove { newInput -= value; }
+            add => NewInput += value;
+            remove => NewInput -= value;
         }
 
         protected Input()
@@ -49,7 +49,7 @@ namespace Client.Inputs
 
         protected void SendNewInput(Common.Inputs inputs)
         {
-            newInput?.Invoke(this, new NewInputEventArgs(inputs));
+            NewInput?.Invoke(this, new NewInputEventArgs(inputs));
         }
     }
 }

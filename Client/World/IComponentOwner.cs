@@ -7,6 +7,7 @@ namespace Client.World
     internal interface IComponentOwner
     {
         string Id { get; }
-        T GetComponent<T>() where T : Component;
+        T GetComponent<T>() where T : IComponent;
+        List<T> GetComponents<T>() where T : IComponent;
     }
 }

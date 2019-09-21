@@ -1,42 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.ViewportAdapters;
 
-namespace Client.Screens
+namespace Client.World.Components
 {
-    public class Camera : Camera<Vector2>, IMovable, IRotatable
+    internal class Camera : Component, IMovable, IRotatable
     {
-        private float _maximumZoom = float.MaxValue;
-        private readonly ViewportAdapter _viewportAdapter;
-        private Rectangle _screenBounds;
-        private float _minimumZoom;
-        private float _zoom;
+        private float maximumZoom = float.MaxValue;
+        private readonly ViewportAdapter viewportAdapter;
+        private Rectangle screenBounds;
+        private float minimumZoom;
+        private float zoom;
 
-        public Camera(GraphicsDevice graphicsDevice)
-          : this((ViewportAdapter)new DefaultViewportAdapter(graphicsDevice))
-        {
-        }
 
-        public Camera(ViewportAdapter viewportAdapter)
+        public Camera(IComponentOwner owner, GraphicsDevice graphicsDevice, ViewportAdapter viewportAdapter) : base(owner)
         {
-            this._viewportAdapter = viewportAdapter;
+            this.viewportAdapter = viewportAdapter;
             this.Rotation = 0.0f;
             this.Zoom = 1f;
             this.Origin = new Vector2((float)viewportAdapter.VirtualWidth / 2f, (float)viewportAdapter.VirtualHeight / 2f);
             this.Position = Vector2.Zero;
         }
 
-        public override Vector2 Position { get; set; }
+        public Vector2 Position { get; set; }
 
-        public override float Rotation { get; set; }
+        public float Rotation { get; set; }
 
-        public override Vector2 Origin { get; set; }
+        public Vector2 Origin { get; set; }
 
-        public override Vector2 Center
+        public Vector2 Center
         {
             get
             {
@@ -44,25 +38,25 @@ namespace Client.Screens
             }
         }
 
-        public override float Zoom
+        public float Zoom
         {
             get
             {
-                return this._zoom;
+                return this.zoom;
             }
             set
             {
                 if ((double)value < (double)this.MinimumZoom || (double)value > (double)this.MaximumZoom)
                     throw new ArgumentException("Zoom must be between MinimumZoom and MaximumZoom");
-                this._zoom = value;
+                this.zoom = value;
             }
         }
 
-        public override float MinimumZoom
+        public float MinimumZoom
         {
             get
             {
-                return this._minimumZoom;
+                return this.minimumZoom;
             }
             set
             {
@@ -70,15 +64,15 @@ namespace Client.Screens
                     throw new ArgumentException("MinimumZoom must be greater than zero");
                 if ((double)this.Zoom < (double)value)
                     this.Zoom = this.MinimumZoom;
-                this._minimumZoom = value;
+                this.minimumZoom = value;
             }
         }
 
-        public override float MaximumZoom
+        public float MaximumZoom
         {
             get
             {
-                return this._maximumZoom;
+                return this.maximumZoom;
             }
             set
             {
@@ -86,7 +80,7 @@ namespace Client.Screens
                     throw new ArgumentException("MaximumZoom must be greater than zero");
                 if ((double)this.Zoom > (double)value)
                     this.Zoom = value;
-                this._maximumZoom = value;
+                this.maximumZoom = value;
             }
         }
 
@@ -94,38 +88,38 @@ namespace Client.Screens
         {
             get
             {
-                return _screenBounds != Rectangle.Empty;
+                return screenBounds != Rectangle.Empty;
             }
         }
-        public override RectangleF BoundingRectangle
+        public RectangleF BoundingRectangle
         {
             get
             {
                 Vector3[] corners = this.GetBoundingFrustum().GetCorners();
-                Vector3 vector3_1 = corners[0];
-                Vector3 vector3_2 = corners[2];
-                float width = vector3_2.X - vector3_1.X;
-                float height = vector3_2.Y - vector3_1.Y;
-                return new RectangleF(vector3_1.X, vector3_1.Y, width, height);
+                Vector3 vector31 = corners[0];
+                Vector3 vector32 = corners[2];
+                float width = vector32.X - vector31.X;
+                float height = vector32.Y - vector31.Y;
+                return new RectangleF(vector31.X, vector31.Y, width, height);
             }
         }
 
-        public override void Move(Vector2 direction)
+        public void Move(Vector2 direction)
         {
             this.Position = this.Position + Vector2.Transform(direction, Matrix.CreateRotationZ(-this.Rotation));
         }
 
-        public override void Rotate(float deltaRadians)
+        public void Rotate(float deltaRadians)
         {
             this.Rotation += deltaRadians;
         }
 
-        public override void ZoomIn(float deltaZoom)
+        public void ZoomIn(float deltaZoom)
         {
             this.ClampZoom(this.Zoom + deltaZoom);
         }
 
-        public override void ZoomOut(float deltaZoom)
+        public void ZoomOut(float deltaZoom)
         {
             this.ClampZoom(this.Zoom - deltaZoom);
         }
@@ -140,20 +134,20 @@ namespace Client.Screens
 
         public void SetScreenBounds(Rectangle screenBounds)
         {
-            this._screenBounds = screenBounds;
+            this.screenBounds = screenBounds;
         }
-        public override void LookAt(Vector2 position)
+        public void LookAt(Vector2 position)
         {
-            var wantedPosition = position - new Vector2((float)this._viewportAdapter.VirtualWidth / 2f, (float)this._viewportAdapter.VirtualHeight / 2f);
-            if (_screenBounds != Rectangle.Empty)
+            var wantedPosition = position - new Vector2((float)this.viewportAdapter.VirtualWidth / 2f, (float)this.viewportAdapter.VirtualHeight / 2f);
+            if (screenBounds != Rectangle.Empty)
             {
-                var width = _screenBounds.Width - (float) this._viewportAdapter.VirtualWidth;
-                var height = _screenBounds.Height - (float)this._viewportAdapter.VirtualHeight;
+                var width = screenBounds.Width - (float) this.viewportAdapter.VirtualWidth;
+                var height = screenBounds.Height - (float)this.viewportAdapter.VirtualHeight;
 
-                if (wantedPosition.X <= _screenBounds.X)
-                    wantedPosition.X = _screenBounds.Y;
-                if (wantedPosition.Y <= _screenBounds.Y)
-                    wantedPosition.Y = _screenBounds.Y;
+                if (wantedPosition.X <= screenBounds.X)
+                    wantedPosition.X = screenBounds.Y;
+                if (wantedPosition.Y <= screenBounds.Y)
+                    wantedPosition.Y = screenBounds.Y;
                 if (wantedPosition.X >= width)
                     wantedPosition.X = width;
                 if (wantedPosition.Y >= height)
@@ -168,9 +162,9 @@ namespace Client.Screens
             return this.WorldToScreen(new Vector2(x, y));
         }
 
-        public override Vector2 WorldToScreen(Vector2 worldPosition)
+        public Vector2 WorldToScreen(Vector2 worldPosition)
         {
-            Viewport viewport = this._viewportAdapter.Viewport;
+            Viewport viewport = this.viewportAdapter.Viewport;
             return Vector2.Transform(worldPosition + new Vector2((float)viewport.X, (float)viewport.Y), this.GetViewMatrix());
         }
 
@@ -179,15 +173,15 @@ namespace Client.Screens
             return this.ScreenToWorld(new Vector2(x, y));
         }
 
-        public override Vector2 ScreenToWorld(Vector2 screenPosition)
+        public Vector2 ScreenToWorld(Vector2 screenPosition)
         {
-            Viewport viewport = this._viewportAdapter.Viewport;
+            Viewport viewport = this.viewportAdapter.Viewport;
             return Vector2.Transform(screenPosition - new Vector2((float)viewport.X, (float)viewport.Y), Matrix.Invert(this.GetViewMatrix()));
         }
 
         public Matrix GetViewMatrix(Vector2 parallaxFactor)
         {
-            return this.GetVirtualViewMatrix(parallaxFactor) * this._viewportAdapter.GetScaleMatrix();
+            return this.GetVirtualViewMatrix(parallaxFactor) * this.viewportAdapter.GetScaleMatrix();
         }
 
         private Matrix GetVirtualViewMatrix(Vector2 parallaxFactor)
@@ -200,24 +194,24 @@ namespace Client.Screens
             return this.GetVirtualViewMatrix(Vector2.One);
         }
 
-        public override Matrix GetViewMatrix()
+        public Matrix GetViewMatrix()
         {
             return this.GetViewMatrix(Vector2.One);
         }
 
-        public override Matrix GetInverseViewMatrix()
+        public Matrix GetInverseViewMatrix()
         {
             return Matrix.Invert(this.GetViewMatrix());
         }
 
         private Matrix GetProjectionMatrix(Matrix viewMatrix)
         {
-            Matrix result = Matrix.CreateOrthographicOffCenter(0.0f, (float)this._viewportAdapter.VirtualWidth, (float)this._viewportAdapter.VirtualHeight, 0.0f, -1f, 0.0f);
+            Matrix result = Matrix.CreateOrthographicOffCenter(0.0f, (float)this.viewportAdapter.VirtualWidth, (float)this.viewportAdapter.VirtualHeight, 0.0f, -1f, 0.0f);
             Matrix.Multiply(ref viewMatrix, ref result, out result);
             return result;
         }
 
-        public override BoundingFrustum GetBoundingFrustum()
+        public BoundingFrustum GetBoundingFrustum()
         {
             return new BoundingFrustum(this.GetProjectionMatrix(this.GetVirtualViewMatrix()));
         }
@@ -227,12 +221,12 @@ namespace Client.Screens
             return this.Contains(point.ToVector2());
         }
 
-        public override ContainmentType Contains(Vector2 vector2)
+        public ContainmentType Contains(Vector2 vector2)
         {
             return this.GetBoundingFrustum().Contains(new Vector3(vector2.X, vector2.Y, 0.0f));
         }
 
-        public override ContainmentType Contains(Rectangle rectangle)
+        public ContainmentType Contains(Rectangle rectangle)
         {
             Vector3 max = new Vector3((float)(rectangle.X + rectangle.Width), (float)(rectangle.Y + rectangle.Height), 0.5f);
             return this.GetBoundingFrustum().Contains(new BoundingBox(new Vector3((float)rectangle.X, (float)rectangle.Y, 0.5f), max));

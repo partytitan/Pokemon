@@ -4,29 +4,31 @@ using Client.World.Components.Animations;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
 using System;
+using System.Linq;
 using Client.Screens;
+using Client.Services.World;
 using Client.World.Components.Tiles;
 
 namespace Client.World.Components.Movements
 {
-    internal abstract class Movement : Component
+    internal abstract class Movement : Component, IUpdateComponent
     {
         private readonly float speed;
-        protected Vector2 wantedPosition;
+        private Vector2 wantedPosition;
         protected bool InMovement;
         private readonly AnimationWalking animationWalking;
 
-        private Camera _camera;
+        private readonly Camera camera;
 
-        protected Movement(IComponentOwner owner, float speed, Camera camera) : base(owner)
+        protected Movement(IComponentOwner owner, float speed, IWorldData worldData) : base(owner)
         {
             this.speed = speed;
             InMovement = false;
             animationWalking = new AnimationWalking(41, 51, 2, Directions.Down);
-            this._camera = camera;
+            this.camera = worldData.GetComponents<Camera>().FirstOrDefault();
 
             var sprite = Owner.GetComponent<Sprite>();
-            _camera.LookAt(sprite.CurrentPosition);
+            this.camera?.LookAt(sprite.CurrentPosition);
         }
 
         protected void Move(Directions direction)
@@ -68,13 +70,13 @@ namespace Client.World.Components.Movements
         private bool Collision(int wantedXTilePosition, int wantedYTilePostion)
         {
             var collision = Owner.GetComponent<Collision>();
-            return collision != null && collision.CollideOnTile(wantedXTilePosition, wantedYTilePostion);
+            return collision != null && collision.CheckCollision<IPreMoveCollisionComponent>(wantedXTilePosition, wantedYTilePostion);
         }
 
-        public override void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             var sprite = Owner.GetComponent<Sprite>();
-            _camera.LookAt(sprite.CurrentPosition);
+            this.camera.LookAt(sprite.CurrentPosition);
 
             if (!InMovement)
                 return;
@@ -110,6 +112,14 @@ namespace Client.World.Components.Movements
             InMovement = false;
             var animation = Owner.GetComponent<Animation>();
             animation.StopAnimation();
+
+            CheckWarp((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
+        }
+
+        private void CheckWarp(int wantedXTilePosition, int wantedYTilePostion)
+        {
+            var warp = Owner.GetComponent<Collision>();
+            warp?.CheckCollision<IPostMoveCollisionComponent>(wantedXTilePosition, wantedYTilePostion);
         }
     }
 }

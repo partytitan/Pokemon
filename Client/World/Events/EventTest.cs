@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Client.Services.Content;
+using Client.Services.World;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -14,7 +15,7 @@ namespace Client.World.Events
 
         public bool IsDone { get; private set; }
 
-        public void Initialize()
+        public void Initialize(IWorldData worldData)
         {
             position = new Vector2(-100, 40);
         }
@@ -24,7 +25,7 @@ namespace Client.World.Events
             texture = contentLoader.LoadTexture("pi_test");
         }
 
-        public void Update(double gameTime)
+        public void Update(GameTime gameTime)
         {
             position.X++;
             if (position.X > 240)

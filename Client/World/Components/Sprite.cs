@@ -11,7 +11,7 @@ using MonoGame.Extended;
 
 namespace Client.World.Components
 {
-    internal class Sprite : Component
+    internal class Sprite : Component, ILoadContentComponent, IDrawComponent
     {
         private readonly SpriteData spriteData;
         private Texture2D texture;
@@ -32,15 +32,9 @@ namespace Client.World.Components
             DrawFrame = drawFrame;
         }
 
-        public override void LoadContent(IContentLoader contentLoader)
+        public virtual void LoadContent(IContentLoader contentLoader)
         {
             texture = contentLoader.LoadTexture(spriteData.TextureName);
-            base.LoadContent(contentLoader);
-        }
-
-        public override void Update(GameTime gameTime)
-        {
-
         }
 
         public void IncreasePositionOffset(float x, float y)
@@ -59,7 +53,7 @@ namespace Client.World.Components
             spriteData.YTilePosition = y;
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, new Rectangle((int)CurrentPosition.X, (int)CurrentPosition.Y, spriteData.Width, spriteData.Height), DrawFrame, spriteData.Color);
         }

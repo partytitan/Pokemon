@@ -1,10 +1,12 @@
 ﻿using Autofac;
+using Client.Data;
 using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
 using Client.Services.Content;
 using Client.Services.Screens;
 using Client.Services.World;
 using Client.World;
+using Client.World.Components;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -14,13 +16,12 @@ namespace Client
 {
     public class GameBase : Game
     {
-        GraphicsDeviceManager GraphicsDeviceManager;
+        private readonly GraphicsDeviceManager GraphicsDeviceManager;
         SpriteBatch spriteBatch;
-        Entity entity;
-        IContentLoader contentLoader;
+        readonly IContentLoader contentLoader;
         ScreenLoader screenLoader;
 
-        Camera _camera;
+        Camera camera;
 
 
         public GameBase(int width = 800, int height = 480)
@@ -33,14 +34,17 @@ namespace Client
         protected override void LoadContent()
         {
             var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 400, 240);
-            _camera = new Camera(viewportAdapter);
+            var cameraWorldObject = new WorldObject("camera");
+            camera = new Camera(null,GraphicsDevice, viewportAdapter);
+            cameraWorldObject.AddComponent(camera);
 
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 5),
                 new ScreenTransitionEffectFadeIn(GraphicsDeviceManager.PreferredBackBufferWidth, GraphicsDeviceManager.PreferredBackBufferHeight, 3), contentLoader);
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new TileTestLoader(contentLoader), new EntityTestLoader(), new EventRunner(contentLoader), GraphicsDevice, _camera));
+            //screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(16, 20, -32, -31)));
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(10,18,0,0)));
             screenLoader.LoadContent(GraphicsDevice);
         }
 
@@ -59,7 +63,7 @@ namespace Client
         {
             GraphicsDevice.Clear(Color.Black);
 
-            spriteBatch.Begin(transformMatrix: _camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
+            spriteBatch.Begin(transformMatrix: camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
             screenLoader.Draw(spriteBatch);
             spriteBatch.End();
 

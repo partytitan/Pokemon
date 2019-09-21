@@ -5,6 +5,7 @@ using Client.Common;
 using Client.EventArg;
 using Client.Inputs;
 using Client.Screens;
+using Client.Services.World;
 using Client.World.Components.Animations;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
@@ -15,10 +16,10 @@ namespace Client.World.Components.Movements
     {
         private readonly Input input;
 
-        public MovementPlayer(IComponentOwner owner, float speed, Input input, Camera camera) : base(owner, speed, camera)
+        public MovementPlayer(IComponentOwner owner, float speed, Input input, IWorldData worldData) : base(owner, speed, worldData)
         {
             this.input = input;
-            this.input.NewInput += OnNewInput;
+            this.input.NewInputEvent += OnNewInput;
         }
 
         private void OnNewInput(object sender, NewInputEventArgs newInputEventArgs)

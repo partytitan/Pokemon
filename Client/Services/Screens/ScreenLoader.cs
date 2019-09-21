@@ -21,7 +21,7 @@ namespace Client.Services.Screens
         private enum Phases { ClosingPreviousScreen, SettingUpNewScreen, Running }
         private Phases currentPhase;
 
-        private GraphicsDevice GraphicsDevice;
+        private GraphicsDevice graphicsDevice;
 
         public ScreenLoader(IScreenTransitionEffect previousScreenTransitionEffect,
             IScreenTransitionEffect newScreenTransitionEffect, IContentLoader contentLoader)
@@ -34,7 +34,7 @@ namespace Client.Services.Screens
 
         public void LoadContent(GraphicsDevice graphicsDevice)
         {
-            this.GraphicsDevice = graphicsDevice;
+            this.graphicsDevice = graphicsDevice;
             previousScreenTransitionEffect.LoadContent(contentLoader);
             newScreenTransitionEffect.LoadContent(contentLoader);
         }
