@@ -147,9 +147,9 @@ namespace Client.Services.Content
                     mapDataByName.Add(mapName, mapData);
                     return mapData;
                 }
-                catch (Exception) when (mapName != MapNotFoundName)
+                catch (Exception) when (mapName != MapDataNotFoundName)
                 {
-                    return LoadMapData(MapNotFoundName);
+                    return LoadMapData(MapDataNotFoundName);
                 }
             }
             return mapDataByName[mapName];

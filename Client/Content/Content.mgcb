@@ -5603,6 +5603,12 @@
 #begin Maps/Data/0.-2.txt
 /copy:Maps/Data/0.-2.txt
 
+#begin Maps/Data/0.-46.txt
+/copy:Maps/Data/0.-46.txt
+
+#begin Maps/Data/0.-47.txt
+/copy:Maps/Data/0.-47.txt
+
 #begin Maps/Data/0.49.txt
 /copy:Maps/Data/0.49.txt
 
@@ -5618,11 +5624,23 @@
 #begin Maps/Data/-1.0.txt
 /copy:Maps/Data/-1.0.txt
 
+#begin Maps/Data/1.1.txt
+/copy:Maps/Data/1.1.txt
+
 #begin Maps/Data/-1.-1.txt
 /copy:Maps/Data/-1.-1.txt
 
 #begin Maps/Data/-1.-4.txt
 /copy:Maps/Data/-1.-4.txt
+
+#begin Maps/Data/1.-41.txt
+/copy:Maps/Data/1.-41.txt
+
+#begin Maps/Data/1.-46.txt
+/copy:Maps/Data/1.-46.txt
+
+#begin Maps/Data/1.-47.txt
+/copy:Maps/Data/1.-47.txt
 
 #begin Maps/Data/1.49.txt
 /copy:Maps/Data/1.49.txt
@@ -5632,6 +5650,9 @@
 
 #begin Maps/Data/1.-50.txt
 /copy:Maps/Data/1.-50.txt
+
+#begin Maps/Data/10.41.txt
+/copy:Maps/Data/10.41.txt
 
 #begin Maps/Data/10.49.txt
 /copy:Maps/Data/10.49.txt
@@ -5650,6 +5671,9 @@
 
 #begin Maps/Data/11.17.txt
 /copy:Maps/Data/11.17.txt
+
+#begin Maps/Data/11.18.txt
+/copy:Maps/Data/11.18.txt
 
 #begin Maps/Data/11.-2.txt
 /copy:Maps/Data/11.-2.txt
@@ -5675,6 +5699,12 @@
 #begin Maps/Data/12.-2.txt
 /copy:Maps/Data/12.-2.txt
 
+#begin Maps/Data/12.39.txt
+/copy:Maps/Data/12.39.txt
+
+#begin Maps/Data/12.42.txt
+/copy:Maps/Data/12.42.txt
+
 #begin Maps/Data/12.49.txt
 /copy:Maps/Data/12.49.txt
 
@@ -5684,8 +5714,23 @@
 #begin Maps/Data/13.17.txt
 /copy:Maps/Data/13.17.txt
 
+#begin Maps/Data/13.49.txt
+/copy:Maps/Data/13.49.txt
+
+#begin Maps/Data/13.-49.txt
+/copy:Maps/Data/13.-49.txt
+
 #begin Maps/Data/14.17.txt
 /copy:Maps/Data/14.17.txt
+
+#begin Maps/Data/14.37.txt
+/copy:Maps/Data/14.37.txt
+
+#begin Maps/Data/14.38.txt
+/copy:Maps/Data/14.38.txt
+
+#begin Maps/Data/14.41.txt
+/copy:Maps/Data/14.41.txt
 
 #begin Maps/Data/15.15.txt
 /copy:Maps/Data/15.15.txt
@@ -5695,6 +5740,24 @@
 
 #begin Maps/Data/15.17.txt
 /copy:Maps/Data/15.17.txt
+
+#begin Maps/Data/15.43.txt
+/copy:Maps/Data/15.43.txt
+
+#begin Maps/Data/16.0.txt
+/copy:Maps/Data/16.0.txt
+
+#begin Maps/Data/16.1.txt
+/copy:Maps/Data/16.1.txt
+
+#begin Maps/Data/16.2.txt
+/copy:Maps/Data/16.2.txt
+
+#begin Maps/Data/16.3.txt
+/copy:Maps/Data/16.3.txt
+
+#begin Maps/Data/16.41.txt
+/copy:Maps/Data/16.41.txt
 
 #begin Maps/Data/17.36.txt
 /copy:Maps/Data/17.36.txt
@@ -5707,6 +5770,9 @@
 
 #begin Maps/Data/17.39.txt
 /copy:Maps/Data/17.39.txt
+
+#begin Maps/Data/17.44.txt
+/copy:Maps/Data/17.44.txt
 
 #begin Maps/Data/18.34.txt
 /copy:Maps/Data/18.34.txt
@@ -5723,6 +5789,9 @@
 #begin Maps/Data/19.43.txt
 /copy:Maps/Data/19.43.txt
 
+#begin Maps/Data/19.45.txt
+/copy:Maps/Data/19.45.txt
+
 #begin Maps/Data/2.0.txt
 /copy:Maps/Data/2.0.txt
 
@@ -5731,6 +5800,9 @@
 
 #begin Maps/Data/2.-1.txt
 /copy:Maps/Data/2.-1.txt
+
+#begin Maps/Data/-2.1.txt
+/copy:Maps/Data/-2.1.txt
 
 #begin Maps/Data/-2.-1.txt
 /copy:Maps/Data/-2.-1.txt
@@ -5741,11 +5813,74 @@
 #begin Maps/Data/-2.-2.txt
 /copy:Maps/Data/-2.-2.txt
 
+#begin Maps/Data/2.-28.txt
+/copy:Maps/Data/2.-28.txt
+
+#begin Maps/Data/2.-29.txt
+/copy:Maps/Data/2.-29.txt
+
 #begin Maps/Data/2.-3.txt
 /copy:Maps/Data/2.-3.txt
 
+#begin Maps/Data/2.-30.txt
+/copy:Maps/Data/2.-30.txt
+
+#begin Maps/Data/2.-31.txt
+/copy:Maps/Data/2.-31.txt
+
+#begin Maps/Data/2.-32.txt
+/copy:Maps/Data/2.-32.txt
+
+#begin Maps/Data/2.-33.txt
+/copy:Maps/Data/2.-33.txt
+
+#begin Maps/Data/2.-34.txt
+/copy:Maps/Data/2.-34.txt
+
+#begin Maps/Data/2.-35.txt
+/copy:Maps/Data/2.-35.txt
+
+#begin Maps/Data/2.-36.txt
+/copy:Maps/Data/2.-36.txt
+
+#begin Maps/Data/2.-37.txt
+/copy:Maps/Data/2.-37.txt
+
+#begin Maps/Data/2.-38.txt
+/copy:Maps/Data/2.-38.txt
+
+#begin Maps/Data/2.-39.txt
+/copy:Maps/Data/2.-39.txt
+
 #begin Maps/Data/-2.-4.txt
 /copy:Maps/Data/-2.-4.txt
+
+#begin Maps/Data/2.-40.txt
+/copy:Maps/Data/2.-40.txt
+
+#begin Maps/Data/2.-41.txt
+/copy:Maps/Data/2.-41.txt
+
+#begin Maps/Data/2.-42.txt
+/copy:Maps/Data/2.-42.txt
+
+#begin Maps/Data/2.-43.txt
+/copy:Maps/Data/2.-43.txt
+
+#begin Maps/Data/2.-44.txt
+/copy:Maps/Data/2.-44.txt
+
+#begin Maps/Data/2.-45.txt
+/copy:Maps/Data/2.-45.txt
+
+#begin Maps/Data/2.-46.txt
+/copy:Maps/Data/2.-46.txt
+
+#begin Maps/Data/2.-47.txt
+/copy:Maps/Data/2.-47.txt
+
+#begin Maps/Data/2.-48.txt
+/copy:Maps/Data/2.-48.txt
 
 #begin Maps/Data/2.49.txt
 /copy:Maps/Data/2.49.txt
@@ -5777,14 +5912,47 @@
 #begin Maps/Data/20.49.txt
 /copy:Maps/Data/20.49.txt
 
+#begin Maps/Data/21.38.txt
+/copy:Maps/Data/21.38.txt
+
+#begin Maps/Data/21.44.txt
+/copy:Maps/Data/21.44.txt
+
 #begin Maps/Data/21.49.txt
 /copy:Maps/Data/21.49.txt
+
+#begin Maps/Data/22.20.txt
+/copy:Maps/Data/22.20.txt
 
 #begin Maps/Data/22.21.txt
 /copy:Maps/Data/22.21.txt
 
+#begin Maps/Data/22.22.txt
+/copy:Maps/Data/22.22.txt
+
+#begin Maps/Data/22.23.txt
+/copy:Maps/Data/22.23.txt
+
+#begin Maps/Data/22.24.txt
+/copy:Maps/Data/22.24.txt
+
+#begin Maps/Data/22.25.txt
+/copy:Maps/Data/22.25.txt
+
 #begin Maps/Data/22.26.txt
 /copy:Maps/Data/22.26.txt
+
+#begin Maps/Data/22.33.txt
+/copy:Maps/Data/22.33.txt
+
+#begin Maps/Data/22.35.txt
+/copy:Maps/Data/22.35.txt
+
+#begin Maps/Data/22.37.txt
+/copy:Maps/Data/22.37.txt
+
+#begin Maps/Data/22.38.txt
+/copy:Maps/Data/22.38.txt
 
 #begin Maps/Data/22.42.txt
 /copy:Maps/Data/22.42.txt
@@ -5792,17 +5960,56 @@
 #begin Maps/Data/22.49.txt
 /copy:Maps/Data/22.49.txt
 
+#begin Maps/Data/23.19.txt
+/copy:Maps/Data/23.19.txt
+
+#begin Maps/Data/23.21.txt
+/copy:Maps/Data/23.21.txt
+
 #begin Maps/Data/23.23.txt
 /copy:Maps/Data/23.23.txt
+
+#begin Maps/Data/23.37.txt
+/copy:Maps/Data/23.37.txt
+
+#begin Maps/Data/23.38.txt
+/copy:Maps/Data/23.38.txt
 
 #begin Maps/Data/23.49.txt
 /copy:Maps/Data/23.49.txt
 
+#begin Maps/Data/24.19.txt
+/copy:Maps/Data/24.19.txt
+
+#begin Maps/Data/24.23.txt
+/copy:Maps/Data/24.23.txt
+
 #begin Maps/Data/24.33.txt
 /copy:Maps/Data/24.33.txt
 
+#begin Maps/Data/24.35.txt
+/copy:Maps/Data/24.35.txt
+
+#begin Maps/Data/24.37.txt
+/copy:Maps/Data/24.37.txt
+
+#begin Maps/Data/24.38.txt
+/copy:Maps/Data/24.38.txt
+
 #begin Maps/Data/24.49.txt
 /copy:Maps/Data/24.49.txt
+
+#begin Maps/Data/25.19.txt
+/copy:Maps/Data/25.19.txt
+
+#begin Maps/Data/25.20.txt
+/copy:Maps/Data/25.20.txt
+
+#begin Maps/Data/25.21.txt
+/copy:Maps/Data/25.21.txt
+
+#begin Maps/Data/25.22.txt
+/copy:Maps/Data/25.22.txt
 
 #begin Maps/Data/25.23.txt
 /copy:Maps/Data/25.23.txt
@@ -5812,6 +6019,12 @@
 
 #begin Maps/Data/25.49.txt
 /copy:Maps/Data/25.49.txt
+
+#begin Maps/Data/26.19.txt
+/copy:Maps/Data/26.19.txt
+
+#begin Maps/Data/26.20.txt
+/copy:Maps/Data/26.20.txt
 
 #begin Maps/Data/26.21.txt
 /copy:Maps/Data/26.21.txt
@@ -5846,23 +6059,68 @@
 #begin Maps/Data/26.41.txt
 /copy:Maps/Data/26.41.txt
 
+#begin Maps/Data/26.-45.txt
+/copy:Maps/Data/26.-45.txt
+
 #begin Maps/Data/26.49.txt
 /copy:Maps/Data/26.49.txt
+
+#begin Maps/Data/27.20.txt
+/copy:Maps/Data/27.20.txt
 
 #begin Maps/Data/27.21.txt
 /copy:Maps/Data/27.21.txt
 
+#begin Maps/Data/27.22.txt
+/copy:Maps/Data/27.22.txt
+
+#begin Maps/Data/27.23.txt
+/copy:Maps/Data/27.23.txt
+
 #begin Maps/Data/27.24.txt
 /copy:Maps/Data/27.24.txt
+
+#begin Maps/Data/27.25.txt
+/copy:Maps/Data/27.25.txt
+
+#begin Maps/Data/27.-45.txt
+/copy:Maps/Data/27.-45.txt
 
 #begin Maps/Data/27.49.txt
 /copy:Maps/Data/27.49.txt
 
+#begin Maps/Data/-28.1.txt
+/copy:Maps/Data/-28.1.txt
+
+#begin Maps/Data/-28.10.txt
+/copy:Maps/Data/-28.10.txt
+
+#begin Maps/Data/-28.12.txt
+/copy:Maps/Data/-28.12.txt
+
+#begin Maps/Data/-28.15.txt
+/copy:Maps/Data/-28.15.txt
+
+#begin Maps/Data/-28.16.txt
+/copy:Maps/Data/-28.16.txt
+
+#begin Maps/Data/-28.2.txt
+/copy:Maps/Data/-28.2.txt
+
+#begin Maps/Data/28.20.txt
+/copy:Maps/Data/28.20.txt
+
 #begin Maps/Data/-28.4.txt
 /copy:Maps/Data/-28.4.txt
 
+#begin Maps/Data/28.-45.txt
+/copy:Maps/Data/28.-45.txt
+
 #begin Maps/Data/28.49.txt
 /copy:Maps/Data/28.49.txt
+
+#begin Maps/Data/28.-49.txt
+/copy:Maps/Data/28.-49.txt
 
 #begin Maps/Data/-28.5.txt
 /copy:Maps/Data/-28.5.txt
@@ -5878,6 +6136,21 @@
 
 #begin Maps/Data/29.20.txt
 /copy:Maps/Data/29.20.txt
+
+#begin Maps/Data/29.26.txt
+/copy:Maps/Data/29.26.txt
+
+#begin Maps/Data/-29.4.txt
+/copy:Maps/Data/-29.4.txt
+
+#begin Maps/Data/29.-45.txt
+/copy:Maps/Data/29.-45.txt
+
+#begin Maps/Data/29.-47.txt
+/copy:Maps/Data/29.-47.txt
+
+#begin Maps/Data/-29.7.txt
+/copy:Maps/Data/-29.7.txt
 
 #begin Maps/Data/-29.8.txt
 /copy:Maps/Data/-29.8.txt
@@ -5924,11 +6197,26 @@
 #begin Maps/Data/3.-50.txt
 /copy:Maps/Data/3.-50.txt
 
-#begin Maps/Data/-31.-29.txt
-/copy:Maps/Data/-31.-29.txt
+#begin Maps/Data/30.20.txt
+/copy:Maps/Data/30.20.txt
+
+#begin Maps/Data/30.-45.txt
+/copy:Maps/Data/30.-45.txt
+
+#begin Maps/Data/31.20.txt
+/copy:Maps/Data/31.20.txt
+
+#begin Maps/Data/31.24.txt
+/copy:Maps/Data/31.24.txt
 
 #begin Maps/Data/-31.-30.txt
 /copy:Maps/Data/-31.-30.txt
+
+#begin Maps/Data/-31.-31.txt
+/copy:Maps/Data/-31.-31.txt
+
+#begin Maps/Data/-31.-32.txt
+/copy:Maps/Data/-31.-32.txt
 
 #begin Maps/Data/-31.-33.txt
 /copy:Maps/Data/-31.-33.txt
@@ -5963,14 +6251,29 @@
 #begin Maps/Data/-31.-43.txt
 /copy:Maps/Data/-31.-43.txt
 
+#begin Maps/Data/-31.44.txt
+/copy:Maps/Data/-31.44.txt
+
 #begin Maps/Data/-31.-44.txt
 /copy:Maps/Data/-31.-44.txt
+
+#begin Maps/Data/-31.45.txt
+/copy:Maps/Data/-31.45.txt
 
 #begin Maps/Data/-31.-45.txt
 /copy:Maps/Data/-31.-45.txt
 
+#begin Maps/Data/-31.46.txt
+/copy:Maps/Data/-31.46.txt
+
 #begin Maps/Data/-31.-46.txt
 /copy:Maps/Data/-31.-46.txt
+
+#begin Maps/Data/-31.47.txt
+/copy:Maps/Data/-31.47.txt
+
+#begin Maps/Data/-31.-47.txt
+/copy:Maps/Data/-31.-47.txt
 
 #begin Maps/Data/-31.-48.txt
 /copy:Maps/Data/-31.-48.txt
@@ -5984,14 +6287,26 @@
 #begin Maps/Data/32.20.txt
 /copy:Maps/Data/32.20.txt
 
+#begin Maps/Data/32.23.txt
+/copy:Maps/Data/32.23.txt
+
+#begin Maps/Data/32.24.txt
+/copy:Maps/Data/32.24.txt
+
 #begin Maps/Data/-32.-31.txt
 /copy:Maps/Data/-32.-31.txt
+
+#begin Maps/Data/-32.-32.txt
+/copy:Maps/Data/-32.-32.txt
 
 #begin Maps/Data/-32.-33.txt
 /copy:Maps/Data/-32.-33.txt
 
 #begin Maps/Data/-32.-34.txt
 /copy:Maps/Data/-32.-34.txt
+
+#begin Maps/Data/-32.-35.txt
+/copy:Maps/Data/-32.-35.txt
 
 #begin Maps/Data/-32.-36.txt
 /copy:Maps/Data/-32.-36.txt
@@ -6023,6 +6338,27 @@
 #begin Maps/Data/-32.-45.txt
 /copy:Maps/Data/-32.-45.txt
 
+#begin Maps/Data/-32.-46.txt
+/copy:Maps/Data/-32.-46.txt
+
+#begin Maps/Data/-32.-47.txt
+/copy:Maps/Data/-32.-47.txt
+
+#begin Maps/Data/-32.-48.txt
+/copy:Maps/Data/-32.-48.txt
+
+#begin Maps/Data/-32.-49.txt
+/copy:Maps/Data/-32.-49.txt
+
+#begin Maps/Data/-32.-50.txt
+/copy:Maps/Data/-32.-50.txt
+
+#begin Maps/Data/33.21.txt
+/copy:Maps/Data/33.21.txt
+
+#begin Maps/Data/-33.-31.txt
+/copy:Maps/Data/-33.-31.txt
+
 #begin Maps/Data/-33.-32.txt
 /copy:Maps/Data/-33.-32.txt
 
@@ -6047,8 +6383,17 @@
 #begin Maps/Data/-33.-39.txt
 /copy:Maps/Data/-33.-39.txt
 
+#begin Maps/Data/-33.-40.txt
+/copy:Maps/Data/-33.-40.txt
+
+#begin Maps/Data/-33.-41.txt
+/copy:Maps/Data/-33.-41.txt
+
 #begin Maps/Data/33.-42.txt
 /copy:Maps/Data/33.-42.txt
+
+#begin Maps/Data/-33.-42.txt
+/copy:Maps/Data/-33.-42.txt
 
 #begin Maps/Data/-33.-43.txt
 /copy:Maps/Data/-33.-43.txt
@@ -6062,6 +6407,15 @@
 #begin Maps/Data/-33.-46.txt
 /copy:Maps/Data/-33.-46.txt
 
+#begin Maps/Data/-33.-47.txt
+/copy:Maps/Data/-33.-47.txt
+
+#begin Maps/Data/-34.15.txt
+/copy:Maps/Data/-34.15.txt
+
+#begin Maps/Data/34.19.txt
+/copy:Maps/Data/34.19.txt
+
 #begin Maps/Data/34.20.txt
 /copy:Maps/Data/34.20.txt
 
@@ -6074,11 +6428,50 @@
 #begin Maps/Data/34.-39.txt
 /copy:Maps/Data/34.-39.txt
 
+#begin Maps/Data/34.-40.txt
+/copy:Maps/Data/34.-40.txt
+
+#begin Maps/Data/-34.-40.txt
+/copy:Maps/Data/-34.-40.txt
+
+#begin Maps/Data/-34.-41.txt
+/copy:Maps/Data/-34.-41.txt
+
+#begin Maps/Data/34.-42.txt
+/copy:Maps/Data/34.-42.txt
+
+#begin Maps/Data/-34.-42.txt
+/copy:Maps/Data/-34.-42.txt
+
+#begin Maps/Data/-34.-43.txt
+/copy:Maps/Data/-34.-43.txt
+
+#begin Maps/Data/34.-44.txt
+/copy:Maps/Data/34.-44.txt
+
+#begin Maps/Data/-34.-44.txt
+/copy:Maps/Data/-34.-44.txt
+
+#begin Maps/Data/-34.-45.txt
+/copy:Maps/Data/-34.-45.txt
+
+#begin Maps/Data/-34.-46.txt
+/copy:Maps/Data/-34.-46.txt
+
+#begin Maps/Data/-34.-47.txt
+/copy:Maps/Data/-34.-47.txt
+
+#begin Maps/Data/-34.-48.txt
+/copy:Maps/Data/-34.-48.txt
+
 #begin Maps/Data/-34.-49.txt
 /copy:Maps/Data/-34.-49.txt
 
 #begin Maps/Data/-34.-50.txt
 /copy:Maps/Data/-34.-50.txt
+
+#begin Maps/Data/35.23.txt
+/copy:Maps/Data/35.23.txt
 
 #begin Maps/Data/-35.-34.txt
 /copy:Maps/Data/-35.-34.txt
@@ -6086,8 +6479,20 @@
 #begin Maps/Data/-35.-35.txt
 /copy:Maps/Data/-35.-35.txt
 
+#begin Maps/Data/-35.-38.txt
+/copy:Maps/Data/-35.-38.txt
+
+#begin Maps/Data/-35.-39.txt
+/copy:Maps/Data/-35.-39.txt
+
 #begin Maps/Data/35.-40.txt
 /copy:Maps/Data/35.-40.txt
+
+#begin Maps/Data/-35.-40.txt
+/copy:Maps/Data/-35.-40.txt
+
+#begin Maps/Data/-35.-41.txt
+/copy:Maps/Data/-35.-41.txt
 
 #begin Maps/Data/35.-42.txt
 /copy:Maps/Data/35.-42.txt
@@ -6095,11 +6500,65 @@
 #begin Maps/Data/-35.-42.txt
 /copy:Maps/Data/-35.-42.txt
 
+#begin Maps/Data/35.-43.txt
+/copy:Maps/Data/35.-43.txt
+
+#begin Maps/Data/-35.-43.txt
+/copy:Maps/Data/-35.-43.txt
+
 #begin Maps/Data/35.-44.txt
 /copy:Maps/Data/35.-44.txt
 
+#begin Maps/Data/-35.44.txt
+/copy:Maps/Data/-35.44.txt
+
+#begin Maps/Data/-35.-44.txt
+/copy:Maps/Data/-35.-44.txt
+
+#begin Maps/Data/-35.-45.txt
+/copy:Maps/Data/-35.-45.txt
+
+#begin Maps/Data/-35.-46.txt
+/copy:Maps/Data/-35.-46.txt
+
+#begin Maps/Data/-35.-48.txt
+/copy:Maps/Data/-35.-48.txt
+
 #begin Maps/Data/-35.-49.txt
 /copy:Maps/Data/-35.-49.txt
+
+#begin Maps/Data/-35.-50.txt
+/copy:Maps/Data/-35.-50.txt
+
+#begin Maps/Data/-36.-25.txt
+/copy:Maps/Data/-36.-25.txt
+
+#begin Maps/Data/-36.-26.txt
+/copy:Maps/Data/-36.-26.txt
+
+#begin Maps/Data/-36.-27.txt
+/copy:Maps/Data/-36.-27.txt
+
+#begin Maps/Data/-36.-28.txt
+/copy:Maps/Data/-36.-28.txt
+
+#begin Maps/Data/-36.-29.txt
+/copy:Maps/Data/-36.-29.txt
+
+#begin Maps/Data/-36.-30.txt
+/copy:Maps/Data/-36.-30.txt
+
+#begin Maps/Data/-36.-31.txt
+/copy:Maps/Data/-36.-31.txt
+
+#begin Maps/Data/-36.-32.txt
+/copy:Maps/Data/-36.-32.txt
+
+#begin Maps/Data/-36.-33.txt
+/copy:Maps/Data/-36.-33.txt
+
+#begin Maps/Data/-36.-34.txt
+/copy:Maps/Data/-36.-34.txt
 
 #begin Maps/Data/-36.-35.txt
 /copy:Maps/Data/-36.-35.txt
@@ -6107,8 +6566,107 @@
 #begin Maps/Data/-36.-36.txt
 /copy:Maps/Data/-36.-36.txt
 
+#begin Maps/Data/-36.-37.txt
+/copy:Maps/Data/-36.-37.txt
+
+#begin Maps/Data/-36.-38.txt
+/copy:Maps/Data/-36.-38.txt
+
+#begin Maps/Data/-36.-39.txt
+/copy:Maps/Data/-36.-39.txt
+
+#begin Maps/Data/-36.-40.txt
+/copy:Maps/Data/-36.-40.txt
+
+#begin Maps/Data/-36.-41.txt
+/copy:Maps/Data/-36.-41.txt
+
+#begin Maps/Data/36.-42.txt
+/copy:Maps/Data/36.-42.txt
+
+#begin Maps/Data/-36.-42.txt
+/copy:Maps/Data/-36.-42.txt
+
+#begin Maps/Data/-36.-43.txt
+/copy:Maps/Data/-36.-43.txt
+
+#begin Maps/Data/36.-44.txt
+/copy:Maps/Data/36.-44.txt
+
+#begin Maps/Data/-36.-44.txt
+/copy:Maps/Data/-36.-44.txt
+
+#begin Maps/Data/36.-45.txt
+/copy:Maps/Data/36.-45.txt
+
+#begin Maps/Data/-36.-45.txt
+/copy:Maps/Data/-36.-45.txt
+
+#begin Maps/Data/36.-46.txt
+/copy:Maps/Data/36.-46.txt
+
+#begin Maps/Data/-36.-46.txt
+/copy:Maps/Data/-36.-46.txt
+
+#begin Maps/Data/36.-47.txt
+/copy:Maps/Data/36.-47.txt
+
+#begin Maps/Data/-36.-47.txt
+/copy:Maps/Data/-36.-47.txt
+
+#begin Maps/Data/-36.-48.txt
+/copy:Maps/Data/-36.-48.txt
+
 #begin Maps/Data/-36.-49.txt
 /copy:Maps/Data/-36.-49.txt
+
+#begin Maps/Data/-36.-50.txt
+/copy:Maps/Data/-36.-50.txt
+
+#begin Maps/Data/-37.-21.txt
+/copy:Maps/Data/-37.-21.txt
+
+#begin Maps/Data/-37.-22.txt
+/copy:Maps/Data/-37.-22.txt
+
+#begin Maps/Data/-37.-23.txt
+/copy:Maps/Data/-37.-23.txt
+
+#begin Maps/Data/-37.-24.txt
+/copy:Maps/Data/-37.-24.txt
+
+#begin Maps/Data/-37.-25.txt
+/copy:Maps/Data/-37.-25.txt
+
+#begin Maps/Data/-37.-26.txt
+/copy:Maps/Data/-37.-26.txt
+
+#begin Maps/Data/-37.-27.txt
+/copy:Maps/Data/-37.-27.txt
+
+#begin Maps/Data/-37.-28.txt
+/copy:Maps/Data/-37.-28.txt
+
+#begin Maps/Data/-37.-29.txt
+/copy:Maps/Data/-37.-29.txt
+
+#begin Maps/Data/-37.-30.txt
+/copy:Maps/Data/-37.-30.txt
+
+#begin Maps/Data/-37.-31.txt
+/copy:Maps/Data/-37.-31.txt
+
+#begin Maps/Data/-37.-32.txt
+/copy:Maps/Data/-37.-32.txt
+
+#begin Maps/Data/-37.-33.txt
+/copy:Maps/Data/-37.-33.txt
+
+#begin Maps/Data/-37.-34.txt
+/copy:Maps/Data/-37.-34.txt
+
+#begin Maps/Data/-37.-35.txt
+/copy:Maps/Data/-37.-35.txt
 
 #begin Maps/Data/-37.-36.txt
 /copy:Maps/Data/-37.-36.txt
@@ -6116,8 +6674,101 @@
 #begin Maps/Data/-37.-37.txt
 /copy:Maps/Data/-37.-37.txt
 
+#begin Maps/Data/-37.-41.txt
+/copy:Maps/Data/-37.-41.txt
+
+#begin Maps/Data/37.-42.txt
+/copy:Maps/Data/37.-42.txt
+
+#begin Maps/Data/-37.-42.txt
+/copy:Maps/Data/-37.-42.txt
+
+#begin Maps/Data/-37.-43.txt
+/copy:Maps/Data/-37.-43.txt
+
+#begin Maps/Data/37.-44.txt
+/copy:Maps/Data/37.-44.txt
+
+#begin Maps/Data/-37.-44.txt
+/copy:Maps/Data/-37.-44.txt
+
 #begin Maps/Data/37.-45.txt
 /copy:Maps/Data/37.-45.txt
+
+#begin Maps/Data/-37.-45.txt
+/copy:Maps/Data/-37.-45.txt
+
+#begin Maps/Data/-37.-46.txt
+/copy:Maps/Data/-37.-46.txt
+
+#begin Maps/Data/-37.-47.txt
+/copy:Maps/Data/-37.-47.txt
+
+#begin Maps/Data/-37.-48.txt
+/copy:Maps/Data/-37.-48.txt
+
+#begin Maps/Data/-37.-49.txt
+/copy:Maps/Data/-37.-49.txt
+
+#begin Maps/Data/37.-50.txt
+/copy:Maps/Data/37.-50.txt
+
+#begin Maps/Data/-38.-18.txt
+/copy:Maps/Data/-38.-18.txt
+
+#begin Maps/Data/-38.-19.txt
+/copy:Maps/Data/-38.-19.txt
+
+#begin Maps/Data/-38.-20.txt
+/copy:Maps/Data/-38.-20.txt
+
+#begin Maps/Data/-38.-21.txt
+/copy:Maps/Data/-38.-21.txt
+
+#begin Maps/Data/-38.-22.txt
+/copy:Maps/Data/-38.-22.txt
+
+#begin Maps/Data/-38.-23.txt
+/copy:Maps/Data/-38.-23.txt
+
+#begin Maps/Data/-38.-24.txt
+/copy:Maps/Data/-38.-24.txt
+
+#begin Maps/Data/-38.-25.txt
+/copy:Maps/Data/-38.-25.txt
+
+#begin Maps/Data/-38.-26.txt
+/copy:Maps/Data/-38.-26.txt
+
+#begin Maps/Data/-38.-27.txt
+/copy:Maps/Data/-38.-27.txt
+
+#begin Maps/Data/-38.-28.txt
+/copy:Maps/Data/-38.-28.txt
+
+#begin Maps/Data/-38.-29.txt
+/copy:Maps/Data/-38.-29.txt
+
+#begin Maps/Data/-38.-30.txt
+/copy:Maps/Data/-38.-30.txt
+
+#begin Maps/Data/-38.-31.txt
+/copy:Maps/Data/-38.-31.txt
+
+#begin Maps/Data/-38.-32.txt
+/copy:Maps/Data/-38.-32.txt
+
+#begin Maps/Data/-38.-33.txt
+/copy:Maps/Data/-38.-33.txt
+
+#begin Maps/Data/-38.-34.txt
+/copy:Maps/Data/-38.-34.txt
+
+#begin Maps/Data/-38.-35.txt
+/copy:Maps/Data/-38.-35.txt
+
+#begin Maps/Data/-38.-36.txt
+/copy:Maps/Data/-38.-36.txt
 
 #begin Maps/Data/-38.-37.txt
 /copy:Maps/Data/-38.-37.txt
@@ -6125,14 +6776,173 @@
 #begin Maps/Data/-38.-38.txt
 /copy:Maps/Data/-38.-38.txt
 
+#begin Maps/Data/-38.-39.txt
+/copy:Maps/Data/-38.-39.txt
+
+#begin Maps/Data/-38.-40.txt
+/copy:Maps/Data/-38.-40.txt
+
+#begin Maps/Data/-38.-41.txt
+/copy:Maps/Data/-38.-41.txt
+
 #begin Maps/Data/38.-42.txt
 /copy:Maps/Data/38.-42.txt
+
+#begin Maps/Data/-38.-42.txt
+/copy:Maps/Data/-38.-42.txt
+
+#begin Maps/Data/38.-43.txt
+/copy:Maps/Data/38.-43.txt
+
+#begin Maps/Data/-38.-43.txt
+/copy:Maps/Data/-38.-43.txt
+
+#begin Maps/Data/38.-44.txt
+/copy:Maps/Data/38.-44.txt
+
+#begin Maps/Data/-38.-44.txt
+/copy:Maps/Data/-38.-44.txt
+
+#begin Maps/Data/38.-45.txt
+/copy:Maps/Data/38.-45.txt
+
+#begin Maps/Data/-38.-45.txt
+/copy:Maps/Data/-38.-45.txt
+
+#begin Maps/Data/-38.-46.txt
+/copy:Maps/Data/-38.-46.txt
+
+#begin Maps/Data/38.-47.txt
+/copy:Maps/Data/38.-47.txt
+
+#begin Maps/Data/-38.-47.txt
+/copy:Maps/Data/-38.-47.txt
+
+#begin Maps/Data/38.-48.txt
+/copy:Maps/Data/38.-48.txt
+
+#begin Maps/Data/-38.-48.txt
+/copy:Maps/Data/-38.-48.txt
+
+#begin Maps/Data/-38.-49.txt
+/copy:Maps/Data/-38.-49.txt
+
+#begin Maps/Data/38.-50.txt
+/copy:Maps/Data/38.-50.txt
+
+#begin Maps/Data/-38-28.txt
+/copy:Maps/Data/-38-28.txt
+
+#begin Maps/Data/39.10.txt
+/copy:Maps/Data/39.10.txt
+
+#begin Maps/Data/-39.12.txt
+/copy:Maps/Data/-39.12.txt
+
+#begin Maps/Data/-39.-15.txt
+/copy:Maps/Data/-39.-15.txt
+
+#begin Maps/Data/-39.-16.txt
+/copy:Maps/Data/-39.-16.txt
+
+#begin Maps/Data/-39.-17.txt
+/copy:Maps/Data/-39.-17.txt
+
+#begin Maps/Data/-39.-18.txt
+/copy:Maps/Data/-39.-18.txt
+
+#begin Maps/Data/-39.-19.txt
+/copy:Maps/Data/-39.-19.txt
+
+#begin Maps/Data/-39.-20.txt
+/copy:Maps/Data/-39.-20.txt
+
+#begin Maps/Data/-39.-21.txt
+/copy:Maps/Data/-39.-21.txt
+
+#begin Maps/Data/-39.-22.txt
+/copy:Maps/Data/-39.-22.txt
+
+#begin Maps/Data/-39.-23.txt
+/copy:Maps/Data/-39.-23.txt
+
+#begin Maps/Data/-39.-24.txt
+/copy:Maps/Data/-39.-24.txt
+
+#begin Maps/Data/-39.-25.txt
+/copy:Maps/Data/-39.-25.txt
+
+#begin Maps/Data/-39.-26.txt
+/copy:Maps/Data/-39.-26.txt
+
+#begin Maps/Data/-39.-27.txt
+/copy:Maps/Data/-39.-27.txt
+
+#begin Maps/Data/-39.-28.txt
+/copy:Maps/Data/-39.-28.txt
+
+#begin Maps/Data/-39.-29.txt
+/copy:Maps/Data/-39.-29.txt
+
+#begin Maps/Data/-39.-30.txt
+/copy:Maps/Data/-39.-30.txt
+
+#begin Maps/Data/-39.-31.txt
+/copy:Maps/Data/-39.-31.txt
+
+#begin Maps/Data/-39.-32.txt
+/copy:Maps/Data/-39.-32.txt
+
+#begin Maps/Data/-39.-33.txt
+/copy:Maps/Data/-39.-33.txt
+
+#begin Maps/Data/-39.-34.txt
+/copy:Maps/Data/-39.-34.txt
+
+#begin Maps/Data/-39.-35.txt
+/copy:Maps/Data/-39.-35.txt
+
+#begin Maps/Data/-39.-36.txt
+/copy:Maps/Data/-39.-36.txt
+
+#begin Maps/Data/-39.-37.txt
+/copy:Maps/Data/-39.-37.txt
 
 #begin Maps/Data/-39.-38.txt
 /copy:Maps/Data/-39.-38.txt
 
 #begin Maps/Data/-39.-39.txt
 /copy:Maps/Data/-39.-39.txt
+
+#begin Maps/Data/-39.-40.txt
+/copy:Maps/Data/-39.-40.txt
+
+#begin Maps/Data/-39.-41.txt
+/copy:Maps/Data/-39.-41.txt
+
+#begin Maps/Data/39.-42.txt
+/copy:Maps/Data/39.-42.txt
+
+#begin Maps/Data/-39.-42.txt
+/copy:Maps/Data/-39.-42.txt
+
+#begin Maps/Data/-39.-43.txt
+/copy:Maps/Data/-39.-43.txt
+
+#begin Maps/Data/-39.-44.txt
+/copy:Maps/Data/-39.-44.txt
+
+#begin Maps/Data/39.-45.txt
+/copy:Maps/Data/39.-45.txt
+
+#begin Maps/Data/-39.-45.txt
+/copy:Maps/Data/-39.-45.txt
+
+#begin Maps/Data/-39.-46.txt
+/copy:Maps/Data/-39.-46.txt
+
+#begin Maps/Data/-39.-47.txt
+/copy:Maps/Data/-39.-47.txt
 
 #begin Maps/Data/39.-48.txt
 /copy:Maps/Data/39.-48.txt
@@ -6142,6 +6952,12 @@
 
 #begin Maps/Data/-39.-49.txt
 /copy:Maps/Data/-39.-49.txt
+
+#begin Maps/Data/39.-50.txt
+/copy:Maps/Data/39.-50.txt
+
+#begin Maps/Data/-39.7.txt
+/copy:Maps/Data/-39.7.txt
 
 #begin Maps/Data/-4.2.txt
 /copy:Maps/Data/-4.2.txt
@@ -6170,29 +6986,266 @@
 #begin Maps/Data/4.-50.txt
 /copy:Maps/Data/4.-50.txt
 
+#begin Maps/Data/-40.-10.txt
+/copy:Maps/Data/-40.-10.txt
+
+#begin Maps/Data/-40.-11.txt
+/copy:Maps/Data/-40.-11.txt
+
+#begin Maps/Data/-40.-12.txt
+/copy:Maps/Data/-40.-12.txt
+
+#begin Maps/Data/-40.-13.txt
+/copy:Maps/Data/-40.-13.txt
+
+#begin Maps/Data/-40.-14.txt
+/copy:Maps/Data/-40.-14.txt
+
 #begin Maps/Data/-40.-15.txt
 /copy:Maps/Data/-40.-15.txt
+
+#begin Maps/Data/-40.-16.txt
+/copy:Maps/Data/-40.-16.txt
+
+#begin Maps/Data/-40.-17.txt
+/copy:Maps/Data/-40.-17.txt
+
+#begin Maps/Data/-40.-18.txt
+/copy:Maps/Data/-40.-18.txt
+
+#begin Maps/Data/-40.-19.txt
+/copy:Maps/Data/-40.-19.txt
+
+#begin Maps/Data/-40.-20.txt
+/copy:Maps/Data/-40.-20.txt
+
+#begin Maps/Data/-40.-21.txt
+/copy:Maps/Data/-40.-21.txt
 
 #begin Maps/Data/-40.-22.txt
 /copy:Maps/Data/-40.-22.txt
 
+#begin Maps/Data/-40.-23.txt
+/copy:Maps/Data/-40.-23.txt
+
+#begin Maps/Data/-40.-24.txt
+/copy:Maps/Data/-40.-24.txt
+
+#begin Maps/Data/-40.-26.txt
+/copy:Maps/Data/-40.-26.txt
+
+#begin Maps/Data/-40.-27.txt
+/copy:Maps/Data/-40.-27.txt
+
+#begin Maps/Data/-40.-29.txt
+/copy:Maps/Data/-40.-29.txt
+
+#begin Maps/Data/-40.-30.txt
+/copy:Maps/Data/-40.-30.txt
+
+#begin Maps/Data/-40.-31.txt
+/copy:Maps/Data/-40.-31.txt
+
+#begin Maps/Data/-40.-32.txt
+/copy:Maps/Data/-40.-32.txt
+
+#begin Maps/Data/-40.-33.txt
+/copy:Maps/Data/-40.-33.txt
+
+#begin Maps/Data/-40.-34.txt
+/copy:Maps/Data/-40.-34.txt
+
+#begin Maps/Data/-40.-35.txt
+/copy:Maps/Data/-40.-35.txt
+
+#begin Maps/Data/-40.-36.txt
+/copy:Maps/Data/-40.-36.txt
+
+#begin Maps/Data/-40.-37.txt
+/copy:Maps/Data/-40.-37.txt
+
+#begin Maps/Data/-40.-38.txt
+/copy:Maps/Data/-40.-38.txt
+
+#begin Maps/Data/-40.-39.txt
+/copy:Maps/Data/-40.-39.txt
+
+#begin Maps/Data/40.-40.txt
+/copy:Maps/Data/40.-40.txt
+
 #begin Maps/Data/-40.-40.txt
 /copy:Maps/Data/-40.-40.txt
+
+#begin Maps/Data/40.-41.txt
+/copy:Maps/Data/40.-41.txt
+
+#begin Maps/Data/-40.-41.txt
+/copy:Maps/Data/-40.-41.txt
 
 #begin Maps/Data/40.-42.txt
 /copy:Maps/Data/40.-42.txt
 
+#begin Maps/Data/-40.-42.txt
+/copy:Maps/Data/-40.-42.txt
+
+#begin Maps/Data/-40.-43.txt
+/copy:Maps/Data/-40.-43.txt
+
+#begin Maps/Data/-40.-44.txt
+/copy:Maps/Data/-40.-44.txt
+
 #begin Maps/Data/40.-45.txt
 /copy:Maps/Data/40.-45.txt
+
+#begin Maps/Data/-40.-45.txt
+/copy:Maps/Data/-40.-45.txt
+
+#begin Maps/Data/-40.-46.txt
+/copy:Maps/Data/-40.-46.txt
+
+#begin Maps/Data/-40.-47.txt
+/copy:Maps/Data/-40.-47.txt
+
+#begin Maps/Data/-40.-48.txt
+/copy:Maps/Data/-40.-48.txt
+
+#begin Maps/Data/-40.-49.txt
+/copy:Maps/Data/-40.-49.txt
 
 #begin Maps/Data/-40.-50.txt
 /copy:Maps/Data/-40.-50.txt
 
+#begin Maps/Data/-40.-9.txt
+/copy:Maps/Data/-40.-9.txt
+
+#begin Maps/Data/-41.1.txt
+/copy:Maps/Data/-41.1.txt
+
+#begin Maps/Data/41.15.txt
+/copy:Maps/Data/41.15.txt
+
+#begin Maps/Data/-41.-19.txt
+/copy:Maps/Data/-41.-19.txt
+
+#begin Maps/Data/-41.2.txt
+/copy:Maps/Data/-41.2.txt
+
+#begin Maps/Data/-41.-20.txt
+/copy:Maps/Data/-41.-20.txt
+
+#begin Maps/Data/-41.-21.txt
+/copy:Maps/Data/-41.-21.txt
+
+#begin Maps/Data/-41.-22.txt
+/copy:Maps/Data/-41.-22.txt
+
+#begin Maps/Data/-41.-23.txt
+/copy:Maps/Data/-41.-23.txt
+
+#begin Maps/Data/-41.-24.txt
+/copy:Maps/Data/-41.-24.txt
+
+#begin Maps/Data/-41.-25.txt
+/copy:Maps/Data/-41.-25.txt
+
+#begin Maps/Data/-41.-26.txt
+/copy:Maps/Data/-41.-26.txt
+
+#begin Maps/Data/-41.-27.txt
+/copy:Maps/Data/-41.-27.txt
+
+#begin Maps/Data/-41.-28.txt
+/copy:Maps/Data/-41.-28.txt
+
+#begin Maps/Data/41.29.txt
+/copy:Maps/Data/41.29.txt
+
+#begin Maps/Data/-41.3.txt
+/copy:Maps/Data/-41.3.txt
+
+#begin Maps/Data/41.30.txt
+/copy:Maps/Data/41.30.txt
+
+#begin Maps/Data/-41.-30.txt
+/copy:Maps/Data/-41.-30.txt
+
+#begin Maps/Data/41.31.txt
+/copy:Maps/Data/41.31.txt
+
+#begin Maps/Data/-41.-31.txt
+/copy:Maps/Data/-41.-31.txt
+
+#begin Maps/Data/41.32.txt
+/copy:Maps/Data/41.32.txt
+
+#begin Maps/Data/-41.-32.txt
+/copy:Maps/Data/-41.-32.txt
+
+#begin Maps/Data/41.33.txt
+/copy:Maps/Data/41.33.txt
+
+#begin Maps/Data/-41.-33.txt
+/copy:Maps/Data/-41.-33.txt
+
+#begin Maps/Data/-41.-34.txt
+/copy:Maps/Data/-41.-34.txt
+
+#begin Maps/Data/41.35.txt
+/copy:Maps/Data/41.35.txt
+
+#begin Maps/Data/-41.-35.txt
+/copy:Maps/Data/-41.-35.txt
+
+#begin Maps/Data/41.36.txt
+/copy:Maps/Data/41.36.txt
+
+#begin Maps/Data/-41.-36.txt
+/copy:Maps/Data/-41.-36.txt
+
+#begin Maps/Data/41.37.txt
+/copy:Maps/Data/41.37.txt
+
+#begin Maps/Data/-41.-37.txt
+/copy:Maps/Data/-41.-37.txt
+
+#begin Maps/Data/41.38.txt
+/copy:Maps/Data/41.38.txt
+
+#begin Maps/Data/-41.-38.txt
+/copy:Maps/Data/-41.-38.txt
+
+#begin Maps/Data/-41.-39.txt
+/copy:Maps/Data/-41.-39.txt
+
+#begin Maps/Data/-41.4.txt
+/copy:Maps/Data/-41.4.txt
+
+#begin Maps/Data/41.40.txt
+/copy:Maps/Data/41.40.txt
+
 #begin Maps/Data/41.-40.txt
 /copy:Maps/Data/41.-40.txt
 
+#begin Maps/Data/-41.-40.txt
+/copy:Maps/Data/-41.-40.txt
+
+#begin Maps/Data/41.41.txt
+/copy:Maps/Data/41.41.txt
+
 #begin Maps/Data/-41.-41.txt
 /copy:Maps/Data/-41.-41.txt
+
+#begin Maps/Data/41.42.txt
+/copy:Maps/Data/41.42.txt
+
+#begin Maps/Data/41.-42.txt
+/copy:Maps/Data/41.-42.txt
+
+#begin Maps/Data/-41.-42.txt
+/copy:Maps/Data/-41.-42.txt
+
+#begin Maps/Data/41.43.txt
+/copy:Maps/Data/41.43.txt
 
 #begin Maps/Data/41.-43.txt
 /copy:Maps/Data/41.-43.txt
@@ -6200,8 +7253,98 @@
 #begin Maps/Data/-41.-43.txt
 /copy:Maps/Data/-41.-43.txt
 
+#begin Maps/Data/41.-44.txt
+/copy:Maps/Data/41.-44.txt
+
+#begin Maps/Data/-41.45.txt
+/copy:Maps/Data/-41.45.txt
+
+#begin Maps/Data/-41.46.txt
+/copy:Maps/Data/-41.46.txt
+
+#begin Maps/Data/-41.5.txt
+/copy:Maps/Data/-41.5.txt
+
+#begin Maps/Data/-41.6.txt
+/copy:Maps/Data/-41.6.txt
+
+#begin Maps/Data/-41.7.txt
+/copy:Maps/Data/-41.7.txt
+
+#begin Maps/Data/-42.1.txt
+/copy:Maps/Data/-42.1.txt
+
+#begin Maps/Data/-42.10.txt
+/copy:Maps/Data/-42.10.txt
+
+#begin Maps/Data/-42.-18.txt
+/copy:Maps/Data/-42.-18.txt
+
+#begin Maps/Data/-42.-19.txt
+/copy:Maps/Data/-42.-19.txt
+
+#begin Maps/Data/-42.2.txt
+/copy:Maps/Data/-42.2.txt
+
+#begin Maps/Data/-42.-20.txt
+/copy:Maps/Data/-42.-20.txt
+
+#begin Maps/Data/-42.-21.txt
+/copy:Maps/Data/-42.-21.txt
+
+#begin Maps/Data/-42.-22.txt
+/copy:Maps/Data/-42.-22.txt
+
+#begin Maps/Data/-42.-23.txt
+/copy:Maps/Data/-42.-23.txt
+
+#begin Maps/Data/-42.-25.txt
+/copy:Maps/Data/-42.-25.txt
+
+#begin Maps/Data/-42.-26.txt
+/copy:Maps/Data/-42.-26.txt
+
+#begin Maps/Data/-42.-27.txt
+/copy:Maps/Data/-42.-27.txt
+
+#begin Maps/Data/-42.3.txt
+/copy:Maps/Data/-42.3.txt
+
+#begin Maps/Data/-42.-33.txt
+/copy:Maps/Data/-42.-33.txt
+
+#begin Maps/Data/-42.-34.txt
+/copy:Maps/Data/-42.-34.txt
+
+#begin Maps/Data/-42.-35.txt
+/copy:Maps/Data/-42.-35.txt
+
+#begin Maps/Data/-42.-36.txt
+/copy:Maps/Data/-42.-36.txt
+
+#begin Maps/Data/-42.-37.txt
+/copy:Maps/Data/-42.-37.txt
+
+#begin Maps/Data/-42.-38.txt
+/copy:Maps/Data/-42.-38.txt
+
+#begin Maps/Data/-42.-39.txt
+/copy:Maps/Data/-42.-39.txt
+
+#begin Maps/Data/-42.-40.txt
+/copy:Maps/Data/-42.-40.txt
+
 #begin Maps/Data/-42.-41.txt
 /copy:Maps/Data/-42.-41.txt
+
+#begin Maps/Data/-42.-42.txt
+/copy:Maps/Data/-42.-42.txt
+
+#begin Maps/Data/42.-44.txt
+/copy:Maps/Data/42.-44.txt
+
+#begin Maps/Data/-42.45.txt
+/copy:Maps/Data/-42.45.txt
 
 #begin Maps/Data/-42.46.txt
 /copy:Maps/Data/-42.46.txt
@@ -6212,20 +7355,119 @@
 #begin Maps/Data/-42.48.txt
 /copy:Maps/Data/-42.48.txt
 
-#begin Maps/Data/43,-44.txt
-/copy:Maps/Data/43,-44.txt
+#begin Maps/Data/-42.49.txt
+/copy:Maps/Data/-42.49.txt
+
+#begin Maps/Data/-42.5.txt
+/copy:Maps/Data/-42.5.txt
+
+#begin Maps/Data/42.6.txt
+/copy:Maps/Data/42.6.txt
+
+#begin Maps/Data/-42.6.txt
+/copy:Maps/Data/-42.6.txt
+
+#begin Maps/Data/-42.7.txt
+/copy:Maps/Data/-42.7.txt
+
+#begin Maps/Data/-43.-24.txt
+/copy:Maps/Data/-43.-24.txt
+
+#begin Maps/Data/-43.-25.txt
+/copy:Maps/Data/-43.-25.txt
+
+#begin Maps/Data/-43.-27.txt
+/copy:Maps/Data/-43.-27.txt
+
+#begin Maps/Data/-43.-29.txt
+/copy:Maps/Data/-43.-29.txt
+
+#begin Maps/Data/-43.-32.txt
+/copy:Maps/Data/-43.-32.txt
+
+#begin Maps/Data/-43.-34.txt
+/copy:Maps/Data/-43.-34.txt
+
+#begin Maps/Data/-43.-35.txt
+/copy:Maps/Data/-43.-35.txt
+
+#begin Maps/Data/-43.-36.txt
+/copy:Maps/Data/-43.-36.txt
+
+#begin Maps/Data/-43.-37.txt
+/copy:Maps/Data/-43.-37.txt
+
+#begin Maps/Data/-43.-38.txt
+/copy:Maps/Data/-43.-38.txt
+
+#begin Maps/Data/-43.-39.txt
+/copy:Maps/Data/-43.-39.txt
+
+#begin Maps/Data/-43.-40.txt
+/copy:Maps/Data/-43.-40.txt
+
+#begin Maps/Data/43.-41.txt
+/copy:Maps/Data/43.-41.txt
+
+#begin Maps/Data/-43.-41.txt
+/copy:Maps/Data/-43.-41.txt
+
+#begin Maps/Data/43.-42.txt
+/copy:Maps/Data/43.-42.txt
 
 #begin Maps/Data/-43.-42.txt
 /copy:Maps/Data/-43.-42.txt
 
+#begin Maps/Data/43.-43.txt
+/copy:Maps/Data/43.-43.txt
+
+#begin Maps/Data/-43.-43.txt
+/copy:Maps/Data/-43.-43.txt
+
+#begin Maps/Data/43.-44.txt
+/copy:Maps/Data/43.-44.txt
+
+#begin Maps/Data/-43.-44.txt
+/copy:Maps/Data/-43.-44.txt
+
+#begin Maps/Data/-43.-45.txt
+/copy:Maps/Data/-43.-45.txt
+
+#begin Maps/Data/-43.46.txt
+/copy:Maps/Data/-43.46.txt
+
+#begin Maps/Data/-43.-46.txt
+/copy:Maps/Data/-43.-46.txt
+
+#begin Maps/Data/43.-47.txt
+/copy:Maps/Data/43.-47.txt
+
 #begin Maps/Data/-43.47.txt
 /copy:Maps/Data/-43.47.txt
+
+#begin Maps/Data/-43.-47.txt
+/copy:Maps/Data/-43.-47.txt
+
+#begin Maps/Data/43.-48.txt
+/copy:Maps/Data/43.-48.txt
 
 #begin Maps/Data/-43.48.txt
 /copy:Maps/Data/-43.48.txt
 
+#begin Maps/Data/-43.-48.txt
+/copy:Maps/Data/-43.-48.txt
+
 #begin Maps/Data/-43.49.txt
 /copy:Maps/Data/-43.49.txt
+
+#begin Maps/Data/-43.-49.txt
+/copy:Maps/Data/-43.-49.txt
+
+#begin Maps/Data/-43.-50.txt
+/copy:Maps/Data/-43.-50.txt
+
+#begin Maps/Data/-44.1.txt
+/copy:Maps/Data/-44.1.txt
 
 #begin Maps/Data/-44.10.txt
 /copy:Maps/Data/-44.10.txt
@@ -6242,6 +7484,12 @@
 #begin Maps/Data/-44.-17.txt
 /copy:Maps/Data/-44.-17.txt
 
+#begin Maps/Data/-44.-19.txt
+/copy:Maps/Data/-44.-19.txt
+
+#begin Maps/Data/-44.2.txt
+/copy:Maps/Data/-44.2.txt
+
 #begin Maps/Data/-44.-20.txt
 /copy:Maps/Data/-44.-20.txt
 
@@ -6257,8 +7505,23 @@
 #begin Maps/Data/-44.-24.txt
 /copy:Maps/Data/-44.-24.txt
 
+#begin Maps/Data/-44.-25.txt
+/copy:Maps/Data/-44.-25.txt
+
+#begin Maps/Data/-44.-26.txt
+/copy:Maps/Data/-44.-26.txt
+
+#begin Maps/Data/-44.-27.txt
+/copy:Maps/Data/-44.-27.txt
+
+#begin Maps/Data/-44.-28.txt
+/copy:Maps/Data/-44.-28.txt
+
 #begin Maps/Data/-44.-29.txt
 /copy:Maps/Data/-44.-29.txt
+
+#begin Maps/Data/-44.3.txt
+/copy:Maps/Data/-44.3.txt
 
 #begin Maps/Data/-44.-30.txt
 /copy:Maps/Data/-44.-30.txt
@@ -6266,14 +7529,62 @@
 #begin Maps/Data/-44.-31.txt
 /copy:Maps/Data/-44.-31.txt
 
+#begin Maps/Data/-44.-32.txt
+/copy:Maps/Data/-44.-32.txt
+
+#begin Maps/Data/-44.-33.txt
+/copy:Maps/Data/-44.-33.txt
+
+#begin Maps/Data/-44.-34.txt
+/copy:Maps/Data/-44.-34.txt
+
+#begin Maps/Data/-44.-35.txt
+/copy:Maps/Data/-44.-35.txt
+
+#begin Maps/Data/-44.-36.txt
+/copy:Maps/Data/-44.-36.txt
+
+#begin Maps/Data/-44.-37.txt
+/copy:Maps/Data/-44.-37.txt
+
+#begin Maps/Data/-44.-38.txt
+/copy:Maps/Data/-44.-38.txt
+
+#begin Maps/Data/-44.-39.txt
+/copy:Maps/Data/-44.-39.txt
+
+#begin Maps/Data/-44.-40.txt
+/copy:Maps/Data/-44.-40.txt
+
+#begin Maps/Data/-44.-41.txt
+/copy:Maps/Data/-44.-41.txt
+
+#begin Maps/Data/-44.-42.txt
+/copy:Maps/Data/-44.-42.txt
+
 #begin Maps/Data/-44.-43.txt
 /copy:Maps/Data/-44.-43.txt
 
 #begin Maps/Data/-44.-44.txt
 /copy:Maps/Data/-44.-44.txt
 
+#begin Maps/Data/-44.-45.txt
+/copy:Maps/Data/-44.-45.txt
+
+#begin Maps/Data/-44.46.txt
+/copy:Maps/Data/-44.46.txt
+
+#begin Maps/Data/-44.-46.txt
+/copy:Maps/Data/-44.-46.txt
+
 #begin Maps/Data/-44.47.txt
 /copy:Maps/Data/-44.47.txt
+
+#begin Maps/Data/-44.-47.txt
+/copy:Maps/Data/-44.-47.txt
+
+#begin Maps/Data/44.-48.txt
+/copy:Maps/Data/44.-48.txt
 
 #begin Maps/Data/-44.48.txt
 /copy:Maps/Data/-44.48.txt
@@ -6284,17 +7595,56 @@
 #begin Maps/Data/-44.5.txt
 /copy:Maps/Data/-44.5.txt
 
+#begin Maps/Data/-44.7.txt
+/copy:Maps/Data/-44.7.txt
+
+#begin Maps/Data/-45.1.txt
+/copy:Maps/Data/-45.1.txt
+
+#begin Maps/Data/-45.-10.txt
+/copy:Maps/Data/-45.-10.txt
+
+#begin Maps/Data/-45.-11.txt
+/copy:Maps/Data/-45.-11.txt
+
+#begin Maps/Data/-45.-12.txt
+/copy:Maps/Data/-45.-12.txt
+
 #begin Maps/Data/-45.-13.txt
 /copy:Maps/Data/-45.-13.txt
 
 #begin Maps/Data/-45.-14.txt
 /copy:Maps/Data/-45.-14.txt
 
+#begin Maps/Data/-45.-15.txt
+/copy:Maps/Data/-45.-15.txt
+
+#begin Maps/Data/-45.-16.txt
+/copy:Maps/Data/-45.-16.txt
+
+#begin Maps/Data/-45.-17.txt
+/copy:Maps/Data/-45.-17.txt
+
 #begin Maps/Data/-45.-18.txt
 /copy:Maps/Data/-45.-18.txt
 
+#begin Maps/Data/-45.-19.txt
+/copy:Maps/Data/-45.-19.txt
+
+#begin Maps/Data/-45.-20.txt
+/copy:Maps/Data/-45.-20.txt
+
+#begin Maps/Data/-45.-21.txt
+/copy:Maps/Data/-45.-21.txt
+
+#begin Maps/Data/-45.-22.txt
+/copy:Maps/Data/-45.-22.txt
+
 #begin Maps/Data/-45.-23.txt
 /copy:Maps/Data/-45.-23.txt
+
+#begin Maps/Data/-45.-24.txt
+/copy:Maps/Data/-45.-24.txt
 
 #begin Maps/Data/-45.-25.txt
 /copy:Maps/Data/-45.-25.txt
@@ -6302,8 +7652,17 @@
 #begin Maps/Data/-45.-26.txt
 /copy:Maps/Data/-45.-26.txt
 
+#begin Maps/Data/-45.-27.txt
+/copy:Maps/Data/-45.-27.txt
+
+#begin Maps/Data/-45.-28.txt
+/copy:Maps/Data/-45.-28.txt
+
 #begin Maps/Data/-45.-29.txt
 /copy:Maps/Data/-45.-29.txt
+
+#begin Maps/Data/-45.-3.txt
+/copy:Maps/Data/-45.-3.txt
 
 #begin Maps/Data/-45.-30.txt
 /copy:Maps/Data/-45.-30.txt
@@ -6314,11 +7673,53 @@
 #begin Maps/Data/-45.-32.txt
 /copy:Maps/Data/-45.-32.txt
 
+#begin Maps/Data/-45.-33.txt
+/copy:Maps/Data/-45.-33.txt
+
+#begin Maps/Data/-45.-34.txt
+/copy:Maps/Data/-45.-34.txt
+
+#begin Maps/Data/45.-35.txt
+/copy:Maps/Data/45.-35.txt
+
+#begin Maps/Data/-45.-35.txt
+/copy:Maps/Data/-45.-35.txt
+
+#begin Maps/Data/-45.-36.txt
+/copy:Maps/Data/-45.-36.txt
+
 #begin Maps/Data/45.-37.txt
 /copy:Maps/Data/45.-37.txt
 
+#begin Maps/Data/-45.-37.txt
+/copy:Maps/Data/-45.-37.txt
+
+#begin Maps/Data/-45.-38.txt
+/copy:Maps/Data/-45.-38.txt
+
+#begin Maps/Data/-45.-39.txt
+/copy:Maps/Data/-45.-39.txt
+
+#begin Maps/Data/-45.-4.txt
+/copy:Maps/Data/-45.-4.txt
+
+#begin Maps/Data/-45.-40.txt
+/copy:Maps/Data/-45.-40.txt
+
+#begin Maps/Data/-45.-41.txt
+/copy:Maps/Data/-45.-41.txt
+
 #begin Maps/Data/45.-42.txt
 /copy:Maps/Data/45.-42.txt
+
+#begin Maps/Data/-45.-42.txt
+/copy:Maps/Data/-45.-42.txt
+
+#begin Maps/Data/-45.-43.txt
+/copy:Maps/Data/-45.-43.txt
+
+#begin Maps/Data/45.-44.txt
+/copy:Maps/Data/45.-44.txt
 
 #begin Maps/Data/-45.-44.txt
 /copy:Maps/Data/-45.-44.txt
@@ -6326,14 +7727,68 @@
 #begin Maps/Data/-45.-45.txt
 /copy:Maps/Data/-45.-45.txt
 
+#begin Maps/Data/-45.46.txt
+/copy:Maps/Data/-45.46.txt
+
+#begin Maps/Data/-45.-46.txt
+/copy:Maps/Data/-45.-46.txt
+
 #begin Maps/Data/-45.47.txt
 /copy:Maps/Data/-45.47.txt
+
+#begin Maps/Data/-45.-47.txt
+/copy:Maps/Data/-45.-47.txt
+
+#begin Maps/Data/45.-48.txt
+/copy:Maps/Data/45.-48.txt
 
 #begin Maps/Data/-45.48.txt
 /copy:Maps/Data/-45.48.txt
 
+#begin Maps/Data/-45.-48.txt
+/copy:Maps/Data/-45.-48.txt
+
+#begin Maps/Data/45.-49.txt
+/copy:Maps/Data/45.-49.txt
+
 #begin Maps/Data/-45.49.txt
 /copy:Maps/Data/-45.49.txt
+
+#begin Maps/Data/45.5.txt
+/copy:Maps/Data/45.5.txt
+
+#begin Maps/Data/-45.-5.txt
+/copy:Maps/Data/-45.-5.txt
+
+#begin Maps/Data/45.6.txt
+/copy:Maps/Data/45.6.txt
+
+#begin Maps/Data/-45.-6.txt
+/copy:Maps/Data/-45.-6.txt
+
+#begin Maps/Data/45.7.txt
+/copy:Maps/Data/45.7.txt
+
+#begin Maps/Data/-45.-7.txt
+/copy:Maps/Data/-45.-7.txt
+
+#begin Maps/Data/-45.-8.txt
+/copy:Maps/Data/-45.-8.txt
+
+#begin Maps/Data/-46.1.txt
+/copy:Maps/Data/-46.1.txt
+
+#begin Maps/Data/-46.-13.txt
+/copy:Maps/Data/-46.-13.txt
+
+#begin Maps/Data/-46.-14.txt
+/copy:Maps/Data/-46.-14.txt
+
+#begin Maps/Data/-46.-15.txt
+/copy:Maps/Data/-46.-15.txt
+
+#begin Maps/Data/-46.-16.txt
+/copy:Maps/Data/-46.-16.txt
 
 #begin Maps/Data/-46.-17.txt
 /copy:Maps/Data/-46.-17.txt
@@ -6344,6 +7799,9 @@
 #begin Maps/Data/-46.-19.txt
 /copy:Maps/Data/-46.-19.txt
 
+#begin Maps/Data/-46.2.txt
+/copy:Maps/Data/-46.2.txt
+
 #begin Maps/Data/-46.-20.txt
 /copy:Maps/Data/-46.-20.txt
 
@@ -6352,6 +7810,9 @@
 
 #begin Maps/Data/-46.-22.txt
 /copy:Maps/Data/-46.-22.txt
+
+#begin Maps/Data/-46.-23.txt
+/copy:Maps/Data/-46.-23.txt
 
 #begin Maps/Data/-46.-24.txt
 /copy:Maps/Data/-46.-24.txt
@@ -6371,17 +7832,77 @@
 #begin Maps/Data/-46.-29.txt
 /copy:Maps/Data/-46.-29.txt
 
+#begin Maps/Data/-46.3.txt
+/copy:Maps/Data/-46.3.txt
+
 #begin Maps/Data/-46.-30.txt
 /copy:Maps/Data/-46.-30.txt
 
 #begin Maps/Data/-46.-31.txt
 /copy:Maps/Data/-46.-31.txt
 
+#begin Maps/Data/-46.-32.txt
+/copy:Maps/Data/-46.-32.txt
+
+#begin Maps/Data/-46.-33.txt
+/copy:Maps/Data/-46.-33.txt
+
+#begin Maps/Data/-46.-34.txt
+/copy:Maps/Data/-46.-34.txt
+
+#begin Maps/Data/-46.-35.txt
+/copy:Maps/Data/-46.-35.txt
+
+#begin Maps/Data/-46.-36.txt
+/copy:Maps/Data/-46.-36.txt
+
+#begin Maps/Data/-46.-37.txt
+/copy:Maps/Data/-46.-37.txt
+
+#begin Maps/Data/-46.-38.txt
+/copy:Maps/Data/-46.-38.txt
+
+#begin Maps/Data/-46.-39.txt
+/copy:Maps/Data/-46.-39.txt
+
+#begin Maps/Data/-46.4.txt
+/copy:Maps/Data/-46.4.txt
+
+#begin Maps/Data/-46.-40.txt
+/copy:Maps/Data/-46.-40.txt
+
+#begin Maps/Data/-46.-41.txt
+/copy:Maps/Data/-46.-41.txt
+
+#begin Maps/Data/-46.-42.txt
+/copy:Maps/Data/-46.-42.txt
+
+#begin Maps/Data/-46.-43.txt
+/copy:Maps/Data/-46.-43.txt
+
+#begin Maps/Data/-46.-44.txt
+/copy:Maps/Data/-46.-44.txt
+
+#begin Maps/Data/-46.-45.txt
+/copy:Maps/Data/-46.-45.txt
+
+#begin Maps/Data/46.-46.txt
+/copy:Maps/Data/46.-46.txt
+
+#begin Maps/Data/-46.46.txt
+/copy:Maps/Data/-46.46.txt
+
 #begin Maps/Data/-46.-46.txt
 /copy:Maps/Data/-46.-46.txt
 
+#begin Maps/Data/46.-47.txt
+/copy:Maps/Data/46.-47.txt
+
 #begin Maps/Data/-46.47.txt
 /copy:Maps/Data/-46.47.txt
+
+#begin Maps/Data/46.-48.txt
+/copy:Maps/Data/46.-48.txt
 
 #begin Maps/Data/-46.48.txt
 /copy:Maps/Data/-46.48.txt
@@ -6389,11 +7910,26 @@
 #begin Maps/Data/-46.49.txt
 /copy:Maps/Data/-46.49.txt
 
+#begin Maps/Data/47.10.txt
+/copy:Maps/Data/47.10.txt
+
 #begin Maps/Data/-47.-18.txt
 /copy:Maps/Data/-47.-18.txt
 
 #begin Maps/Data/-47.-19.txt
 /copy:Maps/Data/-47.-19.txt
+
+#begin Maps/Data/-47.2.txt
+/copy:Maps/Data/-47.2.txt
+
+#begin Maps/Data/-47.-20.txt
+/copy:Maps/Data/-47.-20.txt
+
+#begin Maps/Data/-47.-21.txt
+/copy:Maps/Data/-47.-21.txt
+
+#begin Maps/Data/-47.-22.txt
+/copy:Maps/Data/-47.-22.txt
 
 #begin Maps/Data/-47.-23.txt
 /copy:Maps/Data/-47.-23.txt
@@ -6416,6 +7952,9 @@
 #begin Maps/Data/-47.-29.txt
 /copy:Maps/Data/-47.-29.txt
 
+#begin Maps/Data/-47.3.txt
+/copy:Maps/Data/-47.3.txt
+
 #begin Maps/Data/-47.-30.txt
 /copy:Maps/Data/-47.-30.txt
 
@@ -6431,17 +7970,53 @@
 #begin Maps/Data/-47.-34.txt
 /copy:Maps/Data/-47.-34.txt
 
+#begin Maps/Data/-47.-35.txt
+/copy:Maps/Data/-47.-35.txt
+
+#begin Maps/Data/-47.-36.txt
+/copy:Maps/Data/-47.-36.txt
+
+#begin Maps/Data/-47.-37.txt
+/copy:Maps/Data/-47.-37.txt
+
+#begin Maps/Data/-47.-38.txt
+/copy:Maps/Data/-47.-38.txt
+
+#begin Maps/Data/-47.-39.txt
+/copy:Maps/Data/-47.-39.txt
+
 #begin Maps/Data/47.4.txt
 /copy:Maps/Data/47.4.txt
 
 #begin Maps/Data/-47.-40.txt
 /copy:Maps/Data/-47.-40.txt
 
+#begin Maps/Data/-47.-41.txt
+/copy:Maps/Data/-47.-41.txt
+
+#begin Maps/Data/-47.-42.txt
+/copy:Maps/Data/-47.-42.txt
+
+#begin Maps/Data/-47.-43.txt
+/copy:Maps/Data/-47.-43.txt
+
+#begin Maps/Data/-47.-44.txt
+/copy:Maps/Data/-47.-44.txt
+
+#begin Maps/Data/-47.-45.txt
+/copy:Maps/Data/-47.-45.txt
+
+#begin Maps/Data/-47.46.txt
+/copy:Maps/Data/-47.46.txt
+
 #begin Maps/Data/-47.-46.txt
 /copy:Maps/Data/-47.-46.txt
 
 #begin Maps/Data/-47.47.txt
 /copy:Maps/Data/-47.47.txt
+
+#begin Maps/Data/-47.-47.txt
+/copy:Maps/Data/-47.-47.txt
 
 #begin Maps/Data/-47.48.txt
 /copy:Maps/Data/-47.48.txt
@@ -6464,6 +8039,12 @@
 #begin Maps/Data/47.8.txt
 /copy:Maps/Data/47.8.txt
 
+#begin Maps/Data/47.9.txt
+/copy:Maps/Data/47.9.txt
+
+#begin Maps/Data/-48.1.txt
+/copy:Maps/Data/-48.1.txt
+
 #begin Maps/Data/-48.-12.txt
 /copy:Maps/Data/-48.-12.txt
 
@@ -6478,6 +8059,9 @@
 
 #begin Maps/Data/-48.-16.txt
 /copy:Maps/Data/-48.-16.txt
+
+#begin Maps/Data/-48.-17.txt
+/copy:Maps/Data/-48.-17.txt
 
 #begin Maps/Data/-48.-18.txt
 /copy:Maps/Data/-48.-18.txt
@@ -6548,11 +8132,35 @@
 #begin Maps/Data/-48.-40.txt
 /copy:Maps/Data/-48.-40.txt
 
+#begin Maps/Data/-48.-41.txt
+/copy:Maps/Data/-48.-41.txt
+
+#begin Maps/Data/-48.-42.txt
+/copy:Maps/Data/-48.-42.txt
+
+#begin Maps/Data/-48.-43.txt
+/copy:Maps/Data/-48.-43.txt
+
+#begin Maps/Data/-48.-44.txt
+/copy:Maps/Data/-48.-44.txt
+
+#begin Maps/Data/-48.-45.txt
+/copy:Maps/Data/-48.-45.txt
+
+#begin Maps/Data/-48.46.txt
+/copy:Maps/Data/-48.46.txt
+
+#begin Maps/Data/-48.-46.txt
+/copy:Maps/Data/-48.-46.txt
+
 #begin Maps/Data/-48.47.txt
 /copy:Maps/Data/-48.47.txt
 
 #begin Maps/Data/-48.-47.txt
 /copy:Maps/Data/-48.-47.txt
+
+#begin Maps/Data/48.-48.txt
+/copy:Maps/Data/48.-48.txt
 
 #begin Maps/Data/-48.48.txt
 /copy:Maps/Data/-48.48.txt
@@ -6566,6 +8174,9 @@
 #begin Maps/Data/-48.-49.txt
 /copy:Maps/Data/-48.-49.txt
 
+#begin Maps/Data/49.-1.txt
+/copy:Maps/Data/49.-1.txt
+
 #begin Maps/Data/-49.-13.txt
 /copy:Maps/Data/-49.-13.txt
 
@@ -6577,6 +8188,9 @@
 
 #begin Maps/Data/-49.-19.txt
 /copy:Maps/Data/-49.-19.txt
+
+#begin Maps/Data/49.-2.txt
+/copy:Maps/Data/49.-2.txt
 
 #begin Maps/Data/-49.-20.txt
 /copy:Maps/Data/-49.-20.txt
@@ -6608,6 +8222,9 @@
 #begin Maps/Data/-49.-29.txt
 /copy:Maps/Data/-49.-29.txt
 
+#begin Maps/Data/49.-3.txt
+/copy:Maps/Data/49.-3.txt
+
 #begin Maps/Data/-49.-30.txt
 /copy:Maps/Data/-49.-30.txt
 
@@ -6638,11 +8255,17 @@
 #begin Maps/Data/-49.-39.txt
 /copy:Maps/Data/-49.-39.txt
 
+#begin Maps/Data/49.-4.txt
+/copy:Maps/Data/49.-4.txt
+
 #begin Maps/Data/-49.-40.txt
 /copy:Maps/Data/-49.-40.txt
 
 #begin Maps/Data/-49.-41.txt
 /copy:Maps/Data/-49.-41.txt
+
+#begin Maps/Data/-49.42.txt
+/copy:Maps/Data/-49.42.txt
 
 #begin Maps/Data/-49.-42.txt
 /copy:Maps/Data/-49.-42.txt
@@ -6652,6 +8275,9 @@
 
 #begin Maps/Data/-49.-44.txt
 /copy:Maps/Data/-49.-44.txt
+
+#begin Maps/Data/-49.46.txt
+/copy:Maps/Data/-49.46.txt
 
 #begin Maps/Data/-49.-46.txt
 /copy:Maps/Data/-49.-46.txt
@@ -6673,6 +8299,9 @@
 
 #begin Maps/Data/-49.-49.txt
 /copy:Maps/Data/-49.-49.txt
+
+#begin Maps/Data/49.-5.txt
+/copy:Maps/Data/49.-5.txt
 
 #begin Maps/Data/-49.-50.txt
 /copy:Maps/Data/-49.-50.txt
@@ -6701,6 +8330,9 @@
 #begin Maps/Data/-5.-4.txt
 /copy:Maps/Data/-5.-4.txt
 
+#begin Maps/Data/5.47.txt
+/copy:Maps/Data/5.47.txt
+
 #begin Maps/Data/5.49.txt
 /copy:Maps/Data/5.49.txt
 
@@ -6716,6 +8348,9 @@
 #begin Maps/Data/-50.-13.txt
 /copy:Maps/Data/-50.-13.txt
 
+#begin Maps/Data/-50.-14.txt
+/copy:Maps/Data/-50.-14.txt
+
 #begin Maps/Data/-50.-15.txt
 /copy:Maps/Data/-50.-15.txt
 
@@ -6724,6 +8359,12 @@
 
 #begin Maps/Data/-50.-17.txt
 /copy:Maps/Data/-50.-17.txt
+
+#begin Maps/Data/-50.-18.txt
+/copy:Maps/Data/-50.-18.txt
+
+#begin Maps/Data/-50.-19.txt
+/copy:Maps/Data/-50.-19.txt
 
 #begin Maps/Data/-50.-20.txt
 /copy:Maps/Data/-50.-20.txt
@@ -6749,6 +8390,9 @@
 #begin Maps/Data/-50.-27.txt
 /copy:Maps/Data/-50.-27.txt
 
+#begin Maps/Data/-50.-28.txt
+/copy:Maps/Data/-50.-28.txt
+
 #begin Maps/Data/-50.-29.txt
 /copy:Maps/Data/-50.-29.txt
 
@@ -6760,6 +8404,9 @@
 
 #begin Maps/Data/-50.-32.txt
 /copy:Maps/Data/-50.-32.txt
+
+#begin Maps/Data/-50.-33.txt
+/copy:Maps/Data/-50.-33.txt
 
 #begin Maps/Data/-50.-34.txt
 /copy:Maps/Data/-50.-34.txt
@@ -6785,11 +8432,17 @@
 #begin Maps/Data/-50.-41.txt
 /copy:Maps/Data/-50.-41.txt
 
+#begin Maps/Data/-50.-42.txt
+/copy:Maps/Data/-50.-42.txt
+
 #begin Maps/Data/-50.-43.txt
 /copy:Maps/Data/-50.-43.txt
 
 #begin Maps/Data/-50.-44.txt
 /copy:Maps/Data/-50.-44.txt
+
+#begin Maps/Data/-50.45.txt
+/copy:Maps/Data/-50.45.txt
 
 #begin Maps/Data/-50.-45.txt
 /copy:Maps/Data/-50.-45.txt
@@ -6808,6 +8461,42 @@
 
 #begin Maps/Data/-50.-50.txt
 /copy:Maps/Data/-50.-50.txt
+
+#begin Maps/Data/51.46.txt
+/copy:Maps/Data/51.46.txt
+
+#begin Maps/Data/51.47.txt
+/copy:Maps/Data/51.47.txt
+
+#begin Maps/Data/51.48.txt
+/copy:Maps/Data/51.48.txt
+
+#begin Maps/Data/51.49.txt
+/copy:Maps/Data/51.49.txt
+
+#begin Maps/Data/51.50.txt
+/copy:Maps/Data/51.50.txt
+
+#begin Maps/Data/52.1.txt
+/copy:Maps/Data/52.1.txt
+
+#begin Maps/Data/52.10.txt
+/copy:Maps/Data/52.10.txt
+
+#begin Maps/Data/52.11.txt
+/copy:Maps/Data/52.11.txt
+
+#begin Maps/Data/52.12.txt
+/copy:Maps/Data/52.12.txt
+
+#begin Maps/Data/52.13.txt
+/copy:Maps/Data/52.13.txt
+
+#begin Maps/Data/52.2.txt
+/copy:Maps/Data/52.2.txt
+
+#begin Maps/Data/52.9.txt
+/copy:Maps/Data/52.9.txt
 
 #begin Maps/Data/6.0.txt
 /copy:Maps/Data/6.0.txt
@@ -6857,6 +8546,9 @@
 #begin Maps/Data/7.-4.txt
 /copy:Maps/Data/7.-4.txt
 
+#begin Maps/Data/7.47.txt
+/copy:Maps/Data/7.47.txt
+
 #begin Maps/Data/7.49.txt
 /copy:Maps/Data/7.49.txt
 
@@ -6890,6 +8582,12 @@
 #begin Maps/Data/8.-50.txt
 /copy:Maps/Data/8.-50.txt
 
+#begin Maps/Data/-9.-2.txt
+/copy:Maps/Data/-9.-2.txt
+
+#begin Maps/Data/9.47.txt
+/copy:Maps/Data/9.47.txt
+
 #begin Maps/Data/9.49.txt
 /copy:Maps/Data/9.49.txt
 
@@ -6898,9 +8596,6 @@
 
 #begin Maps/Data/9.-50.txt
 /copy:Maps/Data/9.-50.txt
-
-#begin Maps/Data/99.99.txt
-/copy:Maps/Data/99.99.txt
 
 #begin Test/test-map.tmx
 /importer:TiledMapImporter
