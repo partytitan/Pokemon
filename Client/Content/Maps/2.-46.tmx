@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="35" height="39" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="35" height="39" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value="Machop,25;Cleffa,25;Geodude,20;Zubat,10;Bronzor,10;Chingling,10;"/>
   <property name="dayPokemonLevels" value="15-16;14-14;15-15;15-15;14-15;15-15;"/>
@@ -19,39 +19,39 @@
  <tileset firstgid="1025" source="normal7.tsx"/>
  <tileset firstgid="2049" source="SinnohCaveset.tsx"/>
  <tileset firstgid="3129" source="SinnohCaveset2.tsx"/>
- <layer name="Grass" width="35" height="39">
+ <layer id="1" name="Grass" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OMQrAIBBEUUvvfxzZdDlYFExjZbeC78OrZ1otpSVZy/oRh3yJg74Mb/dMWR/+H5n7AAAA7JOkG/oAMh/4w1QVAAA=
+   H4sIAAAAAAAACu3OMQrAIBBEUUvvfxzZdDlYFExjZbeC78OrZ1otpSVZy/oRh3yJg74Mb/dMWR/+H5n7AAAA7JOkG/oAMh/4w1QVAAA=
   </data>
  </layer>
- <layer name="Water" width="35" height="39">
+ <layer id="2" name="Water" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+2WsQ6AIAxE2QRdRCb0//9TEmUhWgLIhZh7Sdf2Dc3llCKE9MZopWZhFo1zseHWJowDuvhwaxfmALoQHAb88xIW/PMSdLlI83K9XUrzKe5p+bWnvHQV+WQr/N92TElGlubkly6tP/I3F1/xGz33EBLJ9VBkH831UGQfHckl14nZjQkhZExOpTYUSlQVAAA=
+   H4sIAAAAAAAACu2WsQ6AIAxE2QRdRCb0//9TEmUhWgLIhZh7Sdf2Dc3llCKE9MZopWZhFo1zseHWJowDuvhwaxfmALoQHAb88xIW/PMSdLlI83K9XUrzKe5p+bWnvHQV+WQr/N92TElGlubkly6tP/I3F1/xGz33EBLJ9VBkH831UGQfHckl14nZjQkhZExOpTYUSlQVAAA=
   </data>
  </layer>
- <layer name="Walkable" width="35" height="39">
+ <layer id="3" name="Walkable_2" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3VUQ5AMAyA4fXNaV2EuAhHMBfgJhzCFrxUsGVtVvRP+iTsyyzYwhibaXA51q7AmBpkWFrn6AIsHOFnj84xwfl6DsvsHIsQy9X1Y4Z9uMKWBq73g9uCk2TxxX5/pFkov63clqe1OCyxcVpiTV+34PvV8h9LX2wjwWKJLP7fdvd/C3ke1b7cWUJLPS+UUVpK2EaCJXUvUyyc7/CtFu6z/WaLpmmalt4KkSeS3lQVAAA=
+   H4sIAAAAAAAACu3VUQ5AMAyA4fXNaV2EuAhHMBfgJhzCFrxUsGVtVvRP+iTsyyzYwhibaXA51q7AmBpkWFrn6AIsHOFnj84xwfl6DsvsHIsQy9X1Y4Z9uMKWBq73g9uCk2TxxX5/pFkov63clqe1OCyxcVpiTV+34PvV8h9LX2wjwWKJLP7fdvd/C3ke1b7cWUJLPS+UUVpK2EaCJXUvUyyc7/CtFu6z/WaLpmmalt4KkSeS3lQVAAA=
   </data>
  </layer>
- <layer name="Collisions" width="35" height="39">
+ <layer id="4" name="Collisions_2" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+2XzQrCMAyAxZPv/xzDk+40d5o7ic/kAgZCSJq06X7QfhCQmXbf0nbtusvp9NwhrktwxuVadwAPdNnCR7u/5LKmD3gMggvPGVlMZ9uf4skfBBfJdS8X6X90iAA+GNq9JjZuAK1JLRfTVZhDAPXYykVjUFw0p9ty7R6I3jFPNBc65vAbckp9eqPmuXWx1kAKa/xzXLAuR3Ch+UdxoWvSs6/UdsE5zD1yalS7LlJb6srBNdc7+qzlksp5OPvMeb9obVM5OKaz8/lovyUuKeg+GXWx2uBzI6kz1LyiC11THhf0sRxKXGrzCy7w3uD7NVJ6nnh/I9clsi9Z5K7pPVysfCT3e0EC+0i58DN99BxjgX2/WETOttE53Gg0Gv/AB9JJwPNUFQAA
+   H4sIAAAAAAAACu2XzQrCMAyAxZPv/xzDk+40d5o7ic/kAgZCSJq06X7QfhCQmXbf0nbtusvp9NwhrktwxuVadwAPdNnCR7u/5LKmD3gMggvPGVlMZ9uf4skfBBfJdS8X6X90iAA+GNq9JjZuAK1JLRfTVZhDAPXYykVjUFw0p9ty7R6I3jFPNBc65vAbckp9eqPmuXWx1kAKa/xzXLAuR3Ch+UdxoWvSs6/UdsE5zD1yalS7LlJb6srBNdc7+qzlksp5OPvMeb9obVM5OKaz8/lovyUuKeg+GXWx2uBzI6kz1LyiC11THhf0sRxKXGrzCy7w3uD7NVJ6nnh/I9clsi9Z5K7pPVysfCT3e0EC+0i58DN99BxjgX2/WETOttE53Gg0Gv/AB9JJwPNUFQAA
   </data>
  </layer>
- <layer name="Walkable" width="35" height="39">
+ <layer id="5" name="Walkable_1" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3UsQ2AMBAEwQ9JXCAEIByAIIDq3B8nuQWjv2Cngo02AsAoa4nYSnZFd6jjNGl51PGatAAA/jHr84vJ63d1VJOWSx23SQvGa1N2AQAAyPIBjT66y1QVAAA=
+   H4sIAAAAAAAACu3UsQ2AMBAEwQ9JXCAEIByAIIDq3B8nuQWjv2Cngo02AsAoa4nYSnZFd6jjNGl51PGatAAA/jHr84vJ63d1VJOWSx23SQvGa1N2AQAAyPIBjT66y1QVAAA=
   </data>
  </layer>
- <layer name="Collisions" width="35" height="39">
+ <layer id="6" name="Collisions_1" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3UIQ7AMAxD0cDe/yBD3VBbtO1cC4wipahKwf6TjGMZRAQAgLlaRM4gV8nt0vReDzKSu9x673E5TJ/sbby2cRvPbvVu7gIAq1T+GQAAv/UBKAJmSFQVAAA=
+   H4sIAAAAAAAACu3UIQ7AMAxD0cDe/yBD3VBbtO1cC4wipahKwf6TjGMZRAQAgLlaRM4gV8nt0vReDzKSu9x673E5TJ/sbby2cRvPbvVu7gIAq1T+GQAAv/UBKAJmSFQVAAA=
   </data>
  </layer>
- <layer name="LedgesDown" width="35" height="39">
+ <layer id="7" name="LedgesDown" width="35" height="39">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OsQkAMAwEscerZBRv6knTpzakkeD6SwDYcCqZp67fVwAAAMC2C0yZtBNUFQAA
+   H4sIAAAAAAAACu3OsQkAMAwEscerZBRv6knTpzakkeD6SwDYcCqZp67fVwAAAMC2C0yZtBNUFQAA
   </data>
  </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="40" height="20" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -15,19 +15,19 @@
   <property name="yOffsetModifier" value="0"/>
  </properties>
  <tileset firstgid="1" source="Caveset.tsx"/>
- <layer name="Walkable" width="40" height="20">
+ <layer id="1" name="Walkable_2" width="40" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBSMglEwCkbBKCAPyFMJ+xOJyXEfsWZTA4+6b9R9Q819tML43AcAJQ6sTIAMAAA=
+   H4sIAAAAAAAACmNgGAWjYBSMglEwCkbBKCAPyFMJ+xOJyXEfsWZTA4+6b9R9Q819tML43AcAJQ6sTIAMAAA=
   </data>
  </layer>
- <layer name="Walkable" width="40" height="20">
+ <layer id="2" name="Walkable_1" width="40" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBSMglEwCkbBKBgFwwFwD7QDBhCwATE7EHMMtENwAD4g5gdiASqZN5T9CwClH8mMgAwAAA==
+   H4sIAAAAAAAACmNgGAWjYBSMglEwCkbBKBgFwwFwD7QDBhCwATE7EHMMtENwAD4g5gdiASqZN5T9CwClH8mMgAwAAA==
   </data>
  </layer>
- <layer name="Collisions" width="40" height="20">
+ <layer id="3" name="Collisions" width="40" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+2QsQ6AIAxEG2YxDipOwqT+/xcKCcTaFIdCnPqSW+6gvRRAURRFURRFho06f9Ig6BeYjmmOR7KVzMJ7r/nYk7Jd2C/k/2X+QfpeKD+IT98D1G/V2q8ntEvr/TjWKBe1wdO/eI7JDMrnjv2WPHPM3oR2eJRjzzMZzSmSfnR+T2HoTW+1RPbagAwAAA==
+   H4sIAAAAAAAACu2QsQ6AIAxEG2YxDipOwqT+/xcKCcTaFIdCnPqSW+6gvRRAURRFURRFho06f9Ig6BeYjmmOR7KVzMJ7r/nYk7Jd2C/k/2X+QfpeKD+IT98D1G/V2q8ntEvr/TjWKBe1wdO/eI7JDMrnjv2WPHPM3oR2eJRjzzMZzSmSfnR+T2HoTW+1RPbagAwAAA==
   </data>
  </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="11" height="13" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="11" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -14,24 +14,24 @@
  </properties>
  <tileset firstgid="1" source="InteriorFloor 1.tsx"/>
  <tileset firstgid="331" source="InteriorObjects1.tsx"/>
- <layer name="Walkable" width="11" height="13">
+ <layer id="1" name="Walkable_2" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB0w4cEjVa0h48C7gZBaagMAdfcC+zwCAAA=
+   H4sIAAAAAAAACmNgIB0w4cEjVa0h48C7gZBaagMAdfcC+zwCAAA=
   </data>
  </layer>
- <layer name="Walkable" width="11" height="13">
+ <layer id="2" name="Walkable_1" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB/UAXE9FDdQYM4oGJoAAPnp58Q8AgAA
+   H4sIAAAAAAAACmNgIB/UAXE9FDdQYM4oGJoAAPnp58Q8AgAA
   </data>
  </layer>
- <layer name="Collisions" width="11" height="13">
+ <layer id="3" name="Collisions" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgYGBgRMMwQEiMkDiyPDZAqlpsbGLVhqFpgvFxmasK5Kih6cGl1gCLg3CptQZybIg0FxtADi9S1RLCpAIAE0zVFjwCAAA=
+   H4sIAAAAAAAACmNgYGBgRMMwQEiMkDiyPDZAqlpsbGLVhqFpgvFxmasK5Kih6cGl1gCLg3CptQZybIg0FxtADi9S1RLCpAIAE0zVFjwCAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="11" height="13">
+ <layer id="4" name="WalkBehind" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGLrAhxE/fxTQFgAAUV9n7TwCAAA=
+   H4sIAAAAAAAACmNgGLrAhxE/fxTQFgAAUV9n7TwCAAA=
   </data>
  </layer>
 </map>

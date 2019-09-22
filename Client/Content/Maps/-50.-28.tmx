@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="14" height="19" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="14" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -20,24 +20,24 @@
  <tileset firstgid="1789" source="InteriorWalls 1.tsx"/>
  <tileset firstgid="2089" source="various 4.tsx"/>
  <tileset firstgid="3181" source="InteriorObjects1.tsx"/>
- <layer name="Walkable" width="14" height="19">
+ <layer id="1" name="Walkable_2" width="14" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIA8wsWBiXOKEMLXNG8WDF7sxD7wbhgMuZSddTzkZemAYAD+13P8oBAAA
+   H4sIAAAAAAAACmNgIA8wsWBiXOKEMLXNG8WDF7sxD7wbhgMuZSddTzkZemAYAD+13P8oBAAA
   </data>
  </layer>
- <layer name="Walkable" width="14" height="19">
+ <layer id="2" name="Walkable_1" width="14" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC8tmZ2DIIRHnAnEpEJMKynHoe8OIXT1MHJc+cu0b1Tdw+pR46GvfcNWXTUa+JReA7AMAwcK6dSgEAAA=
+   H4sIAAAAAAAACstmZ2DIIRHnAnEpEJMKynHoe8OIXT1MHJc+cu0b1Tdw+pR46GvfcNWXTUa+JReA7AMAwcK6dSgEAAA=
   </data>
  </layer>
- <layer name="Collisions" width="14" height="19">
+ <layer id="3" name="Collisions" width="14" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC5vPysCwAAkjA1ziC4H8tWhiZ9gZGM4C8Tkgng+U28+KKb4ei75r7BD6BjuqHLI4Nn3IAJccvfRV8EDwULOPFWgGGxCz85BmH3KckmIfcpzSw3/E6kO3bx8Q78GC9xKwr4IHuzwuQIm+3TjciA+D3F8KDPsyEnE5EAMA+Dw+bygEAAA=
+   H4sIAAAAAAAACpvPysCwAAkjA1ziC4H8tWhiZ9gZGM4C8Tkgng+U28+KKb4ei75r7BD6BjuqHLI4Nn3IAJccvfRV8EDwULOPFWgGGxCz85BmH3KckmIfcpzSw3/E6kO3bx8Q78GC9xKwr4IHuzwuQIm+3TjciA+D3F8KDPsyEnE5EAMA+Dw+bygEAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="14" height="19">
+ <layer id="4" name="WalkBehind" width="14" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgQAWsPAwM7EDMwUOcOAycZmRgOAPEZxmJE4eB11Dxt4zEidMS5PFA8FCz7zs3A8MPIP7JTZp9rFA2rjilFAzV8CTXDHr6ld4AAOWCQnAoBAAA
+   H4sIAAAAAAAACmNgQAWsPAwM7EDMwUOcOAycZmRgOAPEZxmJE4eB11Dxt4zEidMS5PFA8FCz7zs3A8MPIP7JTZp9rFA2rjilFAzV8CTXDHr6ld4AAOWCQnAoBAAA
   </data>
  </layer>
 </map>

@@ -21,15 +21,6886 @@
 /processor:TiledMapProcessor
 /build:Maps/0.0.tmx
 
+#begin Maps/0.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.1.tmx
+
+#begin Maps/0.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.-1.tmx
+
+#begin Maps/0.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.-2.tmx
+
+#begin Maps/0.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.-46.tmx
+
+#begin Maps/0.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.-47.tmx
+
+#begin Maps/0.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.49.tmx
+
+#begin Maps/0.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.-49.tmx
+
+#begin Maps/0.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/0.-50.tmx
+
+#begin Maps/1.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.0.tmx
+
 #begin Maps/-1.0.tmx
 /importer:TiledMapImporter
 /processor:TiledMapProcessor
 /build:Maps/-1.0.tmx
 
+#begin Maps/1.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.1.tmx
+
+#begin Maps/-1.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-1.-1.tmx
+
+#begin Maps/-1.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-1.-4.tmx
+
+#begin Maps/1.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.-41.tmx
+
+#begin Maps/1.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.-46.tmx
+
+#begin Maps/1.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.-47.tmx
+
+#begin Maps/1.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.49.tmx
+
+#begin Maps/1.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.-49.tmx
+
+#begin Maps/1.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/1.-50.tmx
+
+#begin Maps/10.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/10.41.tmx
+
+#begin Maps/10.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/10.42.tmx
+
+#begin Maps/10.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/10.43.tmx
+
+#begin Maps/10.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/10.49.tmx
+
+#begin Maps/10.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/10.-49.tmx
+
+#begin Maps/10.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/10.-50.tmx
+
+#begin Maps/11.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.15.tmx
+
+#begin Maps/11.16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.16.tmx
+
+#begin Maps/11.17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.17.tmx
+
+#begin Maps/11.18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.18.tmx
+
+#begin Maps/11.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.38.tmx
+
+#begin Maps/11.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.41.tmx
+
+#begin Maps/11.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.42.tmx
+
+#begin Maps/11.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.43.tmx
+
+#begin Maps/11.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.44.tmx
+
+#begin Maps/11.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.49.tmx
+
+#begin Maps/11.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/11.-49.tmx
+
+#begin Maps/12.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.15.tmx
+
+#begin Maps/12.17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.17.tmx
+
+#begin Maps/12.18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.18.tmx
+
+#begin Maps/12.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.38.tmx
+
+#begin Maps/12.39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.39.tmx
+
+#begin Maps/12.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.40.tmx
+
+#begin Maps/12.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.41.tmx
+
+#begin Maps/12.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.42.tmx
+
+#begin Maps/12.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.43.tmx
+
+#begin Maps/12.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.44.tmx
+
+#begin Maps/12.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.49.tmx
+
+#begin Maps/12.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/12.-49.tmx
+
+#begin Maps/13.17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.17.tmx
+
+#begin Maps/13.39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.39.tmx
+
+#begin Maps/13.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.40.tmx
+
+#begin Maps/13.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.41.tmx
+
+#begin Maps/13.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.42.tmx
+
+#begin Maps/13.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.43.tmx
+
+#begin Maps/13.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.44.tmx
+
+#begin Maps/13.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.45.tmx
+
+#begin Maps/13.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/13.49.tmx
+
+#begin Maps/14.17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.17.tmx
+
+#begin Maps/14.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.37.tmx
+
+#begin Maps/14.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.38.tmx
+
+#begin Maps/14.39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.39.tmx
+
+#begin Maps/14.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.40.tmx
+
+#begin Maps/14.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.41.tmx
+
+#begin Maps/14.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.42.tmx
+
+#begin Maps/14.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.43.tmx
+
+#begin Maps/14.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.44.tmx
+
+#begin Maps/14.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/14.45.tmx
+
+#begin Maps/15.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.15.tmx
+
+#begin Maps/15.16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.16.tmx
+
+#begin Maps/15.17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.17.tmx
+
+#begin Maps/15.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.40.tmx
+
+#begin Maps/15.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.41.tmx
+
+#begin Maps/15.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.42.tmx
+
+#begin Maps/15.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.43.tmx
+
+#begin Maps/15.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.44.tmx
+
+#begin Maps/15.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/15.45.tmx
+
+#begin Maps/16.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.0.tmx
+
+#begin Maps/16.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.1.tmx
+
+#begin Maps/16.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.2.tmx
+
+#begin Maps/16.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.3.tmx
+
+#begin Maps/16.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.40.tmx
+
+#begin Maps/16.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.41.tmx
+
+#begin Maps/16.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.42.tmx
+
+#begin Maps/16.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.43.tmx
+
+#begin Maps/16.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.44.tmx
+
+#begin Maps/16.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/16.45.tmx
+
+#begin Maps/17.36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.36.tmx
+
+#begin Maps/17.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.37.tmx
+
+#begin Maps/17.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.38.tmx
+
+#begin Maps/17.39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.39.tmx
+
+#begin Maps/17.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.40.tmx
+
+#begin Maps/17.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.41.tmx
+
+#begin Maps/17.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.42.tmx
+
+#begin Maps/17.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.43.tmx
+
+#begin Maps/17.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.44.tmx
+
+#begin Maps/17.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/17.45.tmx
+
+#begin Maps/18.34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.34.tmx
+
+#begin Maps/18.35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.35.tmx
+
+#begin Maps/18.36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.36.tmx
+
+#begin Maps/18.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.40.tmx
+
+#begin Maps/18.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.41.tmx
+
+#begin Maps/18.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.42.tmx
+
+#begin Maps/18.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.43.tmx
+
+#begin Maps/18.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.44.tmx
+
+#begin Maps/18.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.45.tmx
+
+#begin Maps/18.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/18.46.tmx
+
+#begin Maps/19.34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.34.tmx
+
+#begin Maps/19.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.40.tmx
+
+#begin Maps/19.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.41.tmx
+
+#begin Maps/19.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.42.tmx
+
+#begin Maps/19.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.43.tmx
+
+#begin Maps/19.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.44.tmx
+
+#begin Maps/19.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.45.tmx
+
+#begin Maps/19.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/19.46.tmx
+
+#begin Maps/2.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.0.tmx
+
+#begin Maps/-2.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.0.tmx
+
+#begin Maps/2.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-1.tmx
+
+#begin Maps/-2.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.1.tmx
+
+#begin Maps/-2.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.-1.tmx
+
+#begin Maps/2.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-2.tmx
+
+#begin Maps/-2.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.-2.tmx
+
+#begin Maps/2.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-28.tmx
+
+#begin Maps/2.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-29.tmx
+
+#begin Maps/2.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-3.tmx
+
+#begin Maps/2.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-30.tmx
+
+#begin Maps/2.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-31.tmx
+
+#begin Maps/2.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-32.tmx
+
+#begin Maps/2.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-33.tmx
+
+#begin Maps/2.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-34.tmx
+
+#begin Maps/2.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-35.tmx
+
+#begin Maps/2.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-36.tmx
+
+#begin Maps/2.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-37.tmx
+
+#begin Maps/2.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-38.tmx
+
+#begin Maps/2.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-39.tmx
+
+#begin Maps/-2.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.-4.tmx
+
+#begin Maps/2.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-40.tmx
+
+#begin Maps/2.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-41.tmx
+
+#begin Maps/2.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-42.tmx
+
+#begin Maps/2.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-43.tmx
+
+#begin Maps/2.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-44.tmx
+
+#begin Maps/2.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-45.tmx
+
+#begin Maps/2.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-46.tmx
+
+#begin Maps/2.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-47.tmx
+
+#begin Maps/2.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-48.tmx
+
+#begin Maps/2.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.49.tmx
+
+#begin Maps/2.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-49.tmx
+
+#begin Maps/-2.-5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.-5.tmx
+
+#begin Maps/2.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/2.-50.tmx
+
+#begin Maps/-2.-6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-2.-6.tmx
+
+#begin Maps/20.33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.33.tmx
+
+#begin Maps/20.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.41.tmx
+
+#begin Maps/20.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.42.tmx
+
+#begin Maps/20.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.44.tmx
+
+#begin Maps/20.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.45.tmx
+
+#begin Maps/20.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.46.tmx
+
+#begin Maps/20.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/20.49.tmx
+
+#begin Maps/21.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/21.37.tmx
+
+#begin Maps/21.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/21.38.tmx
+
+#begin Maps/21.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/21.43.tmx
+
+#begin Maps/21.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/21.44.tmx
+
+#begin Maps/21.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/21.49.tmx
+
+#begin Maps/22.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.20.tmx
+
+#begin Maps/22.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.21.tmx
+
+#begin Maps/22.22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.22.tmx
+
+#begin Maps/22.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.23.tmx
+
+#begin Maps/22.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.24.tmx
+
+#begin Maps/22.25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.25.tmx
+
+#begin Maps/22.26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.26.tmx
+
+#begin Maps/22.33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.33.tmx
+
+#begin Maps/22.35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.35.tmx
+
+#begin Maps/22.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.37.tmx
+
+#begin Maps/22.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.38.tmx
+
+#begin Maps/22.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.42.tmx
+
+#begin Maps/22.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.43.tmx
+
+#begin Maps/22.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/22.49.tmx
+
+#begin Maps/-22.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-22.-49.tmx
+
+#begin Maps/23.19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.19.tmx
+
+#begin Maps/23.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.21.tmx
+
+#begin Maps/23.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.23.tmx
+
+#begin Maps/23.26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.26.tmx
+
+#begin Maps/23.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.37.tmx
+
+#begin Maps/23.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.38.tmx
+
+#begin Maps/23.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/23.49.tmx
+
+#begin Maps/24.19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.19.tmx
+
+#begin Maps/24.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.23.tmx
+
+#begin Maps/24.26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.26.tmx
+
+#begin Maps/24.33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.33.tmx
+
+#begin Maps/24.35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.35.tmx
+
+#begin Maps/24.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.37.tmx
+
+#begin Maps/24.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.38.tmx
+
+#begin Maps/24.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.42.tmx
+
+#begin Maps/24.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/24.49.tmx
+
+#begin Maps/25.19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.19.tmx
+
+#begin Maps/25.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.20.tmx
+
+#begin Maps/25.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.21.tmx
+
+#begin Maps/25.22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.22.tmx
+
+#begin Maps/25.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.23.tmx
+
+#begin Maps/25.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.24.tmx
+
+#begin Maps/25.25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.25.tmx
+
+#begin Maps/25.26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.26.tmx
+
+#begin Maps/25.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/25.49.tmx
+
+#begin Maps/26.19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.19.tmx
+
+#begin Maps/26.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.20.tmx
+
+#begin Maps/26.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.21.tmx
+
+#begin Maps/26.22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.22.tmx
+
+#begin Maps/26.26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.26.tmx
+
+#begin Maps/26.32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.32.tmx
+
+#begin Maps/26.33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.33.tmx
+
+#begin Maps/26.34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.34.tmx
+
+#begin Maps/26.35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.35.tmx
+
+#begin Maps/26.36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.36.tmx
+
+#begin Maps/26.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.37.tmx
+
+#begin Maps/26.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.38.tmx
+
+#begin Maps/26.39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.39.tmx
+
+#begin Maps/26.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.40.tmx
+
+#begin Maps/26.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.41.tmx
+
+#begin Maps/26.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.-45.tmx
+
+#begin Maps/26.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/26.49.tmx
+
+#begin Maps/27.19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.19.tmx
+
+#begin Maps/27.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.20.tmx
+
+#begin Maps/27.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.21.tmx
+
+#begin Maps/27.22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.22.tmx
+
+#begin Maps/27.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.23.tmx
+
+#begin Maps/27.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.24.tmx
+
+#begin Maps/27.25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.25.tmx
+
+#begin Maps/27.26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.26.tmx
+
+#begin Maps/27.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.-45.tmx
+
+#begin Maps/27.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/27.49.tmx
+
+#begin Maps/-28.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.1.tmx
+
+#begin Maps/-28.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.10.tmx
+
+#begin Maps/-28.11.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.11.tmx
+
+#begin Maps/-28.12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.12.tmx
+
+#begin Maps/-28.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.15.tmx
+
+#begin Maps/-28.16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.16.tmx
+
+#begin Maps/-28.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.2.tmx
+
+#begin Maps/28.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.20.tmx
+
+#begin Maps/28.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.21.tmx
+
+#begin Maps/28.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.24.tmx
+
+#begin Maps/-28.27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.27.tmx
+
+#begin Maps/-28.4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.4.tmx
+
+#begin Maps/28.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.-45.tmx
+
+#begin Maps/28.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.-47.tmx
+
+#begin Maps/28.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.-48.tmx
+
+#begin Maps/28.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.49.tmx
+
+#begin Maps/28.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/28.-49.tmx
+
+#begin Maps/-28.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.5.tmx
+
+#begin Maps/-28.8.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-28.8.tmx
+
+#begin Maps/-29.11.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.11.tmx
+
+#begin Maps/-29.14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.14.tmx
+
+#begin Maps/-29.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.15.tmx
+
+#begin Maps/-29.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.2.tmx
+
+#begin Maps/29.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.20.tmx
+
+#begin Maps/29.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.21.tmx
+
+#begin Maps/29.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.24.tmx
+
+#begin Maps/-29.4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.4.tmx
+
+#begin Maps/29.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.-45.tmx
+
+#begin Maps/29.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.-47.tmx
+
+#begin Maps/29.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.-48.tmx
+
+#begin Maps/29.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/29.-49.tmx
+
+#begin Maps/-29.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.7.tmx
+
+#begin Maps/-29.8.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-29.8.tmx
+
+#begin Maps/3.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.0.tmx
+
+#begin Maps/3.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.1.tmx
+
+#begin Maps/3.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.-1.tmx
+
+#begin Maps/-3.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-3.-1.tmx
+
+#begin Maps/3.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.2.tmx
+
+#begin Maps/3.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.-2.tmx
+
+#begin Maps/-3.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-3.2.tmx
+
+#begin Maps/-3.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-3.-2.tmx
+
+#begin Maps/3.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.3.tmx
+
+#begin Maps/3.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.-3.tmx
+
+#begin Maps/-3.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-3.-4.tmx
+
+#begin Maps/3.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.49.tmx
+
+#begin Maps/3.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.-49.tmx
+
+#begin Maps/3.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/3.-50.tmx
+
+#begin Maps/30.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/30.20.tmx
+
+#begin Maps/30.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/30.21.tmx
+
+#begin Maps/30.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/30.24.tmx
+
+#begin Maps/30.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/30.-45.tmx
+
+#begin Maps/31.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/31.20.tmx
+
+#begin Maps/31.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/31.21.tmx
+
+#begin Maps/31.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/31.24.tmx
+
+#begin Maps/-31.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-29.tmx
+
+#begin Maps/-31.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-30.tmx
+
+#begin Maps/-31.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-31.tmx
+
+#begin Maps/-31.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-32.tmx
+
+#begin Maps/-31.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-33.tmx
+
+#begin Maps/-31.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-34.tmx
+
+#begin Maps/-31.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-35.tmx
+
+#begin Maps/-31.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-36.tmx
+
+#begin Maps/-31.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-37.tmx
+
+#begin Maps/-31.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-38.tmx
+
+#begin Maps/-31.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-39.tmx
+
+#begin Maps/-31.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-40.tmx
+
+#begin Maps/-31.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-41.tmx
+
+#begin Maps/-31.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.42.tmx
+
+#begin Maps/-31.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-42.tmx
+
+#begin Maps/-31.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.43.tmx
+
+#begin Maps/-31.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-43.tmx
+
+#begin Maps/-31.44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.44.tmx
+
+#begin Maps/-31.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-44.tmx
+
+#begin Maps/-31.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.45.tmx
+
+#begin Maps/-31.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-45.tmx
+
+#begin Maps/-31.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.46.tmx
+
+#begin Maps/-31.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-46.tmx
+
+#begin Maps/-31.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.47.tmx
+
+#begin Maps/-31.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-47.tmx
+
+#begin Maps/-31.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-48.tmx
+
+#begin Maps/-31.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-49.tmx
+
+#begin Maps/-31.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-31.-50.tmx
+
+#begin Maps/32.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/32.23.tmx
+
+#begin Maps/32.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/32.24.tmx
+
 #begin Maps/-32.-31.tmx
 /importer:TiledMapImporter
 /processor:TiledMapProcessor
 /build:Maps/-32.-31.tmx
+
+#begin Maps/-32.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-32.tmx
+
+#begin Maps/-32.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-33.tmx
+
+#begin Maps/-32.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-34.tmx
+
+#begin Maps/-32.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-35.tmx
+
+#begin Maps/-32.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-36.tmx
+
+#begin Maps/-32.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-37.tmx
+
+#begin Maps/-32.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-38.tmx
+
+#begin Maps/-32.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-39.tmx
+
+#begin Maps/-32.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-40.tmx
+
+#begin Maps/-32.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-41.tmx
+
+#begin Maps/-32.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-42.tmx
+
+#begin Maps/-32.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-43.tmx
+
+#begin Maps/-32.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-44.tmx
+
+#begin Maps/-32.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-45.tmx
+
+#begin Maps/-32.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-46.tmx
+
+#begin Maps/-32.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-47.tmx
+
+#begin Maps/-32.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-48.tmx
+
+#begin Maps/-32.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-49.tmx
+
+#begin Maps/-32.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-32.-50.tmx
+
+#begin Maps/33.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/33.20.tmx
+
+#begin Maps/33.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/33.21.tmx
+
+#begin Maps/33.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/33.24.tmx
+
+#begin Maps/-33.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-31.tmx
+
+#begin Maps/-33.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-32.tmx
+
+#begin Maps/-33.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-33.tmx
+
+#begin Maps/-33.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-34.tmx
+
+#begin Maps/-33.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-35.tmx
+
+#begin Maps/-33.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-36.tmx
+
+#begin Maps/-33.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-37.tmx
+
+#begin Maps/-33.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-38.tmx
+
+#begin Maps/-33.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-39.tmx
+
+#begin Maps/-33.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-40.tmx
+
+#begin Maps/-33.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-41.tmx
+
+#begin Maps/33.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/33.-42.tmx
+
+#begin Maps/-33.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-42.tmx
+
+#begin Maps/-33.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-43.tmx
+
+#begin Maps/-33.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-44.tmx
+
+#begin Maps/-33.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-45.tmx
+
+#begin Maps/-33.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-46.tmx
+
+#begin Maps/-33.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-33.-47.tmx
+
+#begin Maps/-34.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.15.tmx
+
+#begin Maps/34.19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.19.tmx
+
+#begin Maps/34.20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.20.tmx
+
+#begin Maps/34.21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.21.tmx
+
+#begin Maps/34.22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.22.tmx
+
+#begin Maps/34.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.23.tmx
+
+#begin Maps/34.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.24.tmx
+
+#begin Maps/-34.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-33.tmx
+
+#begin Maps/-34.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-34.tmx
+
+#begin Maps/34.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.-39.tmx
+
+#begin Maps/34.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.-40.tmx
+
+#begin Maps/-34.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-40.tmx
+
+#begin Maps/-34.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-41.tmx
+
+#begin Maps/34.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.-42.tmx
+
+#begin Maps/-34.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-42.tmx
+
+#begin Maps/-34.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-43.tmx
+
+#begin Maps/34.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/34.-44.tmx
+
+#begin Maps/-34.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-44.tmx
+
+#begin Maps/-34.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-45.tmx
+
+#begin Maps/-34.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-46.tmx
+
+#begin Maps/-34.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-47.tmx
+
+#begin Maps/-34.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-48.tmx
+
+#begin Maps/-34.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-49.tmx
+
+#begin Maps/-34.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-34.-50.tmx
+
+#begin Maps/-35.13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.13.tmx
+
+#begin Maps/35.23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.23.tmx
+
+#begin Maps/-35.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-34.tmx
+
+#begin Maps/-35.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-35.tmx
+
+#begin Maps/35.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-38.tmx
+
+#begin Maps/-35.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-38.tmx
+
+#begin Maps/35.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-39.tmx
+
+#begin Maps/-35.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-39.tmx
+
+#begin Maps/35.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-40.tmx
+
+#begin Maps/-35.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-40.tmx
+
+#begin Maps/35.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-41.tmx
+
+#begin Maps/-35.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-41.tmx
+
+#begin Maps/35.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-42.tmx
+
+#begin Maps/-35.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-42.tmx
+
+#begin Maps/35.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-43.tmx
+
+#begin Maps/-35.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-43.tmx
+
+#begin Maps/35.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/35.-44.tmx
+
+#begin Maps/-35.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-44.tmx
+
+#begin Maps/-35.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-45.tmx
+
+#begin Maps/-35.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-46.tmx
+
+#begin Maps/-35.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-48.tmx
+
+#begin Maps/-35.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-49.tmx
+
+#begin Maps/-35.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-35.-50.tmx
+
+#begin Maps/-36.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.24.tmx
+
+#begin Maps/-36.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-25.tmx
+
+#begin Maps/-36.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-26.tmx
+
+#begin Maps/-36.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-27.tmx
+
+#begin Maps/-36.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-28.tmx
+
+#begin Maps/-36.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-29.tmx
+
+#begin Maps/-36.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-30.tmx
+
+#begin Maps/-36.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-31.tmx
+
+#begin Maps/-36.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-32.tmx
+
+#begin Maps/-36.33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.33.tmx
+
+#begin Maps/-36.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-33.tmx
+
+#begin Maps/-36.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-34.tmx
+
+#begin Maps/-36.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-35.tmx
+
+#begin Maps/-36.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-36.tmx
+
+#begin Maps/-36.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-37.tmx
+
+#begin Maps/36.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/36.-38.tmx
+
+#begin Maps/-36.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-38.tmx
+
+#begin Maps/-36.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-40.tmx
+
+#begin Maps/-36.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-41.tmx
+
+#begin Maps/36.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/36.-42.tmx
+
+#begin Maps/-36.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-42.tmx
+
+#begin Maps/-36.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-43.tmx
+
+#begin Maps/36.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/36.-44.tmx
+
+#begin Maps/-36.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-44.tmx
+
+#begin Maps/36.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/36.-45.tmx
+
+#begin Maps/-36.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-45.tmx
+
+#begin Maps/36.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/36.-46.tmx
+
+#begin Maps/-36.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-46.tmx
+
+#begin Maps/36.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/36.-47.tmx
+
+#begin Maps/-36.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-47.tmx
+
+#begin Maps/-36.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-48.tmx
+
+#begin Maps/-36.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-49.tmx
+
+#begin Maps/-36.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-36.-50.tmx
+
+#begin Maps/-37.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-21.tmx
+
+#begin Maps/-37.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-22.tmx
+
+#begin Maps/-37.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-23.tmx
+
+#begin Maps/-37.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-24.tmx
+
+#begin Maps/-37.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-25.tmx
+
+#begin Maps/-37.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-26.tmx
+
+#begin Maps/-37.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-27.tmx
+
+#begin Maps/-37.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-28.tmx
+
+#begin Maps/-37.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-29.tmx
+
+#begin Maps/-37.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-30.tmx
+
+#begin Maps/-37.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-31.tmx
+
+#begin Maps/-37.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-32.tmx
+
+#begin Maps/-37.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-33.tmx
+
+#begin Maps/-37.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-34.tmx
+
+#begin Maps/-37.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-35.tmx
+
+#begin Maps/-37.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-36.tmx
+
+#begin Maps/-37.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-37.tmx
+
+#begin Maps/37.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/37.-38.tmx
+
+#begin Maps/-37.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-41.tmx
+
+#begin Maps/-37.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-42.tmx
+
+#begin Maps/-37.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-43.tmx
+
+#begin Maps/37.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/37.-44.tmx
+
+#begin Maps/-37.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-44.tmx
+
+#begin Maps/-37.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-46.tmx
+
+#begin Maps/-37.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-47.tmx
+
+#begin Maps/-37.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-48.tmx
+
+#begin Maps/-37.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-37.-49.tmx
+
+#begin Maps/37.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/37.-50.tmx
+
+#begin Maps/38.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.10.tmx
+
+#begin Maps/-38.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-18.tmx
+
+#begin Maps/-38.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-19.tmx
+
+#begin Maps/-38.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-20.tmx
+
+#begin Maps/-38.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-21.tmx
+
+#begin Maps/-38.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-22.tmx
+
+#begin Maps/-38.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-23.tmx
+
+#begin Maps/-38.24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.24.tmx
+
+#begin Maps/-38.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-24.tmx
+
+#begin Maps/-38.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-25.tmx
+
+#begin Maps/-38.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-26.tmx
+
+#begin Maps/-38.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-27.tmx
+
+#begin Maps/-38.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-28.tmx
+
+#begin Maps/-38.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-29.tmx
+
+#begin Maps/-38.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-30.tmx
+
+#begin Maps/-38.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-31.tmx
+
+#begin Maps/-38.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-32.tmx
+
+#begin Maps/-38.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-33.tmx
+
+#begin Maps/-38.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-34.tmx
+
+#begin Maps/-38.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-35.tmx
+
+#begin Maps/-38.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-36.tmx
+
+#begin Maps/-38.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-37.tmx
+
+#begin Maps/-38.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-38.tmx
+
+#begin Maps/-38.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-39.tmx
+
+#begin Maps/-38.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-40.tmx
+
+#begin Maps/-38.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-41.tmx
+
+#begin Maps/38.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-42.tmx
+
+#begin Maps/-38.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-42.tmx
+
+#begin Maps/38.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-43.tmx
+
+#begin Maps/-38.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-43.tmx
+
+#begin Maps/38.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-44.tmx
+
+#begin Maps/-38.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-44.tmx
+
+#begin Maps/38.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-45.tmx
+
+#begin Maps/-38.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-45.tmx
+
+#begin Maps/-38.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-46.tmx
+
+#begin Maps/38.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-47.tmx
+
+#begin Maps/-38.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-47.tmx
+
+#begin Maps/38.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-48.tmx
+
+#begin Maps/-38.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-48.tmx
+
+#begin Maps/-38.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-38.-49.tmx
+
+#begin Maps/38.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.-50.tmx
+
+#begin Maps/38.9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/38.9.tmx
+
+#begin Maps/39.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/39.10.tmx
+
+#begin Maps/-39.12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.12.tmx
+
+#begin Maps/-39.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-15.tmx
+
+#begin Maps/-39.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-16.tmx
+
+#begin Maps/-39.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-17.tmx
+
+#begin Maps/-39.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-18.tmx
+
+#begin Maps/-39.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-19.tmx
+
+#begin Maps/-39.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-20.tmx
+
+#begin Maps/-39.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-21.tmx
+
+#begin Maps/-39.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-22.tmx
+
+#begin Maps/-39.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-23.tmx
+
+#begin Maps/-39.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-24.tmx
+
+#begin Maps/-39.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-25.tmx
+
+#begin Maps/-39.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-26.tmx
+
+#begin Maps/-39.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-27.tmx
+
+#begin Maps/-39.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-28.tmx
+
+#begin Maps/-39.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-29.tmx
+
+#begin Maps/-39.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-30.tmx
+
+#begin Maps/-39.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-31.tmx
+
+#begin Maps/-39.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-32.tmx
+
+#begin Maps/-39.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-33.tmx
+
+#begin Maps/-39.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-34.tmx
+
+#begin Maps/-39.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-35.tmx
+
+#begin Maps/-39.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-36.tmx
+
+#begin Maps/-39.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-37.tmx
+
+#begin Maps/-39.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-38.tmx
+
+#begin Maps/-39.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-39.tmx
+
+#begin Maps/-39.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-40.tmx
+
+#begin Maps/-39.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-41.tmx
+
+#begin Maps/39.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/39.-42.tmx
+
+#begin Maps/-39.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-42.tmx
+
+#begin Maps/-39.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-43.tmx
+
+#begin Maps/-39.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-44.tmx
+
+#begin Maps/39.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/39.-45.tmx
+
+#begin Maps/-39.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-45.tmx
+
+#begin Maps/-39.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-46.tmx
+
+#begin Maps/-39.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-47.tmx
+
+#begin Maps/39.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/39.-48.tmx
+
+#begin Maps/-39.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-48.tmx
+
+#begin Maps/-39.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.-49.tmx
+
+#begin Maps/39.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/39.-50.tmx
+
+#begin Maps/-39.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-39.7.tmx
+
+#begin Maps/39.9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/39.9.tmx
+
+#begin Maps/-4.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-4.2.tmx
+
+#begin Maps/-4.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-4.-2.tmx
+
+#begin Maps/4.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/4.3.tmx
+
+#begin Maps/4.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/4.-3.tmx
+
+#begin Maps/-4.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-4.-3.tmx
+
+#begin Maps/-4.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-4.-4.tmx
+
+#begin Maps/4.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/4.49.tmx
+
+#begin Maps/4.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/4.-49.tmx
+
+#begin Maps/4.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/4.-50.tmx
+
+#begin Maps/40.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/40.10.tmx
+
+#begin Maps/-40.-10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-10.tmx
+
+#begin Maps/-40.-11.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-11.tmx
+
+#begin Maps/-40.-12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-12.tmx
+
+#begin Maps/-40.-13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-13.tmx
+
+#begin Maps/-40.-14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-14.tmx
+
+#begin Maps/-40.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-15.tmx
+
+#begin Maps/-40.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-16.tmx
+
+#begin Maps/-40.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-17.tmx
+
+#begin Maps/-40.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-18.tmx
+
+#begin Maps/-40.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-19.tmx
+
+#begin Maps/-40.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-20.tmx
+
+#begin Maps/-40.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-21.tmx
+
+#begin Maps/-40.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-22.tmx
+
+#begin Maps/-40.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-23.tmx
+
+#begin Maps/-40.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-24.tmx
+
+#begin Maps/-40.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-26.tmx
+
+#begin Maps/-40.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-27.tmx
+
+#begin Maps/-40.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-28.tmx
+
+#begin Maps/-40.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-29.tmx
+
+#begin Maps/-40.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-30.tmx
+
+#begin Maps/-40.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-31.tmx
+
+#begin Maps/-40.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-32.tmx
+
+#begin Maps/-40.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-33.tmx
+
+#begin Maps/-40.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-34.tmx
+
+#begin Maps/-40.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-35.tmx
+
+#begin Maps/-40.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-36.tmx
+
+#begin Maps/-40.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-37.tmx
+
+#begin Maps/-40.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-38.tmx
+
+#begin Maps/-40.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-39.tmx
+
+#begin Maps/40.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/40.-40.tmx
+
+#begin Maps/-40.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-40.tmx
+
+#begin Maps/40.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/40.-41.tmx
+
+#begin Maps/-40.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-41.tmx
+
+#begin Maps/40.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/40.-42.tmx
+
+#begin Maps/-40.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-42.tmx
+
+#begin Maps/-40.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-43.tmx
+
+#begin Maps/-40.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-44.tmx
+
+#begin Maps/40.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/40.-45.tmx
+
+#begin Maps/-40.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-45.tmx
+
+#begin Maps/-40.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-46.tmx
+
+#begin Maps/-40.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-47.tmx
+
+#begin Maps/-40.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-49.tmx
+
+#begin Maps/-40.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-50.tmx
+
+#begin Maps/40.9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/40.9.tmx
+
+#begin Maps/-40.-9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-40.-9.tmx
+
+#begin Maps/-41.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.1.tmx
+
+#begin Maps/41.15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.15.tmx
+
+#begin Maps/-41.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-19.tmx
+
+#begin Maps/-41.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.2.tmx
+
+#begin Maps/-41.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-20.tmx
+
+#begin Maps/-41.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-21.tmx
+
+#begin Maps/-41.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-22.tmx
+
+#begin Maps/-41.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-23.tmx
+
+#begin Maps/-41.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-24.tmx
+
+#begin Maps/-41.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-25.tmx
+
+#begin Maps/-41.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-26.tmx
+
+#begin Maps/-41.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-27.tmx
+
+#begin Maps/-41.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-28.tmx
+
+#begin Maps/41.29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.29.tmx
+
+#begin Maps/-41.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-29.tmx
+
+#begin Maps/-41.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.3.tmx
+
+#begin Maps/41.30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.30.tmx
+
+#begin Maps/-41.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-30.tmx
+
+#begin Maps/41.31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.31.tmx
+
+#begin Maps/-41.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-31.tmx
+
+#begin Maps/41.32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.32.tmx
+
+#begin Maps/-41.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-32.tmx
+
+#begin Maps/41.33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.33.tmx
+
+#begin Maps/-41.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-33.tmx
+
+#begin Maps/41.34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.34.tmx
+
+#begin Maps/-41.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-34.tmx
+
+#begin Maps/41.35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.35.tmx
+
+#begin Maps/-41.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-35.tmx
+
+#begin Maps/41.36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.36.tmx
+
+#begin Maps/-41.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-36.tmx
+
+#begin Maps/41.37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.37.tmx
+
+#begin Maps/-41.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-37.tmx
+
+#begin Maps/41.38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.38.tmx
+
+#begin Maps/-41.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-38.tmx
+
+#begin Maps/-41.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-39.tmx
+
+#begin Maps/-41.4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.4.tmx
+
+#begin Maps/41.40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.40.tmx
+
+#begin Maps/-41.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-40.tmx
+
+#begin Maps/41.41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.41.tmx
+
+#begin Maps/-41.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-41.tmx
+
+#begin Maps/41.42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.42.tmx
+
+#begin Maps/41.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.-42.tmx
+
+#begin Maps/-41.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-42.tmx
+
+#begin Maps/41.43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.43.tmx
+
+#begin Maps/41.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.-43.tmx
+
+#begin Maps/-41.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.-43.tmx
+
+#begin Maps/41.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.-44.tmx
+
+#begin Maps/-41.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.45.tmx
+
+#begin Maps/-41.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.46.tmx
+
+#begin Maps/41.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.5.tmx
+
+#begin Maps/-41.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.5.tmx
+
+#begin Maps/41.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/41.6.tmx
+
+#begin Maps/-41.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.6.tmx
+
+#begin Maps/-41.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-41.7.tmx
+
+#begin Maps/-42.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.1.tmx
+
+#begin Maps/-42.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.10.tmx
+
+#begin Maps/-42.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-18.tmx
+
+#begin Maps/-42.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-19.tmx
+
+#begin Maps/-42.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.2.tmx
+
+#begin Maps/-42.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-20.tmx
+
+#begin Maps/-42.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-21.tmx
+
+#begin Maps/-42.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-22.tmx
+
+#begin Maps/-42.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-23.tmx
+
+#begin Maps/-42.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-25.tmx
+
+#begin Maps/-42.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-26.tmx
+
+#begin Maps/-42.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-27.tmx
+
+#begin Maps/-42.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-28.tmx
+
+#begin Maps/-42.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.3.tmx
+
+#begin Maps/-42.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-33.tmx
+
+#begin Maps/-42.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-34.tmx
+
+#begin Maps/-42.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-35.tmx
+
+#begin Maps/-42.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-36.tmx
+
+#begin Maps/-42.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-37.tmx
+
+#begin Maps/-42.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-38.tmx
+
+#begin Maps/-42.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-39.tmx
+
+#begin Maps/-42.4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.4.tmx
+
+#begin Maps/42.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/42.-40.tmx
+
+#begin Maps/-42.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-40.tmx
+
+#begin Maps/-42.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-41.tmx
+
+#begin Maps/-42.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.-42.tmx
+
+#begin Maps/42.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/42.-44.tmx
+
+#begin Maps/-42.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.45.tmx
+
+#begin Maps/-42.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.46.tmx
+
+#begin Maps/-42.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.47.tmx
+
+#begin Maps/-42.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.48.tmx
+
+#begin Maps/-42.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.49.tmx
+
+#begin Maps/42.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/42.5.tmx
+
+#begin Maps/-42.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.5.tmx
+
+#begin Maps/42.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/42.6.tmx
+
+#begin Maps/-42.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.6.tmx
+
+#begin Maps/-42.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.7.tmx
+
+#begin Maps/-42.8.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-42.8.tmx
+
+#begin Maps/43.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.2.tmx
+
+#begin Maps/-43.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-24.tmx
+
+#begin Maps/-43.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-25.tmx
+
+#begin Maps/-43.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-26.tmx
+
+#begin Maps/-43.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-27.tmx
+
+#begin Maps/-43.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-28.tmx
+
+#begin Maps/-43.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-29.tmx
+
+#begin Maps/-43.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-30.tmx
+
+#begin Maps/-43.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-31.tmx
+
+#begin Maps/-43.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-32.tmx
+
+#begin Maps/-43.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-33.tmx
+
+#begin Maps/-43.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-34.tmx
+
+#begin Maps/-43.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-35.tmx
+
+#begin Maps/-43.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-36.tmx
+
+#begin Maps/-43.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-37.tmx
+
+#begin Maps/-43.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-38.tmx
+
+#begin Maps/-43.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-39.tmx
+
+#begin Maps/-43.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-40.tmx
+
+#begin Maps/43.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.-41.tmx
+
+#begin Maps/-43.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-41.tmx
+
+#begin Maps/43.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.-42.tmx
+
+#begin Maps/-43.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-42.tmx
+
+#begin Maps/43.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.-43.tmx
+
+#begin Maps/-43.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-43.tmx
+
+#begin Maps/43.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.-44.tmx
+
+#begin Maps/-43.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-44.tmx
+
+#begin Maps/-43.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.45.tmx
+
+#begin Maps/-43.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-45.tmx
+
+#begin Maps/-43.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.46.tmx
+
+#begin Maps/-43.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-46.tmx
+
+#begin Maps/43.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.-47.tmx
+
+#begin Maps/-43.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.47.tmx
+
+#begin Maps/-43.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-47.tmx
+
+#begin Maps/43.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.-48.tmx
+
+#begin Maps/-43.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.48.tmx
+
+#begin Maps/-43.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-48.tmx
+
+#begin Maps/-43.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.49.tmx
+
+#begin Maps/-43.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-49.tmx
+
+#begin Maps/43.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.5.tmx
+
+#begin Maps/-43.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-43.-50.tmx
+
+#begin Maps/43.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/43.6.tmx
+
+#begin Maps/-44.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.1.tmx
+
+#begin Maps/-44.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.10.tmx
+
+#begin Maps/-44.-14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-14.tmx
+
+#begin Maps/-44.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-15.tmx
+
+#begin Maps/-44.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-16.tmx
+
+#begin Maps/-44.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-17.tmx
+
+#begin Maps/-44.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-19.tmx
+
+#begin Maps/-44.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.2.tmx
+
+#begin Maps/-44.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-20.tmx
+
+#begin Maps/-44.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-21.tmx
+
+#begin Maps/-44.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-22.tmx
+
+#begin Maps/-44.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-23.tmx
+
+#begin Maps/-44.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-24.tmx
+
+#begin Maps/-44.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-25.tmx
+
+#begin Maps/-44.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-26.tmx
+
+#begin Maps/-44.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-27.tmx
+
+#begin Maps/-44.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-28.tmx
+
+#begin Maps/-44.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-29.tmx
+
+#begin Maps/-44.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.3.tmx
+
+#begin Maps/-44.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-30.tmx
+
+#begin Maps/-44.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-31.tmx
+
+#begin Maps/-44.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-32.tmx
+
+#begin Maps/-44.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-33.tmx
+
+#begin Maps/-44.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-34.tmx
+
+#begin Maps/-44.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-35.tmx
+
+#begin Maps/-44.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-36.tmx
+
+#begin Maps/-44.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-37.tmx
+
+#begin Maps/-44.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-38.tmx
+
+#begin Maps/-44.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-39.tmx
+
+#begin Maps/-44.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-40.tmx
+
+#begin Maps/-44.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-41.tmx
+
+#begin Maps/44.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/44.-42.tmx
+
+#begin Maps/-44.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-42.tmx
+
+#begin Maps/-44.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-43.tmx
+
+#begin Maps/-44.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-44.tmx
+
+#begin Maps/-44.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.45.tmx
+
+#begin Maps/-44.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-45.tmx
+
+#begin Maps/-44.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.46.tmx
+
+#begin Maps/-44.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-46.tmx
+
+#begin Maps/-44.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.47.tmx
+
+#begin Maps/-44.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.-47.tmx
+
+#begin Maps/44.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/44.-48.tmx
+
+#begin Maps/-44.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.48.tmx
+
+#begin Maps/-44.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.49.tmx
+
+#begin Maps/-44.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.5.tmx
+
+#begin Maps/-44.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-44.7.tmx
+
+#begin Maps/-45.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.1.tmx
+
+#begin Maps/-45.-10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-10.tmx
+
+#begin Maps/-45.-11.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-11.tmx
+
+#begin Maps/-45.-12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-12.tmx
+
+#begin Maps/-45.-13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-13.tmx
+
+#begin Maps/-45.-14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-14.tmx
+
+#begin Maps/-45.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-15.tmx
+
+#begin Maps/-45.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-16.tmx
+
+#begin Maps/-45.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-17.tmx
+
+#begin Maps/-45.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-18.tmx
+
+#begin Maps/-45.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-19.tmx
+
+#begin Maps/-45.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-20.tmx
+
+#begin Maps/-45.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-21.tmx
+
+#begin Maps/-45.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-22.tmx
+
+#begin Maps/-45.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-23.tmx
+
+#begin Maps/-45.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-24.tmx
+
+#begin Maps/-45.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-25.tmx
+
+#begin Maps/-45.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-26.tmx
+
+#begin Maps/-45.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-27.tmx
+
+#begin Maps/-45.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-28.tmx
+
+#begin Maps/-45.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-29.tmx
+
+#begin Maps/-45.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-3.tmx
+
+#begin Maps/-45.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-30.tmx
+
+#begin Maps/-45.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-31.tmx
+
+#begin Maps/-45.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-32.tmx
+
+#begin Maps/-45.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-33.tmx
+
+#begin Maps/-45.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-34.tmx
+
+#begin Maps/45.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-35.tmx
+
+#begin Maps/-45.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-35.tmx
+
+#begin Maps/-45.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-36.tmx
+
+#begin Maps/45.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-37.tmx
+
+#begin Maps/-45.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-37.tmx
+
+#begin Maps/-45.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-38.tmx
+
+#begin Maps/-45.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-39.tmx
+
+#begin Maps/-45.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-4.tmx
+
+#begin Maps/-45.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-40.tmx
+
+#begin Maps/-45.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-41.tmx
+
+#begin Maps/45.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-42.tmx
+
+#begin Maps/-45.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-42.tmx
+
+#begin Maps/45.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-43.tmx
+
+#begin Maps/-45.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-43.tmx
+
+#begin Maps/45.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-44.tmx
+
+#begin Maps/-45.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-44.tmx
+
+#begin Maps/-45.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.45.tmx
+
+#begin Maps/-45.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-45.tmx
+
+#begin Maps/-45.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.46.tmx
+
+#begin Maps/-45.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-46.tmx
+
+#begin Maps/-45.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.47.tmx
+
+#begin Maps/-45.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-47.tmx
+
+#begin Maps/45.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-48.tmx
+
+#begin Maps/-45.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.48.tmx
+
+#begin Maps/-45.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-48.tmx
+
+#begin Maps/45.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.-49.tmx
+
+#begin Maps/-45.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.49.tmx
+
+#begin Maps/-45.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-49.tmx
+
+#begin Maps/45.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.5.tmx
+
+#begin Maps/-45.-5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-5.tmx
+
+#begin Maps/45.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.6.tmx
+
+#begin Maps/-45.-6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-6.tmx
+
+#begin Maps/45.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/45.7.tmx
+
+#begin Maps/-45.-7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-7.tmx
+
+#begin Maps/-45.-8.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-8.tmx
+
+#begin Maps/-45.-9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-45.-9.tmx
+
+#begin Maps/-46.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.1.tmx
+
+#begin Maps/-46.-13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-13.tmx
+
+#begin Maps/-46.-14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-14.tmx
+
+#begin Maps/-46.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-15.tmx
+
+#begin Maps/-46.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-16.tmx
+
+#begin Maps/-46.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-17.tmx
+
+#begin Maps/-46.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-18.tmx
+
+#begin Maps/-46.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-19.tmx
+
+#begin Maps/-46.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.2.tmx
+
+#begin Maps/-46.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-20.tmx
+
+#begin Maps/-46.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-21.tmx
+
+#begin Maps/-46.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-22.tmx
+
+#begin Maps/-46.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-23.tmx
+
+#begin Maps/-46.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-24.tmx
+
+#begin Maps/-46.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-25.tmx
+
+#begin Maps/-46.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-26.tmx
+
+#begin Maps/-46.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-27.tmx
+
+#begin Maps/-46.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-28.tmx
+
+#begin Maps/-46.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-29.tmx
+
+#begin Maps/-46.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.3.tmx
+
+#begin Maps/-46.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-30.tmx
+
+#begin Maps/-46.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-31.tmx
+
+#begin Maps/-46.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-32.tmx
+
+#begin Maps/-46.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-33.tmx
+
+#begin Maps/-46.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-34.tmx
+
+#begin Maps/-46.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-35.tmx
+
+#begin Maps/-46.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-36.tmx
+
+#begin Maps/-46.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-37.tmx
+
+#begin Maps/-46.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-38.tmx
+
+#begin Maps/-46.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-39.tmx
+
+#begin Maps/-46.4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.4.tmx
+
+#begin Maps/-46.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-40.tmx
+
+#begin Maps/-46.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-41.tmx
+
+#begin Maps/-46.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-42.tmx
+
+#begin Maps/-46.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-43.tmx
+
+#begin Maps/-46.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-44.tmx
+
+#begin Maps/-46.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.45.tmx
+
+#begin Maps/-46.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-45.tmx
+
+#begin Maps/46.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/46.-46.tmx
+
+#begin Maps/-46.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.46.tmx
+
+#begin Maps/-46.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.-46.tmx
+
+#begin Maps/46.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/46.-47.tmx
+
+#begin Maps/-46.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.47.tmx
+
+#begin Maps/46.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/46.-48.tmx
+
+#begin Maps/-46.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.48.tmx
+
+#begin Maps/-46.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-46.49.tmx
+
+#begin Maps/47.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.10.tmx
+
+#begin Maps/-47.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-19.tmx
+
+#begin Maps/-47.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.2.tmx
+
+#begin Maps/-47.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-20.tmx
+
+#begin Maps/-47.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-21.tmx
+
+#begin Maps/-47.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-22.tmx
+
+#begin Maps/-47.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-23.tmx
+
+#begin Maps/-47.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-24.tmx
+
+#begin Maps/-47.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-25.tmx
+
+#begin Maps/-47.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-26.tmx
+
+#begin Maps/-47.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-27.tmx
+
+#begin Maps/-47.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-28.tmx
+
+#begin Maps/-47.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-29.tmx
+
+#begin Maps/-47.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.3.tmx
+
+#begin Maps/-47.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-30.tmx
+
+#begin Maps/-47.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-31.tmx
+
+#begin Maps/-47.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-32.tmx
+
+#begin Maps/-47.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-33.tmx
+
+#begin Maps/-47.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-34.tmx
+
+#begin Maps/-47.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-35.tmx
+
+#begin Maps/-47.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-36.tmx
+
+#begin Maps/-47.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-37.tmx
+
+#begin Maps/-47.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-38.tmx
+
+#begin Maps/-47.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-39.tmx
+
+#begin Maps/47.4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.4.tmx
+
+#begin Maps/-47.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-40.tmx
+
+#begin Maps/-47.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-41.tmx
+
+#begin Maps/-47.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-42.tmx
+
+#begin Maps/-47.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-43.tmx
+
+#begin Maps/-47.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-44.tmx
+
+#begin Maps/-47.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-45.tmx
+
+#begin Maps/-47.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.46.tmx
+
+#begin Maps/-47.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-46.tmx
+
+#begin Maps/-47.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.47.tmx
+
+#begin Maps/-47.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-47.tmx
+
+#begin Maps/-47.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.48.tmx
+
+#begin Maps/-47.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.49.tmx
+
+#begin Maps/47.5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.5.tmx
+
+#begin Maps/-47.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-47.-50.tmx
+
+#begin Maps/47.6.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.6.tmx
+
+#begin Maps/47.7.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.7.tmx
+
+#begin Maps/47.8.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.8.tmx
+
+#begin Maps/47.9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/47.9.tmx
+
+#begin Maps/-48.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.1.tmx
+
+#begin Maps/-48.-12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-12.tmx
+
+#begin Maps/-48.-13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-13.tmx
+
+#begin Maps/-48.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-15.tmx
+
+#begin Maps/-48.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-16.tmx
+
+#begin Maps/-48.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-17.tmx
+
+#begin Maps/-48.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-18.tmx
+
+#begin Maps/-48.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-19.tmx
+
+#begin Maps/-48.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-20.tmx
+
+#begin Maps/-48.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-21.tmx
+
+#begin Maps/-48.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-22.tmx
+
+#begin Maps/-48.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-23.tmx
+
+#begin Maps/-48.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-24.tmx
+
+#begin Maps/-48.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-25.tmx
+
+#begin Maps/-48.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-26.tmx
+
+#begin Maps/-48.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-27.tmx
+
+#begin Maps/-48.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-28.tmx
+
+#begin Maps/-48.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-29.tmx
+
+#begin Maps/-48.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-30.tmx
+
+#begin Maps/-48.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-31.tmx
+
+#begin Maps/-48.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-32.tmx
+
+#begin Maps/-48.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-33.tmx
+
+#begin Maps/-48.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-34.tmx
+
+#begin Maps/-48.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-35.tmx
+
+#begin Maps/-48.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-36.tmx
+
+#begin Maps/-48.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-37.tmx
+
+#begin Maps/-48.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-38.tmx
+
+#begin Maps/-48.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-39.tmx
+
+#begin Maps/-48.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-40.tmx
+
+#begin Maps/-48.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-42.tmx
+
+#begin Maps/-48.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-43.tmx
+
+#begin Maps/-48.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-44.tmx
+
+#begin Maps/-48.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.45.tmx
+
+#begin Maps/-48.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-45.tmx
+
+#begin Maps/-48.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.46.tmx
+
+#begin Maps/-48.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-46.tmx
+
+#begin Maps/-48.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.47.tmx
+
+#begin Maps/-48.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-47.tmx
+
+#begin Maps/48.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/48.-48.tmx
+
+#begin Maps/-48.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.48.tmx
+
+#begin Maps/-48.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-48.tmx
+
+#begin Maps/-48.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.49.tmx
+
+#begin Maps/-48.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-48.-49.tmx
+
+#begin Maps/49.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/49.-1.tmx
+
+#begin Maps/-49.-13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-13.tmx
+
+#begin Maps/-49.-14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-14.tmx
+
+#begin Maps/-49.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-15.tmx
+
+#begin Maps/-49.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-19.tmx
+
+#begin Maps/49.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/49.-2.tmx
+
+#begin Maps/-49.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-20.tmx
+
+#begin Maps/-49.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-21.tmx
+
+#begin Maps/-49.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-22.tmx
+
+#begin Maps/-49.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-23.tmx
+
+#begin Maps/-49.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-24.tmx
+
+#begin Maps/-49.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-25.tmx
+
+#begin Maps/-49.-26.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-26.tmx
+
+#begin Maps/-49.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-27.tmx
+
+#begin Maps/-49.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-28.tmx
+
+#begin Maps/-49.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-29.tmx
+
+#begin Maps/49.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/49.-3.tmx
+
+#begin Maps/-49.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-30.tmx
+
+#begin Maps/-49.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-31.tmx
+
+#begin Maps/-49.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-32.tmx
+
+#begin Maps/-49.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-33.tmx
+
+#begin Maps/-49.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-34.tmx
+
+#begin Maps/-49.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-35.tmx
+
+#begin Maps/-49.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-36.tmx
+
+#begin Maps/-49.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-37.tmx
+
+#begin Maps/-49.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-38.tmx
+
+#begin Maps/-49.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-39.tmx
+
+#begin Maps/49.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/49.-4.tmx
+
+#begin Maps/-49.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-40.tmx
+
+#begin Maps/-49.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-41.tmx
+
+#begin Maps/-49.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-42.tmx
+
+#begin Maps/-49.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-43.tmx
+
+#begin Maps/-49.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-44.tmx
+
+#begin Maps/-49.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.45.tmx
+
+#begin Maps/-49.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-45.tmx
+
+#begin Maps/-49.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.46.tmx
+
+#begin Maps/-49.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-46.tmx
+
+#begin Maps/-49.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.47.tmx
+
+#begin Maps/-49.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-47.tmx
+
+#begin Maps/-49.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.48.tmx
+
+#begin Maps/-49.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-48.tmx
+
+#begin Maps/-49.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.49.tmx
+
+#begin Maps/-49.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-49.tmx
+
+#begin Maps/49.-5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/49.-5.tmx
+
+#begin Maps/-49.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-49.-50.tmx
+
+#begin Maps/-5.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-5.0.tmx
+
+#begin Maps/-5.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-5.1.tmx
+
+#begin Maps/-5.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-5.-1.tmx
+
+#begin Maps/5.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/5.-2.tmx
+
+#begin Maps/-5.2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-5.2.tmx
+
+#begin Maps/-5.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-5.-2.tmx
+
+#begin Maps/5.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/5.-4.tmx
+
+#begin Maps/-5.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-5.-4.tmx
+
+#begin Maps/5.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/5.49.tmx
+
+#begin Maps/5.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/5.-49.tmx
+
+#begin Maps/5.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/5.-50.tmx
+
+#begin Maps/-50.-12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-12.tmx
+
+#begin Maps/-50.-13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-13.tmx
+
+#begin Maps/-50.-14.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-14.tmx
+
+#begin Maps/-50.-15.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-15.tmx
+
+#begin Maps/-50.-16.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-16.tmx
+
+#begin Maps/-50.-17.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-17.tmx
+
+#begin Maps/-50.-18.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-18.tmx
+
+#begin Maps/-50.-19.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-19.tmx
+
+#begin Maps/-50.-20.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-20.tmx
+
+#begin Maps/-50.-21.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-21.tmx
+
+#begin Maps/-50.-22.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-22.tmx
+
+#begin Maps/-50.-23.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-23.tmx
+
+#begin Maps/-50.-24.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-24.tmx
+
+#begin Maps/-50.-25.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-25.tmx
+
+#begin Maps/-50.-27.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-27.tmx
+
+#begin Maps/-50.-28.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-28.tmx
+
+#begin Maps/-50.-29.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-29.tmx
+
+#begin Maps/-50.-30.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-30.tmx
+
+#begin Maps/-50.-31.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-31.tmx
+
+#begin Maps/-50.-32.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-32.tmx
+
+#begin Maps/-50.-33.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-33.tmx
+
+#begin Maps/-50.-34.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-34.tmx
+
+#begin Maps/-50.-35.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-35.tmx
+
+#begin Maps/-50.-36.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-36.tmx
+
+#begin Maps/-50.-37.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-37.tmx
+
+#begin Maps/-50.-38.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-38.tmx
+
+#begin Maps/-50.-39.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-39.tmx
+
+#begin Maps/-50.-40.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-40.tmx
+
+#begin Maps/-50.-41.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-41.tmx
+
+#begin Maps/-50.-42.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-42.tmx
+
+#begin Maps/-50.-43.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-43.tmx
+
+#begin Maps/-50.-44.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-44.tmx
+
+#begin Maps/-50.45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.45.tmx
+
+#begin Maps/-50.-45.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-45.tmx
+
+#begin Maps/-50.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.46.tmx
+
+#begin Maps/-50.-46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-46.tmx
+
+#begin Maps/-50.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.47.tmx
+
+#begin Maps/-50.-47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-47.tmx
+
+#begin Maps/-50.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.48.tmx
+
+#begin Maps/-50.-48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-48.tmx
+
+#begin Maps/-50.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.49.tmx
+
+#begin Maps/-50.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-49.tmx
+
+#begin Maps/-50.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-50.-50.tmx
+
+#begin Maps/51.46.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/51.46.tmx
+
+#begin Maps/51.47.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/51.47.tmx
+
+#begin Maps/51.48.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/51.48.tmx
+
+#begin Maps/51.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/51.49.tmx
+
+#begin Maps/52.1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.1.tmx
+
+#begin Maps/52.10.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.10.tmx
+
+#begin Maps/52.11.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.11.tmx
+
+#begin Maps/52.12.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.12.tmx
+
+#begin Maps/52.13.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.13.tmx
+
+#begin Maps/52.3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.3.tmx
+
+#begin Maps/52.9.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/52.9.tmx
+
+#begin Maps/6.-1.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-1.tmx
+
+#begin Maps/6.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-2.tmx
+
+#begin Maps/6.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-3.tmx
+
+#begin Maps/-6.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-6.-3.tmx
+
+#begin Maps/6.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-4.tmx
+
+#begin Maps/-6.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-6.-4.tmx
+
+#begin Maps/6.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.49.tmx
+
+#begin Maps/6.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-49.tmx
+
+#begin Maps/6.-5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-5.tmx
+
+#begin Maps/6.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/6.-50.tmx
+
+#begin Maps/7.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/7.-2.tmx
+
+#begin Maps/-7.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-7.-2.tmx
+
+#begin Maps/-7.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-7.-3.tmx
+
+#begin Maps/7.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/7.-4.tmx
+
+#begin Maps/7.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/7.49.tmx
+
+#begin Maps/7.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/7.-49.tmx
+
+#begin Maps/7.-5.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/7.-5.tmx
+
+#begin Maps/7.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/7.-50.tmx
+
+#begin Maps/8.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/8.-2.tmx
+
+#begin Maps/-8.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-8.-2.tmx
+
+#begin Maps/8.-3.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/8.-3.tmx
+
+#begin Maps/8.-4.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/8.-4.tmx
+
+#begin Maps/8.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/8.49.tmx
+
+#begin Maps/8.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/8.-49.tmx
+
+#begin Maps/8.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/8.-50.tmx
+
+#begin Maps/-9.-2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/-9.-2.tmx
+
+#begin Maps/9.49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/9.49.tmx
+
+#begin Maps/9.-49.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/9.-49.tmx
+
+#begin Maps/9.-50.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:Maps/9.-50.tmx
+
+#begin Maps/Data/0.0.txt
+/copy:Maps/Data/0.0.txt
+
+#begin Maps/Data/0.1.txt
+/copy:Maps/Data/0.1.txt
+
+#begin Maps/Data/0.-1.txt
+/copy:Maps/Data/0.-1.txt
+
+#begin Maps/Data/0.-2.txt
+/copy:Maps/Data/0.-2.txt
+
+#begin Maps/Data/0.49.txt
+/copy:Maps/Data/0.49.txt
+
+#begin Maps/Data/0.-49.txt
+/copy:Maps/Data/0.-49.txt
+
+#begin Maps/Data/0.-50.txt
+/copy:Maps/Data/0.-50.txt
+
+#begin Maps/Data/1.0.txt
+/copy:Maps/Data/1.0.txt
+
+#begin Maps/Data/-1.0.txt
+/copy:Maps/Data/-1.0.txt
+
+#begin Maps/Data/-1.-1.txt
+/copy:Maps/Data/-1.-1.txt
+
+#begin Maps/Data/-1.-4.txt
+/copy:Maps/Data/-1.-4.txt
+
+#begin Maps/Data/1.49.txt
+/copy:Maps/Data/1.49.txt
+
+#begin Maps/Data/1.-49.txt
+/copy:Maps/Data/1.-49.txt
+
+#begin Maps/Data/1.-50.txt
+/copy:Maps/Data/1.-50.txt
+
+#begin Maps/Data/10.49.txt
+/copy:Maps/Data/10.49.txt
+
+#begin Maps/Data/10.-49.txt
+/copy:Maps/Data/10.-49.txt
+
+#begin Maps/Data/10.-50.txt
+/copy:Maps/Data/10.-50.txt
+
+#begin Maps/Data/11.15.txt
+/copy:Maps/Data/11.15.txt
+
+#begin Maps/Data/11.16.txt
+/copy:Maps/Data/11.16.txt
+
+#begin Maps/Data/11.17.txt
+/copy:Maps/Data/11.17.txt
+
+#begin Maps/Data/11.-2.txt
+/copy:Maps/Data/11.-2.txt
+
+#begin Maps/Data/11.38.txt
+/copy:Maps/Data/11.38.txt
+
+#begin Maps/Data/11.49.txt
+/copy:Maps/Data/11.49.txt
+
+#begin Maps/Data/11.-49.txt
+/copy:Maps/Data/11.-49.txt
+
+#begin Maps/Data/12.15.txt
+/copy:Maps/Data/12.15.txt
+
+#begin Maps/Data/12.17.txt
+/copy:Maps/Data/12.17.txt
+
+#begin Maps/Data/12.18.txt
+/copy:Maps/Data/12.18.txt
+
+#begin Maps/Data/12.-2.txt
+/copy:Maps/Data/12.-2.txt
+
+#begin Maps/Data/12.49.txt
+/copy:Maps/Data/12.49.txt
+
+#begin Maps/Data/12.-49.txt
+/copy:Maps/Data/12.-49.txt
+
+#begin Maps/Data/13.17.txt
+/copy:Maps/Data/13.17.txt
+
+#begin Maps/Data/14.17.txt
+/copy:Maps/Data/14.17.txt
+
+#begin Maps/Data/15.15.txt
+/copy:Maps/Data/15.15.txt
+
+#begin Maps/Data/15.16.txt
+/copy:Maps/Data/15.16.txt
+
+#begin Maps/Data/15.17.txt
+/copy:Maps/Data/15.17.txt
+
+#begin Maps/Data/17.36.txt
+/copy:Maps/Data/17.36.txt
+
+#begin Maps/Data/17.37.txt
+/copy:Maps/Data/17.37.txt
+
+#begin Maps/Data/17.38.txt
+/copy:Maps/Data/17.38.txt
+
+#begin Maps/Data/17.39.txt
+/copy:Maps/Data/17.39.txt
+
+#begin Maps/Data/18.34.txt
+/copy:Maps/Data/18.34.txt
+
+#begin Maps/Data/18.35.txt
+/copy:Maps/Data/18.35.txt
+
+#begin Maps/Data/18.36.txt
+/copy:Maps/Data/18.36.txt
+
+#begin Maps/Data/19.34.txt
+/copy:Maps/Data/19.34.txt
+
+#begin Maps/Data/19.43.txt
+/copy:Maps/Data/19.43.txt
+
+#begin Maps/Data/2.0.txt
+/copy:Maps/Data/2.0.txt
+
+#begin Maps/Data/-2.0.txt
+/copy:Maps/Data/-2.0.txt
+
+#begin Maps/Data/2.-1.txt
+/copy:Maps/Data/2.-1.txt
+
+#begin Maps/Data/-2.-1.txt
+/copy:Maps/Data/-2.-1.txt
+
+#begin Maps/Data/2.-2.txt
+/copy:Maps/Data/2.-2.txt
+
+#begin Maps/Data/-2.-2.txt
+/copy:Maps/Data/-2.-2.txt
+
+#begin Maps/Data/2.-3.txt
+/copy:Maps/Data/2.-3.txt
+
+#begin Maps/Data/-2.-4.txt
+/copy:Maps/Data/-2.-4.txt
+
+#begin Maps/Data/2.49.txt
+/copy:Maps/Data/2.49.txt
+
+#begin Maps/Data/2.-49.txt
+/copy:Maps/Data/2.-49.txt
+
+#begin Maps/Data/-2.-5.txt
+/copy:Maps/Data/-2.-5.txt
+
+#begin Maps/Data/2.-50.txt
+/copy:Maps/Data/2.-50.txt
+
+#begin Maps/Data/-2.-6.txt
+/copy:Maps/Data/-2.-6.txt
+
+#begin Maps/Data/20.32.txt
+/copy:Maps/Data/20.32.txt
+
+#begin Maps/Data/20.33.txt
+/copy:Maps/Data/20.33.txt
+
+#begin Maps/Data/20.34.txt
+/copy:Maps/Data/20.34.txt
+
+#begin Maps/Data/20.41.txt
+/copy:Maps/Data/20.41.txt
+
+#begin Maps/Data/20.49.txt
+/copy:Maps/Data/20.49.txt
+
+#begin Maps/Data/21.49.txt
+/copy:Maps/Data/21.49.txt
+
+#begin Maps/Data/22.21.txt
+/copy:Maps/Data/22.21.txt
+
+#begin Maps/Data/22.26.txt
+/copy:Maps/Data/22.26.txt
+
+#begin Maps/Data/22.42.txt
+/copy:Maps/Data/22.42.txt
+
+#begin Maps/Data/22.49.txt
+/copy:Maps/Data/22.49.txt
+
+#begin Maps/Data/23.23.txt
+/copy:Maps/Data/23.23.txt
+
+#begin Maps/Data/23.49.txt
+/copy:Maps/Data/23.49.txt
+
+#begin Maps/Data/24.33.txt
+/copy:Maps/Data/24.33.txt
+
+#begin Maps/Data/24.49.txt
+/copy:Maps/Data/24.49.txt
+
+#begin Maps/Data/25.23.txt
+/copy:Maps/Data/25.23.txt
+
+#begin Maps/Data/25.25.txt
+/copy:Maps/Data/25.25.txt
+
+#begin Maps/Data/25.49.txt
+/copy:Maps/Data/25.49.txt
+
+#begin Maps/Data/26.21.txt
+/copy:Maps/Data/26.21.txt
+
+#begin Maps/Data/26.32.txt
+/copy:Maps/Data/26.32.txt
+
+#begin Maps/Data/26.33.txt
+/copy:Maps/Data/26.33.txt
+
+#begin Maps/Data/26.34.txt
+/copy:Maps/Data/26.34.txt
+
+#begin Maps/Data/26.35.txt
+/copy:Maps/Data/26.35.txt
+
+#begin Maps/Data/26.36.txt
+/copy:Maps/Data/26.36.txt
+
+#begin Maps/Data/26.37.txt
+/copy:Maps/Data/26.37.txt
+
+#begin Maps/Data/26.38.txt
+/copy:Maps/Data/26.38.txt
+
+#begin Maps/Data/26.39.txt
+/copy:Maps/Data/26.39.txt
+
+#begin Maps/Data/26.40.txt
+/copy:Maps/Data/26.40.txt
+
+#begin Maps/Data/26.41.txt
+/copy:Maps/Data/26.41.txt
+
+#begin Maps/Data/26.49.txt
+/copy:Maps/Data/26.49.txt
+
+#begin Maps/Data/27.21.txt
+/copy:Maps/Data/27.21.txt
+
+#begin Maps/Data/27.24.txt
+/copy:Maps/Data/27.24.txt
+
+#begin Maps/Data/27.49.txt
+/copy:Maps/Data/27.49.txt
+
+#begin Maps/Data/-28.4.txt
+/copy:Maps/Data/-28.4.txt
+
+#begin Maps/Data/28.49.txt
+/copy:Maps/Data/28.49.txt
+
+#begin Maps/Data/-28.5.txt
+/copy:Maps/Data/-28.5.txt
+
+#begin Maps/Data/-29.11.txt
+/copy:Maps/Data/-29.11.txt
+
+#begin Maps/Data/-29.14.txt
+/copy:Maps/Data/-29.14.txt
+
+#begin Maps/Data/-29.2.txt
+/copy:Maps/Data/-29.2.txt
+
+#begin Maps/Data/29.20.txt
+/copy:Maps/Data/29.20.txt
+
+#begin Maps/Data/-29.8.txt
+/copy:Maps/Data/-29.8.txt
+
+#begin Maps/Data/3.0.txt
+/copy:Maps/Data/3.0.txt
+
+#begin Maps/Data/3.1.txt
+/copy:Maps/Data/3.1.txt
+
+#begin Maps/Data/3.-1.txt
+/copy:Maps/Data/3.-1.txt
+
+#begin Maps/Data/-3.-1.txt
+/copy:Maps/Data/-3.-1.txt
+
+#begin Maps/Data/3.2.txt
+/copy:Maps/Data/3.2.txt
+
+#begin Maps/Data/3.-2.txt
+/copy:Maps/Data/3.-2.txt
+
+#begin Maps/Data/-3.2.txt
+/copy:Maps/Data/-3.2.txt
+
+#begin Maps/Data/-3.-2.txt
+/copy:Maps/Data/-3.-2.txt
+
+#begin Maps/Data/3.3.txt
+/copy:Maps/Data/3.3.txt
+
+#begin Maps/Data/3.-3.txt
+/copy:Maps/Data/3.-3.txt
+
+#begin Maps/Data/-3.-4.txt
+/copy:Maps/Data/-3.-4.txt
+
+#begin Maps/Data/3.49.txt
+/copy:Maps/Data/3.49.txt
+
+#begin Maps/Data/3.-49.txt
+/copy:Maps/Data/3.-49.txt
+
+#begin Maps/Data/3.-50.txt
+/copy:Maps/Data/3.-50.txt
+
+#begin Maps/Data/-31.-29.txt
+/copy:Maps/Data/-31.-29.txt
+
+#begin Maps/Data/-31.-30.txt
+/copy:Maps/Data/-31.-30.txt
+
+#begin Maps/Data/-31.-33.txt
+/copy:Maps/Data/-31.-33.txt
+
+#begin Maps/Data/-31.-34.txt
+/copy:Maps/Data/-31.-34.txt
+
+#begin Maps/Data/-31.-35.txt
+/copy:Maps/Data/-31.-35.txt
+
+#begin Maps/Data/-31.-36.txt
+/copy:Maps/Data/-31.-36.txt
+
+#begin Maps/Data/-31.-37.txt
+/copy:Maps/Data/-31.-37.txt
+
+#begin Maps/Data/-31.-38.txt
+/copy:Maps/Data/-31.-38.txt
+
+#begin Maps/Data/-31.-39.txt
+/copy:Maps/Data/-31.-39.txt
+
+#begin Maps/Data/-31.-40.txt
+/copy:Maps/Data/-31.-40.txt
+
+#begin Maps/Data/-31.-41.txt
+/copy:Maps/Data/-31.-41.txt
+
+#begin Maps/Data/-31.-42.txt
+/copy:Maps/Data/-31.-42.txt
+
+#begin Maps/Data/-31.-43.txt
+/copy:Maps/Data/-31.-43.txt
+
+#begin Maps/Data/-31.-44.txt
+/copy:Maps/Data/-31.-44.txt
+
+#begin Maps/Data/-31.-45.txt
+/copy:Maps/Data/-31.-45.txt
+
+#begin Maps/Data/-31.-46.txt
+/copy:Maps/Data/-31.-46.txt
+
+#begin Maps/Data/-31.-48.txt
+/copy:Maps/Data/-31.-48.txt
+
+#begin Maps/Data/-31.-49.txt
+/copy:Maps/Data/-31.-49.txt
+
+#begin Maps/Data/-31.-50.txt
+/copy:Maps/Data/-31.-50.txt
+
+#begin Maps/Data/32.20.txt
+/copy:Maps/Data/32.20.txt
+
+#begin Maps/Data/-32.-31.txt
+/copy:Maps/Data/-32.-31.txt
+
+#begin Maps/Data/-32.-33.txt
+/copy:Maps/Data/-32.-33.txt
+
+#begin Maps/Data/-32.-34.txt
+/copy:Maps/Data/-32.-34.txt
+
+#begin Maps/Data/-32.-36.txt
+/copy:Maps/Data/-32.-36.txt
+
+#begin Maps/Data/-32.-37.txt
+/copy:Maps/Data/-32.-37.txt
+
+#begin Maps/Data/-32.-38.txt
+/copy:Maps/Data/-32.-38.txt
+
+#begin Maps/Data/-32.-39.txt
+/copy:Maps/Data/-32.-39.txt
+
+#begin Maps/Data/-32.-40.txt
+/copy:Maps/Data/-32.-40.txt
+
+#begin Maps/Data/-32.-41.txt
+/copy:Maps/Data/-32.-41.txt
+
+#begin Maps/Data/-32.-42.txt
+/copy:Maps/Data/-32.-42.txt
+
+#begin Maps/Data/-32.-43.txt
+/copy:Maps/Data/-32.-43.txt
+
+#begin Maps/Data/-32.-44.txt
+/copy:Maps/Data/-32.-44.txt
+
+#begin Maps/Data/-32.-45.txt
+/copy:Maps/Data/-32.-45.txt
+
+#begin Maps/Data/-33.-32.txt
+/copy:Maps/Data/-33.-32.txt
+
+#begin Maps/Data/-33.-33.txt
+/copy:Maps/Data/-33.-33.txt
+
+#begin Maps/Data/-33.-34.txt
+/copy:Maps/Data/-33.-34.txt
+
+#begin Maps/Data/-33.-35.txt
+/copy:Maps/Data/-33.-35.txt
+
+#begin Maps/Data/-33.-36.txt
+/copy:Maps/Data/-33.-36.txt
+
+#begin Maps/Data/-33.-37.txt
+/copy:Maps/Data/-33.-37.txt
+
+#begin Maps/Data/-33.-38.txt
+/copy:Maps/Data/-33.-38.txt
+
+#begin Maps/Data/-33.-39.txt
+/copy:Maps/Data/-33.-39.txt
+
+#begin Maps/Data/33.-42.txt
+/copy:Maps/Data/33.-42.txt
+
+#begin Maps/Data/-33.-43.txt
+/copy:Maps/Data/-33.-43.txt
+
+#begin Maps/Data/-33.-44.txt
+/copy:Maps/Data/-33.-44.txt
+
+#begin Maps/Data/-33.-45.txt
+/copy:Maps/Data/-33.-45.txt
+
+#begin Maps/Data/-33.-46.txt
+/copy:Maps/Data/-33.-46.txt
+
+#begin Maps/Data/34.20.txt
+/copy:Maps/Data/34.20.txt
+
+#begin Maps/Data/-34.-33.txt
+/copy:Maps/Data/-34.-33.txt
+
+#begin Maps/Data/-34.-34.txt
+/copy:Maps/Data/-34.-34.txt
+
+#begin Maps/Data/34.-39.txt
+/copy:Maps/Data/34.-39.txt
+
+#begin Maps/Data/-34.-49.txt
+/copy:Maps/Data/-34.-49.txt
+
+#begin Maps/Data/-34.-50.txt
+/copy:Maps/Data/-34.-50.txt
+
+#begin Maps/Data/-35.-34.txt
+/copy:Maps/Data/-35.-34.txt
+
+#begin Maps/Data/-35.-35.txt
+/copy:Maps/Data/-35.-35.txt
+
+#begin Maps/Data/35.-40.txt
+/copy:Maps/Data/35.-40.txt
+
+#begin Maps/Data/35.-42.txt
+/copy:Maps/Data/35.-42.txt
+
+#begin Maps/Data/-35.-42.txt
+/copy:Maps/Data/-35.-42.txt
+
+#begin Maps/Data/35.-44.txt
+/copy:Maps/Data/35.-44.txt
+
+#begin Maps/Data/-35.-49.txt
+/copy:Maps/Data/-35.-49.txt
+
+#begin Maps/Data/-36.-35.txt
+/copy:Maps/Data/-36.-35.txt
+
+#begin Maps/Data/-36.-36.txt
+/copy:Maps/Data/-36.-36.txt
+
+#begin Maps/Data/-36.-49.txt
+/copy:Maps/Data/-36.-49.txt
+
+#begin Maps/Data/-37.-36.txt
+/copy:Maps/Data/-37.-36.txt
+
+#begin Maps/Data/-37.-37.txt
+/copy:Maps/Data/-37.-37.txt
+
+#begin Maps/Data/37.-45.txt
+/copy:Maps/Data/37.-45.txt
+
+#begin Maps/Data/-38.-37.txt
+/copy:Maps/Data/-38.-37.txt
+
+#begin Maps/Data/-38.-38.txt
+/copy:Maps/Data/-38.-38.txt
+
+#begin Maps/Data/38.-42.txt
+/copy:Maps/Data/38.-42.txt
+
+#begin Maps/Data/-39.-38.txt
+/copy:Maps/Data/-39.-38.txt
+
+#begin Maps/Data/-39.-39.txt
+/copy:Maps/Data/-39.-39.txt
+
+#begin Maps/Data/39.-48.txt
+/copy:Maps/Data/39.-48.txt
+
+#begin Maps/Data/-39.-48.txt
+/copy:Maps/Data/-39.-48.txt
+
+#begin Maps/Data/-39.-49.txt
+/copy:Maps/Data/-39.-49.txt
+
+#begin Maps/Data/-4.2.txt
+/copy:Maps/Data/-4.2.txt
+
+#begin Maps/Data/-4.-2.txt
+/copy:Maps/Data/-4.-2.txt
+
+#begin Maps/Data/4.3.txt
+/copy:Maps/Data/4.3.txt
+
+#begin Maps/Data/4.-3.txt
+/copy:Maps/Data/4.-3.txt
+
+#begin Maps/Data/-4.-3.txt
+/copy:Maps/Data/-4.-3.txt
+
+#begin Maps/Data/-4.-4.txt
+/copy:Maps/Data/-4.-4.txt
+
+#begin Maps/Data/4.49.txt
+/copy:Maps/Data/4.49.txt
+
+#begin Maps/Data/4.-49.txt
+/copy:Maps/Data/4.-49.txt
+
+#begin Maps/Data/4.-50.txt
+/copy:Maps/Data/4.-50.txt
+
+#begin Maps/Data/-40.-15.txt
+/copy:Maps/Data/-40.-15.txt
+
+#begin Maps/Data/-40.-22.txt
+/copy:Maps/Data/-40.-22.txt
+
+#begin Maps/Data/-40.-40.txt
+/copy:Maps/Data/-40.-40.txt
+
+#begin Maps/Data/40.-42.txt
+/copy:Maps/Data/40.-42.txt
+
+#begin Maps/Data/40.-45.txt
+/copy:Maps/Data/40.-45.txt
+
+#begin Maps/Data/-40.-50.txt
+/copy:Maps/Data/-40.-50.txt
+
+#begin Maps/Data/41.-40.txt
+/copy:Maps/Data/41.-40.txt
+
+#begin Maps/Data/-41.-41.txt
+/copy:Maps/Data/-41.-41.txt
+
+#begin Maps/Data/41.-43.txt
+/copy:Maps/Data/41.-43.txt
+
+#begin Maps/Data/-41.-43.txt
+/copy:Maps/Data/-41.-43.txt
+
+#begin Maps/Data/-42.-41.txt
+/copy:Maps/Data/-42.-41.txt
+
+#begin Maps/Data/-42.46.txt
+/copy:Maps/Data/-42.46.txt
+
+#begin Maps/Data/-42.47.txt
+/copy:Maps/Data/-42.47.txt
+
+#begin Maps/Data/-42.48.txt
+/copy:Maps/Data/-42.48.txt
+
+#begin Maps/Data/43,-44.txt
+/copy:Maps/Data/43,-44.txt
+
+#begin Maps/Data/-43.-42.txt
+/copy:Maps/Data/-43.-42.txt
+
+#begin Maps/Data/-43.47.txt
+/copy:Maps/Data/-43.47.txt
+
+#begin Maps/Data/-43.48.txt
+/copy:Maps/Data/-43.48.txt
+
+#begin Maps/Data/-43.49.txt
+/copy:Maps/Data/-43.49.txt
+
+#begin Maps/Data/-44.10.txt
+/copy:Maps/Data/-44.10.txt
+
+#begin Maps/Data/-44.-14.txt
+/copy:Maps/Data/-44.-14.txt
+
+#begin Maps/Data/-44.-15.txt
+/copy:Maps/Data/-44.-15.txt
+
+#begin Maps/Data/-44.-16.txt
+/copy:Maps/Data/-44.-16.txt
+
+#begin Maps/Data/-44.-17.txt
+/copy:Maps/Data/-44.-17.txt
+
+#begin Maps/Data/-44.-20.txt
+/copy:Maps/Data/-44.-20.txt
+
+#begin Maps/Data/-44.-21.txt
+/copy:Maps/Data/-44.-21.txt
+
+#begin Maps/Data/-44.-22.txt
+/copy:Maps/Data/-44.-22.txt
+
+#begin Maps/Data/-44.-23.txt
+/copy:Maps/Data/-44.-23.txt
+
+#begin Maps/Data/-44.-24.txt
+/copy:Maps/Data/-44.-24.txt
+
+#begin Maps/Data/-44.-29.txt
+/copy:Maps/Data/-44.-29.txt
+
+#begin Maps/Data/-44.-30.txt
+/copy:Maps/Data/-44.-30.txt
+
+#begin Maps/Data/-44.-31.txt
+/copy:Maps/Data/-44.-31.txt
+
+#begin Maps/Data/-44.-43.txt
+/copy:Maps/Data/-44.-43.txt
+
+#begin Maps/Data/-44.-44.txt
+/copy:Maps/Data/-44.-44.txt
+
+#begin Maps/Data/-44.47.txt
+/copy:Maps/Data/-44.47.txt
+
+#begin Maps/Data/-44.48.txt
+/copy:Maps/Data/-44.48.txt
+
+#begin Maps/Data/-44.49.txt
+/copy:Maps/Data/-44.49.txt
+
+#begin Maps/Data/-44.5.txt
+/copy:Maps/Data/-44.5.txt
+
+#begin Maps/Data/-45.-13.txt
+/copy:Maps/Data/-45.-13.txt
+
+#begin Maps/Data/-45.-14.txt
+/copy:Maps/Data/-45.-14.txt
+
+#begin Maps/Data/-45.-18.txt
+/copy:Maps/Data/-45.-18.txt
+
+#begin Maps/Data/-45.-23.txt
+/copy:Maps/Data/-45.-23.txt
+
+#begin Maps/Data/-45.-25.txt
+/copy:Maps/Data/-45.-25.txt
+
+#begin Maps/Data/-45.-26.txt
+/copy:Maps/Data/-45.-26.txt
+
+#begin Maps/Data/-45.-29.txt
+/copy:Maps/Data/-45.-29.txt
+
+#begin Maps/Data/-45.-30.txt
+/copy:Maps/Data/-45.-30.txt
+
+#begin Maps/Data/-45.-31.txt
+/copy:Maps/Data/-45.-31.txt
+
+#begin Maps/Data/-45.-32.txt
+/copy:Maps/Data/-45.-32.txt
+
+#begin Maps/Data/45.-37.txt
+/copy:Maps/Data/45.-37.txt
+
+#begin Maps/Data/45.-42.txt
+/copy:Maps/Data/45.-42.txt
+
+#begin Maps/Data/-45.-44.txt
+/copy:Maps/Data/-45.-44.txt
+
+#begin Maps/Data/-45.-45.txt
+/copy:Maps/Data/-45.-45.txt
+
+#begin Maps/Data/-45.47.txt
+/copy:Maps/Data/-45.47.txt
+
+#begin Maps/Data/-45.48.txt
+/copy:Maps/Data/-45.48.txt
+
+#begin Maps/Data/-45.49.txt
+/copy:Maps/Data/-45.49.txt
+
+#begin Maps/Data/-46.-17.txt
+/copy:Maps/Data/-46.-17.txt
+
+#begin Maps/Data/-46.-18.txt
+/copy:Maps/Data/-46.-18.txt
+
+#begin Maps/Data/-46.-19.txt
+/copy:Maps/Data/-46.-19.txt
+
+#begin Maps/Data/-46.-20.txt
+/copy:Maps/Data/-46.-20.txt
+
+#begin Maps/Data/-46.-21.txt
+/copy:Maps/Data/-46.-21.txt
+
+#begin Maps/Data/-46.-22.txt
+/copy:Maps/Data/-46.-22.txt
+
+#begin Maps/Data/-46.-24.txt
+/copy:Maps/Data/-46.-24.txt
+
+#begin Maps/Data/-46.-25.txt
+/copy:Maps/Data/-46.-25.txt
+
+#begin Maps/Data/-46.-26.txt
+/copy:Maps/Data/-46.-26.txt
+
+#begin Maps/Data/-46.-27.txt
+/copy:Maps/Data/-46.-27.txt
+
+#begin Maps/Data/-46.-28.txt
+/copy:Maps/Data/-46.-28.txt
+
+#begin Maps/Data/-46.-29.txt
+/copy:Maps/Data/-46.-29.txt
+
+#begin Maps/Data/-46.-30.txt
+/copy:Maps/Data/-46.-30.txt
+
+#begin Maps/Data/-46.-31.txt
+/copy:Maps/Data/-46.-31.txt
+
+#begin Maps/Data/-46.-46.txt
+/copy:Maps/Data/-46.-46.txt
+
+#begin Maps/Data/-46.47.txt
+/copy:Maps/Data/-46.47.txt
+
+#begin Maps/Data/-46.48.txt
+/copy:Maps/Data/-46.48.txt
+
+#begin Maps/Data/-46.49.txt
+/copy:Maps/Data/-46.49.txt
+
+#begin Maps/Data/-47.-18.txt
+/copy:Maps/Data/-47.-18.txt
+
+#begin Maps/Data/-47.-19.txt
+/copy:Maps/Data/-47.-19.txt
+
+#begin Maps/Data/-47.-23.txt
+/copy:Maps/Data/-47.-23.txt
+
+#begin Maps/Data/-47.-24.txt
+/copy:Maps/Data/-47.-24.txt
+
+#begin Maps/Data/-47.-25.txt
+/copy:Maps/Data/-47.-25.txt
+
+#begin Maps/Data/-47.-26.txt
+/copy:Maps/Data/-47.-26.txt
+
+#begin Maps/Data/-47.-27.txt
+/copy:Maps/Data/-47.-27.txt
+
+#begin Maps/Data/-47.-28.txt
+/copy:Maps/Data/-47.-28.txt
+
+#begin Maps/Data/-47.-29.txt
+/copy:Maps/Data/-47.-29.txt
+
+#begin Maps/Data/-47.-30.txt
+/copy:Maps/Data/-47.-30.txt
+
+#begin Maps/Data/-47.-31.txt
+/copy:Maps/Data/-47.-31.txt
+
+#begin Maps/Data/-47.-32.txt
+/copy:Maps/Data/-47.-32.txt
+
+#begin Maps/Data/-47.-33.txt
+/copy:Maps/Data/-47.-33.txt
+
+#begin Maps/Data/-47.-34.txt
+/copy:Maps/Data/-47.-34.txt
+
+#begin Maps/Data/47.4.txt
+/copy:Maps/Data/47.4.txt
+
+#begin Maps/Data/-47.-40.txt
+/copy:Maps/Data/-47.-40.txt
+
+#begin Maps/Data/-47.-46.txt
+/copy:Maps/Data/-47.-46.txt
+
+#begin Maps/Data/-47.47.txt
+/copy:Maps/Data/-47.47.txt
+
+#begin Maps/Data/-47.48.txt
+/copy:Maps/Data/-47.48.txt
+
+#begin Maps/Data/-47.49.txt
+/copy:Maps/Data/-47.49.txt
+
+#begin Maps/Data/47.5.txt
+/copy:Maps/Data/47.5.txt
+
+#begin Maps/Data/-47.-50.txt
+/copy:Maps/Data/-47.-50.txt
+
+#begin Maps/Data/47.6.txt
+/copy:Maps/Data/47.6.txt
+
+#begin Maps/Data/47.7.txt
+/copy:Maps/Data/47.7.txt
+
+#begin Maps/Data/47.8.txt
+/copy:Maps/Data/47.8.txt
+
+#begin Maps/Data/-48.-12.txt
+/copy:Maps/Data/-48.-12.txt
+
+#begin Maps/Data/-48.-13.txt
+/copy:Maps/Data/-48.-13.txt
+
+#begin Maps/Data/-48.-14.txt
+/copy:Maps/Data/-48.-14.txt
+
+#begin Maps/Data/-48.-15.txt
+/copy:Maps/Data/-48.-15.txt
+
+#begin Maps/Data/-48.-16.txt
+/copy:Maps/Data/-48.-16.txt
+
+#begin Maps/Data/-48.-18.txt
+/copy:Maps/Data/-48.-18.txt
+
+#begin Maps/Data/-48.-19.txt
+/copy:Maps/Data/-48.-19.txt
+
+#begin Maps/Data/-48.-20.txt
+/copy:Maps/Data/-48.-20.txt
+
+#begin Maps/Data/-48.-21.txt
+/copy:Maps/Data/-48.-21.txt
+
+#begin Maps/Data/-48.-22.txt
+/copy:Maps/Data/-48.-22.txt
+
+#begin Maps/Data/-48.-23.txt
+/copy:Maps/Data/-48.-23.txt
+
+#begin Maps/Data/-48.-24.txt
+/copy:Maps/Data/-48.-24.txt
+
+#begin Maps/Data/-48.-25.txt
+/copy:Maps/Data/-48.-25.txt
+
+#begin Maps/Data/-48.-26.txt
+/copy:Maps/Data/-48.-26.txt
+
+#begin Maps/Data/-48.-27.txt
+/copy:Maps/Data/-48.-27.txt
+
+#begin Maps/Data/-48.-28.txt
+/copy:Maps/Data/-48.-28.txt
+
+#begin Maps/Data/-48.-29.txt
+/copy:Maps/Data/-48.-29.txt
+
+#begin Maps/Data/-48.-30.txt
+/copy:Maps/Data/-48.-30.txt
+
+#begin Maps/Data/-48.-31.txt
+/copy:Maps/Data/-48.-31.txt
+
+#begin Maps/Data/-48.-32.txt
+/copy:Maps/Data/-48.-32.txt
+
+#begin Maps/Data/-48.-33.txt
+/copy:Maps/Data/-48.-33.txt
+
+#begin Maps/Data/-48.-34.txt
+/copy:Maps/Data/-48.-34.txt
+
+#begin Maps/Data/-48.-35.txt
+/copy:Maps/Data/-48.-35.txt
+
+#begin Maps/Data/-48.-36.txt
+/copy:Maps/Data/-48.-36.txt
+
+#begin Maps/Data/-48.-37.txt
+/copy:Maps/Data/-48.-37.txt
+
+#begin Maps/Data/-48.-38.txt
+/copy:Maps/Data/-48.-38.txt
+
+#begin Maps/Data/-48.-39.txt
+/copy:Maps/Data/-48.-39.txt
+
+#begin Maps/Data/-48.-40.txt
+/copy:Maps/Data/-48.-40.txt
+
+#begin Maps/Data/-48.47.txt
+/copy:Maps/Data/-48.47.txt
+
+#begin Maps/Data/-48.-47.txt
+/copy:Maps/Data/-48.-47.txt
+
+#begin Maps/Data/-48.48.txt
+/copy:Maps/Data/-48.48.txt
+
+#begin Maps/Data/-48.-48.txt
+/copy:Maps/Data/-48.-48.txt
+
+#begin Maps/Data/-48.49.txt
+/copy:Maps/Data/-48.49.txt
+
+#begin Maps/Data/-48.-49.txt
+/copy:Maps/Data/-48.-49.txt
+
+#begin Maps/Data/-49.-13.txt
+/copy:Maps/Data/-49.-13.txt
+
+#begin Maps/Data/-49.-14.txt
+/copy:Maps/Data/-49.-14.txt
+
+#begin Maps/Data/-49.-15.txt
+/copy:Maps/Data/-49.-15.txt
+
+#begin Maps/Data/-49.-19.txt
+/copy:Maps/Data/-49.-19.txt
+
+#begin Maps/Data/-49.-20.txt
+/copy:Maps/Data/-49.-20.txt
+
+#begin Maps/Data/-49.-21.txt
+/copy:Maps/Data/-49.-21.txt
+
+#begin Maps/Data/-49.-22.txt
+/copy:Maps/Data/-49.-22.txt
+
+#begin Maps/Data/-49.-23.txt
+/copy:Maps/Data/-49.-23.txt
+
+#begin Maps/Data/-49.-24.txt
+/copy:Maps/Data/-49.-24.txt
+
+#begin Maps/Data/-49.-25.txt
+/copy:Maps/Data/-49.-25.txt
+
+#begin Maps/Data/-49.-26.txt
+/copy:Maps/Data/-49.-26.txt
+
+#begin Maps/Data/-49.-27.txt
+/copy:Maps/Data/-49.-27.txt
+
+#begin Maps/Data/-49.-28.txt
+/copy:Maps/Data/-49.-28.txt
+
+#begin Maps/Data/-49.-29.txt
+/copy:Maps/Data/-49.-29.txt
+
+#begin Maps/Data/-49.-30.txt
+/copy:Maps/Data/-49.-30.txt
+
+#begin Maps/Data/-49.-31.txt
+/copy:Maps/Data/-49.-31.txt
+
+#begin Maps/Data/-49.-32.txt
+/copy:Maps/Data/-49.-32.txt
+
+#begin Maps/Data/-49.-33.txt
+/copy:Maps/Data/-49.-33.txt
+
+#begin Maps/Data/-49.-34.txt
+/copy:Maps/Data/-49.-34.txt
+
+#begin Maps/Data/-49.-35.txt
+/copy:Maps/Data/-49.-35.txt
+
+#begin Maps/Data/-49.-36.txt
+/copy:Maps/Data/-49.-36.txt
+
+#begin Maps/Data/-49.-37.txt
+/copy:Maps/Data/-49.-37.txt
+
+#begin Maps/Data/-49.-38.txt
+/copy:Maps/Data/-49.-38.txt
+
+#begin Maps/Data/-49.-39.txt
+/copy:Maps/Data/-49.-39.txt
+
+#begin Maps/Data/-49.-40.txt
+/copy:Maps/Data/-49.-40.txt
+
+#begin Maps/Data/-49.-41.txt
+/copy:Maps/Data/-49.-41.txt
+
+#begin Maps/Data/-49.-42.txt
+/copy:Maps/Data/-49.-42.txt
+
+#begin Maps/Data/-49.-43.txt
+/copy:Maps/Data/-49.-43.txt
+
+#begin Maps/Data/-49.-44.txt
+/copy:Maps/Data/-49.-44.txt
+
+#begin Maps/Data/-49.-46.txt
+/copy:Maps/Data/-49.-46.txt
+
+#begin Maps/Data/-49.47.txt
+/copy:Maps/Data/-49.47.txt
+
+#begin Maps/Data/-49.-47.txt
+/copy:Maps/Data/-49.-47.txt
+
+#begin Maps/Data/-49.48.txt
+/copy:Maps/Data/-49.48.txt
+
+#begin Maps/Data/-49.-48.txt
+/copy:Maps/Data/-49.-48.txt
+
+#begin Maps/Data/-49.49.txt
+/copy:Maps/Data/-49.49.txt
+
+#begin Maps/Data/-49.-49.txt
+/copy:Maps/Data/-49.-49.txt
+
+#begin Maps/Data/-49.-50.txt
+/copy:Maps/Data/-49.-50.txt
+
+#begin Maps/Data/-5.0.txt
+/copy:Maps/Data/-5.0.txt
+
+#begin Maps/Data/-5.1.txt
+/copy:Maps/Data/-5.1.txt
+
+#begin Maps/Data/-5.-1.txt
+/copy:Maps/Data/-5.-1.txt
+
+#begin Maps/Data/5.-2.txt
+/copy:Maps/Data/5.-2.txt
+
+#begin Maps/Data/-5.2.txt
+/copy:Maps/Data/-5.2.txt
+
+#begin Maps/Data/-5.-2.txt
+/copy:Maps/Data/-5.-2.txt
+
+#begin Maps/Data/5.-4.txt
+/copy:Maps/Data/5.-4.txt
+
+#begin Maps/Data/-5.-4.txt
+/copy:Maps/Data/-5.-4.txt
+
+#begin Maps/Data/5.49.txt
+/copy:Maps/Data/5.49.txt
+
+#begin Maps/Data/5.-49.txt
+/copy:Maps/Data/5.-49.txt
+
+#begin Maps/Data/5.-50.txt
+/copy:Maps/Data/5.-50.txt
+
+#begin Maps/Data/-50.-12.txt
+/copy:Maps/Data/-50.-12.txt
+
+#begin Maps/Data/-50.-13.txt
+/copy:Maps/Data/-50.-13.txt
+
+#begin Maps/Data/-50.-15.txt
+/copy:Maps/Data/-50.-15.txt
+
+#begin Maps/Data/-50.-16.txt
+/copy:Maps/Data/-50.-16.txt
+
+#begin Maps/Data/-50.-17.txt
+/copy:Maps/Data/-50.-17.txt
+
+#begin Maps/Data/-50.-20.txt
+/copy:Maps/Data/-50.-20.txt
+
+#begin Maps/Data/-50.-21.txt
+/copy:Maps/Data/-50.-21.txt
+
+#begin Maps/Data/-50.-22.txt
+/copy:Maps/Data/-50.-22.txt
+
+#begin Maps/Data/-50.-23.txt
+/copy:Maps/Data/-50.-23.txt
+
+#begin Maps/Data/-50.-24.txt
+/copy:Maps/Data/-50.-24.txt
+
+#begin Maps/Data/-50.-25.txt
+/copy:Maps/Data/-50.-25.txt
+
+#begin Maps/Data/-50.-26.txt
+/copy:Maps/Data/-50.-26.txt
+
+#begin Maps/Data/-50.-27.txt
+/copy:Maps/Data/-50.-27.txt
+
+#begin Maps/Data/-50.-29.txt
+/copy:Maps/Data/-50.-29.txt
+
+#begin Maps/Data/-50.-30.txt
+/copy:Maps/Data/-50.-30.txt
+
+#begin Maps/Data/-50.-31.txt
+/copy:Maps/Data/-50.-31.txt
+
+#begin Maps/Data/-50.-32.txt
+/copy:Maps/Data/-50.-32.txt
+
+#begin Maps/Data/-50.-34.txt
+/copy:Maps/Data/-50.-34.txt
+
+#begin Maps/Data/-50.-35.txt
+/copy:Maps/Data/-50.-35.txt
+
+#begin Maps/Data/-50.-36.txt
+/copy:Maps/Data/-50.-36.txt
+
+#begin Maps/Data/-50.-37.txt
+/copy:Maps/Data/-50.-37.txt
+
+#begin Maps/Data/-50.-38.txt
+/copy:Maps/Data/-50.-38.txt
+
+#begin Maps/Data/-50.-39.txt
+/copy:Maps/Data/-50.-39.txt
+
+#begin Maps/Data/-50.-40.txt
+/copy:Maps/Data/-50.-40.txt
+
+#begin Maps/Data/-50.-41.txt
+/copy:Maps/Data/-50.-41.txt
+
+#begin Maps/Data/-50.-43.txt
+/copy:Maps/Data/-50.-43.txt
+
+#begin Maps/Data/-50.-44.txt
+/copy:Maps/Data/-50.-44.txt
+
+#begin Maps/Data/-50.-45.txt
+/copy:Maps/Data/-50.-45.txt
+
+#begin Maps/Data/-50.-46.txt
+/copy:Maps/Data/-50.-46.txt
+
+#begin Maps/Data/-50.-47.txt
+/copy:Maps/Data/-50.-47.txt
+
+#begin Maps/Data/-50.-48.txt
+/copy:Maps/Data/-50.-48.txt
+
+#begin Maps/Data/-50.-49.txt
+/copy:Maps/Data/-50.-49.txt
+
+#begin Maps/Data/-50.-50.txt
+/copy:Maps/Data/-50.-50.txt
+
+#begin Maps/Data/6.0.txt
+/copy:Maps/Data/6.0.txt
+
+#begin Maps/Data/6.-1.txt
+/copy:Maps/Data/6.-1.txt
+
+#begin Maps/Data/6.-2.txt
+/copy:Maps/Data/6.-2.txt
+
+#begin Maps/Data/6.-3.txt
+/copy:Maps/Data/6.-3.txt
+
+#begin Maps/Data/-6.-3.txt
+/copy:Maps/Data/-6.-3.txt
+
+#begin Maps/Data/6.-4.txt
+/copy:Maps/Data/6.-4.txt
+
+#begin Maps/Data/-6.-4.txt
+/copy:Maps/Data/-6.-4.txt
+
+#begin Maps/Data/6.49.txt
+/copy:Maps/Data/6.49.txt
+
+#begin Maps/Data/6.-49.txt
+/copy:Maps/Data/6.-49.txt
+
+#begin Maps/Data/6.-5.txt
+/copy:Maps/Data/6.-5.txt
+
+#begin Maps/Data/6.-50.txt
+/copy:Maps/Data/6.-50.txt
+
+#begin Maps/Data/7.0.txt
+/copy:Maps/Data/7.0.txt
+
+#begin Maps/Data/7.-2.txt
+/copy:Maps/Data/7.-2.txt
+
+#begin Maps/Data/-7.-2.txt
+/copy:Maps/Data/-7.-2.txt
+
+#begin Maps/Data/-7.-3.txt
+/copy:Maps/Data/-7.-3.txt
+
+#begin Maps/Data/7.-4.txt
+/copy:Maps/Data/7.-4.txt
+
+#begin Maps/Data/7.49.txt
+/copy:Maps/Data/7.49.txt
+
+#begin Maps/Data/7.-49.txt
+/copy:Maps/Data/7.-49.txt
+
+#begin Maps/Data/7.-5.txt
+/copy:Maps/Data/7.-5.txt
+
+#begin Maps/Data/7.-50.txt
+/copy:Maps/Data/7.-50.txt
+
+#begin Maps/Data/8.-2.txt
+/copy:Maps/Data/8.-2.txt
+
+#begin Maps/Data/-8.-2.txt
+/copy:Maps/Data/-8.-2.txt
+
+#begin Maps/Data/8.-3.txt
+/copy:Maps/Data/8.-3.txt
+
+#begin Maps/Data/8.-4.txt
+/copy:Maps/Data/8.-4.txt
+
+#begin Maps/Data/8.49.txt
+/copy:Maps/Data/8.49.txt
+
+#begin Maps/Data/8.-49.txt
+/copy:Maps/Data/8.-49.txt
+
+#begin Maps/Data/8.-50.txt
+/copy:Maps/Data/8.-50.txt
+
+#begin Maps/Data/9.49.txt
+/copy:Maps/Data/9.49.txt
+
+#begin Maps/Data/9.-49.txt
+/copy:Maps/Data/9.-49.txt
+
+#begin Maps/Data/9.-50.txt
+/copy:Maps/Data/9.-50.txt
+
+#begin Maps/Data/99.99.txt
+/copy:Maps/Data/99.99.txt
 
 #begin Test/test-map.tmx
 /importer:TiledMapImporter

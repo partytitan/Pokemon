@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="13" height="9" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,29 +17,29 @@
  <tileset firstgid="1027" source="InteriorObjects1.tsx"/>
  <tileset firstgid="1127" source="Interior - Furniture.tsx"/>
  <tileset firstgid="1427" source="InteriorWalls 1.tsx"/>
- <layer name="Walkable" width="13" height="9">
+ <layer id="1" name="Walkable_2" width="13" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIA9EkoAp1eNPJB6uekgFAN40bH3UAQAA
+   H4sIAAAAAAAACmNgIA9EkoAp1eNPJB6uekgFAN40bH3UAQAA
   </data>
  </layer>
- <layer name="Walkable" width="13" height="9">
+ <layer id="2" name="Walkable_1" width="13" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGFlgNsvgsbMOiOuBuIHK9gEA1PRHBdQBAAA=
+   H4sIAAAAAAAACmNgGFlgNsvgsbMOiOuBuIHK9gEA1PRHBdQBAAA=
   </data>
  </layer>
- <layer name="Collisions" width="13" height="9">
+ <layer id="3" name="Collisions_2" width="13" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NkYGA4yMrAcIgIfBiIGRkg+DSQfYYIfBZJDx8LAhMCMD2EwGWgWVdYSNNzF6j+HpoeQu6ilz3IgBEHxicHwgBnB3fH1AEAAA==
+   H4sIAAAAAAAACmNkYGA4yMrAcIgIfBiIGRkg+DSQfYYIfBZJDx8LAhMCMD2EwGWgWVdYSNNzF6j+HpoeQu6ilz3IgBEHxicHwgBnB3fH1AEAAA==
   </data>
  </layer>
- <layer name="Collisions" width="13" height="9">
+ <layer id="4" name="Collisions_1" width="13" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoC7IY2FgyAHiXCSaEKgAqikD4nIkehSQDwAI0BFv1AEAAA==
+   H4sIAAAAAAAACmNgoC7IY2FgyAHiXCSaEKgAqikD4nIkehSQDwAI0BFv1AEAAA==
   </data>
  </layer>
- <layer name="WalkBehind" width="13" height="9">
+ <layer id="5" name="WalkBehind" width="13" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgQAUFzAxEARYWBK4gUg8hcBJo1ikWys2BuWug7RkoAABcuIm11AEAAA==
+   H4sIAAAAAAAACmNgQAUFzAxEARYWBK4gUg8hcBJo1ikWys2BuWug7RkoAABcuIm11AEAAA==
   </data>
  </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="63" height="34" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="63" height="34" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,29 +17,29 @@
  </properties>
  <tileset firstgid="1" source="Sinnoh Ruins Set.tsx"/>
  <tileset firstgid="1396" source="normal12.tsx"/>
- <layer name="Grass" width="63" height="34">
+ <layer id="1" name="Grass" width="63" height="34">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3RwQkAIAwEwdiM/ZdoDYqRSGbAd24xAgAA8s2x/yrseXlLu/ZM2rV3aD/ZcGvPL3+tXbt27dm3M3VuBwCgtgWQCwBTeCEAAA==
+   H4sIAAAAAAAACu3RwQkAIAwEwdiM/ZdoDYqRSGbAd24xAgAA8s2x/yrseXlLu/ZM2rV3aD/ZcGvPL3+tXbt27dm3M3VuBwCgtgWQCwBTeCEAAA==
   </data>
  </layer>
- <layer name="Walkable" width="63" height="34">
+ <layer id="2" name="Walkable_2" width="63" height="34">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3UMQrAIAwFUKGX7V56fxfBrTrYNJX3IFvA/wlYCgAAwDuuNlmM8txtIt76QlSebN1n8qy6+9/s3Ps81uzAk2z/XSTdAQAAugqZfw5VeCEAAA==
+   H4sIAAAAAAAACu3UMQrAIAwFUKGX7V56fxfBrTrYNJX3IFvA/wlYCgAAwDuuNlmM8txtIt76QlSebN1n8qy6+9/s3Ps81uzAk2z/XSTdAQAAugqZfw5VeCEAAA==
   </data>
  </layer>
- <layer name="Walkable" width="63" height="34">
+ <layer id="3" name="Walkable_1" width="63" height="34">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3VUQqCQBRG4cFtKgUKthXFIEG3oiQY2FaMWkf/m48z0FQXOd/rHYYzMHCdAwAAAIDvOCTOHZN/V2x8PalmWaTeRvecDb3d11NpVkfqveqeydDbfT2DZmOk3qfueRl6u69n1exhqBf4RK6/XAT851JnTpH+vZU9d1FDG9DR6Uy/sz03q+EW0LHozH2ne+6XrO05AAAAwIo3TAXFE3ghAAA=
+   H4sIAAAAAAAACu3VUQqCQBRG4cFtKgUKthXFIEG3oiQY2FaMWkf/m48z0FQXOd/rHYYzMHCdAwAAAIDvOCTOHZN/V2x8PalmWaTeRvecDb3d11NpVkfqveqeydDbfT2DZmOk3qfueRl6u69n1exhqBf4RK6/XAT851JnTpH+vZU9d1FDG9DR6Uy/sz03q+EW0LHozH2ne+6XrO05AAAAwIo3TAXFE3ghAAA=
   </data>
  </layer>
- <layer name="Collisions" width="63" height="34">
+ <layer id="4" name="Collisions_2" width="63" height="34">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+2VQQqDMBBFZ9mT2V7Ak4iXKS6sJ9UshDTYJOpktPoezEII/vmQ/C8CAAAAAFCeaprninmdYB+tHZpMvVmzVdLduo/FDku0B+keQf34/r6T95CreXfvq5/mkzGD2Lz3JnFGa4de8nz7/rXxs62TuHfn+y16mZ/K+dK9FmZ7Fzkb+t57B2K9YtVrqXu+ROn8sci3M3n3u+1u3i3/71jTNdq9E9O26LVf2ha9k9Iu0WsAAAAA8D+MIi/sS3ghAAA=
+   H4sIAAAAAAAACu2VQQqDMBBFZ9mT2V7Ak4iXKS6sJ9UshDTYJOpktPoezEII/vmQ/C8CAAAAAFCeaprninmdYB+tHZpMvVmzVdLduo/FDku0B+keQf34/r6T95CreXfvq5/mkzGD2Lz3JnFGa4de8nz7/rXxs62TuHfn+y16mZ/K+dK9FmZ7Fzkb+t57B2K9YtVrqXu+ROn8sci3M3n3u+1u3i3/71jTNdq9E9O26LVf2ha9k9Iu0WsAAAAA8D+MIi/sS3ghAAA=
   </data>
  </layer>
- <layer name="Collisions" width="63" height="34">
+ <layer id="5" name="Collisions_1" width="63" height="34">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQdvoAAAAAAAAAAAeAwSd+B3eCEAAA==
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQdvoAAAAAAAAAAAeAwSd+B3eCEAAA==
   </data>
  </layer>
 </map>

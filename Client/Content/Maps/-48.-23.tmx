@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="21" height="20" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="21" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,24 +17,24 @@
  <tileset firstgid="1" source="Lost Tower (Sinnoh) Set.tsx"/>
  <tileset firstgid="205" source="InteriorFloor 1.tsx"/>
  <tileset firstgid="535" source="SinnohInteriorSet5.tsx"/>
- <layer name="Walkable" width="21" height="20">
+ <layer id="1" name="Walkable_2" width="21" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGB6gBAumplnkmk2MWaSYTY55+MylxDxc5lLbTGqYh27uqJmDM57QAS3MpNRcQoCaZhFrPjUAtc0jBwAA0KomtJAGAAA=
+   H4sIAAAAAAAACmNgGB6gBAumplnkmk2MWaSYTY55+MylxDxc5lLbTGqYh27uqJmDM57QAS3MpNRcQoCaZhFrPjUAtc0jBwAA0KomtJAGAAA=
   </data>
  </layer>
- <layer name="Walkable" width="21" height="20">
+ <layer id="2" name="Walkable_1" width="21" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBSQA6oH2gGjYBRQEXgxMjB4A7EP48C5AQBssnc/kAYAAA==
+   H4sIAAAAAAAACmNgGAWjYBSQA6oH2gGjYBRQEXgxMjB4A7EP48C5AQBssnc/kAYAAA==
   </data>
  </layer>
- <layer name="Collisions" width="21" height="20">
+ <layer id="3" name="Collisions" width="21" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgwA9YsWByAUy/GBZMqtnoZmEDpJhNyCx8ZuMzjxyAy1xyzcOln5K4xGUOpW5ENiceiqkJqG1mDZXN7AHiXih7MPldnomBQQELhplJjrnqTGQ6hgIzyXGrPhHuJDUcbEjwezwDYfMpSSvYzKVGmkY2g1jzABWE2t+QBgAA
+   H4sIAAAAAAAACmNgwA9YsWByAUy/GBZMqtnoZmEDpJhNyCx8ZuMzjxyAy1xyzcOln5K4xGUOpW5ENiceiqkJqG1mDZXN7AHiXih7MPldnomBQQELhplJjrnqTGQ6hgIzyXGrPhHuJDUcbEjwezwDYfMpSSvYzKVGmkY2g1jzABWE2t+QBgAA
   </data>
  </layer>
- <layer name="WalkBehind" width="21" height="20">
+ <layer id="4" name="WalkBehind" width="21" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYPiDLCDOHmhH0AmIMzEwSACxJBoeBaNgsAMAQDT6cZAGAAA=
+   H4sIAAAAAAAACmNgGAWjYPiDLCDOHmhH0AmIMzEwSACxJBoeBaNgsAMAQDT6cZAGAAA=
   </data>
  </layer>
 </map>

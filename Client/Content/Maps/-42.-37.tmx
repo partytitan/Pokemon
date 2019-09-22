@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="35" height="35" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="35" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="isCave" value="false"/>
   <property name="pvp" value="disabled"/>
@@ -8,29 +8,29 @@
  </properties>
  <tileset firstgid="1" source="Hoenn Interior Set 9.tsx"/>
  <tileset firstgid="257" source="Hoenn Interior Set 13.tsx"/>
- <layer name="Walkable" width="35" height="35">
+ <layer id="1" name="Walkable_3" width="35" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OMQ0AAAzDsGIqf3ClsHuypfxJAAB+6jEvXrwAAAOn2g9yJBMAAA==
+   H4sIAAAAAAAACu3OMQ0AAAzDsGIqf3ClsHuypfxJAAB+6jEvXrwAAAOn2g9yJBMAAA==
   </data>
  </layer>
- <layer name="Walkable" width="35" height="35">
+ <layer id="2" name="Walkable_2" width="35" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OOwqAQAxF0WQzauGvUjekiLr/2tdZpTTKcA9cGAIDzwwAAKBcu5ud6vLntuq9qcPjf2+oVB3U5E6xXg1BY/KWSc1BS/KWv2pV9/UIAAAKdwOjuv3XJBMAAA==
+   H4sIAAAAAAAACu3OOwqAQAxF0WQzauGvUjekiLr/2tdZpTTKcA9cGAIDzwwAAKBcu5ud6vLntuq9qcPjf2+oVB3U5E6xXg1BY/KWSc1BS/KWv2pV9/UIAAAKdwOjuv3XJBMAAA==
   </data>
  </layer>
- <layer name="Walkable" width="35" height="35">
+ <layer id="3" name="Walkable_1" width="35" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OoQEAMAgEMRit7D9UZVUtIBJ14sVHAADQ6eTryv+uw6YvAACTLuc89bEkEwAA
+   H4sIAAAAAAAACu3OoQEAMAgEMRit7D9UZVUtIBJ14sVHAADQ6eTryv+uw6YvAACTLuc89bEkEwAA
   </data>
  </layer>
- <layer name="Collisions" width="35" height="35">
+ <layer id="4" name="Collisions_2" width="35" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3QQQqAIBCFYb1F27JN2SY6V/ffNi2zAUNyRPg/eAvHQR46BwAAejdKpkyCUZdFsmYSjbrsyuz0z/Nh0GPw71mQ2azMtd2/u6R/EOW8NepSY7eE9i8tu9TYLXG/n+bLHQAAPboAfF9A5iQTAAA=
+   H4sIAAAAAAAACu3QQQqAIBCFYb1F27JN2SY6V/ffNi2zAUNyRPg/eAvHQR46BwAAejdKpkyCUZdFsmYSjbrsyuz0z/Nh0GPw71mQ2azMtd2/u6R/EOW8NepSY7eE9i8tu9TYLXG/n+bLHQAAPboAfF9A5iQTAAA=
   </data>
  </layer>
- <layer name="Collisions" width="35" height="35">
+ <layer id="5" name="Collisions-1" width="35" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OMQqAMBAEwMs3TZQQ/f8bvFIwhY0WMgMLxzZ7EQDAX9QS0cq9Xybdm3ru7ZnjsrvmvWXGx78AAMATJ45/oYMkEwAA
+   H4sIAAAAAAAACu3OMQqAMBAEwMs3TZQQ/f8bvFIwhY0WMgMLxzZ7EQDAX9QS0cq9Xybdm3ru7ZnjsrvmvWXGx78AAMATJ45/oYMkEwAA
   </data>
  </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="18" height="10" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="18" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -18,39 +18,39 @@
  <tileset firstgid="1655" source="InteriorFloor2.tsx"/>
  <tileset firstgid="2351" source="SinnohInteriorSet1.tsx"/>
  <tileset firstgid="4719" source="SinnohInteriorSet5.tsx"/>
- <layer name="Walkable" width="18" height="10">
+ <layer id="1" name="Walkable_2" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGHwgkoUyjGxOIAV41Bz6mkMNAABhDlrE0AIAAA==
+   H4sIAAAAAAAACmNgGHwgkoUyjGxOIAV41Bz6mkMNAABhDlrE0AIAAA==
   </data>
  </layer>
- <layer name="Walkable" width="18" height="10">
+ <layer id="2" name="Walkable_1" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGBxg/kA7gI7ATQTBdhHBrY4QCEPSG0KBOYPNPZQAANlhl2jQAgAA
+   H4sIAAAAAAAACmNgGBxg/kA7gI7ATQTBdhHBrY4QCEPSG0KBOYPNPZQAANlhl2jQAgAA
   </data>
  </layer>
- <layer name="LedgesLeft" width="18" height="10">
+ <layer id="3" name="LedgesLeft" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYPgAAKnxXv/QAgAA
+   H4sIAAAAAAAACmNgGAWjYPgAAKnxXv/QAgAA
   </data>
  </layer>
- <layer name="LedgesRight" width="18" height="10">
+ <layer id="4" name="LedgesRight" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYPgAAKnxXv/QAgAA
+   H4sIAAAAAAAACmNgGAWjYPgAAKnxXv/QAgAA
   </data>
  </layer>
- <layer name="LedgesDown" width="18" height="10">
+ <layer id="5" name="LedgesDown" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYPgAAKnxXv/QAgAA
+   H4sIAAAAAAAACmNgGAWjYPgAAKnxXv/QAgAA
   </data>
  </layer>
- <layer name="Collisions" width="18" height="10">
+ <layer id="6" name="Collisions" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NkYWCoYqUMM7JAcAsr+RgEYOasZ2NgOA7EJ7DQzhwMDC5A7MrBgBPAzMEHvIH6fYDYl0JziAEwcybjsWvUHOpgAGVyWS/QAgAA
+   H4sIAAAAAAAACmNkYWCoYqUMM7JAcAsr+RgEYOasZ2NgOA7EJ7DQzhwMDC5A7MrBgBPAzMEHvIH6fYDYl0JziAEwcybjsWvUHOpgAGVyWS/QAgAA
   </data>
  </layer>
- <layer name="WalkBehind" width="18" height="10">
+ <layer id="7" name="WalkBehind" width="18" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB/M4cAU28/GwHCADZO2Bqq1AWJbLHqWYBHDB56zkedeckE3ie4baeYMJgAA1JL8qdACAAA=
+   H4sIAAAAAAAACmNgIB/M4cAU28/GwHCADZO2Bqq1AWJbLHqWYBHDB56zkedeckE3ie4baeYMJgAA1JL8qdACAAA=
   </data>
  </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="86" height="35" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="86" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,29 +17,29 @@
  </properties>
  <tileset firstgid="1" source="Sinnoh Ruins Set.tsx"/>
  <tileset firstgid="1396" source="normal12.tsx"/>
- <layer name="Grass" width="86" height="35">
+ <layer id="1" name="Grass" width="86" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3RwQ2AMAwAsXYZ9h+RCcqLUymypXwT6TIGAAAAO13zecrdb9z4Kl0bujZ0beja0LWh67l2/u7PdG3o2tC1oWtD1/PoCgAAAGs3XHJJ4ggvAAA=
+   H4sIAAAAAAAACu3RwQ2AMAwAsXYZ9h+RCcqLUymypXwT6TIGAAAAO13zecrdb9z4Kl0bujZ0beja0LWh67l2/u7PdG3o2tC1oWtD1/PoCgAAAGs3XHJJ4ggvAAA=
   </data>
  </layer>
- <layer name="Walkable" width="86" height="35">
+ <layer id="2" name="Walkable_2" width="86" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3QQQqDMBRF0Y/dWxdSJ50H16FbcB+6NzMoHQlFjA2Gc+APMgmPGwEAAABwzvC5El5dRN8V+qwBpbqOuemk61eprktuuup6ifnHm+P2Gr4ff58B1aV8z9ojGpVqD2hQCl2voisAAADA/W0JlXkxCC8AAA==
+   H4sIAAAAAAAACu3QQQqDMBRF0Y/dWxdSJ50H16FbcB+6NzMoHQlFjA2Gc+APMgmPGwEAAABwzvC5El5dRN8V+qwBpbqOuemk61eprktuuup6ifnHm+P2Gr4ff58B1aV8z9ojGpVqD2hQCl2voisAAADA/W0JlXkxCC8AAA==
   </data>
  </layer>
- <layer name="Walkable" width="86" height="35">
+ <layer id="3" name="Walkable_1" width="86" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3WwQ2CUBCE4YUqMRrhJK1ghJO0AlFP0AoGbcPpgbcJZv8v2eskM4eXZwYAAAAAALDNMTc75T7ZF+XWTtl716j31an7Xbl90F0H9R6duk/KnYPuuqj3O2h3AP5S/gfOyil1FW9W0v/ATTmtrgu8a5GZHbK0/4GHcp66V+BdPaza86P7sisAAAAAAMBf+wGJkmQxCC8AAA==
+   H4sIAAAAAAAACu3WwQ2CUBCE4YUqMRrhJK1ghJO0AlFP0AoGbcPpgbcJZv8v2eskM4eXZwYAAAAAALDNMTc75T7ZF+XWTtl716j31an7Xbl90F0H9R6duk/KnYPuuqj3O2h3AP5S/gfOyil1FW9W0v/ATTmtrgu8a5GZHbK0/4GHcp66V+BdPaza86P7sisAAAAAAMBf+wGJkmQxCC8AAA==
   </data>
  </layer>
- <layer name="Collisions" width="86" height="35">
+ <layer id="4" name="Collisions_2" width="86" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3WMQ7CMAyFYUtdOBlwAU5S9SJMiMlw0jaCiKikE3Ea4v+TvDC8KK9QLAIAAAAA2NNxmdPGnA2zS53RqlHy9w/3nYyyS57RqvE9e2RP4qPXy8EuO8dLr7Wyr8NrntJ3r7rMYzUl7pxm34bP5yE39BrP6ZHKd6dptyWyQ6fp9zb0epe+94Ea1u+DtNNffxOWe2Lrtt6zJf+3PO1wUY1ea2a3omavcVf00quK3c6R46FXFbudw/KZeaZi98wAAAAAAPh3M/5nLNkILwAA
+   H4sIAAAAAAAACu3WMQ7CMAyFYUtdOBlwAU5S9SJMiMlw0jaCiKikE3Ea4v+TvDC8KK9QLAIAAAAA2NNxmdPGnA2zS53RqlHy9w/3nYyyS57RqvE9e2RP4qPXy8EuO8dLr7Wyr8NrntJ3r7rMYzUl7pxm34bP5yE39BrP6ZHKd6dptyWyQ6fp9zb0epe+94Ea1u+DtNNffxOWe2Lrtt6zJf+3PO1wUY1ea2a3omavcVf00quK3c6R46FXFbudw/KZeaZi98wAAAAAAPh3M/5nLNkILwAA
   </data>
  </layer>
- <layer name="Collisions" width="86" height="35">
+ <layer id="5" name="Collisions_1" width="86" height="35">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OwQkAMAgAMceuA7Vz6hZCTeD+FwEAAMAWp8vpiQ/d7k1PAAAAAAAAAMAiBU+xBeAILwAA
+   H4sIAAAAAAAACu3OwQkAMAgAMceuA7Vz6hZCTeD+FwEAAMAWp8vpiQ/d7k1PAAAAAAAAAMAiBU+xBeAILwAA
   </data>
  </layer>
 </map>

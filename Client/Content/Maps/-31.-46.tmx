@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="10" height="19" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="10" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -15,24 +15,24 @@
  <tileset firstgid="1" source="Daycare Johto.tsx"/>
  <tileset firstgid="932" source="SinnohSet7.tsx"/>
  <tileset firstgid="2708" source="InteriorFloor 1.tsx"/>
- <layer name="Walkable" width="10" height="19">
+ <layer id="1" name="Walkable_2" width="10" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC1vMxcCweBSP4mGCiQUAN6NAz/gCAAA=
+   H4sIAAAAAAAAClvMxcCweBSP4mGCiQUAN6NAz/gCAAA=
   </data>
  </layer>
- <layer name="Walkable" width="10" height="19">
+ <layer id="2" name="Walkable_1" width="10" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGDzgIPdAu4B2oJWJsJowItTQyryhBASB6UQIioXJTDMAbtsP3vgCAAA=
+   H4sIAAAAAAAACmNgGDzgIPdAu4B2oJWJsJowItTQyryhBASB6UQIioXJTDMAbtsP3vgCAAA=
   </data>
  </layer>
- <layer name="Collisions" width="10" height="19">
+ <layer id="3" name="Collisions" width="10" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC1NhYmBQQcJtOHALCwNDKxCHANnoIAxJfgsQb0VTt42bgWE7N0QdTB4G0M07BFWHDpDVnQGqOUuEOmT3wYAy1D/tWNS1QuVUmbCbg81cUtR14lHbQYa91DaPGHWwMIKFEwwoI4mjhy2y2ej2wNINLnXo6QqXOvR0RQgAAG8bzAL4AgAA
+   H4sIAAAAAAAAClNhYmBQQcJtOHALCwNDKxCHANnoIAxJfgsQb0VTt42bgWE7N0QdTB4G0M07BFWHDpDVnQGqOUuEOmT3wYAy1D/tWNS1QuVUmbCbg81cUtR14lHbQYa91DaPGHWwMIKFEwwoI4mjhy2y2ej2wNINLnXo6QqXOvR0RQgAAG8bzAL4AgAA
   </data>
  </layer>
- <layer name="WalkBehind" width="10" height="19">
+ <layer id="4" name="WalkBehind" width="10" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACwthYWAIBWJcIISA/CgYBdgAoXQz0OkKAKBzbnL4AgAA
+   H4sIAAAAAAAACgthYWAIBWJcIISA/CgYBdgAoXQz0OkKAKBzbnL4AgAA
   </data>
  </layer>
 </map>

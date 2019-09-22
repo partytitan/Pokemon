@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="17" height="16" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="17" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -16,24 +16,24 @@
  <tileset firstgid="369" source="SinnohInteriorSet4.tsx"/>
  <tileset firstgid="857" source="InteriorWalls 1.tsx"/>
  <tileset firstgid="1157" source="InteriorFloor 1.tsx"/>
- <layer name="Walkable" width="17" height="16">
+ <layer id="1" name="Walkable_2" width="17" height="16">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGJ6gkUhMyIwqIjA9zehAw6NmjJpBDTPIBQDdAz92QAQAAA==
+   H4sIAAAAAAAACmNgGJ6gkUhMyIwqIjA9zehAw6NmjJpBDTPIBQDdAz92QAQAAA==
   </data>
  </layer>
- <layer name="Walkable" width="17" height="16">
+ <layer id="2" name="Walkable_1" width="17" height="16">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAUjFWxiheBRMHzAbkYGhj1AvBeI9zHS3j4AvvsGNkAEAAA=
+   H4sIAAAAAAAACmNgGAUjFWxiheBRMHzAbkYGhj1AvBeI9zHS3j4AvvsGNkAEAAA=
   </data>
  </layer>
- <layer name="Collisions" width="17" height="16">
+ <layer id="3" name="Collisions" width="17" height="16">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoC7QYGFg0CSAtVjwm2EElDcmgE3wmNHCSLk/qG2GDDMDgyQQS0GxNDNEjFQzYGA5KwPDClZUMVxuxmUGCGym0Iy9QP37yDCDEBg1gz5mgMSwYVzy6AAAFHntW0AEAAA=
+   H4sIAAAAAAAACmNgoC7QYGFg0CSAtVjwm2EElDcmgE3wmNHCSLk/qG2GDDMDgyQQS0GxNDNEjFQzYGA5KwPDClZUMVxuxmUGCGym0Iy9QP37yDCDEBg1gz5mgMSwYVzy6AAAFHntW0AEAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="17" height="16">
+ <layer id="4" name="WalkBehind" width="17" height="16">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWEgAgzA4MgEAtBsTAzRIxUM4gRGwpmjIJRAAMA4L0O0EAEAAA=
+   H4sIAAAAAAAACmNgGAWEgAgzA4MgEAtBsTAzRIxUM4gRGwpmjIJRAAMA4L0O0EAEAAA=
   </data>
  </layer>
 </map>

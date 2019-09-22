@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="35" height="19" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="35" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -15,29 +15,29 @@
  <tileset firstgid="1" source="Buildings7.tsx"/>
  <tileset firstgid="353" source="Caveset 2.tsx"/>
  <tileset firstgid="1377" source="Cliffs02.tsx"/>
- <layer name="Walkable" width="35" height="19">
+ <layer id="1" name="Walkable_2" width="35" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB3UMNMGkwMotW+wuGUwhcuoW0bdMuqWUbeMumXULaNuGXULpRgAIlmn3GQKAAA=
+   H4sIAAAAAAAACmNgIB3UMNMGkwMotW+wuGUwhcuoW0bdMuqWUbeMumXULaNuGXULpRgAIlmn3GQKAAA=
   </data>
  </layer>
- <layer name="Walkable" width="35" height="19">
+ <layer id="2" name="Walkable_1" width="35" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3OyxEAEBAE0ala0hAXckckPisEp3GYV9X3BoQtG1C8auwTERERnhaA7o3APgGmPyxvf/Bypcg+eHcAYKTmw2QKAAA=
+   H4sIAAAAAAAACu3OyxEAEBAE0ala0hAXckckPisEp3GYV9X3BoQtG1C8auwTERERnhaA7o3APgGmPyxvf/Bypcg+eHcAYKTmw2QKAAA=
   </data>
  </layer>
- <layer name="LedgesDown" width="35" height="19">
+ <layer id="3" name="LedgesDown" width="35" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYGSBNFYGhgxWBDsdiT+SAXpYpI2GyygYBaNgFIwCCgAAxDuiO2QKAAA=
+   H4sIAAAAAAAACmNgGAWjYGSBNFYGhgxWBDsdiT+SAXpYpI2GyygYBaNgFIwCCgAAxDuiO2QKAAA=
   </data>
  </layer>
- <layer name="Collisions" width="35" height="19">
+ <layer id="4" name="Collisions" width="35" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB3MYaYNJgfsptA+ZP4eIK6BYnJALVDfJjL1IoPLQDOqqeAWUgE/DvGBcAs2QOtwiQbKxZCA79DQLcj+JBWPuoU+bplNYnlDjfKFWmCw5OlRt4wct1weRHXjJgrdswlqBqVuuU1inQMCtKqPyC1XCWEAoNg0H2QKAAA=
+   H4sIAAAAAAAACmNgIB3MYaYNJgfsptA+ZP4eIK6BYnJALVDfJjL1IoPLQDOqqeAWUgE/DvGBcAs2QOtwiQbKxZCA79DQLcj+JBWPuoU+bplNYnlDjfKFWmCw5OlRt4wct1weRHXjJgrdswlqBqVuuU1inQMCtKqPyC1XCWEAoNg0H2QKAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="35" height="19">
+ <layer id="5" name="WalkBehind" width="35" height="19">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoB+QYGZgkARiKWY6WooDWADdYAnEVlC3bB4gN7EPjLVEg4EKl1EwCkbBKBgFlAFqlN/UrANG6xPygSwrhJZnHVh3kAoATKW3E2QKAAA=
+   H4sIAAAAAAAACmNgoB+QYGZgkARiKWY6WooDWADdYAnEVlC3bB4gN7EPjLVEg4EKl1EwCkbBKBgFlAFqlN/UrANG6xPygSwrhJZnHVh3kAoATKW3E2QKAAA=
   </data>
  </layer>
 </map>

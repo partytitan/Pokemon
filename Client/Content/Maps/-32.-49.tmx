@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="20" height="9" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value="Swinub,40;Golbat,30;Delibird,20;Zubat,5;Jynx,5;"/>
   <property name="dayPokemonLevels" value="23-25;24-24;24-24;24-24;24-24;"/>
@@ -14,29 +14,29 @@
  </properties>
  <tileset firstgid="1" source="normal9.tsx"/>
  <tileset firstgid="1025" source="Caveset 2.tsx"/>
- <layer name="Walkable" width="20" height="9">
+ <layer id="1" name="Walkable_2" width="20" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWDFRxipq364QgA4A2LQdACAAA=
+   H4sIAAAAAAAACmNgGAWDFRxipq364QgA4A2LQdACAAA=
   </data>
  </layer>
- <layer name="Walkable" width="20" height="9">
+ <layer id="2" name="Walkable_1" width="20" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAXUAifZB9Y8ats/FAEAzWVdRdACAAA=
+   H4sIAAAAAAAACmNgGAXUAifZB9Y8ats/FAEAzWVdRdACAAA=
   </data>
  </layer>
- <layer name="Grass" width="20" height="9">
+ <layer id="3" name="Grass" width="20" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACzvEzMBwaBQPSgwCtFQ/HDEAqsiGddACAAA=
+   H4sIAAAAAAAACjvEzMBwaBQPSgwCtFQ/HDEAqsiGddACAAA=
   </data>
  </layer>
- <layer name="Collisions" width="20" height="9">
+ <layer id="4" name="Collisions" width="20" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NkZ2BgpCPGBUjRi88cYs0lRQ+p8tjU4uJjM5OQecSKYTMPWYzYcCUnLvCppyUGAL52o9DQAgAA
+   H4sIAAAAAAAACmNkZ2BgpCPGBUjRi88cYs0lRQ+p8tjU4uJjM5OQecSKYTMPWYzYcCUnLvCppyUGAL52o9DQAgAA
   </data>
  </layer>
- <layer name="WalkBehind" width="20" height="9">
+ <layer id="5" name="WalkBehind" width="20" height="9">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAXUAivZaat+FBAGAFNYi+/QAgAA
+   H4sIAAAAAAAACmNgGAXUAivZaat+FBAGAFNYi+/QAgAA
   </data>
  </layer>
 </map>

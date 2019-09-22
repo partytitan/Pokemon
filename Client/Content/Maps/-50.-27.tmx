@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="16" height="20" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="16" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -20,29 +20,29 @@
  <tileset firstgid="1655" source="InteriorObjects1.tsx"/>
  <tileset firstgid="1755" source="InteriorWalls 1.tsx"/>
  <tileset firstgid="2055" source="InteriorFloor2.tsx"/>
- <layer name="Walkable" width="16" height="20">
+ <layer id="1" name="Walkable_2" width="16" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGHjQyoodEytfzYqKsenHJ4+ufwIU49KPLk+M/9DtqKaifmLCD59+bHLo5g9m/bjMGWj3I8cFOfoJYWLBQKW/weJ/fAAAdFVRaQAFAAA=
+   H4sIAAAAAAAACmNgGHjQyoodEytfzYqKsenHJ4+ufwIU49KPLk+M/9DtqKaifmLCD59+bHLo5g9m/bjMGWj3I8cFOfoJYWLBQKW/weJ/fAAAdFVRaQAFAAA=
   </data>
  </layer>
- <layer name="Walkable" width="70" height="76">
+ <layer id="2" name="Walkable_1" width="70" height="76">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3SsQ2AMAxFQSMRNsoqDJkwGkPABGlSOJHupF+5eYUjGHmP7IL13dfcHQCAXPXMLmAH/gRgTa1E9H9PyS4BAAAAAAAAAAAAAAAAAACAOR8dLqKAIFMAAA==
+   H4sIAAAAAAAACu3SsQ2AMAxFQSMRNsoqDJkwGkPABGlSOJHupF+5eYUjGHmP7IL13dfcHQCAXPXMLmAH/gRgTa1E9H9PyS4BAAAAAAAAAAAAAAAAAACAOR8dLqKAIFMAAA==
   </data>
  </layer>
- <layer name="Collisions" width="70" height="76">
+ <layer id="3" name="Collisions_2" width="70" height="76">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3WwWoCMRAG4BzUfRofrV4taC+Fra+tQZdGnUapBzX5PhhYHOaQ3002y3lKmyGl7UV9HWo5P1at36q8tnE4Pv8Mv7UrchmH817Zb1VtbVMu/5l9d3KJySV261ztOZfauZrre3E9l39rPZdsWnuZQe/vS60nl7jX+z76q/dI/53ldX3MUlrNrnub03epNttyLutDJp9BLuPpu1TbRy3n8sisXOLZlnOJ7rvlvTfSwz6K7rvlvbc223Iu0bl672zLuTxj9tVN//m9dTnTkygLAAAAAAAAAAAAAAAAAACAV7cHDIidmyBTAAA=
+   H4sIAAAAAAAACu3WwWoCMRAG4BzUfRofrV4taC+Fra+tQZdGnUapBzX5PhhYHOaQ3002y3lKmyGl7UV9HWo5P1at36q8tnE4Pv8Mv7UrchmH817Zb1VtbVMu/5l9d3KJySV261ztOZfauZrre3E9l39rPZdsWnuZQe/vS60nl7jX+z76q/dI/53ldX3MUlrNrnub03epNttyLutDJp9BLuPpu1TbRy3n8sisXOLZlnOJ7rvlvTfSwz6K7rvlvbc223Iu0bl672zLuTxj9tVN//m9dTnTkygLAAAAAAAAAAAAAAAAAACAV7cHDIidmyBTAAA=
   </data>
  </layer>
- <layer name="Collisions" width="16" height="20">
+ <layer id="4" name="Collisions_1" width="16" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgYGA4zcjAcAaIzwJxHgcDgwMbA4MjEGMD2ORfM0Lot0C6DCjvDZTzwaGfkDwMhFMgnwiUS6JAnlKgy8XAoMdFmh4BJgRtCtRrRqL+kQ4m0TA+hzsApTkpFgYGaRbyzVAB6lWlQP9AAQDSFg9XAAUAAA==
+   H4sIAAAAAAAACmNgYGA4zcjAcAaIzwJxHgcDgwMbA4MjEGMD2ORfM0Lot0C6DCjvDZTzwaGfkDwMhFMgnwiUS6JAnlKgy8XAoMdFmh4BJgRtCtRrRqL+kQ4m0TA+hzsApTkpFgYGaRbyzVAB6lWlQP9AAQDSFg9XAAUAAA==
   </data>
  </layer>
- <layer name="WalkBehind" width="16" height="20">
+ <layer id="5" name="WalkBehind" width="16" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAW0BhVshMVgfGxqBxoQ435KQDILA0MKC/XMQwe0dv9AAGq6f6iHBSUAAHvHBf8ABQAA
+   H4sIAAAAAAAACmNgGAW0BhVshMVgfGxqBxoQ435KQDILA0MKC/XMQwe0dv9AAGq6f6iHBSUAAHvHBf8ABQAA
   </data>
  </layer>
 </map>

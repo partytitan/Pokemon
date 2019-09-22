@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="27" height="11" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="27" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="isCave" value="false"/>
   <property name="pvp" value="disabled"/>
@@ -8,29 +8,29 @@
  </properties>
  <tileset firstgid="1" source="Hoenn Interior Set 21.tsx"/>
  <tileset firstgid="257" source="Hoenn Interior Set 22.tsx"/>
- <layer name="Walkable" width="27" height="11">
+ <layer id="1" name="Walkable_2" width="27" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGL7gCBAfBeLDUPogkhi5fGTzjiLZdRwqfwhKH0QSI5ePbt5gsYsamBi7QOErxsjAIA7EEowQvhyQlgdiBShfDUirA7EGlK8HpPWB2IAREWeDxV8weXwYm3nEqMVmF60wvQEA4oqgvaQEAAA=
+   H4sIAAAAAAAACmNgGL7gCBAfBeLDUPogkhi5fGTzjiLZdRwqfwhKH0QSI5ePbt5gsYsamBi7QOErxsjAIA7EEowQvhyQlgdiBShfDUirA7EGlK8HpPWB2IAREWeDxV8weXwYm3nEqMVmF60wvQEA4oqgvaQEAAA=
   </data>
  </layer>
- <layer name="Walkable" width="27" height="11">
+ <layer id="2" name="Walkable_1" width="27" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGN6Aj5GBgR+IBRipZ+ZxKpo1GIE7Hf3nT0e7wod5vJEDzIFhYjHIwwUAvfcH8qQEAAA=
+   H4sIAAAAAAAACmNgGN6Aj5GBgR+IBRipZ+ZxKpo1GIE7Hf3nT0e7wod5vJEDzIFhYjHIwwUAvfcH8qQEAAA=
   </data>
  </layer>
- <layer name="Collisions" width="27" height="11">
+ <layer id="3" name="Collisions_2" width="27" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACzNgYGC4iAVfAuLLQHyFTD46NoDim1jwLSC+DcR3yOSjY5hd6ECSkTK+DBqfYZDYpQhUqwRVL8QI0UssXxlIq5BglyZQrRZUvRSQliWBrw2kdUiwixZguNtVygjBtAAws2F2kYrR3UosBgCQgfYXpAQAAA==
+   H4sIAAAAAAAACjNgYGC4iAVfAuLLQHyFTD46NoDim1jwLSC+DcR3yOSjY5hd6ECSkTK+DBqfYZDYpQhUqwRVL8QI0UssXxlIq5BglyZQrRZUvRSQliWBrw2kdUiwixZguNtVygjBtAAws2F2kYrR3UosBgCQgfYXpAQAAA==
   </data>
  </layer>
- <layer name="Collisions" width="27" height="11">
+ <layer id="4" name="Collisions_1" width="27" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoB3YzohdnA0ozg7EHEAsiKaGVL4IlL8fh10jAbAyUsYnBfAyUsYfBaOAVAAAZnDJMaQEAAA=
+   H4sIAAAAAAAACmNgoB3YzohdnA0ozg7EHEAsiKaGVL4IlL8fh10jAbAyUsYnBfAyUsYfBaOAVAAAZnDJMaQEAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="27" height="11">
+ <layer id="5" name="WalkBehind" width="27" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBTQEuQyQvBQM3uwAAA5V+cApAQAAA==
+   H4sIAAAAAAAACmNgGAWjYBTQEuQyQvBQM3uwAAA5V+cApAQAAA==
   </data>
  </layer>
 </map>

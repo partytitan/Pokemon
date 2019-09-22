@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,39 +17,39 @@
  <tileset firstgid="915" source="Interior - Furniture.tsx"/>
  <tileset firstgid="1215" source="InteriorWalls 1.tsx"/>
  <tileset firstgid="1515" source="Fuchsia Tileset.tsx"/>
- <layer name="Walkable" width="10" height="10">
+ <layer id="1" name="Walkable_2" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGDjADsSceGgYwKeGfQiZRwwAANmCfLiQAQAA
+   H4sIAAAAAAAACmNgGDjADsSceGgYwKeGfQiZRwwAANmCfLiQAQAA
   </data>
  </layer>
- <layer name="Walkable" width="10" height="10">
+ <layer id="2" name="Walkable_1" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGDqgkIWBoYgFt7wqG4RWh9L8bMSbja4XGRBrTh0Q1wNxA/HWYgAA4qRTl5ABAAA=
+   H4sIAAAAAAAACmNgGDqgkIWBoYgFt7wqG4RWh9L8bMSbja4XGRBrTh0Q1wNxA/HWYgAA4qRTl5ABAAA=
   </data>
  </layer>
- <layer name="LedgesLeft" width="10" height="10">
+ <layer id="3" name="LedgesLeft" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWDCQAADA0iRpABAAA=
+   H4sIAAAAAAAACmNgGAWDCQAADA0iRpABAAA=
   </data>
  </layer>
- <layer name="LedgesRight" width="10" height="10">
+ <layer id="4" name="LedgesRight" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWDCQAADA0iRpABAAA=
+   H4sIAAAAAAAACmNgGAWDCQAADA0iRpABAAA=
   </data>
  </layer>
- <layer name="LedgesDown" width="10" height="10">
+ <layer id="5" name="LedgesDown" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWDCQAADA0iRpABAAA=
+   H4sIAAAAAAAACmNgGAWDCQAADA0iRpABAAA=
   </data>
  </layer>
- <layer name="Collisions" width="10" height="10">
+ <layer id="6" name="Collisions" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIA4wAvEBFvyYEaruFAt+DFMHA+lAsQwWBD+bEWEnsjp0UAyUjGREVafGBqH52LD7AZ95ML3I6rCZQ6x56OqQMS5xADYJ/TqQAQAA
+   H4sIAAAAAAAACmNgIA4wAvEBFvyYEaruFAt+DFMHA+lAsQwWBD+bEWEnsjp0UAyUjGREVafGBqH52LD7AZ95ML3I6rCZQ6x56OqQMS5xADYJ/TqQAQAA
   </data>
  </layer>
- <layer name="WalkBehind" width="10" height="10">
+ <layer id="7" name="WalkBehind" width="10" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoB2IZWFgiGNB8BMYidcbSIJadMDLRr5eWphDCgAACYt9fpABAAA=
+   H4sIAAAAAAAACmNgoB2IZWFgiGNB8BMYidcbSIJadMDLRr5eWphDCgAACYt9fpABAAA=
   </data>
  </layer>
 </map>

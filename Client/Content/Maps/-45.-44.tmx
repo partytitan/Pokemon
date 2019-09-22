@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="11" height="13" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="11" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,24 +17,24 @@
  <tileset firstgid="631" source="InteriorObjects1.tsx"/>
  <tileset firstgid="731" source="Interior - Furniture.tsx"/>
  <tileset firstgid="1031" source="SinnohInteriorSet5.tsx"/>
- <layer name="Walkable" width="11" height="13">
+ <layer id="1" name="Walkable_2" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoB1gIgLDAA8RGFktKeaOqiVNLbEAAL13Gjw8AgAA
+   H4sIAAAAAAAACmNgoB1gIgLDAA8RGFktKeaOqiVNLbEAAL13Gjw8AgAA
   </data>
  </layer>
- <layer name="Walkable" width="11" height="13">
+ <layer id="2" name="Walkable_1" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGB6An5m6akFqSDFzsAFc7q8D4nogbqCCHQBtw9vTPAIAAA==
+   H4sIAAAAAAAACmNgGB6An5m6akFqSDFzsAFc7q8D4nogbqCCHQBtw9vTPAIAAA==
   </data>
  </layer>
- <layer name="Collisions" width="11" height="13">
+ <layer id="3" name="Collisions" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIA0UMzIwlODBpYwQdSCqFkjU4cH1SGrxAR8WBBtdrTszA4MHM4Lvj6a2iQnBDwSqC8KjFh+gldpwEtTGA9UmsCDUIvsNF2Akwlx0tcgYlzgIAwA/6XezPAIAAA==
+   H4sIAAAAAAAACmNgIA0UMzIwlODBpYwQdSCqFkjU4cH1SGrxAR8WBBtdrTszA4MHM4Lvj6a2iQnBDwSqC8KjFh+gldpwEtTGA9UmsCDUIvsNF2Akwlx0tcgYlzgIAwA/6XezPAIAAA==
   </data>
  </layer>
- <layer name="WalkBehind" width="11" height="13">
+ <layer id="4" name="WalkBehind" width="11" height="13">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGHzAlpmBwY4Zt3wFE/3cQg8QwYJgDyW/AQAynqtHPAIAAA==
+   H4sIAAAAAAAACmNgGHzAlpmBwY4Zt3wFE/3cQg8QwYJgDyW/AQAynqtHPAIAAA==
   </data>
  </layer>
 </map>

@@ -23,15 +23,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Content\bin\DesktopGL\Content\Maps\" />
+    <Folder Include="Content\bin\DesktopGL\Content\Maps\Data\" />
     <Folder Include="Content\bin\DesktopGL\Content\Test\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\NPC\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\ScreenEffects\" />
+    <Folder Include="Content\bin\DesktopGL\Maps\Data\" />
+    <Folder Include="Content\Maps\Data\" />
     <Folder Include="Content\obj\DesktopGL\Content\Maps\" />
     <Folder Include="Content\obj\DesktopGL\Content\Test\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\NPC\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\ScreenEffects\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameLogic\GameLogic.csproj" />
   </ItemGroup>
 
 </Project>

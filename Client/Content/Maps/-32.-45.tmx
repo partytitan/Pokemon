@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="20" height="11" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,49 +17,49 @@
  <tileset firstgid="2049" source="InteriorFloor 1.tsx"/>
  <tileset firstgid="2379" source="InteriorFloor2.tsx"/>
  <tileset firstgid="3075" source="Interior - Furniture.tsx"/>
- <layer name="Walkable" width="20" height="11">
+ <layer id="1" name="Walkable_2" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGHnAnwM7JiSPT30gFkxInlT1o+YNjHnUBACgjbigcAMAAA==
+   H4sIAAAAAAAACmNgGHnAnwM7JiSPT30gFkxInlT1o+YNjHnUBACgjbigcAMAAA==
   </data>
  </layer>
- <layer name="Walkable" width="20" height="11">
+ <layer id="2" name="Walkable_1" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGPxgPgsEk6J+FKACR56hYT8+dchyA+0fcgEAAmPefXADAAA=
+   H4sIAAAAAAAACmNgGPxgPgsEk6J+FKACR56hYT8+dchyA+0fcgEAAmPefXADAAA=
   </data>
  </layer>
- <layer name="Grass" width="20" height="11">
+ <layer id="3" name="Grass" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBTQCwAAf45feXADAAA=
+   H4sIAAAAAAAACmNgGAWjYBTQCwAAf45feXADAAA=
   </data>
  </layer>
- <layer name="LedgesLeft" width="20" height="11">
+ <layer id="4" name="LedgesLeft" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBTQCwAAf45feXADAAA=
+   H4sIAAAAAAAACmNgGAWjYBTQCwAAf45feXADAAA=
   </data>
  </layer>
- <layer name="LedgesDown" width="20" height="11">
+ <layer id="5" name="LedgesDown" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBTQCwAAf45feXADAAA=
+   H4sIAAAAAAAACmNgGAWjYBTQCwAAf45feXADAAA=
   </data>
  </layer>
- <layer name="LedgesRight" width="20" height="11">
+ <layer id="6" name="LedgesRight" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBTQCwAAf45feXADAAA=
+   H4sIAAAAAAAACmNgGAWjYBTQCwAAf45feXADAAA=
   </data>
  </layer>
- <layer name="Water" width="20" height="11">
+ <layer id="7" name="Water" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBTQCwAAf45feXADAAA=
+   H4sIAAAAAAAACmNgGAWjYBTQCwAAf45feXADAAA=
   </data>
  </layer>
- <layer name="Collisions" width="20" height="11">
+ <layer id="8" name="Collisions" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACxNiYGAQoiJm5GBgqGHAjmFqcMljUw8ybw4DBMxBwyA5mDwyxqYWWT02kM6NkAexQRgXEOJhYBDmwW8eAwH7CKmvBppfw4NdnlC4EWs/rvDDFp64zEN2J7q8CVA8H4gL0PxBqvuQQSXQrCoqmocPwNRTEwMAxR4Rn3ADAAA=
+   H4sIAAAAAAAAChNiYGAQoiJm5GBgqGHAjmFqcMljUw8ybw4DBMxBwyA5mDwyxqYWWT02kM6NkAexQRgXEOJhYBDmwW8eAwH7CKmvBppfw4NdnlC4EWs/rvDDFp64zEN2J7q8CVA8H4gL0PxBqvuQQSXQrCoqmocPwNRTEwMAxR4Rn3ADAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="20" height="11">
+ <layer id="9" name="WalkBehind" width="20" height="11">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoD6oZWFgqAfiBiAu4MatDiSHrBYmhg7mQuUWAOkKqHw8kjoQG4RBcshqQQAkxsHDwMDJQ5mfCIFCoPlFNLaDGgCfO7WA4qlAnDYE/DFUAQBaezyYcAMAAA==
+   H4sIAAAAAAAACmNgoD6oZWFgqAfiBiAu4MatDiSHrBYmhg7mQuUWAOkKqHw8kjoQG4RBcshqQQAkxsHDwMDJQ5mfCIFCoPlFNLaDGgCfO7WA4qlAnDYE/DFUAQBaezyYcAMAAA==
   </data>
  </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="22" height="20" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="22" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value="Swinub,40;Golbat,30;Delibird,20;Zubat,5;Jynx,5;"/>
   <property name="dayPokemonLevels" value="22-24;23-23;23-23;23-23;23-23;"/>
@@ -16,29 +16,29 @@
  <tileset firstgid="811" source="normal9.tsx"/>
  <tileset firstgid="1835" source="normal7.tsx"/>
  <tileset firstgid="2859" source="Caveset 2.tsx"/>
- <layer name="Grass" width="22" height="20">
+ <layer id="1" name="Grass" width="22" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC3vDxsDwhsb4Ky95mJbmgsBQci81zSNkz6i5A2suqfaPmkufeKOW+bTKz9Quf2hVvtO6vkHGAKY/xY/gBgAA
+   H4sIAAAAAAAACnvDxsDwhsb4Ky95mJbmgsBQci81zSNkz6i5A2suqfaPmkufeKOW+bTKz9Quf2hVvtO6vkHGAKY/xY/gBgAA
   </data>
  </layer>
- <layer name="Walkable" width="22" height="20">
+ <layer id="2" name="Walkable_2" width="22" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgoC34wku+3m949FJq7hs22piLC3ymwNxPWPRS4k5cAOT+UXMH3txLQDWXSbCfWHNJ9ddAmwtK96TkG1rGGwiI8pEWL7gAKH5BZiEDargbV/lDrruxuRMdkONufOUkMgDZTQrGBgCAHPZC4AYAAA==
+   H4sIAAAAAAAACmNgoC34wku+3m949FJq7hs22piLC3ymwNxPWPRS4k5cAOT+UXMH3txLQDWXSbCfWHNJ9ddAmwtK96TkG1rGGwiI8pEWL7gAKH5BZiEDargbV/lDrruxuRMdkONufOUkMgDZTQrGBgCAHPZC4AYAAA==
   </data>
  </layer>
- <layer name="Walkable" width="22" height="20">
+ <layer id="3" name="Walkable_1" width="22" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgQICrvOThoQg+89HPLkrDaTiE9ygYvuACMC9dpEF++gA08yMd8+koGH4AALYF92vgBgAA
+   H4sIAAAAAAAACmNgQICrvOThoQg+89HPLkrDaTiE9ygYvuACMC9dpEF++gA08yMd8+koGH4AALYF92vgBgAA
   </data>
  </layer>
- <layer name="Collisions" width="22" height="20">
+ <layer id="4" name="Collisions" width="22" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC9PmY2DQpiGmBqCFmdjMp4WZQ8W9o+aOmjtq7sCYS6uyhxZmwsylhh20rHdgGACWR/x54AYAAA==
+   H4sIAAAAAAAACtPmY2DQpiGmBqCFmdjMp4WZQ8W9o+aOmjtq7sCYS6uyhxZmwsylhh20rHdgGACWR/x54AYAAA==
   </data>
  </layer>
- <layer name="WalkBehind" width="22" height="20">
+ <layer id="5" name="WalkBehind" width="22" height="20">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGNzgMt9Au2AUjIJRMApGwVAEAJYLo3LgBgAA
+   H4sIAAAAAAAACmNgGNzgMt9Au2AUjIJRMApGwVAEAJYLo3LgBgAA
   </data>
  </layer>
 </map>

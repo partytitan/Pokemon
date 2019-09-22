@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="21" height="18" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="21" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -15,24 +15,24 @@
   <property name="yOffsetModifier" value="0"/>
  </properties>
  <tileset firstgid="1" source="Lost Tower (Sinnoh) Set.tsx"/>
- <layer name="Walkable" width="21" height="18">
+ <layer id="1" name="Walkable_2" width="21" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGB6gBAumplnkmk+sWcSYS45ZhMyl1Exs5lLbTGqYh27uqJmDM57QAS3MpNRcQoCaZhFrPiEAAPPrwGnoBQAA
+   H4sIAAAAAAAACmNgGB6gBAumplnkmk+sWcSYS45ZhMyl1Exs5lLbTGqYh27uqJmDM57QAS3MpNRcQoCaZhFrPiEAAPPrwGnoBQAA
   </data>
  </layer>
- <layer name="Walkable" width="21" height="18">
+ <layer id="2" name="Walkable_1" width="21" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBRQCyQOtAOwAKeBdsAoGHAAADaFjhboBQAA
+   H4sIAAAAAAAACmNgGAWjYBRQCyQOtAOwAKeBdsAoGHAAADaFjhboBQAA
   </data>
  </layer>
- <layer name="Collisions" width="21" height="18">
+ <layer id="3" name="Collisions" width="21" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC62R0QmAMAxE++MKLuQI+l9X0Jkc1AoNhOMSm9AHB5U2z7QpxWchySL1K0nUja6HJOJmLg/t9nzY0wiWN+vT9djjDLQH//HBZvN3D+1hZ6JvgGdx7fVj7cu69u9zglMQ59VyO7WjbN1Zjf2oc285lFO8mVlrsMcRnzdLcVr+DMyB7xB1eXUVwu6PZ5AX+bwUrOgFAAA=
+   H4sIAAAAAAAACq2R0QmAMAxE++MKLuQI+l9X0Jkc1AoNhOMSm9AHB5U2z7QpxWchySL1K0nUja6HJOJmLg/t9nzY0wiWN+vT9djjDLQH//HBZvN3D+1hZ6JvgGdx7fVj7cu69u9zglMQ59VyO7WjbN1Zjf2oc285lFO8mVlrsMcRnzdLcVr+DMyB7xB1eXUVwu6PZ5AX+bwUrOgFAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="21" height="18">
+ <layer id="4" name="WalkBehind" width="21" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYOQBfyAOGGhHYAGGQGw00I4YBcMOAACA+1WD6AUAAA==
+   H4sIAAAAAAAACmNgGAWjYOQBfyAOGGhHYAGGQGw00I4YBcMOAACA+1WD6AUAAA==
   </data>
  </layer>
 </map>

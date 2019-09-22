@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="13" height="21" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="13" height="21" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -14,29 +14,29 @@
   <property name="yOffsetModifier" value="0"/>
  </properties>
  <tileset firstgid="1" source="Hoenn Gyms Set.tsx"/>
- <layer name="Walkable" width="13" height="21">
+ <layer id="1" name="Walkable_2" width="13" height="21">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgYGAwZCQewwC5eoyB2JQARtYDUm9ChB2mSHrMyHAbOXqMGInXhxwGlOjBF2bE2INNbKD0oPsBWzxTK9ywpRdiw80MBxs9jaL7BRubGmkUlO7MsahDFkfXY4EjfJHFyQUA77lZlEQEAAA=
+   H4sIAAAAAAAACmNgYGAwZCQewwC5eoyB2JQARtYDUm9ChB2mSHrMyHAbOXqMGInXhxwGlOjBF2bE2INNbKD0oPsBWzxTK9ywpRdiw80MBxs9jaL7BRubGmkUlO7MsahDFkfXY4EjfJHFyQUA77lZlEQEAAA=
   </data>
  </layer>
- <layer name="Walkable" width="13" height="21">
+ <layer id="2" name="Walkable_1" width="13" height="21">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGDgQxMjAEAzEIYzE64kCqo0G4hgS9IyCUTAKEMAHmHd8qZh/ADG+vEFEBAAA
+   H4sIAAAAAAAACmNgGDgQxMjAEAzEIYzE64kCqo0G4hgS9IyCUTAKEMAHmHd8qZh/ADG+vEFEBAAA
   </data>
  </layer>
- <layer name="Collisions" width="13" height="21">
+ <layer id="3" name="Collisions_2" width="13" height="21">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC7NnYGDwY2Rg8EfD8VjEAoDYngGCw4DscDScjkUsAklPHJANA4FIbBAIReInIOlBBpFoemLR+Nj0EAKU6LFGst8RyHbCgZ2R/OOMpMcTyPbCgm3x6MEFHAnogcmToseVBD3IfvHGYQ4x/kEOR2L1eBIIN5CZLjj0o/vHG80/yHx0Nr3TGwwI4FCHLE6JPdgwPjUAYAMDPEQEAAA=
+   H4sIAAAAAAAACrNnYGDwY2Rg8EfD8VjEAoDYngGCw4DscDScjkUsAklPHJANA4FIbBAIReInIOlBBpFoemLR+Nj0EAKU6LFGst8RyHbCgZ2R/OOMpMcTyPbCgm3x6MEFHAnogcmToseVBD3IfvHGYQ4x/kEOR2L1eBIIN5CZLjj0o/vHG80/yHx0Nr3TGwwI4FCHLE6JPdgwPjUAYAMDPEQEAAA=
   </data>
  </layer>
- <layer name="Collisions" width="13" height="21">
+ <layer id="4" name="Collisions_1" width="13" height="21">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBSMAvIBAAmcdDVEBAAA
+   H4sIAAAAAAAACmNgGAWjYBSMAvIBAAmcdDVEBAAA
   </data>
  </layer>
- <layer name="WalkBehind" width="13" height="21">
+ <layer id="5" name="WalkBehind" width="13" height="21">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAXowJKRgcEKB7ZmHGjXQdxHS3fA/D9YzEE3k1y/w/TROvxIARwkig9GAAAb+/WTRAQAAA==
+   H4sIAAAAAAAACmNgGAXowJKRgcEKB7ZmHGjXQdxHS3fA/D9YzEE3k1y/w/TROvxIARwkig9GAAAb+/WTRAQAAA==
   </data>
  </layer>
 </map>

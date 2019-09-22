@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="11" height="10" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="11" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -17,24 +17,24 @@
  <tileset firstgid="1" source="normal10.tsx"/>
  <tileset firstgid="811" source="InteriorFloor 1.tsx"/>
  <tileset firstgid="1141" source="SinnohInteriorSet1.tsx"/>
- <layer name="Walkable" width="11" height="10">
+ <layer id="1" name="Walkable_2" width="11" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIA0EMDMwBDLjpqOR1EYD+THMuGknEswF0cSaG808dM0lFgAA2K6Ro7gBAAA=
+   H4sIAAAAAAAACmNgIA0EMDMwBDLjpqOR1EYD+THMuGknEswF0cSaG808dM0lFgAA2K6Ro7gBAAA=
   </data>
  </layer>
- <layer name="Walkable" width="11" height="10">
+ <layer id="2" name="Walkable_1" width="11" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIB18R8LY+LQGSxkZGJbhwcsZMfX8ZwISzAwMjFDMxIzbfFmgnBwQy0OxAh61pIIVQLNWAvEqCs0EAG5Fsb+4AQAA
+   H4sIAAAAAAAACmNgIB18R8LY+LQGSxkZGJbhwcsZMfX8ZwISzAwMjFDMxIzbfFmgnBwQy0OxAh61pIIVQLNWAvEqCs0EAG5Fsb+4AQAA
   </data>
  </layer>
- <layer name="Collisions" width="11" height="10">
+ <layer id="3" name="Collisions" width="11" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC9NmZmC4yUAYazND8Hcg+zoXA8MNKMbGh6nNZGTAC7IZEWrbCajtRFJLDBiqatExLjkAEUUN1LgBAAA=
+   H4sIAAAAAAAACtNmZmC4yUAYazND8Hcg+zoXA8MNKMbGh6nNZGTAC7IZEWrbCajtRFJLDBiqatExLjkAEUUN1LgBAAA=
   </data>
  </layer>
- <layer name="WalkBehind" width="11" height="10">
+ <layer id="4" name="WalkBehind" width="11" height="10">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgYGDQZWTAC/SR5L2BbB882BfNrCxG3BgddDDixqMAFQAA557SRrgBAAA=
+   H4sIAAAAAAAACmNgYGDQZWTAC/SR5L2BbB882BfNrCxG3BgddDDixqMAFQAA557SRrgBAAA=
   </data>
  </layer>
 </map>

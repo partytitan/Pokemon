@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="57" height="56" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="57" height="56" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -20,19 +20,19 @@
  <tileset firstgid="527" source="Trees3.tsx"/>
  <tileset firstgid="815" source="Hoenn Gyms Set.tsx"/>
  <tileset firstgid="2023" source="Fire Red Tileset 3.tsx"/>
- <layer name="Walkable" width="57" height="56">
+ <layer id="1" name="Walkable_2" width="57" height="56">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3PsRHCQAwAQYffAUVQJ4RkUC8pQ/a2kYR+d+YKuG0DAAA6uY7jVXXGW9XXX7xVeo34y/7s/hj5l/XZ/THj78jnbcx1T/zb+3gZcz08lnx8jrlef/i4xwqPWZ/RVniM/syywmPUZxWd3751fgMAAAAA+PQGVudqz+AxAAA=
+   H4sIAAAAAAAACu3PsRHCQAwAQYffAUVQJ4RkUC8pQ/a2kYR+d+YKuG0DAAA6uY7jVXXGW9XXX7xVeo34y/7s/hj5l/XZ/THj78jnbcx1T/zb+3gZcz08lnx8jrlef/i4xwqPWZ/RVniM/syywmPUZxWd3751fgMAAAAA+PQGVudqz+AxAAA=
   </data>
  </layer>
- <layer name="Walkable" width="57" height="56">
+ <layer id="2" name="Walkable_1" width="57" height="56">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3PMQ4AEBAAQaXP+7PolChwuZlkH7ClAAAAwFutrhfRzp/Hf2V4HDzGfz358/iX078Mj5F4jP83y/wIAAAAAADc0wECzFrJ4DEAAA==
+   H4sIAAAAAAAACu3PMQ4AEBAAQaXP+7PolChwuZlkH7ClAAAAwFutrhfRzp/Hf2V4HDzGfz358/iX078Mj5F4jP83y/wIAAAAAADc0wECzFrJ4DEAAA==
   </data>
  </layer>
- <layer name="Collisions" width="57" height="56">
+ <layer id="3" name="Collisions" width="57" height="56">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3YQQrCMBCF4eLKI+jSRQ/gwvO49P43EHcKbSczzSSv8f9AEETePFubtNMEAAAAjO12+n1f46Wm9mxKXbNn6d21ZXavnq0ze+TVyHye22d68qLmr14vR8e9ud6ctazHwswXZw8rO/o9hbXrWvhbfPLvAmtKJoU1M5tKx9LzLkKlY6ZIx6xrzmwcS+vzrXn3Kun2L/vHiKX1s0VuNOuo+0dv5hbr2urd//S671D/b9TKHvkeOXMWlV5rRn1mZTny7AAAAAAAAECGN54evOvgMQAA
+   H4sIAAAAAAAACu3YQQrCMBCF4eLKI+jSRQ/gwvO49P43EHcKbSczzSSv8f9AEETePFubtNMEAAAAjO12+n1f46Wm9mxKXbNn6d21ZXavnq0ze+TVyHye22d68qLmr14vR8e9ud6ctazHwswXZw8rO/o9hbXrWvhbfPLvAmtKJoU1M5tKx9LzLkKlY6ZIx6xrzmwcS+vzrXn3Kun2L/vHiKX1s0VuNOuo+0dv5hbr2urd//S671D/b9TKHvkeOXMWlV5rRn1mZTny7AAAAAAAAECGN54evOvgMQAA
   </data>
  </layer>
 </map>

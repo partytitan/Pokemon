@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Client.Data;
 using Client.Services.World;
+using MyContentPipeline.Data;
 
 namespace Client.World.Components.Tiles
 {

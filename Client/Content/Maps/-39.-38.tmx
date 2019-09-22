@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="20" height="18" tilewidth="16" tileheight="16">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
   <property name="dayPokemonChances" value=""/>
   <property name="dayPokemonLevels" value=""/>
@@ -15,24 +15,24 @@
  <tileset firstgid="1" source="Caveset 2.tsx"/>
  <tileset firstgid="1025" source="InteriorFloor 1.tsx"/>
  <tileset firstgid="1355" source="InteriorWalls 1.tsx"/>
- <layer name="Walkable" width="20" height="18">
+ <layer id="1" name="Walkable_2" width="20" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NggAAmFgjGBmBy+DAuPZSaR4zaUUw+pnY4U8s8XGCwmkdt/w6WeKB1vA60eQPlDkLqYAAA6twnc6AFAAA=
+   H4sIAAAAAAAACmNggAAmFgjGBmBy+DAuPZSaR4zaUUw+pnY4U8s8XGCwmkdt/w6WeKB1vA60eQPlDkLqYAAA6twnc6AFAAA=
   </data>
  </layer>
- <layer name="Walkable" width="20" height="18">
+ <layer id="2" name="Walkable_1" width="20" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBQMBPjGONAuGAUDAepYGBjqobiBBb9aABDwLY6gBQAA
+   H4sIAAAAAAAACmNgGAWjYBQMBPjGONAuGAUDAepYGBjqobiBBb9aABDwLY6gBQAA
   </data>
  </layer>
- <layer name="Collisions" width="20" height="18">
+ <layer id="3" name="Collisions" width="20" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NggICPrJRhdAATV2QjDaObR8geQgCXe2H2kQrQ3UnI/8S6n9TwJNc8UsWJ1YcenoTcScg8Qv4abOZRGn641ONKp8TmR3LTHy77ic0/pJYTxJpDbLoiZB4uf5EanrjsI1TOEVIHAwDWUNBQoAUAAA==
+   H4sIAAAAAAAACmNggICPrJRhdAATV2QjDaObR8geQgCXe2H2kQrQ3UnI/8S6n9TwJNc8UsWJ1YcenoTcScg8Qv4abOZRGn641ONKp8TmR3LTHy77ic0/pJYTxJpDbLoiZB4uf5EanrjsI1TOEVIHAwDWUNBQoAUAAA==
   </data>
  </layer>
- <layer name="WalkBehind" width="20" height="18">
+ <layer id="4" name="WalkBehind" width="20" height="18">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgGAWjYBQQA64xDrQLRsFIAwBdsPcPoAUAAA==
+   H4sIAAAAAAAACmNgGAWjYBQQA64xDrQLRsFIAwBdsPcPoAUAAA==
   </data>
  </layer>
 </map>

@@ -12,6 +12,7 @@ using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
+using MyContentPipeline.Data;
 
 namespace Client.Services.World
 {
@@ -19,17 +20,19 @@ namespace Client.Services.World
     {
         private readonly IContentLoader contentLoader;
         private TiledMap tiledMap;
+        private MapData mapData;
         private TiledMapRenderer tiledMapRenderer;
         private readonly GraphicsDevice graphicsDevice;
 
-        public MapLoader(IContentLoader content, GraphicsDevice graphicsDevice)
+        public MapLoader(IContentLoader contentLoader, GraphicsDevice graphicsDevice)
         {
-            this.contentLoader = content;
+            this.contentLoader = contentLoader;
             this.graphicsDevice = graphicsDevice;
         }
 
         public void LoadMap(WarpData warpData, IWorldData worldData)
         {
+            mapData = contentLoader.LoadMapData($"{warpData.XMapId}.{warpData.YMapId}");
             tiledMap = contentLoader.LoadMap($"{warpData.XMapId}.{warpData.YMapId}");
             tiledMapRenderer = new TiledMapRenderer(graphicsDevice, tiledMap);
             var camera = worldData.GetComponents<Camera>().FirstOrDefault();
@@ -71,9 +74,14 @@ namespace Client.Services.World
                     }
                 }
             }
-            collisionObject.AddComponent(new WarpCollision(collisionObject, new WarpData(14,25,16,20,-32,-31), worldData));
+
+            foreach (var warp in mapData.WarpList)
+            {
+                collisionObject.AddComponent(new WarpCollision(collisionObject, warp, worldData));
+            }
 
             return collisionObject;
         }
+
     }
 }
