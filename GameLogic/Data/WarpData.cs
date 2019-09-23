@@ -1,4 +1,4 @@
-﻿namespace MyContentPipeline.Data
+﻿namespace GameLogic.Data
 {
     public class WarpData
     {

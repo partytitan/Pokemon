@@ -10,36 +10,38 @@ using Client.Services.World;
 using Client.World.Components;
 using Client.World.Components.Animations;
 using Client.World.Components.Movements;
+using GameLogic.Data;
+using GameLogic.Trainers;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
-using MyContentPipeline.Data;
 
 namespace Client.Screens
 {
     class ScreenWorld : Screen, IWorldData
     {
-        private readonly IMapLoader mapLoader;
+        public IMapLoader MapLoader { get; set; }
         private readonly IEntityLoader entityLoader;
         private readonly EventRunner eventRunner;
         private readonly List<WorldObject> worldObjects;
         private readonly WorldObject camera;
-        private readonly WarpData warpData;
+        public WarpData WarpData { get; set; }
 
         public ScreenWorld(IScreenLoader screenLoader, IMapLoader mapLoader, IEntityLoader entityLoader, EventRunner eventRunner, WorldObject camera, WarpData warpData) : base(screenLoader)
         {
-            this.mapLoader = mapLoader;
+            this.MapLoader = mapLoader;
             this.entityLoader = entityLoader;
             this.eventRunner = eventRunner;
-            this.warpData = warpData;
+            this.WarpData = warpData;
             this.camera = camera;
             
             worldObjects = new List<WorldObject>();
         }
+
         public void ChangeMap(WarpData warpData)
         {
-            var screen = new ScreenWorld(ScreenLoader, mapLoader, entityLoader, eventRunner, camera, warpData);
+            var screen = new ScreenWorld(ScreenLoader, MapLoader, entityLoader, eventRunner, camera, warpData);
             ScreenLoader.LoadScreen(screen);
         }
         public WorldObject GetWorldObject(string id)
@@ -60,11 +62,11 @@ namespace Client.Screens
         public override void LoadContent(IContentLoader contentLoader)
         {
             worldObjects.Add(camera);
-            mapLoader.LoadMap(warpData, this);
-            worldObjects.Add(mapLoader.BackgroundMapLayers(this));
-            worldObjects.Add(mapLoader.LoadCollisionTiles(this));
-            worldObjects.AddRange(entityLoader.LoadEntities(this, warpData));
-            worldObjects.Add(mapLoader.ForeGoundMapLayers(this));
+            MapLoader.LoadMap(WarpData, this);
+            worldObjects.Add(MapLoader.BackgroundMapLayers(this));
+            worldObjects.Add(MapLoader.LoadCollisionTiles(this));
+            worldObjects.AddRange(entityLoader.LoadEntities(this, WarpData));
+            worldObjects.Add(MapLoader.ForeGoundMapLayers(this));
             GetComponents<ILoadContentComponent>().ForEach(c => c.LoadContent(contentLoader));
             eventRunner.LoadContent(this);
         }

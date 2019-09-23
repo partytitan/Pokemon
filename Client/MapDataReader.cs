@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using GameLogic.Data;
 using Microsoft.Xna.Framework.Content;
-using MyContentPipeline.Data;
 
 namespace Client
 {

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <tileset name="Path1" firstgid="1" tilewidth="16" tileheight="16">
-<image source="Path1.png" trans="000000"/>
+<tileset version="1.2" tiledversion="1.2.4" name="Path1" tilewidth="16" tileheight="16" tilecount="424" columns="8">
+ <image source="Path1.png" trans="000000" width="128" height="848"/>
 </tileset>

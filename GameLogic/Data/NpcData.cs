@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Common;
+﻿using System.Collections.Generic;
+using GameLogic.Common;
 
-namespace MyContentPipeline.Data
+namespace GameLogic.Data
 {
     public class NpcData
     {

@@ -68,6 +68,10 @@ namespace Client.World.Components
             }
         }
 
+        public Point MapBounds
+        {
+            get { return this.screenBounds.Size; }
+        }
         public float MaximumZoom
         {
             get

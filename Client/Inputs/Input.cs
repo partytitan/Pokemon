@@ -47,7 +47,7 @@ namespace Client.Inputs
 
         protected abstract void CheckInput(double gameTime);
 
-        protected void SendNewInput(Common.Inputs inputs)
+        protected void SendNewInput(GameLogic.Common.Inputs inputs)
         {
             NewInput?.Invoke(this, new NewInputEventArgs(inputs));
         }

@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using GameLogic.Data;
 using MonoGame.Extended.Tiled;
-using MyContentPipeline.Data;
 
 namespace Client.Services.Content
 {

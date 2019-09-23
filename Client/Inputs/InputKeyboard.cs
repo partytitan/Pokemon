@@ -16,19 +16,19 @@ namespace Client.Inputs
             keyboardState = Keyboard.GetState();
             if (keyboardState.IsKeyUp(lastKey) && lastKey != Keys.None)
             {
-                SendNewInput(Common.Inputs.None);
+                SendNewInput(GameLogic.Common.Inputs.None);
             }
 
-            CheckKeyState(Keys.Left, Common.Inputs.Left);
-            CheckKeyState(Keys.Up, Common.Inputs.Up);
-            CheckKeyState(Keys.Right, Common.Inputs.Right);
-            CheckKeyState(Keys.Down, Common.Inputs.Down);
-            CheckKeyState(Keys.A, Common.Inputs.A);
+            CheckKeyState(Keys.Left, GameLogic.Common.Inputs.Left);
+            CheckKeyState(Keys.Up, GameLogic.Common.Inputs.Up);
+            CheckKeyState(Keys.Right, GameLogic.Common.Inputs.Right);
+            CheckKeyState(Keys.Down, GameLogic.Common.Inputs.Down);
+            CheckKeyState(Keys.A, GameLogic.Common.Inputs.A);
 
             lasKeyboardState = keyboardState;
         }
 
-        private void CheckKeyState(Keys key, Common.Inputs sendInputs)
+        private void CheckKeyState(Keys key, GameLogic.Common.Inputs sendInputs)
         {
             if (keyboardState.IsKeyDown(key))
             {

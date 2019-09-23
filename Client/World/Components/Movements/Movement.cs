@@ -1,5 +1,4 @@
-﻿using Client.Common;
-using Client.Services;
+﻿using Client.Services;
 using Client.World.Components.Animations;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
@@ -8,13 +7,14 @@ using System.Linq;
 using Client.Screens;
 using Client.Services.World;
 using Client.World.Components.Tiles;
+using GameLogic.Common;
 
 namespace Client.World.Components.Movements
 {
     internal abstract class Movement : Component, IUpdateComponent
     {
         private readonly float speed;
-        private Vector2 wantedPosition;
+        protected Vector2 wantedPosition;
         protected bool InMovement;
         private readonly AnimationWalking animationWalking;
 
@@ -104,7 +104,7 @@ namespace Client.World.Components.Movements
             }
         }
 
-        private void FinishMovement()
+        protected virtual void FinishMovement()
         {
             var sprite = Owner.GetComponent<Sprite>();
             sprite.UpdateTilePosition((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
@@ -112,14 +112,6 @@ namespace Client.World.Components.Movements
             InMovement = false;
             var animation = Owner.GetComponent<Animation>();
             animation.StopAnimation();
-
-            CheckWarp((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
-        }
-
-        private void CheckWarp(int wantedXTilePosition, int wantedYTilePostion)
-        {
-            var warp = Owner.GetComponent<Collision>();
-            warp?.CheckCollision<IPostMoveCollisionComponent>(wantedXTilePosition, wantedYTilePostion);
         }
     }
 }

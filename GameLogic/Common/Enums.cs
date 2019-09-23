@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Client.Common
+﻿namespace GameLogic.Common
 {
     public enum Inputs
     {

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <tileset name="Phoenac Tileset" firstgid="1" tilewidth="16" tileheight="16">
-<image source="Phoenac Tileset.png" trans="000000"/>
+<tileset version="1.2" tiledversion="1.2.4" name="Phoenac Tileset" tilewidth="16" tileheight="16" tilecount="1540" columns="55">
+ <image source="Phoenac Tileset.png" trans="000000" width="891" height="460"/>
 </tileset>

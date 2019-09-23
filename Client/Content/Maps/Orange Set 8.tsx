@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <tileset name="Orange Set 8" firstgid="1" tilewidth="16" tileheight="16">
-<image source="Orange Set 8.png" trans="000000"/>
+<tileset version="1.2" tiledversion="1.2.4" name="Orange Set 8" tilewidth="16" tileheight="16" tilecount="10600" columns="100">
+ <image source="Orange Set 8.png" trans="000000" width="1600" height="1700"/>
 </tileset>

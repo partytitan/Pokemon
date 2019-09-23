@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using GameLogic.Data;
 using MonoGame.Extended.Tiled;
-using MyContentPipeline.Data;
 
 namespace Client.Services.Content
 {
@@ -14,7 +14,7 @@ namespace Client.Services.Content
         private const string TextureNotFoundName = "NotFoundTexture";
         private const string FontNotFoundName = "NotFoundFont";
         private const string MapNotFoundName = "0.0";
-        private const string MapDataNotFoundName = "NotFoundMapData";
+        private const string MapDataNotFoundName = "0.0";
 
 
         private readonly ContentManager contentManager;
@@ -72,17 +72,17 @@ namespace Client.Services.Content
         {
             if (!mapByName.ContainsKey(mapName))
             {
-                //try
-                //{
+                try
+                {
                     var map = contentManager.Load<TiledMap>(Path.Combine("Maps", mapName));
 
                     mapByName.Add(mapName, map);
                     return map;
-                //}
-                //catch (Exception) when (mapName != MapNotFoundName)
-                //{
-                //    return LoadMap(MapNotFoundName);
-                //}
+                }
+                catch (Exception) when (mapName != MapNotFoundName)
+                {
+                    return LoadMap(MapNotFoundName);
+                }
             }
             return mapByName[mapName];
         }

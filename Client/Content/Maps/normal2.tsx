@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="PGTileset 2" firstgid="0" tilewidth="16" tileheight="16">
- <image source="normal2.png"/>
+<tileset version="1.2" tiledversion="1.2.4" name="PGTileset 2" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+ <image source="normal2.png" width="512" height="512"/>
 </tileset>

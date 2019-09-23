@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <tileset name="Interior - Pokecenter Pokemarkt" firstgid="1" tilewidth="16" tileheight="16">
-<image source="Interior - Pokecenter Pokemarkt.png" trans="000000"/>
+<tileset version="1.2" tiledversion="1.2.4" name="Interior - Pokecenter Pokemarkt" tilewidth="16" tileheight="16" tilecount="400" columns="20">
+ <image source="Interior - Pokecenter Pokemarkt.png" trans="000000" width="320" height="320"/>
 </tileset>

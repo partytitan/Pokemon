@@ -7,11 +7,11 @@ using Client.Services.Screens;
 using Client.Services.World;
 using Client.World;
 using Client.World.Components;
+using GameLogic.Data;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.ViewportAdapters;
-using MyContentPipeline.Data;
 
 namespace Client
 {

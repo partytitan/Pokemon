@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="SinnohSet6" firstgid="0" tilewidth="16" tileheight="16">
- <image source="SinnohSet6.png"/>
+<tileset version="1.2" tiledversion="1.2.4" name="SinnohSet6" tilewidth="16" tileheight="16" tilecount="1776" columns="48">
+ <image source="SinnohSet6.png" width="779" height="595"/>
 </tileset>

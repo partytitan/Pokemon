@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Battles\" />
+    <Folder Include="Items\" />
+    <Folder Include="Moves\Reflexive\" />
+    <Folder Include="Moves\Transitive\Attack\MultiTurn\" />
+    <Folder Include="Moves\Transitive\Attack\OneTurnMultiHit\" />
+    <Folder Include="Moves\Transitive\Attack\OneTurnOneHit\" />
+    <Folder Include="Moves\Transitive\Status\" />
+    <Folder Include="PokemonData\" />
+    <Folder Include="Trainers\" />
+  </ItemGroup>
+
 </Project>

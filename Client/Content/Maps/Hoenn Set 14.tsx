@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <tileset name="Hoenn Set 14" firstgid="1" tilewidth="16" tileheight="16">
-<image source="Hoenn Set 14.png" trans="000000"/>
+<tileset version="1.2" tiledversion="1.2.4" name="Hoenn Set 14" tilewidth="16" tileheight="16" tilecount="665" columns="35">
+ <image source="Hoenn Set 14.png" trans="000000" width="560" height="304"/>
 </tileset>

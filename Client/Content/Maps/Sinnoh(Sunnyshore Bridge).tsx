@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <tileset name="Sinnoh(Sunnyshore Bridge)" firstgid="1" tilewidth="16" tileheight="16">
-  <image source="Sinnoh(Sunnyshore Bridge).png" trans="000000"/>
- </tileset>
-
-
-
-
-
-
-
-
-
-
+<tileset version="1.2" tiledversion="1.2.4" name="Sinnoh(Sunnyshore Bridge)" tilewidth="16" tileheight="16" tilecount="1640" columns="41">
+ <image source="Sinnoh(Sunnyshore Bridge).png" trans="000000" width="669" height="644"/>
+</tileset>

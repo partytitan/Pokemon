@@ -6,9 +6,9 @@ namespace Client.EventArg
 {
     internal class NewInputEventArgs : EventArgs
     {
-        public Common.Inputs Inputs { get; set; }
+        public GameLogic.Common.Inputs Inputs { get; set; }
 
-        public NewInputEventArgs(Common.Inputs inputs)
+        public NewInputEventArgs(GameLogic.Common.Inputs inputs)
         {
             Inputs = inputs;
         }
