@@ -16,6 +16,20 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Fonts/guiFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/guiFont.spritefont
+
+#begin Fonts/textBoxFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/textBoxFont.spritefont
+
 #begin Maps/0.0.tmx
 /importer:TiledMapImporter
 /processor:TiledMapProcessor
@@ -8597,28 +8611,6 @@
 #begin Maps/Data/9.-50.txt
 /copy:Maps/Data/9.-50.txt
 
-#begin Test/test-map.tmx
-/importer:TiledMapImporter
-/processor:TiledMapProcessor
-/build:Test/test-map.tmx
-
-#begin Test/tileset.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Test/tileset.png
-
-#begin Test/tileset.tsx
-/importer:TiledMapTilesetImporter
-/processor:TiledMapTilesetProcessor
-/build:Test/tileset.tsx
-
 #begin Textures/NPC/470.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -8690,4 +8682,28 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Textures/ScreenEffects/white_block.png
+
+#begin Textures/Windows/messageArrow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Windows/messageArrow.png
+
+#begin Textures/Windows/windowframe.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Windows/windowframe.png
 

@@ -9,7 +9,9 @@ namespace Client.Inputs
     internal abstract class Input
     {
         public static bool LockInput { get; set; }
-        private event EventHandler<NewInputEventArgs> NewInput;
+        public bool ThrottleInput { get; set; }
+
+        internal event EventHandler<NewInputEventArgs> NewInput;
         private double counter;
         private double cooldown;
 
