@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive.Status
 {
@@ -31,7 +31,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public SandAttack() : base(28, "Sand-Attack", Type.Normal, 15, 24, 100f) { }
+        public SandAttack() : base(28, "Sand-Attack", Type.Normal, 15, 24, 100f)
+        {
+        }
     }
 
     //39
@@ -39,7 +41,6 @@ namespace GameLogic.Moves.Transitive.Status
     {
         public sealed override void ExecuteAndUpdate(BattlePokemon user, BattlePokemon defender)
         {
-
             OnUsed();
             if (IsAMiss(user, defender))
             {
@@ -59,7 +60,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public TailWhip() : base(39, "Tail Whip", Type.Normal, 30, 48, 100f) { }
+        public TailWhip() : base(39, "Tail Whip", Type.Normal, 30, 48, 100f)
+        {
+        }
     }
 
     //43
@@ -86,9 +89,10 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Leer() : base(43, "Leer", Type.Normal, 30, 48, 100f) { }
+        public Leer() : base(43, "Leer", Type.Normal, 30, 48, 100f)
+        {
+        }
     }
-
 
     //45
     public sealed class Growl : TransitiveStatusMove
@@ -118,7 +122,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Growl() : base(45, "Growl", Type.Normal, 40, 64, 100f) { }
+        public Growl() : base(45, "Growl", Type.Normal, 40, 64, 100f)
+        {
+        }
     }
 
     //47
@@ -148,9 +154,10 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Sing() : base(47, "Sing", Type.Normal, 15, 24, 55f) { }
+        public Sing() : base(47, "Sing", Type.Normal, 15, 24, 55f)
+        {
+        }
     }
-
 
     //48
     public sealed class Supersonic : TransitiveStatusMove
@@ -179,9 +186,10 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Supersonic() : base(48, "Supersonic", Type.Normal, 20, 32, 55f) { }
+        public Supersonic() : base(48, "Supersonic", Type.Normal, 20, 32, 55f)
+        {
+        }
     }
-
 
     //50
     public sealed class Disable : TransitiveStatusMove
@@ -192,7 +200,6 @@ namespace GameLogic.Moves.Transitive.Status
             Move move2 = defender.Move2;
             Move move3 = defender.Move3;
             Move move4 = defender.Move4;
-
 
             OnUsed();
             if (HasNoEffect(defender))
@@ -259,9 +266,10 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Disable() : base(50, "Disable", Type.Normal, 20, 32, 90f) { }
+        public Disable() : base(50, "Disable", Type.Normal, 20, 32, 90f)
+        {
+        }
     }
-
 
     //73
     public sealed class LeechSeed : TransitiveStatusMove
@@ -290,11 +298,10 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public LeechSeed() : base(73, "Leech Seed", Type.Grass, 10, 16, 90f) { }
+        public LeechSeed() : base(73, "Leech Seed", Type.Grass, 10, 16, 90f)
+        {
+        }
     }
-
-
-
 
     //77
     public sealed class PoisonPowder : TransitiveStatusMove
@@ -324,7 +331,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public PoisonPowder() : base(77, "PoisonPowder", Type.Poison, 35, 56, 75f) { }
+        public PoisonPowder() : base(77, "PoisonPowder", Type.Poison, 35, 56, 75f)
+        {
+        }
     }
 
     //78
@@ -349,7 +358,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public StunSpore() : base(78, "Stun Spore", Type.Grass, 30, 48, 75f) { }
+        public StunSpore() : base(78, "Stun Spore", Type.Grass, 30, 48, 75f)
+        {
+        }
     }
 
     //79
@@ -374,7 +385,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public SleepPowder() : base(79, "Sleep Powder", Type.Grass, 15, 24, 75f) { }
+        public SleepPowder() : base(79, "Sleep Powder", Type.Grass, 15, 24, 75f)
+        {
+        }
     }
 
     //81
@@ -401,7 +414,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public StringShot(): base(81, "String Shot", Type.Bug, 40, 64, 95f) { }
+        public StringShot() : base(81, "String Shot", Type.Bug, 40, 64, 95f)
+        {
+        }
     }
 
     //86
@@ -430,7 +445,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public ThunderWave() : base(86, "Thunder Wave", Type.Electric, 20, 32, 100f) { }
+        public ThunderWave() : base(86, "Thunder Wave", Type.Electric, 20, 32, 100f)
+        {
+        }
     }
 
     //92
@@ -457,9 +474,10 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Toxic() : base(92, "Toxic", Type.Poison, 10, 16, 85f) { }
+        public Toxic() : base(92, "Toxic", Type.Poison, 10, 16, 85f)
+        {
+        }
     }
-
 
     //95
     public sealed class Hypnosis : TransitiveStatusMove
@@ -483,7 +501,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Hypnosis() : base(95, "Hypnosis", Type.Psychic, 20, 32, 60f) { }
+        public Hypnosis() : base(95, "Hypnosis", Type.Psychic, 20, 32, 60f)
+        {
+        }
     }
 
     //102
@@ -504,7 +524,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Mimic() : base(102, "Mimic", Type.Normal, 10, 16, 100f) { }
+        public Mimic() : base(102, "Mimic", Type.Normal, 10, 16, 100f)
+        {
+        }
     }
 
     //103
@@ -535,7 +557,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Screech() : base(103, "Screech", Type.Normal, 40, 64, 85f) { }
+        public Screech() : base(103, "Screech", Type.Normal, 40, 64, 85f)
+        {
+        }
     }
 
     //108
@@ -566,7 +590,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Smokescreen() : base(108, "Smokescreen", Type.Normal, 20, 32, 100f) { }
+        public Smokescreen() : base(108, "Smokescreen", Type.Normal, 20, 32, 100f)
+        {
+        }
     }
 
     //109
@@ -596,7 +622,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public ConfuseRay() : base(109, "Confuse Ray", Type.Ghost, 10, 16, 100f) { }
+        public ConfuseRay() : base(109, "Confuse Ray", Type.Ghost, 10, 16, 100f)
+        {
+        }
     }
 
     //114
@@ -643,7 +671,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Haze() : base(114, "Haze", Type.Ice, 30, 48, 100f) { }
+        public Haze() : base(114, "Haze", Type.Ice, 30, 48, 100f)
+        {
+        }
     }
 
     //119
@@ -668,7 +698,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public MirrorMove() : base(119, "Mirror Move", Type.Flying, 20, 32, 100f) { }
+        public MirrorMove() : base(119, "Mirror Move", Type.Flying, 20, 32, 100f)
+        {
+        }
     }
 
     //134
@@ -691,7 +723,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Kinesis() : base(134, "Kinesis", Type.Psychic, 15, 24, 80f) { }
+        public Kinesis() : base(134, "Kinesis", Type.Psychic, 15, 24, 80f)
+        {
+        }
     }
 
     //137
@@ -716,7 +750,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Glare() : base(137, "Glare", Type.Normal, 30, 48, 75f) { }
+        public Glare() : base(137, "Glare", Type.Normal, 30, 48, 75f)
+        {
+        }
     }
 
     //139
@@ -742,7 +778,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public PoisonGas() : base(139, "Poison Gas", Type.Poison, 40, 64, 55f) { }
+        public PoisonGas() : base(139, "Poison Gas", Type.Poison, 40, 64, 55f)
+        {
+        }
     }
 
     //142
@@ -771,7 +809,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public LovelyKiss() : base(142, "Lovely Kiss", Type.Normal, 10, 16, 75f) { }
+        public LovelyKiss() : base(142, "Lovely Kiss", Type.Normal, 10, 16, 75f)
+        {
+        }
     }
 
     //144
@@ -785,7 +825,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Transform() : base(144, "Transform", Type.Normal, 10, 16, 100f) { }
+        public Transform() : base(144, "Transform", Type.Normal, 10, 16, 100f)
+        {
+        }
     }
 
     //147
@@ -810,7 +852,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Spore() : base(147, "Spore", Type.Grass, 15, 24, 100f) { }
+        public Spore() : base(147, "Spore", Type.Grass, 15, 24, 100f)
+        {
+        }
     }
 
     //148
@@ -837,7 +881,9 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Flash() : base(148, "Flash", Type.Normal, 29, 32, 70f) { }
+        public Flash() : base(148, "Flash", Type.Normal, 29, 32, 70f)
+        {
+        }
     }
 
     //160
@@ -851,9 +897,8 @@ namespace GameLogic.Moves.Transitive.Status
             SubtractPP(1);
         }
 
-        public Conversion() : base(160, "Conversion", Type.Normal, 30, 48, 100f) { }
-
+        public Conversion() : base(160, "Conversion", Type.Normal, 30, 48, 100f)
+        {
+        }
     }
-
-
 }

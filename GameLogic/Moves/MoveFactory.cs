@@ -1,9 +1,9 @@
-﻿using System;
-using GameLogic.Moves.Reflexive;
+﻿using GameLogic.Moves.Reflexive;
 using GameLogic.Moves.Transitive.Attack.MultiTurn;
 using GameLogic.Moves.Transitive.Attack.OneTurnMultiHit;
 using GameLogic.Moves.Transitive.Attack.OneTurnOneHit;
 using GameLogic.Moves.Transitive.Status;
+using System;
 
 namespace GameLogic.Moves
 {
@@ -22,7 +22,6 @@ namespace GameLogic.Moves
             }
             return move;
         }
-
 
         public static Move Create(int moveIndex)
         {

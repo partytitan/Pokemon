@@ -7,7 +7,7 @@
         public readonly float Defense;
         public readonly float Special;
         public readonly float Speed;
-        
+
         public Stats(
             float hp,
             float attack,

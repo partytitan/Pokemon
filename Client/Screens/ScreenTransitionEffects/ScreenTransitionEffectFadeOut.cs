@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
+using System;
 
 namespace Client.Screens.ScreenTransitionEffects
 {
-    class ScreenTransitionEffectFadeOut : ScreenTransitionEffectFade
+    internal class ScreenTransitionEffectFadeOut : ScreenTransitionEffectFade
     {
         public ScreenTransitionEffectFadeOut(int screenWidth, int screenHeight, byte fadeStepCount) : base(screenWidth, screenHeight, fadeStepCount)
         {

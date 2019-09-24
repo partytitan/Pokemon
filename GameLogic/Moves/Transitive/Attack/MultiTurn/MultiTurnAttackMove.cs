@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive.Attack.MultiTurn
 {
@@ -40,23 +40,23 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
             else
                 if (defender.DidPokemonSwitchThisTurn())
-                {
-                    TurnsLeft = 0;
-                    ExecuteAndUpdate(user, defender);
-                }
-                else
-                {
-                    OnAttackContinues();
-                    if (HasNoEffect(defender)) OnNoEffect();
-                    else defender.Damage(Damage, Type);
+            {
+                TurnsLeft = 0;
+                ExecuteAndUpdate(user, defender);
+            }
+            else
+            {
+                OnAttackContinues();
+                if (HasNoEffect(defender)) OnNoEffect();
+                else defender.Damage(Damage, Type);
 
-                    --TurnsLeft;
-                    if (TurnsLeft == 0)
-                    {
-                        user.DeactivateMultiTurnMove();
-                        defender.DeactivatePartialTrappingAtEndOfTurn();
-                    }
+                --TurnsLeft;
+                if (TurnsLeft == 0)
+                {
+                    user.DeactivateMultiTurnMove();
+                    defender.DeactivatePartialTrappingAtEndOfTurn();
                 }
+            }
         }
 
         private void SetTurnsLeftForBindingMoves()

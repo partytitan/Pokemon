@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Data;
-using Client.Services.World;
+﻿using Client.Services.World;
 using Client.World.Interfaces;
 using GameLogic.Data;
 
 namespace Client.World.Components.Tiles
 {
-    class WarpCollision : Tile, IPostMoveCollisionComponent
+    internal class WarpCollision : Tile, IPostMoveCollisionComponent
     {
         private readonly IWorldData worldData;
         private readonly WarpData warpData;
@@ -18,6 +14,7 @@ namespace Client.World.Components.Tiles
             this.warpData = warpData;
             this.worldData = worldData;
         }
+
         public bool Collide(int xTilePosition, int yTilePosition)
         {
             if (warpData.XTilePosition == xTilePosition && warpData.YTilePosition == yTilePosition)

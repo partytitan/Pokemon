@@ -1,6 +1,6 @@
-﻿using System;
-using GameLogic.Moves;
+﻿using GameLogic.Moves;
 using GameLogic.PokemonData;
+using System;
 
 namespace GameLogic.Battles
 {
@@ -14,7 +14,6 @@ namespace GameLogic.Battles
     {
         public float gainedExp;
     }
-
 
     public class GainedHPEventArgs : BattlePokemonEventArgs
     {
@@ -47,5 +46,4 @@ namespace GameLogic.Battles
     {
         public BattlePokemon transformInto;
     }
-
 }

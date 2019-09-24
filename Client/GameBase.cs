@@ -1,6 +1,4 @@
-﻿using Autofac;
-using Client.Data;
-using Client.Inputs;
+﻿using Client.Inputs;
 using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
 using Client.Services.Content;
@@ -14,21 +12,20 @@ using GameLogic.Data;
 using GameLogic.Trainers;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.ViewportAdapters;
 
 namespace Client
 {
     public class GameBase : Game
     {
-        RenderTarget2D backBuffer;
-        GraphicsDeviceManager GraphicsDeviceManager;
-        SpriteBatch spriteBatch;
-        IContentLoader contentLoader;
-        ScreenLoader screenLoader;
-        Trainer trainer;
-        Camera camera;
-        WindowHandler windowHandler;
+        private RenderTarget2D backBuffer;
+        private GraphicsDeviceManager GraphicsDeviceManager;
+        private SpriteBatch spriteBatch;
+        private IContentLoader contentLoader;
+        private ScreenLoader screenLoader;
+        private Trainer trainer;
+        private Camera camera;
+        private WindowHandler windowHandler;
         private int width;
         private int height;
 
@@ -47,9 +44,9 @@ namespace Client
         protected override void LoadContent()
         {
             backBuffer = new RenderTarget2D(GraphicsDevice, this.width / 2, this.height / 2);
-            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, this.width/2, this.height/2);
+            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, this.width / 2, this.height / 2);
             var cameraWorldObject = new WorldObject("camera");
-            camera = new Camera(null,GraphicsDevice, viewportAdapter);
+            camera = new Camera(null, GraphicsDevice, viewportAdapter);
             cameraWorldObject.AddComponent(camera);
 
             // Create a new SpriteBatch, which can be used to draw textures.
@@ -58,7 +55,7 @@ namespace Client
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(this.width, this.height, 5),
                 new ScreenTransitionEffectFadeIn(this.width, this.height, 3), contentLoader);
             //screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(16, 20, -32, -31)));
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(10,18,0,0)));
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(10, 18, 0, 0)));
             screenLoader.LoadContent(GraphicsDevice);
 
             windowHandler.QueueWindow(new WindowMessage(new Vector2(25, 180), 350, 50, "Hey, Im Ash and youre going down! Hey, Im Ash and youre going down! " +

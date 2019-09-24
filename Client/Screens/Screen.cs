@@ -1,11 +1,7 @@
 ﻿using Client.Services.Content;
 using Client.Services.Screens;
-using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.Xna.Framework;
-using MonoGame.Extended;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Screens
 {
@@ -19,7 +15,9 @@ namespace Client.Screens
         }
 
         public abstract void LoadContent(IContentLoader contentLoader);
+
         public abstract void Update(GameTime gameTime);
+
         public abstract void Draw(SpriteBatch spriteBatch);
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Client.World.Components.Animations
+﻿namespace Client.World.Components.Animations
 {
-    class AnimationIdle
+    internal class AnimationIdle
     {
     }
 }

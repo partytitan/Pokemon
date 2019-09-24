@@ -2,7 +2,7 @@
 
 namespace Client.World.Interfaces
 {
-    interface ILoadContentComponent : IComponent
+    internal interface ILoadContentComponent : IComponent
     {
         void LoadContent(IContentLoader contentLoader);
     }

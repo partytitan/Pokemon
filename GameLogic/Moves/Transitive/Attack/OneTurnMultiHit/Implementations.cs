@@ -2,7 +2,6 @@
 
 namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
 {
-
     //3
     public sealed class DoubleSlap : OneTurnMultiHitAttackMove
     {
@@ -31,7 +30,9 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public DoubleSlap() : base(3, "Double Slap", Type.Normal, 10, 16, 85f, 15f, Category.PHYSICAL) { }
+        public DoubleSlap() : base(3, "Double Slap", Type.Normal, 10, 16, 85f, 15f, Category.PHYSICAL)
+        {
+        }
     }
 
     //4
@@ -62,9 +63,10 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public CometPunch() : base(4, "Comet Punch", Type.Normal, 15, 24, 85f, 18f, Category.PHYSICAL) { }
+        public CometPunch() : base(4, "Comet Punch", Type.Normal, 15, 24, 85f, 18f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //24
     public sealed class DoubleKick : OneTurnMultiHitAttackMove
@@ -123,7 +125,9 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public FuryAttack() : base(31, "Fury Attack", Type.Normal, 20, 32, 85f, 15f, Category.PHYSICAL) { }
+        public FuryAttack() : base(31, "Fury Attack", Type.Normal, 20, 32, 85f, 15f, Category.PHYSICAL)
+        {
+        }
     }
 
     //41
@@ -179,7 +183,9 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public PinMissile() : base(42, "Pin Missile", Type.Bug, 20, 32, 85f, 14f, Category.PHYSICAL) { }
+        public PinMissile() : base(42, "Pin Missile", Type.Bug, 20, 32, 85f, 14f, Category.PHYSICAL)
+        {
+        }
     }
 
     //131
@@ -210,7 +216,9 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public SpikeCannon() : base(131, "Spike Cannon", Type.Normal, 15, 24, 100f, 20f, Category.PHYSICAL) { }
+        public SpikeCannon() : base(131, "Spike Cannon", Type.Normal, 15, 24, 100f, 20f, Category.PHYSICAL)
+        {
+        }
     }
 
     //140
@@ -241,7 +249,9 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public Barrage() : base(140, "Barrage", Type.Normal, 20, 32, 85f, 15f, Category.PHYSICAL) { }
+        public Barrage() : base(140, "Barrage", Type.Normal, 20, 32, 85f, 15f, Category.PHYSICAL)
+        {
+        }
     }
 
     //154
@@ -272,9 +282,10 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             SubtractPP(1);
         }
 
-        public FurySwipes() : base(154, "Fury Swipes", Type.Normal, 15, 24, 80f, 18f, Category.PHYSICAL) { }
+        public FurySwipes() : base(154, "Fury Swipes", Type.Normal, 15, 24, 80f, 18f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //155
     public sealed class Bonemerang : OneTurnMultiHitAttackMove
@@ -306,5 +317,4 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             numberOfHits = 2;
         }
     }
-
 }

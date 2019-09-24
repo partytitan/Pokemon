@@ -3,7 +3,7 @@
 namespace GameLogic.Battles
 {
     /// <summary>
-    /// Representation of a Pokemon battle as a 
+    /// Representation of a Pokemon battle as a
     /// Finite State Machine
     /// </summary>
     public class Battle
@@ -16,61 +16,71 @@ namespace GameLogic.Battles
 
         //references to PlayerSide, OpponentSide, PlayerActor, & OpponentActor, but ordered
         private Side FirstSide;
+
         private Side SecondSide;
         private BattleActor FirstActor;
         private BattleActor SecondActor;
-
-
 
         public bool IsGameOver => PlayerSide.IsDefeated || OpponentSide.IsDefeated;
         public bool IsPlayerDefeated => PlayerSide.IsDefeated;
         public bool IsOpponentDefeated => OpponentSide.IsDefeated;
 
-
-
         public event EventHandler<BattleEventArgs> BattleBegun;
+
         public event EventHandler<BattleEventArgs> MakingSelections;
+
         public event EventHandler<BattleEventArgs> FirstExecutionBegun;
+
         public event EventHandler<BattleEventArgs> FirstExecutionOver;
+
         public event EventHandler<BattleEventArgs> SecondExecutionBegun;
+
         public event EventHandler<BattleEventArgs> SecondExecutionOver;
+
         public event EventHandler<BattleEventArgs> BattleOver;
+
         protected virtual void OnBattleBegun()
         {
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             BattleBegun?.Invoke(this, args);
         }
+
         protected virtual void OnBattleOver()
         {
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             BattleOver?.Invoke(this, args);
         }
+
         protected virtual void OnMakingSelections()
         {
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             MakingSelections?.Invoke(this, args);
         }
+
         protected virtual void OnFirstExecutionBegun()
         {
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             FirstExecutionBegun?.Invoke(this, args);
         }
+
         protected virtual void OnFirstExecutionOver()
         {
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             FirstExecutionOver?.Invoke(this, args);
         }
+
         protected virtual void OnSecondExecutionBegun()
         {
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             SecondExecutionBegun?.Invoke(this, args);
         }
+
         protected virtual void OnSecondExecutionOver()
         {
             BattleEventArgs args = new BattleEventArgs();
@@ -87,6 +97,7 @@ namespace GameLogic.Battles
 
             State = BattleState.Intro;
         }
+
         public void Play()
         {
             OnBattleBegun();
@@ -96,6 +107,7 @@ namespace GameLogic.Battles
             }
             OnBattleOver();
         }
+
         private void ExecuteAndAdvanceState()
         {
             switch (State)
@@ -186,9 +198,9 @@ namespace GameLogic.Battles
                     ExecuteForcedSwitchOnSecond();
                     State = BattleState.SetSelections;
                     break;
-
             }
         }
+
         private void ExecutionSetSelectionState()
         {
             Selection playerSelection;
@@ -218,11 +230,13 @@ namespace GameLogic.Battles
             OpponentSide.SetSelection(opponentSelection);
             State = BattleState.SetFirstAndSecond;
         }
+
         private void UpdateForEndOfTurn()
         {
             PlayerSide.CurrentBattlePokemon.UpdateForEndOfTurn();
             OpponentSide.CurrentBattlePokemon.UpdateForEndOfTurn();
         }
+
         private void ExecuteSetFirstAndSecondState()
         {
             //CASE 1: player's priority higher than opponent's
@@ -256,6 +270,7 @@ namespace GameLogic.Battles
                 }
             }
         }
+
         private void SetPlayerFirst()
         {
             FirstSide = PlayerSide;
@@ -263,6 +278,7 @@ namespace GameLogic.Battles
             SecondSide = OpponentSide;
             SecondActor = OpponentActor;
         }
+
         private void SetOpponentFirst()
         {
             FirstSide = OpponentSide;
@@ -270,23 +286,19 @@ namespace GameLogic.Battles
             SecondSide = PlayerSide;
             SecondActor = PlayerActor;
         }
+
         private void ExecuteForcedSwitchOnFirst()
         {
             Selection selection = FirstActor.MakeForcedSwitchSelection(this, FirstSide);
             FirstSide.SetSelection(selection);
             FirstSide.ExecuteSelection();
         }
+
         private void ExecuteForcedSwitchOnSecond()
         {
             Selection selection = SecondActor.MakeForcedSwitchSelection(this, SecondSide);
             SecondSide.SetSelection(selection);
             SecondSide.ExecuteSelection();
         }
-
-
-
     }
-
-
-
 }

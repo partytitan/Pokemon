@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using GameLogic.Common;
+﻿using GameLogic.Common;
+using System.Collections.Generic;
 
 namespace GameLogic.Data
 {

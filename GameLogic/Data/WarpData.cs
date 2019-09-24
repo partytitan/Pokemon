@@ -13,18 +13,18 @@
         public WarpData()
             : this(0, 0, 0, 0, 0, 0)
         {
-
         }
+
         public WarpData(int xWarpPosition, int yWarpPosition, int xMapId, int yMapId)
-            : this(0,0, xWarpPosition, yWarpPosition, xMapId, yMapId)
+            : this(0, 0, xWarpPosition, yWarpPosition, xMapId, yMapId)
         {
-
         }
+
         public WarpData(int xTilePosition, int yTilePosition, int xWarpPosition, int yWarpPosition, int xMapId, int yMapId)
             : this(xTilePosition, yTilePosition, xWarpPosition, yWarpPosition, xMapId, yMapId, 0)
         {
-
         }
+
         public WarpData(int xTilePosition, int yTilePosition, int xWarpPosition, int yWarpPosition, int xMapId, int yMapId, int badge)
         {
             this.XTilePosition = xTilePosition;

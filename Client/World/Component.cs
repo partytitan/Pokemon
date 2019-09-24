@@ -1,12 +1,4 @@
-﻿using Client.Services.Content;
-using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Screens;
-using Client.World.Interfaces;
-using Microsoft.Xna.Framework;
-using MonoGame.Extended;
+﻿using Client.World.Interfaces;
 
 namespace Client.World
 {

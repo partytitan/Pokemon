@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace GameLogic
 {
-    class GameSession
+    internal class GameSession
     {
-        List<Player> CurrentPlayer { get; set; }
+        private List<Player> CurrentPlayer { get; set; }
 
         public GameSession()
         {
@@ -18,7 +16,6 @@ namespace GameLogic
                     Gold = 9999
                 }
             };
-
         }
     }
 }

@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves
 {
@@ -14,17 +14,18 @@ namespace GameLogic.Moves
 
         public int CurrentPP { get; private set; }
         public int MaxPP { get; private set; }
-        
+
         protected MoveEventArgs EventArgs;
 
-
-
-
         public abstract void ExecuteAndUpdate(BattlePokemon user, BattlePokemon defender);
-        public virtual void Abort() { }
-        public virtual void IfActiveDisruptThrashingMove(BattlePokemon user) { }
 
+        public virtual void Abort()
+        {
+        }
 
+        public virtual void IfActiveDisruptThrashingMove(BattlePokemon user)
+        {
+        }
 
         public Action<Move> Used;
         public Action<Move> Failed;
@@ -50,41 +51,132 @@ namespace GameLogic.Moves
         public Action<Move> SkullBashFirstTurn;
         public Action<Move> SkyAttackFirstTurn;
         public Action<Move> RegainedHealth;
-        protected void OnUsed() { Used?.Invoke(this); }
-        protected void OnFailed() { Failed?.Invoke(this); }
-        protected void OnMissed() { Missed?.Invoke(this); }
-        protected void OnNoEffect() { NoEffect?.Invoke(this); }
-        protected void OnSuperEffective() { SuperEffective?.Invoke(this); }
-        protected void OnNotVeryEffective() { NotVeryEffective?.Invoke(this); }
-        protected void OnCriticalHit() { CriticalHit?.Invoke(this); }
-        protected void OnOneHitKO() { OneHitKO?.Invoke(this); }
-        protected void OnPayDayTriggered() { PayDayTriggered?.Invoke(this); }
-        protected void OnSolarBeamFirstTurn() { SolarBeamFirstTurn?.Invoke(this); }
-        protected void OnRazorWindFirstTurn() { RazorWindFirstTurn?.Invoke(this); }
-        protected void OnBidingTime() { BidingTime?.Invoke(this); }
-        protected void OnBideUnleased() { BideUnleased?.Invoke(this); }
-        protected void OnFlyFirstTurn() { FlyFirstTurn?.Invoke(this); }
-        protected void OnAttackContinues() { AttackContinues?.Invoke(this); }
-        protected void OnCrashDamage() { CrashDamage?.Invoke(this); }
-        protected void OnHurtByRecoilDamage() { HurtByRecoilDamage?.Invoke(this); }
-        protected void OnThrashingAbout() { ThrashingAbout?.Invoke(this); }
-        protected void OnHyperBeamRecharging() { HyperBeamRecharging?.Invoke(this); }
-        protected void OnSuckedHealth() { SuckedHealth?.Invoke(this); }
-        protected void OnDugAHole() { DugAHole?.Invoke(this); }
-        protected void OnSkullBashFirstTurn() { SkullBashFirstTurn?.Invoke(this); }
-        protected void OnSkyAttackFirstTurn() { SkyAttackFirstTurn?.Invoke(this); }
-        protected void OnRegainedHealth() { RegainedHealth?.Invoke(this); }
 
+        protected void OnUsed()
+        {
+            Used?.Invoke(this);
+        }
 
+        protected void OnFailed()
+        {
+            Failed?.Invoke(this);
+        }
 
+        protected void OnMissed()
+        {
+            Missed?.Invoke(this);
+        }
+
+        protected void OnNoEffect()
+        {
+            NoEffect?.Invoke(this);
+        }
+
+        protected void OnSuperEffective()
+        {
+            SuperEffective?.Invoke(this);
+        }
+
+        protected void OnNotVeryEffective()
+        {
+            NotVeryEffective?.Invoke(this);
+        }
+
+        protected void OnCriticalHit()
+        {
+            CriticalHit?.Invoke(this);
+        }
+
+        protected void OnOneHitKO()
+        {
+            OneHitKO?.Invoke(this);
+        }
+
+        protected void OnPayDayTriggered()
+        {
+            PayDayTriggered?.Invoke(this);
+        }
+
+        protected void OnSolarBeamFirstTurn()
+        {
+            SolarBeamFirstTurn?.Invoke(this);
+        }
+
+        protected void OnRazorWindFirstTurn()
+        {
+            RazorWindFirstTurn?.Invoke(this);
+        }
+
+        protected void OnBidingTime()
+        {
+            BidingTime?.Invoke(this);
+        }
+
+        protected void OnBideUnleased()
+        {
+            BideUnleased?.Invoke(this);
+        }
+
+        protected void OnFlyFirstTurn()
+        {
+            FlyFirstTurn?.Invoke(this);
+        }
+
+        protected void OnAttackContinues()
+        {
+            AttackContinues?.Invoke(this);
+        }
+
+        protected void OnCrashDamage()
+        {
+            CrashDamage?.Invoke(this);
+        }
+
+        protected void OnHurtByRecoilDamage()
+        {
+            HurtByRecoilDamage?.Invoke(this);
+        }
+
+        protected void OnThrashingAbout()
+        {
+            ThrashingAbout?.Invoke(this);
+        }
+
+        protected void OnHyperBeamRecharging()
+        {
+            HyperBeamRecharging?.Invoke(this);
+        }
+
+        protected void OnSuckedHealth()
+        {
+            SuckedHealth?.Invoke(this);
+        }
+
+        protected void OnDugAHole()
+        {
+            DugAHole?.Invoke(this);
+        }
+
+        protected void OnSkullBashFirstTurn()
+        {
+            SkullBashFirstTurn?.Invoke(this);
+        }
+
+        protected void OnSkyAttackFirstTurn()
+        {
+            SkyAttackFirstTurn?.Invoke(this);
+        }
+
+        protected void OnRegainedHealth()
+        {
+            RegainedHealth?.Invoke(this);
+        }
 
         public void SubtractPP(int amount)
         {
             CurrentPP -= amount;
             if (CurrentPP < 0) CurrentPP = 0;
         }
-
-        
 
         protected Move(
             int index,
@@ -106,9 +198,6 @@ namespace GameLogic.Moves
             EventArgs = new MoveEventArgs() { move = this };
         }
 
-
-
-
         public sealed override bool Equals(object obj) =>
             (obj == null || GetType() != obj.GetType()) ? false : Equals((Move)obj);
 
@@ -116,7 +205,5 @@ namespace GameLogic.Moves
             (other == null) ? false : Index == other.Index;
 
         public sealed override int GetHashCode() => Index;
-
-
     }
 }

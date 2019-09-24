@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Data;
-using Client.Screens;
+﻿using Client.Data;
 using Client.Services.Content;
 using Client.World.Components.Tiles;
 using Client.World.Interfaces;
 using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MonoGame.Extended;
 
 namespace Client.World.Components
 {
@@ -36,8 +31,8 @@ namespace Client.World.Components
 
         public Sprite(IComponentOwner owner, SpriteData spriteData, Directions directions, int drawWidth, int drawHeight) : this(owner, spriteData)
         {
-            var id = (int) directions;
-            DrawFrame = new Rectangle(0,   id * drawHeight, drawWidth, drawHeight);
+            var id = (int)directions;
+            DrawFrame = new Rectangle(0, id * drawHeight, drawWidth, drawHeight);
         }
 
         public virtual void LoadContent(IContentLoader contentLoader)

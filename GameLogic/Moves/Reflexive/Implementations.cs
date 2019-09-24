@@ -1,9 +1,8 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Reflexive
 {
-
     //14
     public sealed class SwordsDance : ReflexiveStatusMove
     {
@@ -16,9 +15,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public SwordsDance() : base(14, "Swords Dance", Type.Normal, 20, 32) { }
+        public SwordsDance() : base(14, "Swords Dance", Type.Normal, 20, 32)
+        {
+        }
     }
-
 
     //54
     public sealed class Mist : ReflexiveStatusMove
@@ -31,10 +31,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Mist() : base(54, "Mist", Type.Ice, 30, 48) { }
+        public Mist() : base(54, "Mist", Type.Ice, 30, 48)
+        {
+        }
     }
-
-
 
     //74
     public sealed class Growth : ReflexiveStatusMove
@@ -47,9 +47,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Growth() : base(74, "Growth", Type.Normal, 20, 32) { }
+        public Growth() : base(74, "Growth", Type.Normal, 20, 32)
+        {
+        }
     }
-
 
     //96
     public sealed class Meditate : ReflexiveStatusMove
@@ -62,7 +63,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Meditate() : base(96, "Meditate", Type.Psychic, 40, 64) { }
+        public Meditate() : base(96, "Meditate", Type.Psychic, 40, 64)
+        {
+        }
     }
 
     //97
@@ -76,7 +79,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Agility() : base(97, "Agility", Type.Psychic, 30, 48) { }
+        public Agility() : base(97, "Agility", Type.Psychic, 30, 48)
+        {
+        }
     }
 
     //104
@@ -91,9 +96,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public DoubleTeam() : base(104, "Double Team", Type.Normal, 15, 24) { }
+        public DoubleTeam() : base(104, "Double Team", Type.Normal, 15, 24)
+        {
+        }
     }
-
 
     //105
     public sealed class Recover : ReflexiveStatusMove
@@ -103,7 +109,7 @@ namespace GameLogic.Moves.Reflexive
             OnUsed();
             if (user.HP < user.MaxHP)
             {
-                float amount = (float) Math.Floor(user.MaxHP / 2f);
+                float amount = (float)Math.Floor(user.MaxHP / 2f);
                 user.RestoreHP(amount);
                 OnRegainedHealth();
             }
@@ -111,9 +117,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Recover() : base(105, "Recover", Type.Normal, 20, 32) { }
+        public Recover() : base(105, "Recover", Type.Normal, 20, 32)
+        {
+        }
     }
-
 
     //106
     public sealed class Harden : ReflexiveStatusMove
@@ -127,9 +134,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Harden() : base(106, "Harden", Type.Normal, 30, 48) { }
+        public Harden() : base(106, "Harden", Type.Normal, 30, 48)
+        {
+        }
     }
-
 
     //107
     public sealed class Minimize : ReflexiveStatusMove
@@ -143,7 +151,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Minimize() : base(107, "Minimize", Type.Normal, 10, 16) { }
+        public Minimize() : base(107, "Minimize", Type.Normal, 10, 16)
+        {
+        }
     }
 
     //110
@@ -158,7 +168,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Withdraw() : base(110, "Withdraw", Type.Water, 40, 64) { }
+        public Withdraw() : base(110, "Withdraw", Type.Water, 40, 64)
+        {
+        }
     }
 
     //111
@@ -173,9 +185,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public DefenseCurl() : base(111, "Defense Curl", Type.Normal, 40, 64) { }
+        public DefenseCurl() : base(111, "Defense Curl", Type.Normal, 40, 64)
+        {
+        }
     }
-
 
     //112
     public sealed class Barrier : ReflexiveStatusMove
@@ -189,7 +202,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Barrier() : base(112, "Barrier", Type.Psychic, 20, 32) { }
+        public Barrier() : base(112, "Barrier", Type.Psychic, 20, 32)
+        {
+        }
     }
 
     //113
@@ -203,7 +218,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public LightScreen() : base(113, "Light Screen", Type.Psychic, 30, 48) { }
+        public LightScreen() : base(113, "Light Screen", Type.Psychic, 30, 48)
+        {
+        }
     }
 
     //115
@@ -217,9 +234,10 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Reflect() : base(115, "Reflect", Type.Psychic, 20, 32) { }
+        public Reflect() : base(115, "Reflect", Type.Psychic, 20, 32)
+        {
+        }
     }
-
 
     //116
     public sealed class FocusEnergy : ReflexiveStatusMove
@@ -231,7 +249,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public FocusEnergy() : base(116, "Focus Energy", Type.Normal, 30, 48) { }
+        public FocusEnergy() : base(116, "Focus Energy", Type.Normal, 30, 48)
+        {
+        }
     }
 
     //133
@@ -246,7 +266,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Amnesia() : base(133, "Amnesia", Type.Psychic, 20, 32) { }
+        public Amnesia() : base(133, "Amnesia", Type.Psychic, 20, 32)
+        {
+        }
     }
 
     //135
@@ -265,7 +287,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public SoftBoiled() : base(105, "Soft-Boiled", Type.Normal, 10, 16) { }
+        public SoftBoiled() : base(105, "Soft-Boiled", Type.Normal, 10, 16)
+        {
+        }
     }
 
     //150
@@ -278,7 +302,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Splash() : base(150, "Splash", Type.Normal, 40, 64) { }
+        public Splash() : base(150, "Splash", Type.Normal, 40, 64)
+        {
+        }
     }
 
     //151
@@ -293,7 +319,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public AcidArmor() : base(151, "Acid Armor", Type.Poison, 40, 64) { }
+        public AcidArmor() : base(151, "Acid Armor", Type.Poison, 40, 64)
+        {
+        }
     }
 
     //164
@@ -319,7 +347,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Substitute() : base(164, "Substitute", Type.Normal, 10, 16) { }
+        public Substitute() : base(164, "Substitute", Type.Normal, 10, 16)
+        {
+        }
     }
 
     //156
@@ -333,7 +363,9 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Rest() : base(156, "Rest", Type.Psychic, 10, 16) { }
+        public Rest() : base(156, "Rest", Type.Psychic, 10, 16)
+        {
+        }
     }
 
     //159
@@ -348,6 +380,8 @@ namespace GameLogic.Moves.Reflexive
             SetLastMoveAndSubtractPP(user);
         }
 
-        public Sharpen() : base(159, "Sharpen", Type.Normal, 30, 48) { }
+        public Sharpen() : base(159, "Sharpen", Type.Normal, 30, 48)
+        {
+        }
     }
 }

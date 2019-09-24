@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive
 {
@@ -7,14 +7,11 @@ namespace GameLogic.Moves.Transitive
     {
         public readonly float AccuracyPercent;
 
-
         protected void SetLastMoveAndMirrorMove(BattlePokemon user, BattlePokemon defender)
         {
             user.LastMoveUsed = this;
             defender.MirrorMove = this;
         }
-
-
 
         protected bool IsAMiss(BattlePokemon user, BattlePokemon defender)
         {
@@ -33,20 +30,17 @@ namespace GameLogic.Moves.Transitive
             return true;
         }
 
-
-
         protected bool HasNoEffect(BattlePokemon defender)
         {
             return GetTypeMatchupMultiplier(defender) == 0f;
         }
-
-
 
         protected float GetTypeMatchupMultiplier(BattlePokemon defender)
         {
             return TypeEffectiveness(Type, defender.Type1) *
                    TypeEffectiveness(Type, defender.Type2);
         }
+
         private static float TypeEffectiveness(Type attackType, Type defenseType)
         {
             return typeEffectiveness[(int)attackType][(int)defenseType];
@@ -88,8 +82,6 @@ namespace GameLogic.Moves.Transitive
             //DRAGON
             new float[] {1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 2.0f }
         };
-
-
 
         protected TransitiveMove(int index, string name, Type type, int startingPP, int absoluteMaxPP, float accuracyPercent, int priority, Category category)
             : base(index, name, type, startingPP, absoluteMaxPP, priority, category)

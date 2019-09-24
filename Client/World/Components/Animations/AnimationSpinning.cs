@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using GameLogic.Common;
+﻿using GameLogic.Common;
 using Microsoft.Xna.Framework;
 
 namespace Client.World.Components.Animations
 {
-    class AnimationSpinning : IAnimation
+    internal class AnimationSpinning : IAnimation
     {
         private readonly int width;
         private readonly int height;

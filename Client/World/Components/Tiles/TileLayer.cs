@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using Client.Screens;
-using Client.Services.World;
+﻿using Client.Services.World;
 using Client.World.Interfaces;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
+using System.Linq;
 
 namespace Client.World.Components.Tiles
 {
-    class TileLayer : Component, IUpdateComponent, IDrawComponent
+    internal class TileLayer : Component, IUpdateComponent, IDrawComponent
     {
         private readonly TiledMapLayer tiledMapLayer;
         private readonly TiledMapRenderer tiledMapRenderer;

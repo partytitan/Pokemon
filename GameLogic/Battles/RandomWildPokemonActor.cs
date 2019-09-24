@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Moves;
+﻿using GameLogic.Moves;
+using System;
 
 namespace GameLogic.Battles
 {
@@ -21,12 +21,14 @@ namespace GameLogic.Battles
                 return MakeRandomFightSelection(battle, actorSide);
             }
         }
+
         private Selection MakeRandomFightSelection(Battle battle, Side actorSide)
         {
             return Selection.MakeFight(actorSide.CurrentBattlePokemon,
                                        battle.PlayerSide.CurrentBattlePokemon,
                                        PickRandomMove(actorSide));
         }
+
         private Move PickRandomMove(Side actorSide)
         {
             var poke = actorSide.CurrentBattlePokemon;

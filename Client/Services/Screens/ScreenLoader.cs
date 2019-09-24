@@ -1,12 +1,9 @@
-﻿using Client.Services.Content;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Screens;
-using Microsoft.Xna.Framework.Graphics;
+﻿using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
+using Client.Services.Content;
 using Microsoft.Xna.Framework;
-using MonoGame.Extended;
+using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace Client.Services.Screens
 {
@@ -18,7 +15,9 @@ namespace Client.Services.Screens
         private readonly IScreenTransitionEffect previousScreenTransitionEffect;
         private readonly IScreenTransitionEffect newScreenTransitionEffect;
         private readonly IContentLoader contentLoader;
+
         private enum Phases { ClosingPreviousScreen, SettingUpNewScreen, Running }
+
         private Phases currentPhase;
 
         private GraphicsDevice graphicsDevice;
@@ -50,6 +49,7 @@ namespace Client.Services.Screens
                         PrepareNewScreen();
                     }
                     break;
+
                 case Phases.SettingUpNewScreen:
                     newScreenTransitionEffect.Update(gameTime);
                     if (newScreenTransitionEffect.IsDone)
@@ -57,9 +57,11 @@ namespace Client.Services.Screens
                         currentPhase = Phases.Running;
                     }
                     break;
+
                 case Phases.Running:
                     currentScreen?.Update(gameTime);
                     break;
+
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -87,6 +89,5 @@ namespace Client.Services.Screens
             previousScreenTransitionEffect.Draw(spriteBatch);
             newScreenTransitionEffect.Draw(spriteBatch);
         }
-
     }
 }

@@ -4,11 +4,9 @@ using Client.World;
 using Client.World.Components;
 using Client.World.Components.Animations;
 using Client.World.Components.Movements;
+using GameLogic.Data;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using Client.Screens;
-using GameLogic.Data;
 
 namespace Client.Services.World
 {

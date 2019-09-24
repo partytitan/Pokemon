@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using GameLogic.PokemonData;
+using System.Collections.Generic;
 using System.Linq;
-using GameLogic.PokemonData;
+
 namespace GameLogic.Trainers
 {
     public class Trainer
     {
-        public string Identity {get; set;}
+        public string Identity { get; set; }
         public string Name { get; private set; }
         public int PosX { get; set; }
         public int PosY { get; set; }
@@ -36,6 +37,7 @@ namespace GameLogic.Trainers
             this.PosX = 0;
             this.PosY = 0;
         }
+
         public Trainer(string name, int posX, int posY, string currentMap)
         {
             Name = name;

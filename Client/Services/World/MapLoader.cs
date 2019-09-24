@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Client.Data;
+﻿using Client.Data;
 using Client.Services.Content;
 using Client.World;
 using Client.World.Components;
@@ -11,9 +7,10 @@ using Client.World.Components.Tiles;
 using GameLogic.Data;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MonoGame.Extended;
 using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Client.Services.World
 {
@@ -42,7 +39,7 @@ namespace Client.Services.World
             CurrentMap = contentLoader.LoadMap($"{warpData.XMapId}.{warpData.YMapId}");
             tiledMapRenderer = new TiledMapRenderer(graphicsDevice, CurrentMap);
             var camera = worldData.GetComponents<Camera>().FirstOrDefault();
-                camera?.SetScreenBounds(new Rectangle(0,0,CurrentMap.WidthInPixels, CurrentMap.HeightInPixels));
+            camera?.SetScreenBounds(new Rectangle(0, 0, CurrentMap.WidthInPixels, CurrentMap.HeightInPixels));
 
             LoadSurroundingMaps(warpData.XMapId, warpData.YMapId);
         }
@@ -51,7 +48,7 @@ namespace Client.Services.World
         {
             var backgroundLayers = new WorldObject("map_background");
             foreach (var tileLayer in CurrentMap.TileLayers.Where(n => !n.Name.Contains("WalkBehind")))
-            { 
+            {
                 backgroundLayers.AddComponent(new TileLayer(backgroundLayers, tileLayer, tiledMapRenderer, worldData));
             }
 
@@ -114,6 +111,7 @@ namespace Client.Services.World
 
             return npcs;
         }
+
         private void LoadSurroundingMaps(int centerMapX, int centerMapY)
         {
             MapUp = contentLoader.LoadMap($"{centerMapX}.{centerMapY - 1}");

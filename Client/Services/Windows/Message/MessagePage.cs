@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Services.Windows.Message
@@ -58,7 +55,6 @@ namespace Client.Services.Windows.Message
             UpdateText();
             IsDone = true;
         }
-
 
         public void Draw(SpriteBatch spriteBatch)
         {

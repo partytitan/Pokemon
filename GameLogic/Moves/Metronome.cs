@@ -7,7 +7,7 @@ namespace GameLogic.Moves
         public sealed override void ExecuteAndUpdate(BattlePokemon user, BattlePokemon defender)
         {
             OnUsed();
-            
+
             Move newMove = MoveFactory.CreateRandomMoveForMetronome();
             user.AttachMoveEventHandlers(newMove);
             newMove.ExecuteAndUpdate(user, defender);
@@ -17,6 +17,8 @@ namespace GameLogic.Moves
             SubtractPP(1);
         }
 
-        public Metronome() : base(118, "Metronome", Type.Normal, 10, 16, 0, Category.PHYSICAL) { }
+        public Metronome() : base(118, "Metronome", Type.Normal, 10, 16, 0, Category.PHYSICAL)
+        {
+        }
     }
 }

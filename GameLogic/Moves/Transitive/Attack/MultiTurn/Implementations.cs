@@ -1,9 +1,8 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive.Attack.MultiTurn
 {
-
     //13
     public sealed class RazorWind : MultiTurnAttackMove
     {
@@ -39,10 +38,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public RazorWind() : base(13, "Razor Wind", Type.Normal, 10, 16, 75f, 80f, Category.PHYSICAL) { }
+        public RazorWind() : base(13, "Razor Wind", Type.Normal, 10, 16, 75f, 80f, Category.PHYSICAL)
+        {
+        }
     }
-
-
 
     //19
     public sealed class Fly : MultiTurnAttackMove
@@ -57,6 +56,7 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
                     user.ActivateTwoTurnMove(this);
                     this.TurnsLeft = 1;
                     break;
+
                 case 1:
                     OnUsed();
                     if (IsAMiss(user, defender))
@@ -76,10 +76,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public Fly() : base(19, "Fly", Type.Flying, 15, 24, 95f, 90f, Category.PHYSICAL) { }
+        public Fly() : base(19, "Fly", Type.Flying, 15, 24, 95f, 90f, Category.PHYSICAL)
+        {
+        }
     }
-
-
 
     //20
     public sealed class Bind : MultiTurnAttackMove
@@ -89,9 +89,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             ExecuteBindingMove(user, defender);
         }
 
-        public Bind() : base(20, "Bind", Type.Normal, 20, 32, 85f, 15f, Category.PHYSICAL) { }
+        public Bind() : base(20, "Bind", Type.Normal, 20, 32, 85f, 15f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //35
     public sealed class Wrap : MultiTurnAttackMove
@@ -101,7 +102,9 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             ExecuteBindingMove(user, defender);
         }
 
-        public Wrap() : base(35, "Wrap", Type.Normal, 20, 32, 90f, 15f, Category.PHYSICAL) { }
+        public Wrap() : base(35, "Wrap", Type.Normal, 20, 32, 90f, 15f, Category.PHYSICAL)
+        {
+        }
     }
 
     //37
@@ -155,15 +158,17 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
             --TurnsLeft;
         }
+
         public sealed override void IfActiveDisruptThrashingMove(BattlePokemon user)
         {
             TurnsLeft = 0;
             user.DeactivateMultiTurnMove();
         }
 
-        public Thrash() : base(37, "Thrash", Type.Normal, 20, 32, 100f, 90f, Category.PHYSICAL) { }
+        public Thrash() : base(37, "Thrash", Type.Normal, 20, 32, 100f, 90f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //63
     public sealed class HyperBeam : MultiTurnAttackMove
@@ -196,6 +201,7 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
                     SetLastMoveAndMirrorMove(user, defender);
                     SubtractPP(1);
                     break;
+
                 case 1:
                     OnHyperBeamRecharging();
                     this.TurnsLeft = 0;
@@ -204,10 +210,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public HyperBeam() : base(63, "Hyper Beam", Type.Normal, 5, 8, 90f, 150f, Category.PHYSICAL) { }
+        public HyperBeam() : base(63, "Hyper Beam", Type.Normal, 5, 8, 90f, 150f, Category.PHYSICAL)
+        {
+        }
     }
-
-
 
     //76
     public sealed class SolarBeam : MultiTurnAttackMove
@@ -221,6 +227,7 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
                     user.ActivateTwoTurnMove(this);
                     this.TurnsLeft = 1;
                     break;
+
                 case 1:
                     OnUsed();
                     if (IsAMiss(user, defender))
@@ -239,7 +246,9 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public SolarBeam() : base(76, "Solar Beam", Type.Grass, 10, 16, 100f, 120f, Category.SPECIAL) { }
+        public SolarBeam() : base(76, "Solar Beam", Type.Grass, 10, 16, 100f, 120f, Category.SPECIAL)
+        {
+        }
     }
 
     //80
@@ -285,13 +294,16 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
             --TurnsLeft;
         }
+
         public sealed override void IfActiveDisruptThrashingMove(BattlePokemon user)
         {
             TurnsLeft = 0;
             user.DeactivateMultiTurnMove();
         }
 
-        public PetalDance() : base(80, "Petal Dance", Type.Grass, 20, 32, 100f, 70f, Category.SPECIAL) { }
+        public PetalDance() : base(80, "Petal Dance", Type.Grass, 20, 32, 100f, 70f, Category.SPECIAL)
+        {
+        }
     }
 
     //83
@@ -302,7 +314,9 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             ExecuteBindingMove(user, defender);
         }
 
-        public FireSpin() : base(83, "Fire Spin", Type.Fire, 15, 24, 70f, 15f, Category.SPECIAL) { }
+        public FireSpin() : base(83, "Fire Spin", Type.Fire, 15, 24, 70f, 15f, Category.SPECIAL)
+        {
+        }
     }
 
     //91
@@ -320,6 +334,7 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
                     SetLastMoveAndMirrorMove(user, defender);
                     SubtractPP(1);
                     break;
+
                 case 1:
                     OnUsed();
                     if (HasNoEffect(defender))
@@ -341,7 +356,9 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public Dig() : base(91, "Dig", Type.Ground, 10, 16, 100f, 80f, Category.PHYSICAL) { }
+        public Dig() : base(91, "Dig", Type.Ground, 10, 16, 100f, 80f, Category.PHYSICAL)
+        {
+        }
     }
 
     //99
@@ -392,9 +409,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             SetLastMoveAndMirrorMove(user, defender);
         }
 
-        public Rage() : base(99, "Rage", Type.Normal, 20, 32, 100f, 20f, Category.PHYSICAL) { }
+        public Rage() : base(99, "Rage", Type.Normal, 20, 32, 100f, 20f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //117
     public sealed class Bide : MultiTurnAttackMove
@@ -428,9 +446,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             SetLastMoveAndMirrorMove(user, defender);
         }
 
-        public Bide() : base(117, "Bide", Type.Normal, 10, 16, 100f, 0f, Category.PHYSICAL)  { }
+        public Bide() : base(117, "Bide", Type.Normal, 10, 16, 100f, 0f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //128
     public sealed class Clamp : MultiTurnAttackMove
@@ -440,9 +459,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             ExecuteBindingMove(user, defender);
         }
 
-        public Clamp() : base(128, "Clamp", Type.Water, 15, 24, 85f, 35f, Category.SPECIAL) { }
+        public Clamp() : base(128, "Clamp", Type.Water, 15, 24, 85f, 35f, Category.SPECIAL)
+        {
+        }
     }
-
 
     //130
     public sealed class SkullBash : MultiTurnAttackMove
@@ -479,9 +499,10 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public SkullBash() : base(130, "Skull Bash", Type.Normal, 10, 16, 100f, 130f, Category.PHYSICAL) { }
+        public SkullBash() : base(130, "Skull Bash", Type.Normal, 10, 16, 100f, 130f, Category.PHYSICAL)
+        {
+        }
     }
-
 
     //143
     public sealed class SkyAttack : MultiTurnAttackMove
@@ -514,10 +535,8 @@ namespace GameLogic.Moves.Transitive.Attack.MultiTurn
             }
         }
 
-        public SkyAttack() : base(143, "Sky Attack", Type.Flying, 5, 8, 90f, 140f, Category.PHYSICAL) { }
+        public SkyAttack() : base(143, "Sky Attack", Type.Flying, 5, 8, 90f, 140f, Category.PHYSICAL)
+        {
+        }
     }
-
-
-
-
 }

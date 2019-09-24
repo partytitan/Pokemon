@@ -4,7 +4,6 @@ namespace GameLogic.PokemonData
 {
     public static class PokemonLearnset
     {
-
         public static bool CanLearnMoveAtThisLevel(int pokemonIndex, int level)
         {
             int length = AllMovesLearnedAtLevel[pokemonIndex].Length;
@@ -17,8 +16,6 @@ namespace GameLogic.PokemonData
             }
             return false;
         }
-
-
 
         public static List<int> GetAllMoveIndicesOfMovesLearnedAtThisLevel(int pokemonIndex, int level)
         {
@@ -40,7 +37,6 @@ namespace GameLogic.PokemonData
             // 0 - No Pokemon
             new MoveLevelPair[]
             {
-
             },
 
             // 1 - Bulbasaur
@@ -106,10 +102,6 @@ namespace GameLogic.PokemonData
             // 6 - Charizard
         };
 
-
-
-
-
         private struct MoveLevelPair
         {
             public readonly int Level;
@@ -121,6 +113,5 @@ namespace GameLogic.PokemonData
                 this.MoveIndex = moveIndex;
             }
         }
-
     }
 }

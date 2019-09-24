@@ -1,9 +1,9 @@
-﻿using System;
-using Client.World.Interfaces;
+﻿using Client.World.Interfaces;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.ViewportAdapters;
+using System;
 
 namespace Client.World.Components
 {
@@ -14,7 +14,6 @@ namespace Client.World.Components
         private Rectangle screenBounds;
         private float minimumZoom;
         private float zoom;
-
 
         public Camera(IComponentOwner owner, GraphicsDevice graphicsDevice, ViewportAdapter viewportAdapter) : base(owner)
         {
@@ -73,6 +72,7 @@ namespace Client.World.Components
         {
             get { return this.screenBounds.Size; }
         }
+
         public float MaximumZoom
         {
             get
@@ -96,6 +96,7 @@ namespace Client.World.Components
                 return screenBounds != Rectangle.Empty;
             }
         }
+
         public RectangleF BoundingRectangle
         {
             get
@@ -141,12 +142,13 @@ namespace Client.World.Components
         {
             this.screenBounds = screenBounds;
         }
+
         public void LookAt(Vector2 position)
         {
             var wantedPosition = position - new Vector2((float)this.viewportAdapter.VirtualWidth / 2f, (float)this.viewportAdapter.VirtualHeight / 2f);
             if (screenBounds != Rectangle.Empty)
             {
-                var width = screenBounds.Width - (float) this.viewportAdapter.VirtualWidth;
+                var width = screenBounds.Width - (float)this.viewportAdapter.VirtualWidth;
                 var height = screenBounds.Height - (float)this.viewportAdapter.VirtualHeight;
 
                 if (wantedPosition.X <= screenBounds.X)

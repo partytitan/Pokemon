@@ -43,7 +43,6 @@ namespace GameLogic.PokemonData
             return (float)Math.Floor(((((baseStat + DV) * 2) + statPoint) * level / 100) + 5);
         }
 
-
         public static float HPStat(
             float baseStat,
             float DV,
@@ -52,7 +51,6 @@ namespace GameLogic.PokemonData
         {
             return (float)Math.Floor(((((baseStat + DV) * 2) + statPoint) * level / 100) + level + 10);
         }
-
 
         public static float StatPoint(float statExp)
         {

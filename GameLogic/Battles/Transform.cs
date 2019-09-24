@@ -20,10 +20,11 @@ namespace GameLogic.Battles
         public Move Move2 { get; private set; }
         public Move Move3 { get; private set; }
         public Move Move4 { get; private set; }
-        
 
-
-        public void Deactivate() { Active = false; }
+        public void Deactivate()
+        {
+            Active = false;
+        }
 
         public void Activate(BattlePokemon pokemonToTransformInto)
         {

@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive.Attack
 {
@@ -9,7 +9,6 @@ namespace GameLogic.Moves.Transitive.Attack
         protected readonly bool IsHighCritRatioMove;
         protected bool CritFlag;
         protected float EffectivenessMultiplier;
-
 
         protected void UpdateEffectivenessUpdateCritFlagAndDoDamage(BattlePokemon user, BattlePokemon defender)
         {
@@ -34,6 +33,7 @@ namespace GameLogic.Moves.Transitive.Attack
                 OnNotVeryEffective();
             }
         }
+
         protected void UpdateCritFlag(BattlePokemon user)
         {
             int t = (int)Math.Floor(user.BaseSpeed / 2);
@@ -47,6 +47,7 @@ namespace GameLogic.Moves.Transitive.Attack
             }
             else CritFlag = false;
         }
+
         protected float CalcDamage(
             BattlePokemon user, BattlePokemon defender)
         {
@@ -91,7 +92,6 @@ namespace GameLogic.Moves.Transitive.Attack
                                           getStab(user),
                                           EffectivenessMultiplier);
             }
-
             else if (Category == Category.PHYSICAL)
             {
                 return DamageFormula(relativeLevel,
@@ -108,6 +108,7 @@ namespace GameLogic.Moves.Transitive.Attack
                                       getStab(user),
                                       EffectivenessMultiplier);
         }
+
         public static float DamageFormula(
             float attackerLevel,
             float attackStat,
@@ -118,6 +119,7 @@ namespace GameLogic.Moves.Transitive.Attack
         {
             return (float)Math.Floor(((((((2f * attackerLevel / 5f) + 2f) * attackStat * power / defenseStat / 50f) + 2f) * stab * typeModifier * (float)new Random().Next(217, 256)) / 255f));
         }
+
         private float getStab(BattlePokemon attackPokemon)
         {
             float stab;
@@ -129,8 +131,6 @@ namespace GameLogic.Moves.Transitive.Attack
             else stab = 1f;
             return stab;
         }
-
-
 
         protected AttackMove(int index, string name, Type type, int startingPP, int absoluteMaxPP, float accuracyPercent, float power, int priority, bool isHighCritRatio, Category category)
             : base(index, name, type, startingPP, absoluteMaxPP, accuracyPercent, priority, category)

@@ -1,7 +1,5 @@
-﻿using System;
+﻿using Client.World.Events;
 using System.Collections.Generic;
-using System.Text;
-using Client.World.Events;
 
 namespace Client.Services.World
 {

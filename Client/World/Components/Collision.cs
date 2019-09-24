@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Client.Services.World;
+﻿using Client.Services.World;
 using Client.World.Interfaces;
 using Microsoft.Xna.Framework;
+using System.Linq;
 
 namespace Client.World.Components
 {

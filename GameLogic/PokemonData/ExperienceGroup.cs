@@ -8,7 +8,6 @@
         public static readonly ExperienceGroup Slow = new SlowGroup();
 
         public abstract float ExpAt(float level);
-        
 
         private sealed class FastGroup : ExperienceGroup
         {

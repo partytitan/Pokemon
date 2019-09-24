@@ -1,14 +1,12 @@
 ﻿using Client.Services;
-using Client.World.Components.Animations;
-using Microsoft.Xna.Framework;
-using MonoGame.Extended;
-using System;
-using System.Linq;
-using Client.Screens;
 using Client.Services.World;
+using Client.World.Components.Animations;
 using Client.World.Components.Tiles;
 using Client.World.Interfaces;
 using GameLogic.Common;
+using Microsoft.Xna.Framework;
+using System;
+using System.Linq;
 
 namespace Client.World.Components.Movements
 {
@@ -60,7 +58,7 @@ namespace Client.World.Components.Movements
                     throw new ArgumentOutOfRangeException(nameof(direction), direction, null);
             }
             if (Collision((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height)))
-                wantedPosition = new Vector2(x,y);
+                wantedPosition = new Vector2(x, y);
 
             InMovement = true;
             animationWalking.ChangeDirection(direction);

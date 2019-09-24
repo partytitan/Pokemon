@@ -1,7 +1,7 @@
-﻿using System;
-using GameLogic.Moves;
+﻿using GameLogic.Moves;
 using GameLogic.Moves.Transitive.Attack;
 using GameLogic.PokemonData;
+using System;
 
 namespace GameLogic.Battles
 {
@@ -26,6 +26,7 @@ namespace GameLogic.Battles
                 return Pokemon.Move1;
             }
         }
+
         public Move Move2
         {
             get
@@ -37,6 +38,7 @@ namespace GameLogic.Battles
                 return Pokemon.Move2;
             }
         }
+
         public Move Move3
         {
             get
@@ -48,6 +50,7 @@ namespace GameLogic.Battles
                 return Pokemon.Move3;
             }
         }
+
         public Move Move4
         {
             get
@@ -92,10 +95,8 @@ namespace GameLogic.Battles
         private bool LightScreen;
         private bool Reflect;
 
-
         public string Name => Pokemon.Nickname;
         public Status Status => Pokemon.Status;
-
 
         public Type Type1 =>
             Conversion.IsActive ? Conversion.Type1 :
@@ -107,23 +108,32 @@ namespace GameLogic.Battles
             Transform.Active ? Transform.Type2 :
             Pokemon.Type2;
 
-
-
         //events from Pokemon
         public event EventHandler<BattlePokemonEventArgs> Burned;
+
         public event EventHandler<BattlePokemonEventArgs> Frozen;
+
         public event EventHandler<BattlePokemonEventArgs> Paralyzed;
+
         public event EventHandler<BattlePokemonEventArgs> Poisoned;
+
         public event EventHandler<BattlePokemonEventArgs> BadlyPoisoned;
+
         public event EventHandler<BattlePokemonEventArgs> FellAsleep;
+
         public event EventHandler<BattlePokemonEventArgs> StatusCleared;
+
         public event EventHandler<BattlePokemonEventArgs> Fainted;
+
         public event EventHandler<BattlePokemonEventArgs> LeveledUp;
+
         public event EventHandler<Battles.GainedExpEventArgs> GainedExp;
+
         public event EventHandler<Battles.GainedHPEventArgs> GainedHP;
 
         //events from Move
         public Action<MoveEventArgs> MoveUsed;
+
         public Action<MoveEventArgs> MoveFailed;
         public Action<MoveEventArgs> MoveMissed;
         public Action<MoveEventArgs> MoveHadNoEffect;
@@ -148,24 +158,39 @@ namespace GameLogic.Battles
         public Action<MoveEventArgs> SkyAttackFirstTurn;
         public Action<MoveEventArgs> RegainedHealth;
 
-
         //events unique to BattlePokemon
         public event EventHandler<SwitchedOutEventArgs> SwitchedOut;
+
         public event EventHandler<Battles.StatStageChangedEventArgs> StatStageChanged;
+
         public event EventHandler<BattlePokemonEventArgs> SubstituteActivated;
+
         public event EventHandler<BattlePokemonEventArgs> ConversionActivated;
+
         public event EventHandler<TransformedEventArgs> TransformActivated;
+
         public event EventHandler<BattlePokemonEventArgs> LeechSeedActivated;
+
         public event EventHandler<BattlePokemonEventArgs> LeechSeedSaps;
+
         public event EventHandler<BattlePokemonEventArgs> Confused;
+
         public event EventHandler<BattlePokemonEventArgs> HurtFromConfusion;
+
         public event EventHandler<BattlePokemonEventArgs> Flinched;
+
         public event EventHandler<BattlePokemonEventArgs> FullyParalyzed;
+
         public event EventHandler<BattlePokemonEventArgs> FrozenSolid;
+
         public event EventHandler<BattlePokemonEventArgs> FastAsleep;
+
         public event EventHandler<BattlePokemonEventArgs> WokeUp;
+
         public event EventHandler<Battles.MoveEventArgs> Disabled;
+
         public event EventHandler<BattlePokemonEventArgs> MoveAttemptedButIsDisabled;
+
         public event EventHandler<Battles.MimicMoveEventArgs> Mimic;
 
         protected virtual void OnSwitchedOut(Pokemon switchIn)
@@ -274,97 +299,111 @@ namespace GameLogic.Battles
             });
         }
 
-
-
-
         public bool DidPokemonSwitchThisTurn()
         {
             return SwitchedPokemonThisTurn;
         }
 
-
-
         public void ActivatePartialTrapping()
         {
             PartiallyTrapped = true;
         }
+
         public void DeactivatePartialTrappingAtEndOfTurn()
         {
             PartiallyTrappedEndingThisTurn = true;
         }
 
-
-
         public void Confuse()
         {
             ConfusionTurnsLeft = new Random().Next(1, 5);
         }
+
         public bool IsConfused()
         {
             return ConfusionTurnsLeft > 0;
         }
+
         public void DeactivateConfusion()
         {
             ConfusionTurnsLeft = 0;
         }
-
-
 
         public void Flinch()
         {
             if (!Substitute.IsActive) Flinching = true;
         }
 
-
-
         public void AttemptChangeBadlyPoisonToPoison()
         {
             if (IsBadlyPoisoned) Pokemon.ChangeBadlyPoisonToPoison();
         }
-
 
         public void ActivateDisable(Move move, int turns)
         {
             OnDisabled(move);
             Disable.Activate(move, turns);
         }
+
         public void DeactivateDisable()
         {
             Disable.Deactivate();
         }
+
         public bool IsDisabled()
         {
             return Disable.IsActive();
         }
 
-
-
         public void ActivateMist()
         {
             MistActive = true;
         }
+
         public void DeactivateMist()
         {
             MistActive = false;
         }
-        public bool IsMistActive() { return MistActive; }
 
+        public bool IsMistActive()
+        {
+            return MistActive;
+        }
 
-        public bool IsLightScreenActive() { return LightScreen; }
-        public void ActivateLightScreen() { LightScreen = true; }
-        public void DeactivateLightScreen() { LightScreen = false; }
+        public bool IsLightScreenActive()
+        {
+            return LightScreen;
+        }
 
-        public bool IsReflectActive() { return Reflect; }
-        public void ActivateReflect() { Reflect = true; }
-        public void DeactivateReflect() { Reflect = false; }
+        public void ActivateLightScreen()
+        {
+            LightScreen = true;
+        }
 
+        public void DeactivateLightScreen()
+        {
+            LightScreen = false;
+        }
+
+        public bool IsReflectActive()
+        {
+            return Reflect;
+        }
+
+        public void ActivateReflect()
+        {
+            Reflect = true;
+        }
+
+        public void DeactivateReflect()
+        {
+            Reflect = false;
+        }
 
         public float GetDamageForCounter()
         {
             return DamageForCounter;
         }
-        
-
 
         public void MimicMove(Move mimicItself, BattlePokemon opponent)
         {
@@ -385,14 +424,6 @@ namespace GameLogic.Battles
             mimic.Activate(mimicedMove, moveIndex);
         }
 
-
-
-
-
-
-
-
-
         public void UpdateForEndOfTurn()
         {
             SwitchedPokemonThisTurn = false;
@@ -409,15 +440,6 @@ namespace GameLogic.Battles
                 PartiallyTrappedEndingThisTurn = false;
             }
         }
-
-
-
-
-        
-
-
-
-
 
         public void AttemptMoveExecution(Move move, BattlePokemon opponent)
         {
@@ -437,6 +459,7 @@ namespace GameLogic.Battles
 
             EndOfTurnEffects(opponent);
         }
+
         private void BeginningOfTurnEffects(ref bool canMove, Move move)
         {
             if (Pokemon.Status == Status.Sleep)
@@ -521,9 +544,9 @@ namespace GameLogic.Battles
                 return;
             }
         }
+
         private void EndOfTurnEffects(BattlePokemon opponent)
         {
-
             IfSeededThenSapHP(opponent);
 
             if (Status == Status.BadlyPoisoned)
@@ -531,17 +554,16 @@ namespace GameLogic.Battles
                 DamagePokemonOnlyNoEffects(GetStatusConditionDamage());
                 N += 1f;
             }
-
             else if (Status == Status.Poison)
             {
                 DamagePokemonOnlyNoEffects(GetStatusConditionDamage());
             }
-
             else if (Status == Status.Burn)
             {
                 DamagePokemonOnlyNoEffects(GetStatusConditionDamage());
             }
         }
+
         private void IfSeededThenSapHP(BattlePokemon opponent)
         {
             if (Seeded && !opponent.IsFainted)
@@ -561,10 +583,12 @@ namespace GameLogic.Battles
                 opponent.RestoreHP(restore);
             }
         }
+
         private float GetStatusConditionDamage()
         {
             return (float)Math.Floor(HP / 16f) * N;
         }
+
         public void AttachMoveEventHandlers(Move move)
         {
             move.Used += MoveUsedHandler;
@@ -592,6 +616,7 @@ namespace GameLogic.Battles
             move.SkyAttackFirstTurn += SkyAttackFirstTurnHandler;
             move.RegainedHealth += RegainedHealthHandler;
         }
+
         public void DetachMoveEventHandlers(Move move)
         {
             move.Used -= MoveUsedHandler;
@@ -619,102 +644,127 @@ namespace GameLogic.Battles
             move.SkyAttackFirstTurn -= SkyAttackFirstTurnHandler;
             move.RegainedHealth -= RegainedHealthHandler;
         }
+
         protected virtual void MoveUsedHandler(Move m)
         {
             MoveUsed?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveFailedHandler(Move m)
         {
             MoveFailed?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveMissedHandler(Move m)
         {
             MoveMissed?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveHadNoEffectHandler(Move m)
         {
             MoveHadNoEffect?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveSuperEffectiveHandler(Move m)
         {
             MoveSuperEffective?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveNotVeryEffectiveHandler(Move m)
         {
             MoveNotVeryEffective?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveCriticalHitHandler(Move m)
         {
             MoveCriticalHit?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void MoveOneHitKOHandler(Move m)
         {
             MoveOneHitKO?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void PayDayTriggeredHandler(Move m)
         {
             PayDayTriggered?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void SolarBeamFirstTurnHandler(Move m)
         {
             SolarBeamFirstTurn?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void RazorWindFirstTurnHandler(Move m)
         {
             RazorWindFirstTurn?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void BidingTimeHandler(Move m)
         {
             BidingTime?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void BideUnleashedHandler(Move m)
         {
             BideUnleased?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void FlyFirstTurnHandler(Move m)
         {
             FlyFirstTurn?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void AttackContinuesHandler(Move m)
         {
             AttackContinues?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void CrashDamageHandler(Move m)
         {
             CrashDamage?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void HurtByRecoilDamageHandler(Move m)
         {
             HurtByRecoilDamage?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void ThrashingAboutHandler(Move m)
         {
             ThrashingAbout?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void HyperBeamRechargingHandler(Move m)
         {
             HyperBeamRecharging?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void SuckedHealthHandler(Move m)
         {
             SuckedHealth?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void DugAHoleHandler(Move m)
         {
             DugAHole?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void SkullBashFirstTurnHandler(Move m)
         {
             SkullBashFirstTurn?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void SkyAttackFirstTurnHandler(Move m)
         {
             SkyAttackFirstTurn?.Invoke(CreateMoveEventArgs(m));
         }
+
         protected virtual void RegainedHealthHandler(Move m)
         {
             RegainedHealth?.Invoke(CreateMoveEventArgs(m));
         }
+
         private MoveEventArgs CreateMoveEventArgs(Moves.MoveEventArgs e)
         {
             return new MoveEventArgs()
@@ -724,6 +774,7 @@ namespace GameLogic.Battles
                 move = e.move
             };
         }
+
         private MoveEventArgs CreateMoveEventArgs(Move m)
         {
             return new MoveEventArgs()
@@ -734,17 +785,13 @@ namespace GameLogic.Battles
             };
         }
 
-
-
-
-
         public void SwitchOut(Pokemon switchIn)
         {
             OnSwitchedOut(switchIn);
 
             if (IsBadlyPoisoned)
                 Pokemon.ChangeBadlyPoisonToPoison();
-            
+
             DetachPokemonEventHandlers();
             Pokemon = switchIn;
             AttachPokemonEventHandlers();
@@ -777,10 +824,6 @@ namespace GameLogic.Battles
             else BurnDecreasingAttack = false;
         }
 
-
-
-
-
         public BattlePokemon(Pokemon pokemon)
         {
             Pokemon = pokemon;
@@ -800,6 +843,7 @@ namespace GameLogic.Battles
             N = 1f;
             InitializeEventArgs();
         }
+
         private void InitializeEventArgs()
         {
             EventArgs = new BattlePokemonEventArgs()
@@ -808,6 +852,7 @@ namespace GameLogic.Battles
                 pokemon = Pokemon
             };
         }
+
         private void AttachPokemonEventHandlers()
         {
             Pokemon.Burned += BurnedHandler;
@@ -822,6 +867,7 @@ namespace GameLogic.Battles
             Pokemon.GainedExp += GainedExpHandler;
             Pokemon.GainedHP += GainedHPHandler;
         }
+
         private void DetachPokemonEventHandlers()
         {
             Pokemon.Burned -= BurnedHandler;
@@ -836,6 +882,7 @@ namespace GameLogic.Battles
             Pokemon.GainedExp -= GainedExpHandler;
             Pokemon.GainedHP -= GainedHPHandler;
         }
+
         private void BurnedHandler(object sender, PokemonEventArgs e)
         { Burned?.Invoke(this, EventArgs); }
 
@@ -871,7 +918,8 @@ namespace GameLogic.Battles
         }
 
         private void LeveledUpHandler(object sender, PokemonEventArgs e)
-        { LeveledUp?.Invoke(this, EventArgs);
+        {
+            LeveledUp?.Invoke(this, EventArgs);
         }
 
         private void GainedHPHandler(object sender, PokemonData.GainedHPEventArgs e)
@@ -884,43 +932,40 @@ namespace GameLogic.Battles
             });
         }
 
-
-
-
-
-
         public bool IsTwoTurnMoveActive()
         {
             return TwoTurnMove != null;
         }
+
         public void ActivateTwoTurnMove(Move move)
         {
             TwoTurnMove = move;
         }
+
         public void DeactivateTwoTurnMove()
         {
             TwoTurnMove = null;
         }
+
         public Move GetTwoTurnMove()
         {
             return TwoTurnMove;
         }
 
+        public bool IsSemiInvulnerable()
+        {
+            return SemiInvulnerable;
+        }
 
+        public void ActivateSemiInvulnerable()
+        {
+            SemiInvulnerable = true;
+        }
 
-
-
-
-        public bool IsSemiInvulnerable() { return SemiInvulnerable; }
-        public void ActivateSemiInvulnerable() { SemiInvulnerable = true; }
-        public void DeactivateSemiInvulnerable() { SemiInvulnerable = false; }
-        
-
-
-
-
-
-
+        public void DeactivateSemiInvulnerable()
+        {
+            SemiInvulnerable = false;
+        }
 
         public bool IsBurned => Pokemon.Status == Status.Burn;
         public bool IsFrozen => Pokemon.Status == Status.Freeze;
@@ -935,10 +980,10 @@ namespace GameLogic.Battles
 
         //exclusively used to activate a transform
         public float PokemonsAttackStat => Pokemon.Attack;
+
         public float PokemonsDefenseStat => Pokemon.Defense;
         public float PokemonsSpecialStat => Pokemon.Special;
         public float PokemonsSpeedStat => Pokemon.Speed;
-
 
         //exclusively used when crit hit on transformed pokemon
         public float PokemonsDefenseStatWithModifiers =>
@@ -946,13 +991,10 @@ namespace GameLogic.Battles
                 Pokemon.Defense *
                 StatStageData.Multiplier[StatStageModifiers.Defense]);
 
-        public float PokemonsSpecialStatWithModifiers => 
+        public float PokemonsSpecialStatWithModifiers =>
             (float)Math.Floor(
                 Pokemon.Special *
                 StatStageData.Multiplier[StatStageModifiers.Special]);
-
-
-
 
         public void ModifyStatStageAsPrimaryEffect(StatType statType, int delta)
         {
@@ -973,18 +1015,14 @@ namespace GameLogic.Battles
 
         public bool CanStatGoHigher(StatType type) =>
             StatStageModifiers.CanGoHigher(type);
-        
 
         public bool CanStatGoLower(StatType type) =>
             StatStageModifiers.CanGoLower(type);
-        
+
         public void ResetStatStageModifiers()
         {
             StatStageModifiers.Reset();
         }
-
-
-
 
         public float Attack
         {
@@ -996,7 +1034,6 @@ namespace GameLogic.Battles
                 return (float)Math.Floor(attack);
             }
         }
-
 
         public float Defense
         {
@@ -1017,7 +1054,7 @@ namespace GameLogic.Battles
                 return (float)Math.Floor(special);
             }
         }
-        
+
         public float Speed
         {
             get
@@ -1028,13 +1065,9 @@ namespace GameLogic.Battles
                 return (float)Math.Floor(speed);
             }
         }
-        
-
 
         public float HP => Pokemon.CurrentHP;
         public float MaxHP => Pokemon.HP;
-
-
 
         public float AccuracyMultiplier =>
             StatStageData.Multiplier[StatStageModifiers.Accuracy];
@@ -1042,42 +1075,49 @@ namespace GameLogic.Battles
         public float EvasionMultiplier =>
             StatStageData.Multiplier[-StatStageModifiers.Evasion];
 
-
-
         public float BaseSpeed => Pokemon.BaseSpeed;
         public float Level => Pokemon.Level;
 
-
-
         public bool IsFocusEnergyActive => FocusEnergyActive;
+
         public void ActivateFocusEnergy()
         {
             FocusEnergyActive = true;
         }
-        public bool IsDireHitActive() { return DireHitActive; }
-        public bool IsTransformActive() { return Transform.Active; }
 
+        public bool IsDireHitActive()
+        {
+            return DireHitActive;
+        }
+
+        public bool IsTransformActive()
+        {
+            return Transform.Active;
+        }
 
         public bool IsSubstituteActive => Substitute.IsActive;
-        public bool DidSubstituteBreakThisTurn() { return Substitute.BrokeThisTurn; }
 
+        public bool DidSubstituteBreakThisTurn()
+        {
+            return Substitute.BrokeThisTurn;
+        }
 
         public void DeactivateFocusEnergy()
         {
             FocusEnergyActive = false;
         }
 
-
-
         public void DeactivateParalysisDecreasingSpeed()
         {
             ParalysisDecreasingSpeed = false;
         }
-		public void ParalyzeAsPrimaryEffect()
+
+        public void ParalyzeAsPrimaryEffect()
         {
             ParalysisDecreasingSpeed = true;
             Pokemon.Paralyze();
         }
+
         public void ParalyzeAsSecondaryEffect()
         {
             if (!Substitute.IsActive)
@@ -1086,15 +1126,18 @@ namespace GameLogic.Battles
                 Pokemon.Paralyze();
             }
         }
+
         public void DeactivateBurnDecreasingAttack()
         {
             BurnDecreasingAttack = false;
         }
-		public void BurnAsPrimaryEffect()
+
+        public void BurnAsPrimaryEffect()
         {
             BurnDecreasingAttack = true;
             Pokemon.Burn();
         }
+
         public void BurnAsSecondaryEffect()
         {
             if (!Substitute.IsActive)
@@ -1103,10 +1146,12 @@ namespace GameLogic.Battles
                 Pokemon.Burn();
             }
         }
-		public void FreezeAsPrimaryEffect()
+
+        public void FreezeAsPrimaryEffect()
         {
             Pokemon.Freeze();
         }
+
         public void FreezeAsSecondaryEffect()
         {
             if (!Substitute.IsActive)
@@ -1114,10 +1159,12 @@ namespace GameLogic.Battles
                 Pokemon.Freeze();
             }
         }
-		public void PoisonAsPrimaryEffect()
+
+        public void PoisonAsPrimaryEffect()
         {
             Pokemon.Poison();
         }
+
         public void PoisonAsSecondaryEffect()
         {
             if (!Substitute.IsActive)
@@ -1125,11 +1172,13 @@ namespace GameLogic.Battles
                 Pokemon.Poison();
             }
         }
-		public void BadlyPoisonAsPrimaryEffect()
+
+        public void BadlyPoisonAsPrimaryEffect()
         {
             Pokemon.BadlyPoison();
             N = 1f;
         }
+
         public void BadlyPoisonAsSecondaryEffect()
         {
             if (!Substitute.IsActive)
@@ -1138,30 +1187,24 @@ namespace GameLogic.Battles
                 N = 1f;
             }
         }
+
         public void Sleep()
         {
             Pokemon.Sleep();
             SleepTurnsLeft = new Random().Next(1, 8);
         }
+
         public void SleepFor(int numberOfTurns)
         {
             Pokemon.Sleep();
             SleepTurnsLeft = numberOfTurns;
         }
-		public void ClearStatus()
+
+        public void ClearStatus()
         {
             Pokemon.ClearStatus();
             N = 1f;
         }
-
-
-
-
-
-
-
-
-
 
         public void Damage(float amount, Type damageType)
         {
@@ -1182,12 +1225,14 @@ namespace GameLogic.Battles
 
             CheckForRageAndUpdateAttackStatStageIfNecessary();
         }
+
         //this should be referenced exclusively by OneTurnMultiHitAttackMove
         public void DamageWithoutBideOrCounterSideEffects(float amount)
         {
             if (Substitute.IsActive) Substitute.Damage(amount);
             else Pokemon.Damage(amount);
         }
+
         //this should only be referenced by the move Counter.
         public void DamageMethodForCounterOnly(float amount)
         {
@@ -1197,15 +1242,18 @@ namespace GameLogic.Battles
 
             if (Bide.Active) Bide.Damage(amount);
         }
+
         public void DamagePokemonOnlyNoEffects(float amount)
         {
             Pokemon.Damage(amount);
         }
+
         public void RecoilDamage(float amount)
         {
             Pokemon.Damage(amount);
             DamageForCounter = amount;
         }
+
         public void CheckForRageAndUpdateAttackStatStageIfNecessary()
         {
             if (MultiTurnMove != null &&
@@ -1215,6 +1263,7 @@ namespace GameLogic.Battles
                 ModifyStatStageAsPrimaryEffect(StatType.Attack, 1);
             }
         }
+
         private void DamageFromConfusion()
         {
             float damage = AttackMove.DamageFormula(
@@ -1227,95 +1276,88 @@ namespace GameLogic.Battles
             Pokemon.Damage(damage);
         }
 
-
-
-
-
-
-
-
-
-
         public void RestoreHP(float amount)
         {
             Pokemon.RestoreHP(amount);
         }
+
         public void ActivateBide()
         {
             Bide.Activate();
         }
+
         public void DeactivateBide()
         {
             Bide.Deactivate();
         }
+
         public void TickBide()
         {
             Bide.Tick();
         }
+
         public float GetBideDamage()
         {
             return Bide.DamageAccrued;
         }
+
         public bool IsBideActive()
         {
             return Bide.Active;
         }
+
         public int TurnsLeftOfBide()
         {
             return Bide.TurnsLeft;
         }
 
-
-
-
-
         public void ActivateMultiTurnMove(Move move)
         {
             MultiTurnMove = move;
         }
+
         public void DeactivateMultiTurnMove()
         {
             MultiTurnMove = null;
         }
+
         public bool IsMultiTurnMoveActive()
         {
             return MultiTurnMove != null;
         }
+
         public Move GetMultiTurnMove()
         {
             return MultiTurnMove;
         }
-
-
-
-
-
-
-
 
         public void ActivateLeechSeed()
         {
             Seeded = true;
             OnLeechSeedActivated();
         }
+
         public void DeactivateLeechSeed()
         {
             Seeded = false;
         }
+
         public void ActivateConversion(BattlePokemon pokemonToConvertInto)
         {
             Conversion.Activate(pokemonToConvertInto);
             OnConversionActivated();
         }
+
         public void ActivateSubstitute(float hp)
         {
             Substitute.Activate(hp);
             OnSubstituteActivated();
         }
+
         public void ActivateTransform(BattlePokemon pokemonToTransformInto)
         {
             Transform.Activate(pokemonToTransformInto);
-            
+
             StatStageModifiers = new StatStageModifiers(
                 pokemonToTransformInto.StatStageModifiers.Attack,
                 pokemonToTransformInto.StatStageModifiers.Defense,
@@ -1326,7 +1368,5 @@ namespace GameLogic.Battles
 
             OnTransformActivated(pokemonToTransformInto);
         }
-
-
     }
 }

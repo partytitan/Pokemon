@@ -5,11 +5,9 @@ namespace GameLogic.Battles
 {
     public abstract class Selection
     {
-
         public abstract int Priority { get; }
+
         public abstract void Execute();
-
-
 
         public static Selection MakeFight(
             BattlePokemon user,
@@ -42,10 +40,6 @@ namespace GameLogic.Battles
                 pokemonToSwitchIn);
         }
 
-
-
-
-
         private sealed class Fight : Selection
         {
             private BattlePokemon user;
@@ -71,9 +65,6 @@ namespace GameLogic.Battles
             public sealed override int Priority => moveUsed.Priority;
         }
 
-
-
-
         private sealed class ContinueMultiTurnMove : Selection
         {
             private BattlePokemon user;
@@ -86,6 +77,7 @@ namespace GameLogic.Battles
                 this.user = user;
                 this.defender = defender;
             }
+
             public sealed override void Execute()
             {
                 user.AttemptMoveExecution(
@@ -96,23 +88,21 @@ namespace GameLogic.Battles
             public sealed override int Priority => 0;
         }
 
-
-
-
         private sealed class EmptyFight : Selection
         {
-            public sealed override void Execute() { /* do nothing */ }
+            public sealed override void Execute()
+            {
+                /* do nothing */
+            }
+
             public sealed override int Priority => 0;
         }
 
-
-
-
         private sealed class SwitchOut : Selection
         {
-            BattlePokemon myBattlePokemon;
-            BattlePokemon opponentBattlePokemon;
-            Pokemon pokemonToSwitchIn;
+            private BattlePokemon myBattlePokemon;
+            private BattlePokemon opponentBattlePokemon;
+            private Pokemon pokemonToSwitchIn;
 
             public sealed override void Execute()
             {
@@ -132,9 +122,5 @@ namespace GameLogic.Battles
                 this.pokemonToSwitchIn = pokemonToSwitchIn;
             }
         }
-
-
-
-
     }
 }

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using GameLogic.Common;
+﻿using GameLogic.Common;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace Client.World.Components.Animations
 {

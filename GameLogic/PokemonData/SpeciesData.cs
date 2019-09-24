@@ -2,7 +2,6 @@
 {
     public static class SpeciesData
     {
-
         public static readonly string[] Names = new string[]
         {
             "Null",
@@ -159,15 +158,11 @@
             "Mew"
         };
 
-
-
-
-
         public static readonly Type[][] Types = new Type[][]
         {
             //0 - No Pokemon
             new Type[] { Type.Null, Type.Null },
-            //1 - Bulbasaur                      
+            //1 - Bulbasaur
             new Type[] { Type.Grass, Type.Poison },
             //2 - Ivysaur
             new Type[] { Type.Grass, Type.Poison },
@@ -470,10 +465,7 @@
             //151 - Mew
             new Type[] { Type.Psychic, Type.Null }
         };
-        
 
-
-        
         public static readonly ExperienceGroup[] ExpGroup = new ExperienceGroup[]
         {
             //0 - No Pokemon
@@ -782,9 +774,6 @@
             ExperienceGroup.MediumSlow
         };
 
-
-        
-
         public static readonly Stats[] BaseStats = new Stats[]
         {   // 0 - No Pokemon
             new Stats(0f, 0f, 0f, 0f, 0f),
@@ -1092,7 +1081,6 @@
             new Stats(100f, 100f, 100f, 100f, 100f)
         };
 
-
         public static readonly float[] CatchRate = new float[]
         {
             0f,   //0 - NoPokemon
@@ -1177,8 +1165,6 @@
             177f, //76 - Golem
         };
 
-
-        
         public static readonly float[] ExpYield = new float[]
         {
             0f,   //0 - NoPokemon

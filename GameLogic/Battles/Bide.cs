@@ -7,7 +7,6 @@ namespace GameLogic.Battles
         public bool Active { get; private set; }
         public int TurnsLeft { get; private set; }
         public float DamageAccrued { get; private set; }
-        
 
         public void Activate()
         {

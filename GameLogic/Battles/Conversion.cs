@@ -5,7 +5,6 @@
         public bool IsActive { get; private set; }
         public Type Type1 { get; private set; }
         public Type Type2 { get; private set; }
-        
 
         public void Activate(
             BattlePokemon pokemonToConvertInto)

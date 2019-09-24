@@ -3,38 +3,40 @@
     public sealed class StatStageModifiers
     {
         private int attack;
+
         public int Attack
         { get => attack; private set { attack = value; } }
 
         private int defense;
+
         public int Defense
         { get => defense; private set { defense = value; } }
 
         private int special;
+
         public int Special
         { get => special; private set { special = value; } }
 
         private int speed;
+
         public int Speed
         { get => speed; private set { speed = value; } }
 
         private int accuracy;
+
         public int Accuracy
         { get => accuracy; private set { accuracy = value; } }
 
         private int evasion;
+
         public int Evasion
         { get => evasion; private set { evasion = value; } }
-        
-
 
         public bool CanGoHigher(StatType type) =>
             GetModifierForType(type) < 6;
 
         public bool CanGoLower(StatType type) =>
             GetModifierForType(type) > -6;
-
-
 
         public void Modify(StatType type, int delta)
         {
@@ -43,8 +45,6 @@
             if (stat > 6) stat = 6;
             if (stat < 0) stat = 0;
         }
-        
-
 
         public void Reset()
         {
@@ -56,10 +56,10 @@
             evasion = 0;
         }
 
+        public StatStageModifiers()
+        {
+        }
 
-
-        public StatStageModifiers() { }
-        
         public StatStageModifiers(
             int attack,
             int defense,
@@ -75,8 +75,6 @@
             this.accuracy = accuracy;
             this.evasion = evasion;
         }
-
-
 
         private ref int GetModifierForType(StatType type)
         {

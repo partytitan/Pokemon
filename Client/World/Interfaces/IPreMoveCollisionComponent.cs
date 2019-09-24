@@ -1,6 +1,6 @@
 ﻿namespace Client.World.Interfaces
 {
-    interface IPreMoveCollisionComponent : ICollisionComponent
+    internal interface IPreMoveCollisionComponent : ICollisionComponent
     {
     }
 }

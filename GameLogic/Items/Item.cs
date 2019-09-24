@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.PokemonData;
+﻿using GameLogic.PokemonData;
+using System;
 using static GameLogic.PokemonData.Status;
 
 namespace GameLogic.Items
@@ -36,10 +36,6 @@ namespace GameLogic.Items
             return !first.Equals(second);
         }
     }
-    
-    
-
-
 
     public abstract class Ball : Item
     {
@@ -69,7 +65,7 @@ namespace GameLogic.Items
             }
 
             //pokemon broke free
-            float d = (float) Math.Floor(
+            float d = (float)Math.Floor(
                       poke.CatchRate * 100f / maxN);
             if (d >= 256f) return CaptureData.Free3Shake;
 
@@ -84,7 +80,9 @@ namespace GameLogic.Items
             return CaptureData.Free3Shake;
         }
 
-        protected Ball(string name) : base(name) { }
+        protected Ball(string name) : base(name)
+        {
+        }
     }
 
     public sealed class CaptureData
@@ -97,14 +95,16 @@ namespace GameLogic.Items
         public static readonly CaptureData Free1Shake = new CaptureData(false, 1);
         public static readonly CaptureData Free2Shake = new CaptureData(false, 2);
         public static readonly CaptureData Free3Shake = new CaptureData(false, 3);
-        
+
         private CaptureData(bool captured, int shakes)
         {
             this.captured = captured;
             this.shakes = shakes;
         }
 
-        private CaptureData() { }
+        private CaptureData()
+        {
+        }
     }
 
     public sealed class MasterBall : Ball
@@ -113,7 +113,9 @@ namespace GameLogic.Items
 
         public sealed override CaptureData Catch(Pokemon poke) => CaptureData.Captured;
 
-        private MasterBall() : base("Master Ball") { }
+        private MasterBall() : base("Master Ball")
+        {
+        }
     }
 
     public sealed class PokeBall : Ball
@@ -122,7 +124,9 @@ namespace GameLogic.Items
 
         public sealed override CaptureData Catch(Pokemon poke) => Catch(poke, 255, 12f);
 
-        private PokeBall() : base("Pokeball") { }
+        private PokeBall() : base("Pokeball")
+        {
+        }
     }
 
     public sealed class GreatBall : Ball
@@ -131,32 +135,31 @@ namespace GameLogic.Items
 
         public sealed override CaptureData Catch(Pokemon poke) => Catch(poke, 200, 8f);
 
-        private GreatBall() : base("Great Ball") { }
+        private GreatBall() : base("Great Ball")
+        {
+        }
     }
 
     public sealed class UltraBall : Ball
     {
         public static readonly UltraBall instance = new UltraBall();
-         
+
         public sealed override CaptureData Catch(Pokemon poke) => Catch(poke, 150, 12f);
 
-        private UltraBall() : base("Ultra Ball") { }
+        private UltraBall() : base("Ultra Ball")
+        {
+        }
     }
-
-
-
-
-
-
-
 
     public abstract class Stone : Item
     {
         public abstract StoneAttemptData AttemptUseOn(Pokemon poke);
 
-        protected Stone(string name) : base(name) { }
+        protected Stone(string name) : base(name)
+        {
+        }
     }
-    
+
     public sealed class StoneAttemptData
     {
         public readonly bool works;
@@ -183,7 +186,9 @@ namespace GameLogic.Items
             return new StoneAttemptData(false, 0);
         }
 
-        private MoonStone() : base("Moon Stone") { }
+        private MoonStone() : base("Moon Stone")
+        {
+        }
     }
 
     public sealed class FireStone : Stone
@@ -199,7 +204,9 @@ namespace GameLogic.Items
             return new StoneAttemptData(false, 0);
         }
 
-        private FireStone() : base("Fire Stone") { }
+        private FireStone() : base("Fire Stone")
+        {
+        }
     }
 
     public sealed class WaterStone : Stone
@@ -216,7 +223,9 @@ namespace GameLogic.Items
             return new StoneAttemptData(false, 0);
         }
 
-        private WaterStone() : base("Water Stone") { }
+        private WaterStone() : base("Water Stone")
+        {
+        }
     }
 
     public sealed class ThunderStone : Stone
@@ -231,7 +240,9 @@ namespace GameLogic.Items
             return new StoneAttemptData(false, 0);
         }
 
-        private ThunderStone() : base("Thunder Stone") { }
+        private ThunderStone() : base("Thunder Stone")
+        {
+        }
     }
 
     public sealed class LeafStone : Stone
@@ -247,14 +258,10 @@ namespace GameLogic.Items
             return new StoneAttemptData(false, 0);
         }
 
-        private LeafStone() : base("Leaf Stone") { }
+        private LeafStone() : base("Leaf Stone")
+        {
+        }
     }
-
-
-
-
-
-
 
     public abstract class BattleItem : Item
     {
@@ -262,10 +269,10 @@ namespace GameLogic.Items
 
         public abstract bool CanUseOn(Pokemon p);
 
-        protected BattleItem(string name) : base(name) { }
+        protected BattleItem(string name) : base(name)
+        {
+        }
     }
-
-
 
     public abstract class Healer : BattleItem
     {
@@ -274,7 +281,9 @@ namespace GameLogic.Items
             return p.CurrentHP < p.HP;
         }
 
-        protected Healer(string name) : base(name) { }
+        protected Healer(string name) : base(name)
+        {
+        }
     }
 
     public sealed class Potion : Healer
@@ -286,7 +295,9 @@ namespace GameLogic.Items
             p.RestoreHP(20f);
         }
 
-        private Potion() : base("Potion") { }
+        private Potion() : base("Potion")
+        {
+        }
     }
 
     public sealed class SuperPotion : Healer
@@ -298,7 +309,9 @@ namespace GameLogic.Items
             p.RestoreHP(50f);
         }
 
-        private SuperPotion() : base("Super Potion") { }
+        private SuperPotion() : base("Super Potion")
+        {
+        }
     }
 
     public sealed class HyperPotion : Healer
@@ -310,7 +323,9 @@ namespace GameLogic.Items
             p.RestoreHP(200f);
         }
 
-        private HyperPotion() : base("Hyper Potion") { }
+        private HyperPotion() : base("Hyper Potion")
+        {
+        }
     }
 
     public sealed class MaxPotion : Healer
@@ -322,7 +337,9 @@ namespace GameLogic.Items
             p.RestoreHP(999999999f);
         }
 
-        private MaxPotion() : base("Hyper Potion") { }
+        private MaxPotion() : base("Hyper Potion")
+        {
+        }
     }
 
     public sealed class FreshWater : Healer
@@ -334,7 +351,9 @@ namespace GameLogic.Items
             p.RestoreHP(50f);
         }
 
-        private FreshWater() : base("Fresh Water") { }
+        private FreshWater() : base("Fresh Water")
+        {
+        }
     }
 
     public sealed class SodaPop : Healer
@@ -346,7 +365,9 @@ namespace GameLogic.Items
             p.RestoreHP(60f);
         }
 
-        private SodaPop() : base("Soda Pop") { }
+        private SodaPop() : base("Soda Pop")
+        {
+        }
     }
 
     public sealed class Lemonade : Healer
@@ -358,7 +379,9 @@ namespace GameLogic.Items
             p.RestoreHP(80f);
         }
 
-        private Lemonade() : base("Lemonade") { }
+        private Lemonade() : base("Lemonade")
+        {
+        }
     }
 
     public sealed class FullRestore : BattleItem
@@ -377,10 +400,10 @@ namespace GameLogic.Items
                    p.Status != Status.Null;
         }
 
-        private FullRestore() : base("Full Restore") { }
+        private FullRestore() : base("Full Restore")
+        {
+        }
     }
-
-
 
     public abstract class StatusHealer : BattleItem
     {
@@ -389,7 +412,9 @@ namespace GameLogic.Items
             p.ClearStatus();
         }
 
-        protected StatusHealer(string name) : base(name) { }
+        protected StatusHealer(string name) : base(name)
+        {
+        }
     }
 
     public sealed class Antidote : StatusHealer
@@ -402,7 +427,9 @@ namespace GameLogic.Items
                    p.Status == BadlyPoisoned;
         }
 
-        private Antidote() : base("Antidote") { }
+        private Antidote() : base("Antidote")
+        {
+        }
     }
 
     public sealed class ParalyzeHeal : StatusHealer
@@ -414,7 +441,9 @@ namespace GameLogic.Items
             return p.Status == Paralysis;
         }
 
-        private ParalyzeHeal() : base("Paralyze Heal") { }
+        private ParalyzeHeal() : base("Paralyze Heal")
+        {
+        }
     }
 
     public sealed class Awakening : StatusHealer
@@ -426,7 +455,9 @@ namespace GameLogic.Items
             return p.Status == Sleep;
         }
 
-        private Awakening() : base("Awakening") { }
+        private Awakening() : base("Awakening")
+        {
+        }
     }
 
     public sealed class BurnHeal : StatusHealer
@@ -438,7 +469,9 @@ namespace GameLogic.Items
             return p.Status == Burn;
         }
 
-        private BurnHeal() : base("Burn Heal") { }
+        private BurnHeal() : base("Burn Heal")
+        {
+        }
     }
 
     public sealed class IceHeal : StatusHealer
@@ -450,7 +483,9 @@ namespace GameLogic.Items
             return p.Status == Freeze;
         }
 
-        private IceHeal() : base("Ice Heal") { }
+        private IceHeal() : base("Ice Heal")
+        {
+        }
     }
 
     public sealed class FullHeal : StatusHealer
@@ -462,8 +497,8 @@ namespace GameLogic.Items
             return p.Status != Null;
         }
 
-        private FullHeal() : base("Full Heal") { }
+        private FullHeal() : base("Full Heal")
+        {
+        }
     }
-
-
 }

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Services.World;
+﻿using Client.Services.World;
 using Client.World.Events;
 using Client.World.Interfaces;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace Client.World.EventTriggers
 {

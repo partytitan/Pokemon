@@ -5,7 +5,6 @@
         public bool IsActive { get; private set; }
         public bool BrokeThisTurn { get; private set; }
         public float CurrentHP { get; private set; }
-        
 
         public void Activate(float hp)
         {
@@ -32,6 +31,5 @@
         {
             BrokeThisTurn = false;
         }
-
     }
 }

@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Client.EventArg;
+﻿using Client.EventArg;
 using Client.Inputs;
-using Client.Screens;
 using Client.Services.World;
 using Client.World.Components.Animations;
 using Client.World.Components.Tiles;
 using Client.World.Interfaces;
 using GameLogic.Common;
 using Microsoft.Xna.Framework;
-using MonoGame.Extended;
+using System;
+using System.Linq;
 
 namespace Client.World.Components.Movements
 {
@@ -36,19 +32,25 @@ namespace Client.World.Components.Movements
                 case GameLogic.Common.Inputs.Left:
                     Move(Directions.Left);
                     break;
+
                 case GameLogic.Common.Inputs.Up:
                     Move(Directions.Up);
                     break;
+
                 case GameLogic.Common.Inputs.Right:
                     Move(Directions.Right);
                     break;
+
                 case GameLogic.Common.Inputs.Down:
                     Move(Directions.Down);
                     break;
+
                 case GameLogic.Common.Inputs.None:
                     break;
+
                 case GameLogic.Common.Inputs.A:
                     break;
+
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -72,6 +74,7 @@ namespace Client.World.Components.Movements
             CheckWarp((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
             CheckMapChange((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
         }
+
         private void CheckWarp(int wantedXTilePosition, int wantedYTilePostion)
         {
             var warp = Owner.GetComponent<Collision>();

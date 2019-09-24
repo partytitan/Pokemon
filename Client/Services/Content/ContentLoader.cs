@@ -1,11 +1,10 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿using GameLogic.Data;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using MonoGame.Extended.Tiled;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using GameLogic.Data;
-using MonoGame.Extended.Tiled;
 
 namespace Client.Services.Content
 {
@@ -15,7 +14,6 @@ namespace Client.Services.Content
         private const string FontNotFoundName = "NotFoundFont";
         private const string MapNotFoundName = "0.0";
         private const string MapDataNotFoundName = "0.0";
-
 
         private readonly ContentManager contentManager;
         private readonly Dictionary<string, Texture2D> textureByName;

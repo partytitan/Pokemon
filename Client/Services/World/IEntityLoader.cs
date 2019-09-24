@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Data;
-using Client.Screens;
-using Client.World;
+﻿using Client.World;
 using GameLogic.Data;
+using System.Collections.Generic;
 
 namespace Client.Services.World
 {

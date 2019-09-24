@@ -1,5 +1,5 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
 {
@@ -38,7 +38,6 @@ namespace GameLogic.Moves.Transitive.Attack.OneTurnMultiHit
             {
                 defender.PoisonAsSecondaryEffect();
             }
-
 
             for (int i = 1; i < numberOfHits; i++)
             {

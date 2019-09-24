@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
-using Client.Inputs;
+﻿using Client.Inputs;
 using Client.Services.Content;
 using Client.World.Events;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Client.Services.World
 {
@@ -21,6 +19,7 @@ namespace Client.Services.World
         {
             this.contentLoader = contentLoader;
         }
+
         public void LoadContent(IWorldData worldData)
         {
             this.worldData = worldData;
@@ -54,7 +53,6 @@ namespace Client.Services.World
                 {
                     currentEvents[currentIndex].Initialize(worldData);
                 }
-
             }
         }
 

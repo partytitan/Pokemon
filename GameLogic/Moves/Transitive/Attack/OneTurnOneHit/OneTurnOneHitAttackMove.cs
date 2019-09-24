@@ -1,11 +1,10 @@
-﻿using System;
-using GameLogic.Battles;
+﻿using GameLogic.Battles;
+using System;
 
 namespace GameLogic.Moves.Transitive.Attack.OneTurnOneHit
 {
     public abstract class OneTurnOneHitAttackMove : AttackMove
     {
-
         protected void UpdateEffectivenessUpdateCritDoDamageAndRestoreHP(BattlePokemon user, BattlePokemon defender)
         {
             UpdateEffectiveness(defender);

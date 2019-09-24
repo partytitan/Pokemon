@@ -11,13 +11,13 @@ namespace GameLogic.Moves.Reflexive
         }
 
         protected abstract void Execute(BattlePokemon user);
-        
+
         protected void SetLastMoveAndSubtractPP(BattlePokemon user)
         {
             user.LastMoveUsed = this;
             SubtractPP(1);
         }
-        
+
         protected ReflexiveStatusMove(int index, string name, Type type, int startingPP, int absoluteMaxPP)
             : base(index, name, type, startingPP, absoluteMaxPP, 0, Category.STATUS) { }
     }

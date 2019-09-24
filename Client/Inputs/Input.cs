@@ -1,8 +1,6 @@
 ﻿using Client.EventArg;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.Xna.Framework;
+using System;
 
 namespace Client.Inputs
 {
@@ -12,6 +10,7 @@ namespace Client.Inputs
         public bool ThrottleInput { get; set; }
 
         internal event EventHandler<NewInputEventArgs> NewInput;
+
         private double counter;
         private double cooldown;
 
@@ -29,7 +28,7 @@ namespace Client.Inputs
 
         public void Update(GameTime gameTime)
         {
-            if(LockInput)
+            if (LockInput)
                 return;
             if (cooldown > 0)
             {

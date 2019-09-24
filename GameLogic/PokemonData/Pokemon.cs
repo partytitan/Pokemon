@@ -1,6 +1,6 @@
-﻿using System;
+﻿using GameLogic.Moves;
+using System;
 using System.Collections.Generic;
-using GameLogic.Moves;
 
 namespace GameLogic.PokemonData
 {
@@ -25,15 +25,15 @@ namespace GameLogic.PokemonData
         public Move Move4 { get; private set; }
 
         public float Exp { get; private set; }
-        public float ExpYield => SpeciesData.ExpYield[Number]; 
+        public float ExpYield => SpeciesData.ExpYield[Number];
         public ExperienceGroup ExpGroup => SpeciesData.ExpGroup[Number];
 
         private Stats Stats;
-        public float HP => Stats.HP; 
-        public float Attack => Stats.Attack; 
-        public float Defense => Stats.Defense; 
-        public float Special => Stats.Special; 
-        public float Speed => Stats.Speed; 
+        public float HP => Stats.HP;
+        public float Attack => Stats.Attack;
+        public float Defense => Stats.Defense;
+        public float Special => Stats.Special;
+        public float Speed => Stats.Speed;
 
         private Stats BaseStats => SpeciesData.BaseStats[Number];
         public float BaseHP => BaseStats.HP;
@@ -41,7 +41,7 @@ namespace GameLogic.PokemonData
         public float BaseDefense => BaseStats.Defense;
         public float BaseSpecial => BaseStats.Special;
         public float BaseSpeed => BaseStats.Speed;
-        
+
         private readonly Stats DVs;
         public float HPDV => DVs.HP;
         public float AttackDV => DVs.Attack;
@@ -55,30 +55,39 @@ namespace GameLogic.PokemonData
         public float DefenseExp => StatExp.Defense;
         public float SpecialExp => StatExp.Special;
         public float SpeedExp => StatExp.Speed;
-        
+
         private PokemonEventArgs EventArgs;
 
         public float CatchRate => SpeciesData.CatchRate[Number];
 
         private string nickname;
+
         public string Nickname
         {
             get => nickname ?? Species;
             set { nickname = value; }
         }
 
-
-
         public event EventHandler<PokemonEventArgs> Burned;
+
         public event EventHandler<PokemonEventArgs> Frozen;
+
         public event EventHandler<PokemonEventArgs> Paralyzed;
+
         public event EventHandler<PokemonEventArgs> Poisoned;
+
         public event EventHandler<PokemonEventArgs> BadlyPoisoned;
+
         public event EventHandler<PokemonEventArgs> FellAsleep;
+
         public event EventHandler<PokemonEventArgs> StatusCleared;
+
         public event EventHandler<PokemonEventArgs> Fainted;
+
         public event EventHandler<PokemonEventArgs> LeveledUp;
+
         public event EventHandler<GainedExpEventArgs> GainedExp;
+
         public event EventHandler<GainedHPEventArgs> GainedHP;
 
         public void Burn()
@@ -86,47 +95,53 @@ namespace GameLogic.PokemonData
             Status = Status.Burn;
             Burned?.Invoke(this, EventArgs);
         }
+
         public void Freeze()
         {
             Status = Status.Freeze;
             Frozen?.Invoke(this, EventArgs);
         }
+
         public void Paralyze()
         {
             Status = Status.Paralysis;
             Paralyzed?.Invoke(this, EventArgs);
         }
+
         public void Poison()
         {
             Status = Status.Poison;
             Poisoned?.Invoke(this, EventArgs);
         }
+
         public void BadlyPoison()
         {
             Status = Status.BadlyPoisoned;
             BadlyPoisoned?.Invoke(this, EventArgs);
         }
+
         public void ChangeBadlyPoisonToPoison()
         {
             Status = Status.Poison;
         }
+
         public void Sleep()
         {
             Status = Status.Sleep;
             FellAsleep?.Invoke(this, EventArgs);
         }
+
         public void ClearStatus()
         {
             Status = Status.Null;
             StatusCleared?.Invoke(this, EventArgs);
         }
+
         public void Faint()
         {
             Status = Status.Fainted;
             Fainted?.Invoke(this, EventArgs);
         }
-
-
 
         public void Damage(float amount)
         {
@@ -135,19 +150,16 @@ namespace GameLogic.PokemonData
             if (CurrentHP == 0) Faint();
         }
 
-
-
         public void RestoreHP(float amount)
         {
             float gained = GainHP(amount);
             GainedHP?.Invoke(this, new GainedHPEventArgs(this, gained));
         }
+
         private float GainHP(float amount)
         {
             return Math.Min(amount, HP - CurrentHP);
         }
-
-        
 
         private Pokemon(
             int number,
@@ -210,6 +222,7 @@ namespace GameLogic.PokemonData
             Status = Status.Null;
             EventArgs = new PokemonEventArgs() { pokemon = this };
         }
+
         private Pokemon(int number, int level) : this(number)
         {
             Exp = ExpGroup.ExpAt(level);
@@ -253,12 +266,15 @@ namespace GameLogic.PokemonData
                                 case 1:
                                     Move1 = MoveFactory.Create(moveIndex);
                                     break;
+
                                 case 2:
                                     Move2 = MoveFactory.Create(moveIndex);
                                     break;
+
                                 case 3:
                                     Move3 = MoveFactory.Create(moveIndex);
                                     break;
+
                                 case 4:
                                     Move4 = MoveFactory.Create(moveIndex);
                                     break;
@@ -267,43 +283,41 @@ namespace GameLogic.PokemonData
                     }
         }
 
-
         private bool AlreadyKnowsMove(int moveIndex) =>
             (Move1?.Index == moveIndex) ||
             (Move2?.Index == moveIndex) ||
             (Move3?.Index == moveIndex) ||
             (Move4?.Index == moveIndex);
 
-
-
-
-
-
         public class Builder
         {
             //must be specified:
-            int number;
-            float level;
+            private int number;
+
+            private float level;
+
             //optional:
-            Status status;
+            private Status status;
 
-            float currentHP;
-            bool currentHpPreset;
+            private float currentHP;
+            private bool currentHpPreset;
 
-            Move move1;
-            Move move2;
-            Move move3;
-            Move move4;
+            private Move move1;
+            private Move move2;
+            private Move move3;
+            private Move move4;
 
-            float exp;
-            bool expPreset;
+            private float exp;
+            private bool expPreset;
 
-            Stats stats;
-            Stats dvs;
-            Stats statExp;
-            string nickname;
+            private Stats stats;
+            private Stats dvs;
+            private Stats statExp;
+            private string nickname;
 
-            private Builder() { }
+            private Builder()
+            {
+            }
 
             public static Builder Init(int number, float level)
             {
@@ -378,7 +392,6 @@ namespace GameLogic.PokemonData
                 return this;
             }
 
-
             public Pokemon Create()
             {
                 if (statExp == null) statExp = new Stats(0f, 0f, 0f, 0f, 0f);
@@ -391,7 +404,7 @@ namespace GameLogic.PokemonData
                     StatCalculator.NonHPStat(baseStats.Special, dvs.Special, StatCalculator.StatPoint(statExp.Special), level),
                     StatCalculator.NonHPStat(baseStats.Speed, dvs.Speed, StatCalculator.StatPoint(statExp.Speed), level));
                 if (!expPreset) exp = SpeciesData.ExpGroup[number].ExpAt(level);
-                
+
                 if (move1 == null && move2 == null && move3 == null && move4 == null)
                 {
                     //grow
@@ -415,7 +428,5 @@ namespace GameLogic.PokemonData
                     nickname);
             }
         }
-
-
     }
 }

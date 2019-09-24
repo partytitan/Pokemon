@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.EventArg;
+﻿using Client.EventArg;
 using Client.Inputs;
 using Client.Services.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Client.Services.Windows.Message
 {
-    class WindowMessage : Window
+    internal class WindowMessage : Window
     {
         private const int MaxNumberOfRows = 2;
         private readonly string text;
@@ -28,7 +28,7 @@ namespace Client.Services.Windows.Message
             pages = new List<MessagePage>();
             pageIndex = 0;
             margin = new Vector2(10);
-            messageArrow = new MessageArrow(position + new Vector2(width - margin.X * 1.6f, height - margin.Y-5 * 1.6f));
+            messageArrow = new MessageArrow(position + new Vector2(width - margin.X * 1.6f, height - margin.Y - 5 * 1.6f));
         }
 
         private void InputOnNewInput(object sender, NewInputEventArgs newInputEventArgs)

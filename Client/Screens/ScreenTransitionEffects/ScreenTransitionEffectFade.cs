@@ -1,9 +1,6 @@
 ﻿using Client.Services.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Client.Screens.ScreenTransitionEffects
 {
@@ -27,6 +24,7 @@ namespace Client.Screens.ScreenTransitionEffects
         }
 
         public abstract void Start();
+
         public abstract void Update(GameTime gameTime);
 
         public void Draw(SpriteBatch spriteBatch)

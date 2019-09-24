@@ -1,26 +1,17 @@
 ﻿using Client.Services.Content;
 using Client.Services.Screens;
-using Client.World;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using Client.Data;
-using Client.Inputs;
 using Client.Services.World;
-using Client.World.Components;
-using Client.World.Components.Animations;
-using Client.World.Components.Movements;
+using Client.World;
 using Client.World.Interfaces;
 using GameLogic.Data;
-using GameLogic.Trainers;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MonoGame.Extended.Tiled;
-using MonoGame.Extended.Tiled.Renderers;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Client.Screens
 {
-    class ScreenWorld : Screen, IWorldData
+    internal class ScreenWorld : Screen, IWorldData
     {
         public IMapLoader MapLoader { get; set; }
         private readonly IEntityLoader entityLoader;
@@ -36,7 +27,7 @@ namespace Client.Screens
             this.eventRunner = eventRunner;
             this.WarpData = warpData;
             this.camera = camera;
-            
+
             worldObjects = new List<WorldObject>();
         }
 
@@ -45,6 +36,7 @@ namespace Client.Screens
             var screen = new ScreenWorld(ScreenLoader, MapLoader, entityLoader, eventRunner, camera, warpData);
             ScreenLoader.LoadScreen(screen);
         }
+
         public WorldObject GetWorldObject(string id)
         {
             return worldObjects.FirstOrDefault(w => w.Id == id);
