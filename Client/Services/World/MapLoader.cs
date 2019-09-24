@@ -6,6 +6,7 @@ using Client.Data;
 using Client.Services.Content;
 using Client.World;
 using Client.World.Components;
+using Client.World.Components.Animations;
 using Client.World.Components.Tiles;
 using GameLogic.Data;
 using Microsoft.Xna.Framework;
@@ -90,6 +91,29 @@ namespace Client.Services.World
             return collisionObject;
         }
 
+        public List<WorldObject> LoadNpcs(IWorldData worldData)
+        {
+            var npcs = new List<WorldObject>();
+            foreach (var npc in mapData.NpcList)
+            {
+                var npcWorldObject = new WorldObject(npc.Name);
+
+                npcWorldObject.AddComponent(new Sprite(npcWorldObject, new SpriteData
+                {
+                    Color = Color.White,
+                    Height = 20,
+                    Width = 15,
+                    TextureName = $"NPC/{npc.Sprite}",
+                    XTilePosition = npc.XTilePosition,
+                    YTilePosition = npc.YTilePosition
+                }, npc.Direction, 41, 51));
+                npcWorldObject.AddComponent(new Collision(npcWorldObject, worldData));
+                npcWorldObject.AddComponent(new Animation(npcWorldObject));
+                npcs.Add(npcWorldObject);
+            }
+
+            return npcs;
+        }
         private void LoadSurroundingMaps(int centerMapX, int centerMapY)
         {
             MapUp = contentLoader.LoadMap($"{centerMapX}.{centerMapY - 1}");

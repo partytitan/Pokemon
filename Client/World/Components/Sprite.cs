@@ -5,6 +5,7 @@ using Client.Data;
 using Client.Screens;
 using Client.Services.Content;
 using Client.World.Components.Tiles;
+using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
@@ -30,6 +31,12 @@ namespace Client.World.Components
         public Sprite(IComponentOwner owner, SpriteData spriteData, Rectangle drawFrame) : this(owner, spriteData)
         {
             DrawFrame = drawFrame;
+        }
+
+        public Sprite(IComponentOwner owner, SpriteData spriteData, Directions directions, int drawWidth, int drawHeight) : this(owner, spriteData)
+        {
+            var id = (int) directions;
+            DrawFrame = new Rectangle(0,   id * drawHeight, drawWidth, drawHeight);
         }
 
         public virtual void LoadContent(IContentLoader contentLoader)

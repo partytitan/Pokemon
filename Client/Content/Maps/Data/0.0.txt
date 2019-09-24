@@ -1,7 +1,7 @@
 [npc]
 NULL
 down
-12
+0
 7
 15
 NULL
@@ -15,7 +15,7 @@ false
 [npc]
 NULL
 down
-12
+0
 10
 20
 NULL

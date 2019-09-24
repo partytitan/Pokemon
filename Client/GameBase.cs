@@ -83,11 +83,7 @@ namespace Client
         protected override bool BeginDraw()
         {
             GraphicsDevice.SetRenderTarget(backBuffer);
-            GraphicsDevice.Clear(Color.Black);
-
-            spriteBatch.Begin(transformMatrix: camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
-            screenLoader.Draw(spriteBatch);
-            spriteBatch.End();
+            GraphicsDevice.Clear(Color.Transparent);
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             windowHandler.Draw(spriteBatch);
             spriteBatch.End();
@@ -97,8 +93,13 @@ namespace Client
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.SetRenderTarget(null);
-            spriteBatch.Begin(samplerState: SamplerState.PointClamp);
-            spriteBatch.Draw(backBuffer, new Rectangle(0, 0, GraphicsDevice.Viewport.Bounds.Width, GraphicsDevice.Viewport.Bounds.Height), Color.White);
+            GraphicsDevice.Clear(Color.Black);
+
+            spriteBatch.Begin(transformMatrix: camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
+            screenLoader.Draw(spriteBatch);
+            spriteBatch.End();
+            spriteBatch.Begin();
+            spriteBatch.Draw(backBuffer, destinationRectangle: new Rectangle(0, 0, GraphicsDevice.Viewport.Bounds.Width, GraphicsDevice.Viewport.Bounds.Height), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }

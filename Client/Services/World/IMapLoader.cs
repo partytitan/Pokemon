@@ -19,5 +19,6 @@ namespace Client.Services.World
         WorldObject BackgroundMapLayers(IWorldData worldData);
         WorldObject ForeGoundMapLayers(IWorldData worldData);
         WorldObject LoadCollisionTiles(IWorldData worldData);
+        List<WorldObject> LoadNpcs(IWorldData worldData);
     }
 }

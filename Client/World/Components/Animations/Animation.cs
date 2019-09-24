@@ -16,7 +16,10 @@ namespace Client.World.Components.Animations
         {
             counter = 0;
         }
-
+        public Animation(IComponentOwner owner, IAnimation animation) : this(owner)
+        {
+            currentAnimation = animation;
+        }
         public void Update(GameTime gameTime)
         {
             if (currentAnimation == null)

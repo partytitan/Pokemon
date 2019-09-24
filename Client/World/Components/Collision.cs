@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Client.World.Components
 {
-    internal class Collision : Component
+    internal class Collision : Component, IPreMoveCollisionComponent
     {
         private readonly IWorldData worldData;
 
@@ -20,6 +20,14 @@ namespace Client.World.Components
         {
             var collisionObjects = worldData.GetComponents<T>();
             return collisionObjects.Any(c => c.Collide(xTilePosition, yTilePosition));
+        }
+
+        public bool Collide(int xTilePosition, int yTilePosition)
+        {
+            var sprite = Owner.GetComponent<Sprite>();
+            if (sprite == null)
+                return false;
+            return sprite.TilePosition == new Vector2(xTilePosition, yTilePosition);
         }
     }
 }

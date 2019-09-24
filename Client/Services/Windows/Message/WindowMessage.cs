@@ -33,7 +33,7 @@ namespace Client.Services.Windows.Message
 
         private void InputOnNewInput(object sender, NewInputEventArgs newInputEventArgs)
         {
-            if (newInputEventArgs.Inputs == GameLogic.Common.Inputs.A)
+            if (newInputEventArgs.Inputs != GameLogic.Common.Inputs.None)
             {
                 if (pages[pageIndex].IsDone)
                 {
@@ -54,7 +54,7 @@ namespace Client.Services.Windows.Message
         public override void LoadContent(IContentLoader contentLoader)
         {
             base.LoadContent(contentLoader);
-            CreatePages(contentLoader.LoadFont("guiFont"));
+            CreatePages(contentLoader.LoadFont("textBoxFont"));
             messageArrow.LoadContent(contentLoader);
         }
 

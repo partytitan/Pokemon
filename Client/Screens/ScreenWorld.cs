@@ -65,6 +65,7 @@ namespace Client.Screens
             MapLoader.LoadMap(WarpData, this);
             worldObjects.Add(MapLoader.BackgroundMapLayers(this));
             worldObjects.Add(MapLoader.LoadCollisionTiles(this));
+            worldObjects.AddRange(MapLoader.LoadNpcs(this));
             worldObjects.AddRange(entityLoader.LoadEntities(this, WarpData));
             worldObjects.Add(MapLoader.ForeGoundMapLayers(this));
             GetComponents<ILoadContentComponent>().ForEach(c => c.LoadContent(contentLoader));
