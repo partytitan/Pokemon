@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Client.Screens;
+using Client.World.Interfaces;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
 

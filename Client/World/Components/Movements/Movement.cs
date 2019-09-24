@@ -7,6 +7,7 @@ using System.Linq;
 using Client.Screens;
 using Client.Services.World;
 using Client.World.Components.Tiles;
+using Client.World.Interfaces;
 using GameLogic.Common;
 
 namespace Client.World.Components.Movements

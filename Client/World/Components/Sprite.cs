@@ -5,6 +5,7 @@ using Client.Data;
 using Client.Screens;
 using Client.Services.Content;
 using Client.World.Components.Tiles;
+using Client.World.Interfaces;
 using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

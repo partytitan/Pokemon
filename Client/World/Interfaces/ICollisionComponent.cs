@@ -1,4 +1,4 @@
-﻿namespace Client.World
+﻿namespace Client.World.Interfaces
 {
     interface ICollisionComponent : IComponent
     {

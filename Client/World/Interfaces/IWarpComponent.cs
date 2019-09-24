@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Client.World
+﻿namespace Client.World.Interfaces
 {
     interface IWarpComponent : IComponent
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Client.Data;
 using Client.Services.World;
+using Client.World.Interfaces;
 using GameLogic.Data;
 
 namespace Client.World.Components.Tiles

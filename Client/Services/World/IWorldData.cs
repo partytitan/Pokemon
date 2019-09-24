@@ -5,6 +5,7 @@ using Client.Data;
 using Client.Screens;
 using Client.Services.Screens;
 using Client.World;
+using Client.World.Interfaces;
 using GameLogic.Data;
 using GameLogic.Trainers;
 

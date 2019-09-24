@@ -1,4 +1,6 @@
-﻿namespace Client.World.Components.Tiles
+﻿using Client.World.Interfaces;
+
+namespace Client.World.Components.Tiles
 {
     internal abstract class Tile : Component
     {

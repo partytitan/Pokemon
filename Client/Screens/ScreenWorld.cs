@@ -10,6 +10,7 @@ using Client.Services.World;
 using Client.World.Components;
 using Client.World.Components.Animations;
 using Client.World.Components.Movements;
+using Client.World.Interfaces;
 using GameLogic.Data;
 using GameLogic.Trainers;
 using Microsoft.Xna.Framework;

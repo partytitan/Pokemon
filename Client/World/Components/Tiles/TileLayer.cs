@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using Client.Screens;
 using Client.Services.World;
+using Client.World.Interfaces;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Tiled;

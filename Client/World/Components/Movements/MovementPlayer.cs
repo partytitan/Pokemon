@@ -8,6 +8,7 @@ using Client.Screens;
 using Client.Services.World;
 using Client.World.Components.Animations;
 using Client.World.Components.Tiles;
+using Client.World.Interfaces;
 using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using MonoGame.Extended;
