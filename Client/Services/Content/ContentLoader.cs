@@ -5,6 +5,7 @@ using MonoGame.Extended.Tiled;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Client.Services.Content
 {
@@ -14,12 +15,14 @@ namespace Client.Services.Content
         private const string FontNotFoundName = "NotFoundFont";
         private const string MapNotFoundName = "0.0";
         private const string MapDataNotFoundName = "0.0";
+        private const string MapSpeechNotFoundName = "0.0";
 
         private readonly ContentManager contentManager;
         private readonly Dictionary<string, Texture2D> textureByName;
         private readonly Dictionary<string, SpriteFont> fontByName;
         private readonly Dictionary<string, TiledMap> mapByName;
         private readonly Dictionary<string, MapData> mapDataByName;
+        private readonly Dictionary<string, string[]> mapSpeechByName;
 
         public ContentLoader(ContentManager contentManager)
         {
@@ -28,6 +31,7 @@ namespace Client.Services.Content
             fontByName = new Dictionary<string, SpriteFont>();
             mapByName = new Dictionary<string, TiledMap>();
             mapDataByName = new Dictionary<string, MapData>();
+            mapSpeechByName = new Dictionary<string, string[]>();
         }
 
         public Texture2D LoadTexture(string textureName)
@@ -45,6 +49,7 @@ namespace Client.Services.Content
                     return LoadTexture(TextureNotFoundName);
                 }
             }
+
             return textureByName[textureName];
         }
 
@@ -63,6 +68,7 @@ namespace Client.Services.Content
                     return LoadFont(FontNotFoundName);
                 }
             }
+
             return fontByName[fontName];
         }
 
@@ -82,6 +88,7 @@ namespace Client.Services.Content
                     return LoadMap(MapNotFoundName);
                 }
             }
+
             return mapByName[mapName];
         }
 
@@ -91,7 +98,8 @@ namespace Client.Services.Content
             {
                 try
                 {
-                    var input = System.IO.File.ReadAllLines(Path.Combine(contentManager.RootDirectory + Path.Combine("/Maps/Data", mapName)) + ".txt");
+                    var input = System.IO.File.ReadAllLines(
+                        Path.Combine(contentManager.RootDirectory + Path.Combine("/Maps/Data", mapName)) + ".txt");
 
                     MapData mapData = new MapData();
                     int i = 0;
@@ -111,7 +119,7 @@ namespace Client.Services.Content
                             int.TryParse(input[i++], out npc.PartySize);
                             int.TryParse(input[i++], out npc.Badge);
                             // TODO speech
-                            i++;
+                            npc.Speech = input[i++].Split(',').Select(Int32.Parse).ToList();
                             bool.TryParse(input[i++], out npc.Healer);
                             bool.TryParse(input[i++], out npc.Box);
                             bool.TryParse(input[i++], out npc.Shop);
@@ -150,7 +158,28 @@ namespace Client.Services.Content
                     return LoadMapData(MapDataNotFoundName);
                 }
             }
+
             return mapDataByName[mapName];
+        }
+
+        public string[] LoadMapSpeech(string mapName)
+        {
+            if (!mapSpeechByName.ContainsKey(mapName))
+            {
+                try
+                {
+                    var speechLines = System.IO.File.ReadAllLines(
+                        Path.Combine(contentManager.RootDirectory + Path.Combine("/Maps/Speech", mapName)) + ".txt");
+                    mapSpeechByName.Add(mapName, speechLines);
+                    return speechLines;
+                }
+                catch (Exception) when (mapName != MapSpeechNotFoundName)
+                {
+                    return LoadMapSpeech(MapSpeechNotFoundName);
+                }
+            }
+
+            return mapSpeechByName[mapName];
         }
     }
 }

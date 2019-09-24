@@ -13,5 +13,7 @@ namespace Client.Services.Content
         TiledMap LoadMap(string mapName);
 
         MapData LoadMapData(string mapName);
+
+        string[] LoadMapSpeech(string mapName);
     }
 }

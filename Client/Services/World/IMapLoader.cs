@@ -2,6 +2,7 @@
 using GameLogic.Data;
 using MonoGame.Extended.Tiled;
 using System.Collections.Generic;
+using Client.Services.Windows;
 
 namespace Client.Services.World
 {
@@ -21,6 +22,6 @@ namespace Client.Services.World
 
         WorldObject LoadCollisionTiles(IWorldData worldData);
 
-        List<WorldObject> LoadNpcs(IWorldData worldData);
+        List<WorldObject> LoadNpcs(IWorldData worldData, IEventRunner eventRunner, IWindowQueuer windowQueuer);
     }
 }

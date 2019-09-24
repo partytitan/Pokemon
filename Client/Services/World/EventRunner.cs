@@ -33,6 +33,7 @@ namespace Client.Services.World
             {
                 currentEvent.LoadContent(contentLoader);
             }
+            currentEvents[currentIndex].Initialize(worldData);
             Input.LockInput = true;
         }
 

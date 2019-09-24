@@ -54,15 +54,9 @@ namespace Client
 
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(this.width, this.height, 5),
                 new ScreenTransitionEffectFadeIn(this.width, this.height, 3), contentLoader);
-            //screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(16, 20, -32, -31)));
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), cameraWorldObject, new WarpData(10, 18, 0, 0)));
-            screenLoader.LoadContent(GraphicsDevice);
 
-            windowHandler.QueueWindow(new WindowMessage(new Vector2(25, 180), 350, 50, "Hey, Im Ash and youre going down! Hey, Im Ash and youre going down! " +
-                                                                                      "Hey, Im Ash and youre going down! Hey, Im Ash and youre going down! " +
-                                                                                      "Hey, Im Ash and youre going down! Hey, Im Ash and youre going down! " +
-                                                                                      "Hey, Im Ash and youre going down! Hey, Im Ash and youre going down!",
-                new InputKeyboard()));
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, new WarpData(10, 18, 0, 0)));
+            screenLoader.LoadContent(GraphicsDevice);
         }
 
         protected override void UnloadContent()

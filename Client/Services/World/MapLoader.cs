@@ -11,6 +11,10 @@ using MonoGame.Extended.Tiled;
 using MonoGame.Extended.Tiled.Renderers;
 using System.Collections.Generic;
 using System.Linq;
+using Client.Inputs;
+using Client.Services.Windows;
+using Client.World.Events;
+using Client.World.EventTriggers;
 
 namespace Client.Services.World
 {
@@ -23,6 +27,7 @@ namespace Client.Services.World
         public TiledMap MapRight { get; set; }
         public TiledMap MapLeft { get; set; }
 
+        private string[] mapSpeech;
         private MapData mapData;
         private TiledMapRenderer tiledMapRenderer;
         private readonly GraphicsDevice graphicsDevice;
@@ -37,6 +42,7 @@ namespace Client.Services.World
         {
             mapData = contentLoader.LoadMapData($"{warpData.XMapId}.{warpData.YMapId}");
             CurrentMap = contentLoader.LoadMap($"{warpData.XMapId}.{warpData.YMapId}");
+            mapSpeech = contentLoader.LoadMapSpeech($"{warpData.XMapId}.{warpData.YMapId}");
             tiledMapRenderer = new TiledMapRenderer(graphicsDevice, CurrentMap);
             var camera = worldData.GetComponents<Camera>().FirstOrDefault();
             camera?.SetScreenBounds(new Rectangle(0, 0, CurrentMap.WidthInPixels, CurrentMap.HeightInPixels));
@@ -88,7 +94,7 @@ namespace Client.Services.World
             return collisionObject;
         }
 
-        public List<WorldObject> LoadNpcs(IWorldData worldData)
+        public List<WorldObject> LoadNpcs(IWorldData worldData, IEventRunner eventRunner, IWindowQueuer windowQueuer)
         {
             var npcs = new List<WorldObject>();
             foreach (var npc in mapData.NpcList)
@@ -104,6 +110,11 @@ namespace Client.Services.World
                     XTilePosition = npc.XTilePosition,
                     YTilePosition = npc.YTilePosition
                 }, npc.Direction, 41, 51));
+                if (npc.Speech.Count > 0)
+                {
+                    var lines = npc.Speech.Aggregate("", (current, i) => current + mapSpeech[i] + " ");
+                    npcWorldObject.AddComponent(new EventTriggerPlayerInteract(npcWorldObject, eventRunner, new List<IEvent>{new EventSpeek(lines, windowQueuer, new InputKeyboard())}, new InputKeyboard(), worldData));
+                }
                 npcWorldObject.AddComponent(new Collision(npcWorldObject, worldData));
                 npcWorldObject.AddComponent(new Animation(npcWorldObject));
                 npcs.Add(npcWorldObject);

@@ -14,7 +14,7 @@ namespace Client.Services.World
     {
         public IList<WorldObject> LoadEntities(IWorldData worldData, WarpData warpData)
         {
-            var entity = new WorldObject("MyFirstEntity");
+            var entity = new WorldObject("player");
             entity.AddComponent(
                     new Sprite(
                         entity,

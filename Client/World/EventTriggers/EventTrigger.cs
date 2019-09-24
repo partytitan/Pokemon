@@ -8,8 +8,8 @@ namespace Client.World.EventTriggers
 {
     internal abstract class EventTrigger : Component, IUpdateComponent
     {
-        private readonly IEventRunner eventRunner;
-        private readonly IList<IEvent> events;
+        protected readonly IEventRunner eventRunner;
+        protected readonly IList<IEvent> events;
 
         protected EventTrigger(IComponentOwner owner, IEventRunner eventRunner, IList<IEvent> events) : base(owner)
         {
@@ -17,7 +17,7 @@ namespace Client.World.EventTriggers
             this.events = events;
         }
 
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             if (ShouldTriggerEvents())
             {
@@ -25,6 +25,9 @@ namespace Client.World.EventTriggers
             }
         }
 
-        protected abstract bool ShouldTriggerEvents();
+        protected virtual bool ShouldTriggerEvents()
+        {
+            return false;
+        }
     }
 }

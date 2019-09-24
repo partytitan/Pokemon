@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using System.Linq;
+using Client.Services.Windows;
 
 namespace Client.Screens
 {
@@ -16,15 +17,17 @@ namespace Client.Screens
         public IMapLoader MapLoader { get; set; }
         private readonly IEntityLoader entityLoader;
         private readonly EventRunner eventRunner;
+        private readonly IWindowQueuer windowQueuer;
         private readonly List<WorldObject> worldObjects;
         private readonly WorldObject camera;
         public WarpData WarpData { get; set; }
 
-        public ScreenWorld(IScreenLoader screenLoader, IMapLoader mapLoader, IEntityLoader entityLoader, EventRunner eventRunner, WorldObject camera, WarpData warpData) : base(screenLoader)
+        public ScreenWorld(IScreenLoader screenLoader, IMapLoader mapLoader, IEntityLoader entityLoader, EventRunner eventRunner, IWindowQueuer windowQueuer, WorldObject camera, WarpData warpData) : base(screenLoader)
         {
             this.MapLoader = mapLoader;
             this.entityLoader = entityLoader;
             this.eventRunner = eventRunner;
+            this.windowQueuer = windowQueuer;
             this.WarpData = warpData;
             this.camera = camera;
 
@@ -33,7 +36,7 @@ namespace Client.Screens
 
         public void ChangeMap(WarpData warpData)
         {
-            var screen = new ScreenWorld(ScreenLoader, MapLoader, entityLoader, eventRunner, camera, warpData);
+            var screen = new ScreenWorld(ScreenLoader, MapLoader, entityLoader, eventRunner, windowQueuer, camera, warpData);
             ScreenLoader.LoadScreen(screen);
         }
 
@@ -58,7 +61,7 @@ namespace Client.Screens
             MapLoader.LoadMap(WarpData, this);
             worldObjects.Add(MapLoader.BackgroundMapLayers(this));
             worldObjects.Add(MapLoader.LoadCollisionTiles(this));
-            worldObjects.AddRange(MapLoader.LoadNpcs(this));
+            worldObjects.AddRange(MapLoader.LoadNpcs(this, eventRunner, windowQueuer));
             worldObjects.AddRange(entityLoader.LoadEntities(this, WarpData));
             worldObjects.Add(MapLoader.ForeGoundMapLayers(this));
             GetComponents<ILoadContentComponent>().ForEach(c => c.LoadContent(contentLoader));

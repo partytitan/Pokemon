@@ -57,12 +57,16 @@ namespace Client.World.Components.Movements
                 default:
                     throw new ArgumentOutOfRangeException(nameof(direction), direction, null);
             }
-            if (Collision((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height)))
+
+            if (Collision((int) (wantedPosition.X / Tile.Width), (int) (wantedPosition.Y / Tile.Height)))
+            {
+                sprite.DrawFrame = new Rectangle(0, (int)direction * sprite.DrawFrame.Height, sprite.DrawFrame.Width, sprite.DrawFrame.Height);
                 wantedPosition = new Vector2(x, y);
+            }
 
             InMovement = true;
-            animationWalking.ChangeDirection(direction);
             var animation = Owner.GetComponent<Animation>();
+            animationWalking.ChangeDirection(direction);
             animation.PlayAnimation(animationWalking);
         }
 

@@ -8611,6 +8611,1317 @@
 #begin Maps/Data/9.-50.txt
 /copy:Maps/Data/9.-50.txt
 
+#begin Maps/Speech/0.0.txt
+/copy:Maps/Speech/0.0.txt
+
+#begin Maps/Speech/0.1.txt
+/copy:Maps/Speech/0.1.txt
+
+#begin Maps/Speech/0.-1.txt
+/copy:Maps/Speech/0.-1.txt
+
+#begin Maps/Speech/0.-2.txt
+/copy:Maps/Speech/0.-2.txt
+
+#begin Maps/Speech/0.49.txt
+/copy:Maps/Speech/0.49.txt
+
+#begin Maps/Speech/0.-49.txt
+/copy:Maps/Speech/0.-49.txt
+
+#begin Maps/Speech/0.-50.txt
+/copy:Maps/Speech/0.-50.txt
+
+#begin Maps/Speech/1.0.txt
+/copy:Maps/Speech/1.0.txt
+
+#begin Maps/Speech/-1.0.txt
+/copy:Maps/Speech/-1.0.txt
+
+#begin Maps/Speech/-1.-1.txt
+/copy:Maps/Speech/-1.-1.txt
+
+#begin Maps/Speech/-1.-4.txt
+/copy:Maps/Speech/-1.-4.txt
+
+#begin Maps/Speech/1.49.txt
+/copy:Maps/Speech/1.49.txt
+
+#begin Maps/Speech/1.-49.txt
+/copy:Maps/Speech/1.-49.txt
+
+#begin Maps/Speech/1.-50.txt
+/copy:Maps/Speech/1.-50.txt
+
+#begin Maps/Speech/10.49.txt
+/copy:Maps/Speech/10.49.txt
+
+#begin Maps/Speech/10.-49.txt
+/copy:Maps/Speech/10.-49.txt
+
+#begin Maps/Speech/10.-50.txt
+/copy:Maps/Speech/10.-50.txt
+
+#begin Maps/Speech/11.15.txt
+/copy:Maps/Speech/11.15.txt
+
+#begin Maps/Speech/11.16.txt
+/copy:Maps/Speech/11.16.txt
+
+#begin Maps/Speech/11.17.txt
+/copy:Maps/Speech/11.17.txt
+
+#begin Maps/Speech/11.-2.txt
+/copy:Maps/Speech/11.-2.txt
+
+#begin Maps/Speech/11.38.txt
+/copy:Maps/Speech/11.38.txt
+
+#begin Maps/Speech/11.49.txt
+/copy:Maps/Speech/11.49.txt
+
+#begin Maps/Speech/11.-49.txt
+/copy:Maps/Speech/11.-49.txt
+
+#begin Maps/Speech/12.15.txt
+/copy:Maps/Speech/12.15.txt
+
+#begin Maps/Speech/12.17.txt
+/copy:Maps/Speech/12.17.txt
+
+#begin Maps/Speech/12.18.txt
+/copy:Maps/Speech/12.18.txt
+
+#begin Maps/Speech/12.-2.txt
+/copy:Maps/Speech/12.-2.txt
+
+#begin Maps/Speech/12.49.txt
+/copy:Maps/Speech/12.49.txt
+
+#begin Maps/Speech/12.-49.txt
+/copy:Maps/Speech/12.-49.txt
+
+#begin Maps/Speech/13.17.txt
+/copy:Maps/Speech/13.17.txt
+
+#begin Maps/Speech/14.17.txt
+/copy:Maps/Speech/14.17.txt
+
+#begin Maps/Speech/15.15.txt
+/copy:Maps/Speech/15.15.txt
+
+#begin Maps/Speech/15.16.txt
+/copy:Maps/Speech/15.16.txt
+
+#begin Maps/Speech/15.17.txt
+/copy:Maps/Speech/15.17.txt
+
+#begin Maps/Speech/17.36.txt
+/copy:Maps/Speech/17.36.txt
+
+#begin Maps/Speech/17.37.txt
+/copy:Maps/Speech/17.37.txt
+
+#begin Maps/Speech/17.38.txt
+/copy:Maps/Speech/17.38.txt
+
+#begin Maps/Speech/17.39.txt
+/copy:Maps/Speech/17.39.txt
+
+#begin Maps/Speech/18.34.txt
+/copy:Maps/Speech/18.34.txt
+
+#begin Maps/Speech/18.35.txt
+/copy:Maps/Speech/18.35.txt
+
+#begin Maps/Speech/18.36.txt
+/copy:Maps/Speech/18.36.txt
+
+#begin Maps/Speech/19.34.txt
+/copy:Maps/Speech/19.34.txt
+
+#begin Maps/Speech/19.43.txt
+/copy:Maps/Speech/19.43.txt
+
+#begin Maps/Speech/2.0.txt
+/copy:Maps/Speech/2.0.txt
+
+#begin Maps/Speech/-2.0.txt
+/copy:Maps/Speech/-2.0.txt
+
+#begin Maps/Speech/2.-1.txt
+/copy:Maps/Speech/2.-1.txt
+
+#begin Maps/Speech/-2.-1.txt
+/copy:Maps/Speech/-2.-1.txt
+
+#begin Maps/Speech/2.-2.txt
+/copy:Maps/Speech/2.-2.txt
+
+#begin Maps/Speech/-2.-2.txt
+/copy:Maps/Speech/-2.-2.txt
+
+#begin Maps/Speech/2.-3.txt
+/copy:Maps/Speech/2.-3.txt
+
+#begin Maps/Speech/-2.-4.txt
+/copy:Maps/Speech/-2.-4.txt
+
+#begin Maps/Speech/2.49.txt
+/copy:Maps/Speech/2.49.txt
+
+#begin Maps/Speech/2.-49.txt
+/copy:Maps/Speech/2.-49.txt
+
+#begin Maps/Speech/-2.-5.txt
+/copy:Maps/Speech/-2.-5.txt
+
+#begin Maps/Speech/2.-50.txt
+/copy:Maps/Speech/2.-50.txt
+
+#begin Maps/Speech/-2.-6.txt
+/copy:Maps/Speech/-2.-6.txt
+
+#begin Maps/Speech/20.32.txt
+/copy:Maps/Speech/20.32.txt
+
+#begin Maps/Speech/20.33.txt
+/copy:Maps/Speech/20.33.txt
+
+#begin Maps/Speech/20.34.txt
+/copy:Maps/Speech/20.34.txt
+
+#begin Maps/Speech/20.41.txt
+/copy:Maps/Speech/20.41.txt
+
+#begin Maps/Speech/20.49.txt
+/copy:Maps/Speech/20.49.txt
+
+#begin Maps/Speech/21.49.txt
+/copy:Maps/Speech/21.49.txt
+
+#begin Maps/Speech/22.21.txt
+/copy:Maps/Speech/22.21.txt
+
+#begin Maps/Speech/22.26.txt
+/copy:Maps/Speech/22.26.txt
+
+#begin Maps/Speech/22.42.txt
+/copy:Maps/Speech/22.42.txt
+
+#begin Maps/Speech/22.49.txt
+/copy:Maps/Speech/22.49.txt
+
+#begin Maps/Speech/23.23.txt
+/copy:Maps/Speech/23.23.txt
+
+#begin Maps/Speech/23.49.txt
+/copy:Maps/Speech/23.49.txt
+
+#begin Maps/Speech/24.33.txt
+/copy:Maps/Speech/24.33.txt
+
+#begin Maps/Speech/24.49.txt
+/copy:Maps/Speech/24.49.txt
+
+#begin Maps/Speech/25.23.txt
+/copy:Maps/Speech/25.23.txt
+
+#begin Maps/Speech/25.25.txt
+/copy:Maps/Speech/25.25.txt
+
+#begin Maps/Speech/25.49.txt
+/copy:Maps/Speech/25.49.txt
+
+#begin Maps/Speech/26.21.txt
+/copy:Maps/Speech/26.21.txt
+
+#begin Maps/Speech/26.32.txt
+/copy:Maps/Speech/26.32.txt
+
+#begin Maps/Speech/26.33.txt
+/copy:Maps/Speech/26.33.txt
+
+#begin Maps/Speech/26.34.txt
+/copy:Maps/Speech/26.34.txt
+
+#begin Maps/Speech/26.35.txt
+/copy:Maps/Speech/26.35.txt
+
+#begin Maps/Speech/26.36.txt
+/copy:Maps/Speech/26.36.txt
+
+#begin Maps/Speech/26.37.txt
+/copy:Maps/Speech/26.37.txt
+
+#begin Maps/Speech/26.38.txt
+/copy:Maps/Speech/26.38.txt
+
+#begin Maps/Speech/26.39.txt
+/copy:Maps/Speech/26.39.txt
+
+#begin Maps/Speech/26.40.txt
+/copy:Maps/Speech/26.40.txt
+
+#begin Maps/Speech/26.41.txt
+/copy:Maps/Speech/26.41.txt
+
+#begin Maps/Speech/26.49.txt
+/copy:Maps/Speech/26.49.txt
+
+#begin Maps/Speech/27.21.txt
+/copy:Maps/Speech/27.21.txt
+
+#begin Maps/Speech/27.24.txt
+/copy:Maps/Speech/27.24.txt
+
+#begin Maps/Speech/27.49.txt
+/copy:Maps/Speech/27.49.txt
+
+#begin Maps/Speech/-28.4.txt
+/copy:Maps/Speech/-28.4.txt
+
+#begin Maps/Speech/28.49.txt
+/copy:Maps/Speech/28.49.txt
+
+#begin Maps/Speech/-28.5.txt
+/copy:Maps/Speech/-28.5.txt
+
+#begin Maps/Speech/-29.11.txt
+/copy:Maps/Speech/-29.11.txt
+
+#begin Maps/Speech/-29.14.txt
+/copy:Maps/Speech/-29.14.txt
+
+#begin Maps/Speech/-29.2.txt
+/copy:Maps/Speech/-29.2.txt
+
+#begin Maps/Speech/29.20.txt
+/copy:Maps/Speech/29.20.txt
+
+#begin Maps/Speech/-29.8.txt
+/copy:Maps/Speech/-29.8.txt
+
+#begin Maps/Speech/3.0.txt
+/copy:Maps/Speech/3.0.txt
+
+#begin Maps/Speech/3.1.txt
+/copy:Maps/Speech/3.1.txt
+
+#begin Maps/Speech/3.-1.txt
+/copy:Maps/Speech/3.-1.txt
+
+#begin Maps/Speech/-3.-1.txt
+/copy:Maps/Speech/-3.-1.txt
+
+#begin Maps/Speech/3.2.txt
+/copy:Maps/Speech/3.2.txt
+
+#begin Maps/Speech/3.-2.txt
+/copy:Maps/Speech/3.-2.txt
+
+#begin Maps/Speech/-3.2.txt
+/copy:Maps/Speech/-3.2.txt
+
+#begin Maps/Speech/-3.-2.txt
+/copy:Maps/Speech/-3.-2.txt
+
+#begin Maps/Speech/3.3.txt
+/copy:Maps/Speech/3.3.txt
+
+#begin Maps/Speech/3.-3.txt
+/copy:Maps/Speech/3.-3.txt
+
+#begin Maps/Speech/-3.-4.txt
+/copy:Maps/Speech/-3.-4.txt
+
+#begin Maps/Speech/3.49.txt
+/copy:Maps/Speech/3.49.txt
+
+#begin Maps/Speech/3.-49.txt
+/copy:Maps/Speech/3.-49.txt
+
+#begin Maps/Speech/3.-50.txt
+/copy:Maps/Speech/3.-50.txt
+
+#begin Maps/Speech/-31.-29.txt
+/copy:Maps/Speech/-31.-29.txt
+
+#begin Maps/Speech/-31.-30.txt
+/copy:Maps/Speech/-31.-30.txt
+
+#begin Maps/Speech/-31.-33.txt
+/copy:Maps/Speech/-31.-33.txt
+
+#begin Maps/Speech/-31.-34.txt
+/copy:Maps/Speech/-31.-34.txt
+
+#begin Maps/Speech/-31.-35.txt
+/copy:Maps/Speech/-31.-35.txt
+
+#begin Maps/Speech/-31.-36.txt
+/copy:Maps/Speech/-31.-36.txt
+
+#begin Maps/Speech/-31.-37.txt
+/copy:Maps/Speech/-31.-37.txt
+
+#begin Maps/Speech/-31.-38.txt
+/copy:Maps/Speech/-31.-38.txt
+
+#begin Maps/Speech/-31.-39.txt
+/copy:Maps/Speech/-31.-39.txt
+
+#begin Maps/Speech/-31.-40.txt
+/copy:Maps/Speech/-31.-40.txt
+
+#begin Maps/Speech/-31.-41.txt
+/copy:Maps/Speech/-31.-41.txt
+
+#begin Maps/Speech/-31.-42.txt
+/copy:Maps/Speech/-31.-42.txt
+
+#begin Maps/Speech/-31.-43.txt
+/copy:Maps/Speech/-31.-43.txt
+
+#begin Maps/Speech/-31.-44.txt
+/copy:Maps/Speech/-31.-44.txt
+
+#begin Maps/Speech/-31.-45.txt
+/copy:Maps/Speech/-31.-45.txt
+
+#begin Maps/Speech/-31.-46.txt
+/copy:Maps/Speech/-31.-46.txt
+
+#begin Maps/Speech/-31.-48.txt
+/copy:Maps/Speech/-31.-48.txt
+
+#begin Maps/Speech/-31.-49.txt
+/copy:Maps/Speech/-31.-49.txt
+
+#begin Maps/Speech/-31.-50.txt
+/copy:Maps/Speech/-31.-50.txt
+
+#begin Maps/Speech/32.20.txt
+/copy:Maps/Speech/32.20.txt
+
+#begin Maps/Speech/-32.-31.txt
+/copy:Maps/Speech/-32.-31.txt
+
+#begin Maps/Speech/-32.-33.txt
+/copy:Maps/Speech/-32.-33.txt
+
+#begin Maps/Speech/-32.-34.txt
+/copy:Maps/Speech/-32.-34.txt
+
+#begin Maps/Speech/-32.-36.txt
+/copy:Maps/Speech/-32.-36.txt
+
+#begin Maps/Speech/-32.-37.txt
+/copy:Maps/Speech/-32.-37.txt
+
+#begin Maps/Speech/-32.-38.txt
+/copy:Maps/Speech/-32.-38.txt
+
+#begin Maps/Speech/-32.-39.txt
+/copy:Maps/Speech/-32.-39.txt
+
+#begin Maps/Speech/-32.-40.txt
+/copy:Maps/Speech/-32.-40.txt
+
+#begin Maps/Speech/-32.-41.txt
+/copy:Maps/Speech/-32.-41.txt
+
+#begin Maps/Speech/-32.-42.txt
+/copy:Maps/Speech/-32.-42.txt
+
+#begin Maps/Speech/-32.-43.txt
+/copy:Maps/Speech/-32.-43.txt
+
+#begin Maps/Speech/-32.-44.txt
+/copy:Maps/Speech/-32.-44.txt
+
+#begin Maps/Speech/-32.-45.txt
+/copy:Maps/Speech/-32.-45.txt
+
+#begin Maps/Speech/-33.-32.txt
+/copy:Maps/Speech/-33.-32.txt
+
+#begin Maps/Speech/-33.-33.txt
+/copy:Maps/Speech/-33.-33.txt
+
+#begin Maps/Speech/-33.-34.txt
+/copy:Maps/Speech/-33.-34.txt
+
+#begin Maps/Speech/-33.-35.txt
+/copy:Maps/Speech/-33.-35.txt
+
+#begin Maps/Speech/-33.-36.txt
+/copy:Maps/Speech/-33.-36.txt
+
+#begin Maps/Speech/-33.-37.txt
+/copy:Maps/Speech/-33.-37.txt
+
+#begin Maps/Speech/-33.-38.txt
+/copy:Maps/Speech/-33.-38.txt
+
+#begin Maps/Speech/-33.-39.txt
+/copy:Maps/Speech/-33.-39.txt
+
+#begin Maps/Speech/33.-42.txt
+/copy:Maps/Speech/33.-42.txt
+
+#begin Maps/Speech/-33.-43.txt
+/copy:Maps/Speech/-33.-43.txt
+
+#begin Maps/Speech/-33.-44.txt
+/copy:Maps/Speech/-33.-44.txt
+
+#begin Maps/Speech/-33.-45.txt
+/copy:Maps/Speech/-33.-45.txt
+
+#begin Maps/Speech/-33.-46.txt
+/copy:Maps/Speech/-33.-46.txt
+
+#begin Maps/Speech/34.20.txt
+/copy:Maps/Speech/34.20.txt
+
+#begin Maps/Speech/-34.-33.txt
+/copy:Maps/Speech/-34.-33.txt
+
+#begin Maps/Speech/-34.-34.txt
+/copy:Maps/Speech/-34.-34.txt
+
+#begin Maps/Speech/34.-39.txt
+/copy:Maps/Speech/34.-39.txt
+
+#begin Maps/Speech/-34.-49.txt
+/copy:Maps/Speech/-34.-49.txt
+
+#begin Maps/Speech/-34.-50.txt
+/copy:Maps/Speech/-34.-50.txt
+
+#begin Maps/Speech/-35.-34.txt
+/copy:Maps/Speech/-35.-34.txt
+
+#begin Maps/Speech/-35.-35.txt
+/copy:Maps/Speech/-35.-35.txt
+
+#begin Maps/Speech/35.-40.txt
+/copy:Maps/Speech/35.-40.txt
+
+#begin Maps/Speech/35.-42.txt
+/copy:Maps/Speech/35.-42.txt
+
+#begin Maps/Speech/-35.-42.txt
+/copy:Maps/Speech/-35.-42.txt
+
+#begin Maps/Speech/35.-44.txt
+/copy:Maps/Speech/35.-44.txt
+
+#begin Maps/Speech/-35.-49.txt
+/copy:Maps/Speech/-35.-49.txt
+
+#begin Maps/Speech/-36.-35.txt
+/copy:Maps/Speech/-36.-35.txt
+
+#begin Maps/Speech/-36.-36.txt
+/copy:Maps/Speech/-36.-36.txt
+
+#begin Maps/Speech/-36.-49.txt
+/copy:Maps/Speech/-36.-49.txt
+
+#begin Maps/Speech/-37.-36.txt
+/copy:Maps/Speech/-37.-36.txt
+
+#begin Maps/Speech/-37.-37.txt
+/copy:Maps/Speech/-37.-37.txt
+
+#begin Maps/Speech/37.-45.txt
+/copy:Maps/Speech/37.-45.txt
+
+#begin Maps/Speech/-38.-37.txt
+/copy:Maps/Speech/-38.-37.txt
+
+#begin Maps/Speech/-38.-38.txt
+/copy:Maps/Speech/-38.-38.txt
+
+#begin Maps/Speech/38.-42.txt
+/copy:Maps/Speech/38.-42.txt
+
+#begin Maps/Speech/-39.-38.txt
+/copy:Maps/Speech/-39.-38.txt
+
+#begin Maps/Speech/-39.-39.txt
+/copy:Maps/Speech/-39.-39.txt
+
+#begin Maps/Speech/39.-48.txt
+/copy:Maps/Speech/39.-48.txt
+
+#begin Maps/Speech/-39.-48.txt
+/copy:Maps/Speech/-39.-48.txt
+
+#begin Maps/Speech/-39.-49.txt
+/copy:Maps/Speech/-39.-49.txt
+
+#begin Maps/Speech/-4.2.txt
+/copy:Maps/Speech/-4.2.txt
+
+#begin Maps/Speech/-4.-2.txt
+/copy:Maps/Speech/-4.-2.txt
+
+#begin Maps/Speech/4.3.txt
+/copy:Maps/Speech/4.3.txt
+
+#begin Maps/Speech/4.-3.txt
+/copy:Maps/Speech/4.-3.txt
+
+#begin Maps/Speech/-4.-3.txt
+/copy:Maps/Speech/-4.-3.txt
+
+#begin Maps/Speech/-4.-4.txt
+/copy:Maps/Speech/-4.-4.txt
+
+#begin Maps/Speech/4.49.txt
+/copy:Maps/Speech/4.49.txt
+
+#begin Maps/Speech/4.-49.txt
+/copy:Maps/Speech/4.-49.txt
+
+#begin Maps/Speech/4.-50.txt
+/copy:Maps/Speech/4.-50.txt
+
+#begin Maps/Speech/-40.-15.txt
+/copy:Maps/Speech/-40.-15.txt
+
+#begin Maps/Speech/-40.-22.txt
+/copy:Maps/Speech/-40.-22.txt
+
+#begin Maps/Speech/-40.-40.txt
+/copy:Maps/Speech/-40.-40.txt
+
+#begin Maps/Speech/40.-42.txt
+/copy:Maps/Speech/40.-42.txt
+
+#begin Maps/Speech/40.-45.txt
+/copy:Maps/Speech/40.-45.txt
+
+#begin Maps/Speech/-40.-50.txt
+/copy:Maps/Speech/-40.-50.txt
+
+#begin Maps/Speech/41.-40.txt
+/copy:Maps/Speech/41.-40.txt
+
+#begin Maps/Speech/-41.-41.txt
+/copy:Maps/Speech/-41.-41.txt
+
+#begin Maps/Speech/41.-43.txt
+/copy:Maps/Speech/41.-43.txt
+
+#begin Maps/Speech/-41.-43.txt
+/copy:Maps/Speech/-41.-43.txt
+
+#begin Maps/Speech/-42.-41.txt
+/copy:Maps/Speech/-42.-41.txt
+
+#begin Maps/Speech/-42.46.txt
+/copy:Maps/Speech/-42.46.txt
+
+#begin Maps/Speech/-42.47.txt
+/copy:Maps/Speech/-42.47.txt
+
+#begin Maps/Speech/-42.48.txt
+/copy:Maps/Speech/-42.48.txt
+
+#begin Maps/Speech/43,-44.txt
+/copy:Maps/Speech/43,-44.txt
+
+#begin Maps/Speech/-43.-42.txt
+/copy:Maps/Speech/-43.-42.txt
+
+#begin Maps/Speech/-43.47.txt
+/copy:Maps/Speech/-43.47.txt
+
+#begin Maps/Speech/-43.48.txt
+/copy:Maps/Speech/-43.48.txt
+
+#begin Maps/Speech/-43.49.txt
+/copy:Maps/Speech/-43.49.txt
+
+#begin Maps/Speech/-44.10.txt
+/copy:Maps/Speech/-44.10.txt
+
+#begin Maps/Speech/-44.-14.txt
+/copy:Maps/Speech/-44.-14.txt
+
+#begin Maps/Speech/-44.-15.txt
+/copy:Maps/Speech/-44.-15.txt
+
+#begin Maps/Speech/-44.-16.txt
+/copy:Maps/Speech/-44.-16.txt
+
+#begin Maps/Speech/-44.-17.txt
+/copy:Maps/Speech/-44.-17.txt
+
+#begin Maps/Speech/-44.-20.txt
+/copy:Maps/Speech/-44.-20.txt
+
+#begin Maps/Speech/-44.-21.txt
+/copy:Maps/Speech/-44.-21.txt
+
+#begin Maps/Speech/-44.-22.txt
+/copy:Maps/Speech/-44.-22.txt
+
+#begin Maps/Speech/-44.-23.txt
+/copy:Maps/Speech/-44.-23.txt
+
+#begin Maps/Speech/-44.-24.txt
+/copy:Maps/Speech/-44.-24.txt
+
+#begin Maps/Speech/-44.-29.txt
+/copy:Maps/Speech/-44.-29.txt
+
+#begin Maps/Speech/-44.-30.txt
+/copy:Maps/Speech/-44.-30.txt
+
+#begin Maps/Speech/-44.-31.txt
+/copy:Maps/Speech/-44.-31.txt
+
+#begin Maps/Speech/-44.-43.txt
+/copy:Maps/Speech/-44.-43.txt
+
+#begin Maps/Speech/-44.-44.txt
+/copy:Maps/Speech/-44.-44.txt
+
+#begin Maps/Speech/-44.47.txt
+/copy:Maps/Speech/-44.47.txt
+
+#begin Maps/Speech/-44.48.txt
+/copy:Maps/Speech/-44.48.txt
+
+#begin Maps/Speech/-44.49.txt
+/copy:Maps/Speech/-44.49.txt
+
+#begin Maps/Speech/-44.5.txt
+/copy:Maps/Speech/-44.5.txt
+
+#begin Maps/Speech/-45.-13.txt
+/copy:Maps/Speech/-45.-13.txt
+
+#begin Maps/Speech/-45.-14.txt
+/copy:Maps/Speech/-45.-14.txt
+
+#begin Maps/Speech/-45.-18.txt
+/copy:Maps/Speech/-45.-18.txt
+
+#begin Maps/Speech/-45.-23.txt
+/copy:Maps/Speech/-45.-23.txt
+
+#begin Maps/Speech/-45.-25.txt
+/copy:Maps/Speech/-45.-25.txt
+
+#begin Maps/Speech/-45.-26.txt
+/copy:Maps/Speech/-45.-26.txt
+
+#begin Maps/Speech/-45.-29.txt
+/copy:Maps/Speech/-45.-29.txt
+
+#begin Maps/Speech/-45.-30.txt
+/copy:Maps/Speech/-45.-30.txt
+
+#begin Maps/Speech/-45.-31.txt
+/copy:Maps/Speech/-45.-31.txt
+
+#begin Maps/Speech/-45.-32.txt
+/copy:Maps/Speech/-45.-32.txt
+
+#begin Maps/Speech/45.-37.txt
+/copy:Maps/Speech/45.-37.txt
+
+#begin Maps/Speech/45.-42.txt
+/copy:Maps/Speech/45.-42.txt
+
+#begin Maps/Speech/-45.-44.txt
+/copy:Maps/Speech/-45.-44.txt
+
+#begin Maps/Speech/-45.-45.txt
+/copy:Maps/Speech/-45.-45.txt
+
+#begin Maps/Speech/-45.47.txt
+/copy:Maps/Speech/-45.47.txt
+
+#begin Maps/Speech/-45.48.txt
+/copy:Maps/Speech/-45.48.txt
+
+#begin Maps/Speech/-45.49.txt
+/copy:Maps/Speech/-45.49.txt
+
+#begin Maps/Speech/-46.-17.txt
+/copy:Maps/Speech/-46.-17.txt
+
+#begin Maps/Speech/-46.-18.txt
+/copy:Maps/Speech/-46.-18.txt
+
+#begin Maps/Speech/-46.-19.txt
+/copy:Maps/Speech/-46.-19.txt
+
+#begin Maps/Speech/-46.-20.txt
+/copy:Maps/Speech/-46.-20.txt
+
+#begin Maps/Speech/-46.-21.txt
+/copy:Maps/Speech/-46.-21.txt
+
+#begin Maps/Speech/-46.-22.txt
+/copy:Maps/Speech/-46.-22.txt
+
+#begin Maps/Speech/-46.-24.txt
+/copy:Maps/Speech/-46.-24.txt
+
+#begin Maps/Speech/-46.-25.txt
+/copy:Maps/Speech/-46.-25.txt
+
+#begin Maps/Speech/-46.-26.txt
+/copy:Maps/Speech/-46.-26.txt
+
+#begin Maps/Speech/-46.-27.txt
+/copy:Maps/Speech/-46.-27.txt
+
+#begin Maps/Speech/-46.-28.txt
+/copy:Maps/Speech/-46.-28.txt
+
+#begin Maps/Speech/-46.-29.txt
+/copy:Maps/Speech/-46.-29.txt
+
+#begin Maps/Speech/-46.-30.txt
+/copy:Maps/Speech/-46.-30.txt
+
+#begin Maps/Speech/-46.-31.txt
+/copy:Maps/Speech/-46.-31.txt
+
+#begin Maps/Speech/-46.-46.txt
+/copy:Maps/Speech/-46.-46.txt
+
+#begin Maps/Speech/-46.47.txt
+/copy:Maps/Speech/-46.47.txt
+
+#begin Maps/Speech/-46.48.txt
+/copy:Maps/Speech/-46.48.txt
+
+#begin Maps/Speech/-46.49.txt
+/copy:Maps/Speech/-46.49.txt
+
+#begin Maps/Speech/-47.-18.txt
+/copy:Maps/Speech/-47.-18.txt
+
+#begin Maps/Speech/-47.-19.txt
+/copy:Maps/Speech/-47.-19.txt
+
+#begin Maps/Speech/-47.-23.txt
+/copy:Maps/Speech/-47.-23.txt
+
+#begin Maps/Speech/-47.-24.txt
+/copy:Maps/Speech/-47.-24.txt
+
+#begin Maps/Speech/-47.-25.txt
+/copy:Maps/Speech/-47.-25.txt
+
+#begin Maps/Speech/-47.-26.txt
+/copy:Maps/Speech/-47.-26.txt
+
+#begin Maps/Speech/-47.-27.txt
+/copy:Maps/Speech/-47.-27.txt
+
+#begin Maps/Speech/-47.-28.txt
+/copy:Maps/Speech/-47.-28.txt
+
+#begin Maps/Speech/-47.-29.txt
+/copy:Maps/Speech/-47.-29.txt
+
+#begin Maps/Speech/-47.-30.txt
+/copy:Maps/Speech/-47.-30.txt
+
+#begin Maps/Speech/-47.-31.txt
+/copy:Maps/Speech/-47.-31.txt
+
+#begin Maps/Speech/-47.-32.txt
+/copy:Maps/Speech/-47.-32.txt
+
+#begin Maps/Speech/-47.-33.txt
+/copy:Maps/Speech/-47.-33.txt
+
+#begin Maps/Speech/-47.-34.txt
+/copy:Maps/Speech/-47.-34.txt
+
+#begin Maps/Speech/47.4.txt
+/copy:Maps/Speech/47.4.txt
+
+#begin Maps/Speech/-47.-40.txt
+/copy:Maps/Speech/-47.-40.txt
+
+#begin Maps/Speech/-47.-46.txt
+/copy:Maps/Speech/-47.-46.txt
+
+#begin Maps/Speech/-47.47.txt
+/copy:Maps/Speech/-47.47.txt
+
+#begin Maps/Speech/-47.48.txt
+/copy:Maps/Speech/-47.48.txt
+
+#begin Maps/Speech/-47.49.txt
+/copy:Maps/Speech/-47.49.txt
+
+#begin Maps/Speech/47.5.txt
+/copy:Maps/Speech/47.5.txt
+
+#begin Maps/Speech/-47.-50.txt
+/copy:Maps/Speech/-47.-50.txt
+
+#begin Maps/Speech/47.6.txt
+/copy:Maps/Speech/47.6.txt
+
+#begin Maps/Speech/47.7.txt
+/copy:Maps/Speech/47.7.txt
+
+#begin Maps/Speech/47.8.txt
+/copy:Maps/Speech/47.8.txt
+
+#begin Maps/Speech/-48.-12.txt
+/copy:Maps/Speech/-48.-12.txt
+
+#begin Maps/Speech/-48.-13.txt
+/copy:Maps/Speech/-48.-13.txt
+
+#begin Maps/Speech/-48.-14.txt
+/copy:Maps/Speech/-48.-14.txt
+
+#begin Maps/Speech/-48.-15.txt
+/copy:Maps/Speech/-48.-15.txt
+
+#begin Maps/Speech/-48.-16.txt
+/copy:Maps/Speech/-48.-16.txt
+
+#begin Maps/Speech/-48.-18.txt
+/copy:Maps/Speech/-48.-18.txt
+
+#begin Maps/Speech/-48.-19.txt
+/copy:Maps/Speech/-48.-19.txt
+
+#begin Maps/Speech/-48.-20.txt
+/copy:Maps/Speech/-48.-20.txt
+
+#begin Maps/Speech/-48.-21.txt
+/copy:Maps/Speech/-48.-21.txt
+
+#begin Maps/Speech/-48.-22.txt
+/copy:Maps/Speech/-48.-22.txt
+
+#begin Maps/Speech/-48.-23.txt
+/copy:Maps/Speech/-48.-23.txt
+
+#begin Maps/Speech/-48.-24.txt
+/copy:Maps/Speech/-48.-24.txt
+
+#begin Maps/Speech/-48.-25.txt
+/copy:Maps/Speech/-48.-25.txt
+
+#begin Maps/Speech/-48.-26.txt
+/copy:Maps/Speech/-48.-26.txt
+
+#begin Maps/Speech/-48.-27.txt
+/copy:Maps/Speech/-48.-27.txt
+
+#begin Maps/Speech/-48.-28.txt
+/copy:Maps/Speech/-48.-28.txt
+
+#begin Maps/Speech/-48.-29.txt
+/copy:Maps/Speech/-48.-29.txt
+
+#begin Maps/Speech/-48.-30.txt
+/copy:Maps/Speech/-48.-30.txt
+
+#begin Maps/Speech/-48.-31.txt
+/copy:Maps/Speech/-48.-31.txt
+
+#begin Maps/Speech/-48.-32.txt
+/copy:Maps/Speech/-48.-32.txt
+
+#begin Maps/Speech/-48.-33.txt
+/copy:Maps/Speech/-48.-33.txt
+
+#begin Maps/Speech/-48.-34.txt
+/copy:Maps/Speech/-48.-34.txt
+
+#begin Maps/Speech/-48.-35.txt
+/copy:Maps/Speech/-48.-35.txt
+
+#begin Maps/Speech/-48.-36.txt
+/copy:Maps/Speech/-48.-36.txt
+
+#begin Maps/Speech/-48.-37.txt
+/copy:Maps/Speech/-48.-37.txt
+
+#begin Maps/Speech/-48.-38.txt
+/copy:Maps/Speech/-48.-38.txt
+
+#begin Maps/Speech/-48.-39.txt
+/copy:Maps/Speech/-48.-39.txt
+
+#begin Maps/Speech/-48.-40.txt
+/copy:Maps/Speech/-48.-40.txt
+
+#begin Maps/Speech/-48.47.txt
+/copy:Maps/Speech/-48.47.txt
+
+#begin Maps/Speech/-48.-47.txt
+/copy:Maps/Speech/-48.-47.txt
+
+#begin Maps/Speech/-48.48.txt
+/copy:Maps/Speech/-48.48.txt
+
+#begin Maps/Speech/-48.-48.txt
+/copy:Maps/Speech/-48.-48.txt
+
+#begin Maps/Speech/-48.49.txt
+/copy:Maps/Speech/-48.49.txt
+
+#begin Maps/Speech/-48.-49.txt
+/copy:Maps/Speech/-48.-49.txt
+
+#begin Maps/Speech/-49.-13.txt
+/copy:Maps/Speech/-49.-13.txt
+
+#begin Maps/Speech/-49.-14.txt
+/copy:Maps/Speech/-49.-14.txt
+
+#begin Maps/Speech/-49.-15.txt
+/copy:Maps/Speech/-49.-15.txt
+
+#begin Maps/Speech/-49.-19.txt
+/copy:Maps/Speech/-49.-19.txt
+
+#begin Maps/Speech/-49.-20.txt
+/copy:Maps/Speech/-49.-20.txt
+
+#begin Maps/Speech/-49.-21.txt
+/copy:Maps/Speech/-49.-21.txt
+
+#begin Maps/Speech/-49.-22.txt
+/copy:Maps/Speech/-49.-22.txt
+
+#begin Maps/Speech/-49.-23.txt
+/copy:Maps/Speech/-49.-23.txt
+
+#begin Maps/Speech/-49.-24.txt
+/copy:Maps/Speech/-49.-24.txt
+
+#begin Maps/Speech/-49.-25.txt
+/copy:Maps/Speech/-49.-25.txt
+
+#begin Maps/Speech/-49.-26.txt
+/copy:Maps/Speech/-49.-26.txt
+
+#begin Maps/Speech/-49.-27.txt
+/copy:Maps/Speech/-49.-27.txt
+
+#begin Maps/Speech/-49.-28.txt
+/copy:Maps/Speech/-49.-28.txt
+
+#begin Maps/Speech/-49.-29.txt
+/copy:Maps/Speech/-49.-29.txt
+
+#begin Maps/Speech/-49.-30.txt
+/copy:Maps/Speech/-49.-30.txt
+
+#begin Maps/Speech/-49.-31.txt
+/copy:Maps/Speech/-49.-31.txt
+
+#begin Maps/Speech/-49.-32.txt
+/copy:Maps/Speech/-49.-32.txt
+
+#begin Maps/Speech/-49.-33.txt
+/copy:Maps/Speech/-49.-33.txt
+
+#begin Maps/Speech/-49.-34.txt
+/copy:Maps/Speech/-49.-34.txt
+
+#begin Maps/Speech/-49.-35.txt
+/copy:Maps/Speech/-49.-35.txt
+
+#begin Maps/Speech/-49.-36.txt
+/copy:Maps/Speech/-49.-36.txt
+
+#begin Maps/Speech/-49.-37.txt
+/copy:Maps/Speech/-49.-37.txt
+
+#begin Maps/Speech/-49.-38.txt
+/copy:Maps/Speech/-49.-38.txt
+
+#begin Maps/Speech/-49.-39.txt
+/copy:Maps/Speech/-49.-39.txt
+
+#begin Maps/Speech/-49.-40.txt
+/copy:Maps/Speech/-49.-40.txt
+
+#begin Maps/Speech/-49.-41.txt
+/copy:Maps/Speech/-49.-41.txt
+
+#begin Maps/Speech/-49.-42.txt
+/copy:Maps/Speech/-49.-42.txt
+
+#begin Maps/Speech/-49.-43.txt
+/copy:Maps/Speech/-49.-43.txt
+
+#begin Maps/Speech/-49.-44.txt
+/copy:Maps/Speech/-49.-44.txt
+
+#begin Maps/Speech/-49.-46.txt
+/copy:Maps/Speech/-49.-46.txt
+
+#begin Maps/Speech/-49.47.txt
+/copy:Maps/Speech/-49.47.txt
+
+#begin Maps/Speech/-49.-47.txt
+/copy:Maps/Speech/-49.-47.txt
+
+#begin Maps/Speech/-49.48.txt
+/copy:Maps/Speech/-49.48.txt
+
+#begin Maps/Speech/-49.-48.txt
+/copy:Maps/Speech/-49.-48.txt
+
+#begin Maps/Speech/-49.49.txt
+/copy:Maps/Speech/-49.49.txt
+
+#begin Maps/Speech/-49.-49.txt
+/copy:Maps/Speech/-49.-49.txt
+
+#begin Maps/Speech/-49.-50.txt
+/copy:Maps/Speech/-49.-50.txt
+
+#begin Maps/Speech/-5.0.txt
+/copy:Maps/Speech/-5.0.txt
+
+#begin Maps/Speech/-5.1.txt
+/copy:Maps/Speech/-5.1.txt
+
+#begin Maps/Speech/-5.-1.txt
+/copy:Maps/Speech/-5.-1.txt
+
+#begin Maps/Speech/5.-2.txt
+/copy:Maps/Speech/5.-2.txt
+
+#begin Maps/Speech/-5.2.txt
+/copy:Maps/Speech/-5.2.txt
+
+#begin Maps/Speech/-5.-2.txt
+/copy:Maps/Speech/-5.-2.txt
+
+#begin Maps/Speech/5.-4.txt
+/copy:Maps/Speech/5.-4.txt
+
+#begin Maps/Speech/-5.-4.txt
+/copy:Maps/Speech/-5.-4.txt
+
+#begin Maps/Speech/5.49.txt
+/copy:Maps/Speech/5.49.txt
+
+#begin Maps/Speech/5.-49.txt
+/copy:Maps/Speech/5.-49.txt
+
+#begin Maps/Speech/5.-50.txt
+/copy:Maps/Speech/5.-50.txt
+
+#begin Maps/Speech/-50.-12.txt
+/copy:Maps/Speech/-50.-12.txt
+
+#begin Maps/Speech/-50.-13.txt
+/copy:Maps/Speech/-50.-13.txt
+
+#begin Maps/Speech/-50.-15.txt
+/copy:Maps/Speech/-50.-15.txt
+
+#begin Maps/Speech/-50.-16.txt
+/copy:Maps/Speech/-50.-16.txt
+
+#begin Maps/Speech/-50.-17.txt
+/copy:Maps/Speech/-50.-17.txt
+
+#begin Maps/Speech/-50.-20.txt
+/copy:Maps/Speech/-50.-20.txt
+
+#begin Maps/Speech/-50.-21.txt
+/copy:Maps/Speech/-50.-21.txt
+
+#begin Maps/Speech/-50.-22.txt
+/copy:Maps/Speech/-50.-22.txt
+
+#begin Maps/Speech/-50.-23.txt
+/copy:Maps/Speech/-50.-23.txt
+
+#begin Maps/Speech/-50.-24.txt
+/copy:Maps/Speech/-50.-24.txt
+
+#begin Maps/Speech/-50.-25.txt
+/copy:Maps/Speech/-50.-25.txt
+
+#begin Maps/Speech/-50.-26.txt
+/copy:Maps/Speech/-50.-26.txt
+
+#begin Maps/Speech/-50.-27.txt
+/copy:Maps/Speech/-50.-27.txt
+
+#begin Maps/Speech/-50.-29.txt
+/copy:Maps/Speech/-50.-29.txt
+
+#begin Maps/Speech/-50.-30.txt
+/copy:Maps/Speech/-50.-30.txt
+
+#begin Maps/Speech/-50.-31.txt
+/copy:Maps/Speech/-50.-31.txt
+
+#begin Maps/Speech/-50.-32.txt
+/copy:Maps/Speech/-50.-32.txt
+
+#begin Maps/Speech/-50.-34.txt
+/copy:Maps/Speech/-50.-34.txt
+
+#begin Maps/Speech/-50.-35.txt
+/copy:Maps/Speech/-50.-35.txt
+
+#begin Maps/Speech/-50.-36.txt
+/copy:Maps/Speech/-50.-36.txt
+
+#begin Maps/Speech/-50.-37.txt
+/copy:Maps/Speech/-50.-37.txt
+
+#begin Maps/Speech/-50.-38.txt
+/copy:Maps/Speech/-50.-38.txt
+
+#begin Maps/Speech/-50.-39.txt
+/copy:Maps/Speech/-50.-39.txt
+
+#begin Maps/Speech/-50.-40.txt
+/copy:Maps/Speech/-50.-40.txt
+
+#begin Maps/Speech/-50.-41.txt
+/copy:Maps/Speech/-50.-41.txt
+
+#begin Maps/Speech/-50.-43.txt
+/copy:Maps/Speech/-50.-43.txt
+
+#begin Maps/Speech/-50.-44.txt
+/copy:Maps/Speech/-50.-44.txt
+
+#begin Maps/Speech/-50.-45.txt
+/copy:Maps/Speech/-50.-45.txt
+
+#begin Maps/Speech/-50.-46.txt
+/copy:Maps/Speech/-50.-46.txt
+
+#begin Maps/Speech/-50.-47.txt
+/copy:Maps/Speech/-50.-47.txt
+
+#begin Maps/Speech/-50.-48.txt
+/copy:Maps/Speech/-50.-48.txt
+
+#begin Maps/Speech/-50.-49.txt
+/copy:Maps/Speech/-50.-49.txt
+
+#begin Maps/Speech/-50.-50.txt
+/copy:Maps/Speech/-50.-50.txt
+
+#begin Maps/Speech/6.0.txt
+/copy:Maps/Speech/6.0.txt
+
+#begin Maps/Speech/6.-1.txt
+/copy:Maps/Speech/6.-1.txt
+
+#begin Maps/Speech/6.-2.txt
+/copy:Maps/Speech/6.-2.txt
+
+#begin Maps/Speech/6.-3.txt
+/copy:Maps/Speech/6.-3.txt
+
+#begin Maps/Speech/-6.-3.txt
+/copy:Maps/Speech/-6.-3.txt
+
+#begin Maps/Speech/6.-4.txt
+/copy:Maps/Speech/6.-4.txt
+
+#begin Maps/Speech/-6.-4.txt
+/copy:Maps/Speech/-6.-4.txt
+
+#begin Maps/Speech/6.49.txt
+/copy:Maps/Speech/6.49.txt
+
+#begin Maps/Speech/6.-49.txt
+/copy:Maps/Speech/6.-49.txt
+
+#begin Maps/Speech/6.-5.txt
+/copy:Maps/Speech/6.-5.txt
+
+#begin Maps/Speech/6.-50.txt
+/copy:Maps/Speech/6.-50.txt
+
+#begin Maps/Speech/7.0.txt
+/copy:Maps/Speech/7.0.txt
+
+#begin Maps/Speech/7.-2.txt
+/copy:Maps/Speech/7.-2.txt
+
+#begin Maps/Speech/-7.-2.txt
+/copy:Maps/Speech/-7.-2.txt
+
+#begin Maps/Speech/-7.-3.txt
+/copy:Maps/Speech/-7.-3.txt
+
+#begin Maps/Speech/7.-4.txt
+/copy:Maps/Speech/7.-4.txt
+
+#begin Maps/Speech/7.49.txt
+/copy:Maps/Speech/7.49.txt
+
+#begin Maps/Speech/7.-49.txt
+/copy:Maps/Speech/7.-49.txt
+
+#begin Maps/Speech/7.-5.txt
+/copy:Maps/Speech/7.-5.txt
+
+#begin Maps/Speech/7.-50.txt
+/copy:Maps/Speech/7.-50.txt
+
+#begin Maps/Speech/8.-2.txt
+/copy:Maps/Speech/8.-2.txt
+
+#begin Maps/Speech/-8.-2.txt
+/copy:Maps/Speech/-8.-2.txt
+
+#begin Maps/Speech/8.-3.txt
+/copy:Maps/Speech/8.-3.txt
+
+#begin Maps/Speech/8.-4.txt
+/copy:Maps/Speech/8.-4.txt
+
+#begin Maps/Speech/8.49.txt
+/copy:Maps/Speech/8.49.txt
+
+#begin Maps/Speech/8.-49.txt
+/copy:Maps/Speech/8.-49.txt
+
+#begin Maps/Speech/8.-50.txt
+/copy:Maps/Speech/8.-50.txt
+
+#begin Maps/Speech/9.49.txt
+/copy:Maps/Speech/9.49.txt
+
+#begin Maps/Speech/9.-49.txt
+/copy:Maps/Speech/9.-49.txt
+
+#begin Maps/Speech/9.-50.txt
+/copy:Maps/Speech/9.-50.txt
+
+#begin Maps/Speech/99.99.txt
+/copy:Maps/Speech/99.99.txt
+
 #begin Textures/NPC/0.png
 /importer:TextureImporter
 /processor:TextureProcessor

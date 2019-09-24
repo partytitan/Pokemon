@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Client.Services.Windows.Message
@@ -33,20 +34,23 @@ namespace Client.Services.Windows.Message
 
         private void InputOnNewInput(object sender, NewInputEventArgs newInputEventArgs)
         {
-            if (newInputEventArgs.Inputs != GameLogic.Common.Inputs.None)
+            if (newInputEventArgs.Inputs == GameLogic.Common.Inputs.A)
             {
-                if (pages[pageIndex].IsDone)
+                if (pages.Any())
                 {
-                    pageIndex++;
-                    if (pageIndex >= pages.Count)
+                    if (pages[pageIndex].IsDone)
                     {
-                        IsDone = true;
-                        input.NewInput -= InputOnNewInput;
+                        pageIndex++;
+                        if (pageIndex >= pages.Count)
+                        {
+                            IsDone = true;
+                            input.NewInput -= InputOnNewInput;
+                        }
                     }
-                }
-                else
-                {
-                    pages[pageIndex].SpeedUpText();
+                    else
+                    {
+                        pages[pageIndex].SpeedUpText();
+                    }
                 }
             }
         }
