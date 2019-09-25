@@ -28,7 +28,6 @@ namespace Client.Services.Windows
             Width = width;
             Height = height;
         }
-
         public virtual void LoadContent(IContentLoader contentLoader)
         {
             texture = contentLoader.LoadTexture("Windows/windowframe");

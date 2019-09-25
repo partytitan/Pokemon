@@ -113,7 +113,7 @@ namespace Client.Services.World
                 if (npc.Speech.Count > 0)
                 {
                     var lines = npc.Speech.Aggregate("", (current, i) => current + mapSpeech[i] + " ");
-                    npcWorldObject.AddComponent(new EventTriggerPlayerInteract(npcWorldObject, eventRunner, new List<IEvent>{new EventSpeek(lines, windowQueuer, new InputKeyboard())}, new InputKeyboard(), worldData));
+                    npcWorldObject.AddComponent(new EventTriggerPlayerInteract(npcWorldObject, eventRunner, new List<IEvent>{new EventSpeek(lines, windowQueuer, worldData.MainPlayer.Input, worldData)}, worldData.MainPlayer.Input, worldData));
                 }
                 npcWorldObject.AddComponent(new Collision(npcWorldObject, worldData));
                 npcWorldObject.AddComponent(new Animation(npcWorldObject));

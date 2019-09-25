@@ -19,6 +19,7 @@ namespace Client.Services.Windows.Message
         private List<MessagePage> pages;
         private int pageIndex;
         private MessageArrow messageArrow;
+        public event EventHandler OnClose;
 
         public WindowMessage(Vector2 position, int width, int height, string text, Input input) : base(position, width, height)
         {
@@ -45,6 +46,7 @@ namespace Client.Services.Windows.Message
                         {
                             IsDone = true;
                             input.NewInput -= InputOnNewInput;
+                            OnClose?.Invoke(this, null);
                         }
                     }
                     else

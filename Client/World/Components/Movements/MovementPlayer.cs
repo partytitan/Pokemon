@@ -8,6 +8,7 @@ using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using System;
 using System.Linq;
+using Client.Services;
 
 namespace Client.World.Components.Movements
 {
@@ -26,6 +27,8 @@ namespace Client.World.Components.Movements
         private void OnNewInput(object sender, NewInputEventArgs newInputEventArgs)
         {
             if (InMovement)
+                return;
+            if (!worldData.MainPlayer.CanMove)
                 return;
             switch (newInputEventArgs.Inputs)
             {
@@ -71,14 +74,15 @@ namespace Client.World.Components.Movements
             var animation = Owner.GetComponent<Animation>();
             animation.StopAnimation();
 
+            worldData.MainPlayer.CurrentDirection = sprite.CurrentDirection;
             CheckWarp((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
             CheckMapChange((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
         }
 
-        private void CheckWarp(int wantedXTilePosition, int wantedYTilePostion)
+        private void CheckWarp(int wantedXTilePosition, int wantedYTilePosition)
         {
             var warp = Owner.GetComponent<Collision>();
-            warp?.CheckCollision<IPostMoveCollisionComponent>(wantedXTilePosition, wantedYTilePostion);
+            warp?.CheckCollision<IPostMoveCollisionComponent>(wantedXTilePosition, wantedYTilePosition);
         }
 
         private void CheckMapChange(int wantedXTilePosition, int wantedYTilePosition)
@@ -86,31 +90,31 @@ namespace Client.World.Components.Movements
             var camera = worldData.GetComponents<Camera>().FirstOrDefault();
             if (wantedXTilePosition < 0)
             {
-                worldData.WarpData.XMapId--;
-                worldData.WarpData.XWarpPosition = worldData.MapLoader.MapLeft.Width - 1;
-                worldData.WarpData.YWarpPosition = wantedYTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["yOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapLeft.Properties["yOffsetModifier"])) / (Tile.Width * 2);
-                worldData.ChangeMap(worldData.WarpData);
+                worldData.MainPlayer.WarpData.XMapId--;
+                worldData.MainPlayer.WarpData.XWarpPosition = worldData.MapLoader.MapLeft.Width - 1;
+                worldData.MainPlayer.WarpData.YWarpPosition = wantedYTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["yOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapLeft.Properties["yOffsetModifier"])) / (Tile.Width * 2);
+                worldData.ChangeMap(worldData.MainPlayer.WarpData);
             }
             else if (wantedYTilePosition < 0)
             {
-                worldData.WarpData.YMapId--;
-                worldData.WarpData.XWarpPosition = wantedXTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["xOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapUp.Properties["xOffsetModifier"])) / (Tile.Width * 2);
-                worldData.WarpData.YWarpPosition = worldData.MapLoader.MapUp.Height - 1;
-                worldData.ChangeMap(worldData.WarpData);
+                worldData.MainPlayer.WarpData.YMapId--;
+                worldData.MainPlayer.WarpData.XWarpPosition = wantedXTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["xOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapUp.Properties["xOffsetModifier"])) / (Tile.Width * 2);
+                worldData.MainPlayer.WarpData.YWarpPosition = worldData.MapLoader.MapUp.Height - 1;
+                worldData.ChangeMap(worldData.MainPlayer.WarpData);
             }
             else if (wantedXTilePosition > camera?.MapBounds.X / Tile.Width)
             {
-                worldData.WarpData.XMapId++;
-                worldData.WarpData.XWarpPosition = 0;
-                worldData.WarpData.YWarpPosition = wantedYTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["yOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapRight.Properties["yOffsetModifier"])) / (Tile.Width * 2);
-                worldData.ChangeMap(worldData.WarpData);
+                worldData.MainPlayer.WarpData.XMapId++;
+                worldData.MainPlayer.WarpData.XWarpPosition = 0;
+                worldData.MainPlayer.WarpData.YWarpPosition = wantedYTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["yOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapRight.Properties["yOffsetModifier"])) / (Tile.Width * 2);
+                worldData.ChangeMap(worldData.MainPlayer.WarpData);
             }
             else if (wantedYTilePosition > camera?.MapBounds.Y / Tile.Height)
             {
-                worldData.WarpData.YMapId++;
-                worldData.WarpData.XWarpPosition = wantedXTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["xOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapDown.Properties["xOffsetModifier"])) / (Tile.Width * 2);
-                worldData.WarpData.YWarpPosition = 1;
-                worldData.ChangeMap(worldData.WarpData);
+                worldData.MainPlayer.WarpData.YMapId++;
+                worldData.MainPlayer.WarpData.XWarpPosition = wantedXTilePosition + (Convert.ToInt16(worldData.MapLoader.CurrentMap.Properties["xOffsetModifier"]) - Convert.ToInt16(worldData.MapLoader.MapDown.Properties["xOffsetModifier"])) / (Tile.Width * 2);
+                worldData.MainPlayer.WarpData.YWarpPosition = 1;
+                worldData.ChangeMap(worldData.MainPlayer.WarpData);
             }
         }
     }

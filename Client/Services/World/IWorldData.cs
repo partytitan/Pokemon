@@ -8,7 +8,7 @@ namespace Client.Services.World
     internal interface IWorldData
     {
         IMapLoader MapLoader { get; set; }
-        WarpData WarpData { get; set; }
+        MainPlayer MainPlayer { get; set; }
 
         void ChangeMap(WarpData warpData);
 

@@ -34,6 +34,8 @@ namespace Client.World.EventTriggers
         {
             if(checking)
                 return;
+            if(worldData.MainPlayer.IsInteracting)
+                return;
             switch (newInputEventArgs.Inputs)
             {
                 case GameLogic.Common.Inputs.A:
@@ -54,8 +56,8 @@ namespace Client.World.EventTriggers
         {
             checking = true;
             var sprite = Owner.GetComponent<Sprite>();
-            var playerSprite = worldData.GetWorldObject("player").GetComponent<Sprite>();
-            var currentDirection = (Directions)(playerSprite.DrawFrame.Y / playerSprite.DrawFrame.Height);
+            var playerSprite = worldData.GetWorldObject("mainPlayer").GetComponent<Sprite>();
+            var currentDirection = playerSprite.CurrentDirection;
             var currentDirectionVector = UtilityService.ConvertDirectionToVector(currentDirection);
             for (int n = 0; n < range; n++)
             {

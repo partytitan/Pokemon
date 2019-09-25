@@ -14,6 +14,10 @@ namespace Client.World.Components
         private Texture2D texture;
         public Rectangle DrawFrame { get; set; }
         public Vector2 PositionOffset { get; private set; }
+        public Directions CurrentDirection
+        {
+            get { return (Directions) (DrawFrame.Y / DrawFrame.Height); }
+        }
         public Vector2 TilePosition => new Vector2(spriteData.XTilePosition, spriteData.YTilePosition);
         public Vector2 CurrentPosition => new Vector2(spriteData.XTilePosition * Tile.Width + PositionOffset.X, spriteData.YTilePosition * Tile.Height + PositionOffset.Y);
 
@@ -32,7 +36,7 @@ namespace Client.World.Components
         public Sprite(IComponentOwner owner, SpriteData spriteData, Directions directions, int drawWidth, int drawHeight) : this(owner, spriteData)
         {
             var id = (int)directions;
-            DrawFrame = new Rectangle(0, id * drawHeight, drawWidth, drawHeight);
+            DrawFrame = new Rectangle(drawWidth, id * drawHeight, drawWidth, drawHeight);
         }
 
         public virtual void LoadContent(IContentLoader contentLoader)

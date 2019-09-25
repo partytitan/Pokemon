@@ -12,22 +12,34 @@ namespace Client.World.Events
     {
         private readonly IWindowQueuer windowQueuer;
         private readonly InputKeyboard inputKeyboard;
+        private readonly IWorldData worldData;
         private readonly string lines;
 
         public bool IsDone { get; private set; }
-        public EventSpeek(string lines, IWindowQueuer windowQueuer, InputKeyboard inputKeyboard)
+        public EventSpeek(string lines, IWindowQueuer windowQueuer, InputKeyboard inputKeyboard, IWorldData worldData)
         {
             this.lines = lines;
             this.windowQueuer = windowQueuer;
             this.inputKeyboard = inputKeyboard;
+            this.worldData = worldData;
         }
 
         public void Initialize(IWorldData worldData)
         {
-            windowQueuer.QueueWindow(new WindowMessage(new Vector2(25, 180), 350, 50, lines, inputKeyboard));
+            worldData.MainPlayer.CanMove = false;
+            worldData.MainPlayer.IsInteracting = true;
+
+            var message = new WindowMessage(new Vector2(25, 180), 350, 50, lines, inputKeyboard);
+            message.OnClose += Message_OnClose;
+            windowQueuer.QueueWindow(message);
             IsDone = true;
         }
 
+        private void Message_OnClose(object sender, System.EventArgs e)
+        {
+            worldData.MainPlayer.CanMove = true;
+            worldData.MainPlayer.IsInteracting = false;
+        }
 
         public void LoadContent(IContentLoader contentLoader)
         {

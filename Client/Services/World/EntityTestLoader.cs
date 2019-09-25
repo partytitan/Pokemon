@@ -12,9 +12,9 @@ namespace Client.Services.World
 {
     internal class EntityTestLoader : IEntityLoader
     {
-        public IList<WorldObject> LoadEntities(IWorldData worldData, WarpData warpData)
+        public IList<WorldObject> LoadEntities(IWorldData worldData)
         {
-            var entity = new WorldObject("player");
+            var entity = new WorldObject("mainPlayer");
             entity.AddComponent(
                     new Sprite(
                         entity,
@@ -24,10 +24,10 @@ namespace Client.Services.World
                             Height = 20,
                             Width = 15,
                             TextureName = "NPC/main_character",
-                            XTilePosition = warpData.XWarpPosition,
-                            YTilePosition = warpData.YWarpPosition
+                            XTilePosition = worldData.MainPlayer.WarpData.XWarpPosition,
+                            YTilePosition = worldData.MainPlayer.WarpData.YWarpPosition
                         },
-                        new Rectangle(0, 0, 41, 51)
+                        worldData.MainPlayer.CurrentDirection, 41, 51
                     )
                 );
             entity.AddComponent(new MovementPlayer(entity, 1, new InputKeyboard(), worldData));

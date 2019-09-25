@@ -1,4 +1,5 @@
-﻿using Client.Inputs;
+﻿using System.Collections.Generic;
+using Client.Inputs;
 using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
 using Client.Services.Content;
@@ -8,7 +9,9 @@ using Client.Services.Windows.Message;
 using Client.Services.World;
 using Client.World;
 using Client.World.Components;
+using GameLogic.Common;
 using GameLogic.Data;
+using GameLogic.PokemonData;
 using GameLogic.Trainers;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -23,7 +26,7 @@ namespace Client
         private SpriteBatch spriteBatch;
         private IContentLoader contentLoader;
         private ScreenLoader screenLoader;
-        private Trainer trainer;
+        private MainPlayer mainPlayer;
         private Camera camera;
         private WindowHandler windowHandler;
         private int width;
@@ -39,6 +42,7 @@ namespace Client
             Content.RootDirectory = "Content";
             contentLoader = new ContentLoader(Content);
             windowHandler = new WindowHandler(contentLoader);
+            mainPlayer = new MainPlayer("Jordi", new List<Pokemon>(), new WarpData(10, 18, 0, 0), Directions.Down);
         }
 
         protected override void LoadContent()
@@ -55,7 +59,7 @@ namespace Client
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(this.width, this.height, 5),
                 new ScreenTransitionEffectFadeIn(this.width, this.height, 3), contentLoader);
 
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, new WarpData(10, 18, 0, 0)));
+            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, mainPlayer));
             screenLoader.LoadContent(GraphicsDevice);
         }
 

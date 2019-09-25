@@ -1,17 +1,23 @@
-﻿namespace GameLogic
+﻿using System.Collections.Generic;
+using GameLogic.Common;
+using GameLogic.Data;
+using GameLogic.PokemonData;
+using GameLogic.Trainers;
+
+namespace GameLogic
 {
-    public class Player
+    public class Player : Trainer
     {
         public string Identity { get; set; }
-        public string Name { get; set; }
-        public int ExperiencePoints { get; set; }
-        public int Level { get; set; }
-        public int Gold { get; set; }
-        public Coordinates coordinates { get; set; }
 
-        public Player()
+        public WarpData WarpData { get; set; }
+
+        public Directions CurrentDirection { get; set; }
+
+        public Player(string name, List<Pokemon> pokemon, WarpData warpData, Directions currentDirection) : base(name, pokemon)
         {
-            coordinates = new Coordinates(0, 0);
+            this.WarpData = warpData;
+            this.CurrentDirection = currentDirection;
         }
     }
 }
