@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Client.Inputs;
+using Client.PokemonBattle.Phases.TrainerPhases;
 using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
 using Client.Services.Content;
@@ -9,8 +10,12 @@ using Client.Services.Windows.Message;
 using Client.Services.World;
 using Client.World;
 using Client.World.Components;
+using GameLogic.Battles;
 using GameLogic.Common;
 using GameLogic.Data;
+using GameLogic.Moves.Reflexive;
+using GameLogic.Moves.Transitive.Attack.OneTurnOneHit;
+using GameLogic.Moves.Transitive.Status;
 using GameLogic.PokemonData;
 using GameLogic.Trainers;
 using Microsoft.Xna.Framework;
@@ -29,26 +34,36 @@ namespace Client
         private MainPlayer mainPlayer;
         private Camera camera;
         private WindowHandler windowHandler;
-        private int width;
-        private int height;
+        public static readonly int Width = 800;
+        public static readonly int Height = 480;
 
-        public GameBase(int width = 800, int height = 480)
+        public GameBase()
         {
-            this.width = width;
-            this.height = height;
             GraphicsDeviceManager = new GraphicsDeviceManager(this);
-            GraphicsDeviceManager.PreferredBackBufferHeight = height;
-            GraphicsDeviceManager.PreferredBackBufferWidth = width;
+            GraphicsDeviceManager.PreferredBackBufferHeight = Height;
+            GraphicsDeviceManager.PreferredBackBufferWidth = Width;
             Content.RootDirectory = "Content";
             contentLoader = new ContentLoader(Content);
             windowHandler = new WindowHandler(contentLoader);
-            mainPlayer = new MainPlayer("Jordi", new List<Pokemon>(), new WarpData(10, 18, 0, 0), Directions.Down);
         }
 
         protected override void LoadContent()
         {
-            backBuffer = new RenderTarget2D(GraphicsDevice, this.width / 2, this.height / 2);
-            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, this.width / 2, this.height / 2);
+            //Debug
+            var enemyPokemon = Pokemon.Builder.Init(1, 100)
+                .Move1(new RazorLeaf())
+                .Move2(new LeechSeed())
+                .Move3(new BodySlam())
+                .Move4(new Growth())
+                .Create();
+            
+            mainPlayer = new MainPlayer("Jordi", new List<Pokemon>() { enemyPokemon, enemyPokemon, enemyPokemon}, new WarpData(10, 18, 0, 0), Directions.Down);
+
+            Side playerSide = new TrainerSide(mainPlayer);
+            Side enemySide = new WildPokemonSide(enemyPokemon);
+            //Debug end
+            backBuffer = new RenderTarget2D(GraphicsDevice, Width / 2, Height / 2);
+            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, Width / 2, Height / 2);
             var cameraWorldObject = new WorldObject("camera");
             camera = new Camera(null, GraphicsDevice, viewportAdapter);
             cameraWorldObject.AddComponent(camera);
@@ -56,10 +71,11 @@ namespace Client
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(this.width, this.height, 5),
-                new ScreenTransitionEffectFadeIn(this.width, this.height, 3), contentLoader);
+            screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(Width, Height, 5),
+                new ScreenTransitionEffectFadeIn(Width, Height, 3), contentLoader);
 
-            screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, mainPlayer));
+            //screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, mainPlayer));
+            screenLoader.LoadScreen(new ScreenBattle(screenLoader, windowHandler, new TrainerStartPhase(), new Battle(playerSide, enemySide, null,null) ));
             screenLoader.LoadContent(GraphicsDevice);
         }
 
