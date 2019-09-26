@@ -3,5 +3,6 @@
     internal interface IWindowQueuer
     {
         void QueueWindow(Window window);
+        bool WindowActive { get; }
     }
 }

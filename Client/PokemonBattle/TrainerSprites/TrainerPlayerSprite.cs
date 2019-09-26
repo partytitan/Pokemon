@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Client.Screens;
 using Microsoft.Xna.Framework;
 
 namespace Client.PokemonBattle.TrainerSprites
@@ -17,8 +18,8 @@ namespace Client.PokemonBattle.TrainerSprites
 
         public TrainerPlayerSprite(string textureName) : base(textureName)
         {
-            Position = new Vector2(GameBase.Width / 2, GameBase.Height / 2 - 60 - TrainerTextureHeight);
-            WantedPosition = new Vector2(GameBase.Width / 2 / 3 - TrainerTextureWidth, GameBase.Height / 2 - 60 - TrainerTextureHeight);
+            Position = new Vector2(ScreenBattle.ArenaSize.Width, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
+            WantedPosition = new Vector2(ScreenBattle.ArenaSize.Width * 0.33f - TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
             speed = 3;
             isMovingOut = false;
             frameIndex = 0;
@@ -37,7 +38,6 @@ namespace Client.PokemonBattle.TrainerSprites
                     DrawRectangle = new Rectangle(TrainerTextureWidth * frameIndex, 0, TrainerTextureWidth, TrainerTextureHeight);
                 }
             }
-
         }
 
         public override void StartMoveOut()

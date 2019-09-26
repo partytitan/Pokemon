@@ -21,6 +21,8 @@ namespace Client.Services.Windows.Message
         private MessageArrow messageArrow;
         public event EventHandler OnClose;
 
+        public Color FontColor { get; set; }
+
         public WindowMessage(Vector2 position, int width, int height, string text, Input input) : base(position, width, height)
         {
             this.text = text;
@@ -31,6 +33,7 @@ namespace Client.Services.Windows.Message
             pageIndex = 0;
             margin = new Vector2(10);
             messageArrow = new MessageArrow(position + new Vector2(width - margin.X * 1.6f, height - margin.Y - 5 * 1.6f));
+            FontColor = Color.Gray;
         }
 
         private void InputOnNewInput(object sender, NewInputEventArgs newInputEventArgs)
@@ -80,7 +83,7 @@ namespace Client.Services.Windows.Message
                     rowText.Remove(oldRowLength, rowText.Length - oldRowLength);
                     if (rowIndex == MaxNumberOfRows - 1)
                     {
-                        pages.Add(new MessagePage(rowText.ToString(), Position + margin, font));
+                        pages.Add(new MessagePage(rowText.ToString(), Position + margin, font, FontColor));
                         rowText.Clear();
                         rowIndex = 0;
                     }
@@ -97,7 +100,7 @@ namespace Client.Services.Windows.Message
             }
             if (rowText.Length > 0)
             {
-                pages.Add(new MessagePage(rowText.ToString(), Position + margin, font));
+                pages.Add(new MessagePage(rowText.ToString(), Position + margin, font, FontColor));
             }
         }
 

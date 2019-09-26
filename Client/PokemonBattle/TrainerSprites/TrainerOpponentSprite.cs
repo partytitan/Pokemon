@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Client.Screens;
 using Microsoft.Xna.Framework;
 
 namespace Client.PokemonBattle.TrainerSprites
@@ -9,8 +10,8 @@ namespace Client.PokemonBattle.TrainerSprites
     {
         public TrainerOpponentSprite(string textureName) : base(textureName)
         {
-            Position = new Vector2(-64, GameBase.Height/2/10);
-            WantedPosition = new Vector2(GameBase.Width / 2 / 3 *2, GameBase.Height / 2 / 10);
+            Position = new Vector2(-TrainerTextureWidth, ScreenBattle.ArenaSize.Height * 0.1f);
+            WantedPosition = new Vector2(ScreenBattle.ArenaSize.Width * 0.66f, ScreenBattle.ArenaSize.Height * 0.1f);
         }
 
         protected override void Move(GameTime gameTime)
@@ -20,7 +21,7 @@ namespace Client.PokemonBattle.TrainerSprites
 
         public override void StartMoveOut()
         {
-            WantedPosition = new Vector2(304, GameBase.Height / 2 / 10);
+            WantedPosition = new Vector2(ScreenBattle.ArenaSize.Width, ScreenBattle.ArenaSize.Height * 0.1f);
         }
     }
 }

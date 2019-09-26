@@ -34,14 +34,18 @@ namespace Client
         private MainPlayer mainPlayer;
         private Camera camera;
         private WindowHandler windowHandler;
-        public static readonly int Width = 800;
-        public static readonly int Height = 480;
+        private static readonly int actualWidth = 800;
+        private static readonly int actualHeight = 480;
+
+        public static int GameWidth => actualWidth / 2;
+        public static int GameHeight => actualHeight / 2;
+
 
         public GameBase()
         {
             GraphicsDeviceManager = new GraphicsDeviceManager(this);
-            GraphicsDeviceManager.PreferredBackBufferHeight = Height;
-            GraphicsDeviceManager.PreferredBackBufferWidth = Width;
+            GraphicsDeviceManager.PreferredBackBufferHeight = actualHeight;
+            GraphicsDeviceManager.PreferredBackBufferWidth = actualWidth;
             Content.RootDirectory = "Content";
             contentLoader = new ContentLoader(Content);
             windowHandler = new WindowHandler(contentLoader);
@@ -62,8 +66,8 @@ namespace Client
             Side playerSide = new TrainerSide(mainPlayer);
             Side enemySide = new WildPokemonSide(enemyPokemon);
             //Debug end
-            backBuffer = new RenderTarget2D(GraphicsDevice, Width / 2, Height / 2);
-            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, Width / 2, Height / 2);
+            backBuffer = new RenderTarget2D(GraphicsDevice, GameWidth, GameHeight);
+            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, GameWidth, GameHeight);
             var cameraWorldObject = new WorldObject("camera");
             camera = new Camera(null, GraphicsDevice, viewportAdapter);
             cameraWorldObject.AddComponent(camera);
@@ -71,8 +75,8 @@ namespace Client
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(Width, Height, 5),
-                new ScreenTransitionEffectFadeIn(Width, Height, 3), contentLoader);
+            screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(actualWidth, actualHeight, 5),
+                new ScreenTransitionEffectFadeIn(actualWidth, actualHeight, 3), contentLoader);
 
             //screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, mainPlayer));
             screenLoader.LoadScreen(new ScreenBattle(screenLoader, windowHandler, new TrainerStartPhase(), new Battle(playerSide, enemySide, null,null) ));

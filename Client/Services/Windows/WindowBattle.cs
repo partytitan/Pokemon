@@ -8,7 +8,7 @@ namespace Client.Services.Windows
 {
     class WindowBattle : Window
     {
-        public WindowBattle(Vector2 position, int width, int height) : base(position, width, height)
+        public WindowBattle(Rectangle target) : base(new Vector2(target.X, target.Y), target.Width, target.Height)
         {
         }
 

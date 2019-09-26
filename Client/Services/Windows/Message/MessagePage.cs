@@ -7,6 +7,7 @@ namespace Client.Services.Windows.Message
     {
         private const int CharacterDelay = 40;
         private readonly SpriteFont font;
+        private readonly Color fontColor;
         private readonly char[] text;
         private readonly Vector2 position;
         private int index;
@@ -15,11 +16,12 @@ namespace Client.Services.Windows.Message
 
         public bool IsDone { get; set; }
 
-        public MessagePage(string text, Vector2 position, SpriteFont font)
+        public MessagePage(string text, Vector2 position, SpriteFont font, Color fontColor)
         {
             this.text = text.ToCharArray();
             this.position = position;
             this.font = font;
+            this.fontColor = fontColor;
             index = 0;
             counter = 0;
             currentText = "";
@@ -58,7 +60,7 @@ namespace Client.Services.Windows.Message
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.DrawString(font, currentText, position, Color.Gray);
+            spriteBatch.DrawString(font, currentText, position, fontColor);
         }
     }
 }
