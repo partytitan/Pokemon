@@ -30,7 +30,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
         public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
         {
             this.windowQueuer = windowQueuer;
-            windowQueuer.QueueWindow(new WindowBattleMessage($"{battleData.OpponentSide.Name} would like to battle! {Environment.NewLine}{Environment.NewLine} {battleData.OpponentSide.Name} sent out {battleData.OpponentSide.Party[0].Nickname}!", new InputKeyboard(), ScreenBattle.Window));
+            windowQueuer.QueueWindow(new WindowBattleMessage($"{battleData.OpponentSide.Name} would like to battle! {Environment.NewLine}{battleData.OpponentSide.Name} sent out {battleData.OpponentSide.Party[0].Nickname}!", new InputKeyboard(), ScreenBattle.Window));
         }
 
         public void Update(GameTime gameTime)

@@ -21,7 +21,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
                 TrainerSprites.Remove(opponentTrainerSprite);
             }
 
-            return null;
+            return new OpponentTrainerFirstPokemonPhase(TrainerSprites, TrainerPokemonStatuses);
         }
     }
 }

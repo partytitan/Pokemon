@@ -77,14 +77,23 @@ namespace Client.Services.Windows.Message
             {
                 var word = words[index];
                 var oldRowLength = rowText.Length;
+
+                //Force a new page
+                if (word == Environment.NewLine)
+                {
+                    CreatePage(font, rowText);
+                    rowIndex = 0;
+                    index++;
+                    continue;
+                }
+
                 rowText.Append($"{word} ");
                 if (font.MeasureString(rowText).X > Width - margin.X)
                 {
                     rowText.Remove(oldRowLength, rowText.Length - oldRowLength);
                     if (rowIndex == MaxNumberOfRows - 1)
                     {
-                        pages.Add(new MessagePage(rowText.ToString(), Position + margin, font, FontColor));
-                        rowText.Clear();
+                        CreatePage(font, rowText);
                         rowIndex = 0;
                     }
                     else
@@ -102,6 +111,12 @@ namespace Client.Services.Windows.Message
             {
                 pages.Add(new MessagePage(rowText.ToString(), Position + margin, font, FontColor));
             }
+        }
+
+        private void CreatePage(SpriteFont font, StringBuilder rowText)
+        {
+            pages.Add(new MessagePage(rowText.ToString(), Position + margin, font, FontColor));
+            rowText.Clear();
         }
 
         public override void Update(GameTime gameTime)
