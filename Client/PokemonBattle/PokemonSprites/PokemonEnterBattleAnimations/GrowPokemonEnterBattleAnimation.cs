@@ -15,7 +15,7 @@ namespace Client.PokemonBattle.PokemonSprites.PokemonEnterBattleAnimations
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-            if (PokemonBattleSpriteData.Position.Y > ScreenBattle.ArenaSize.Height - PokemonBattleSpriteData.Height / 2)
+            if (PokemonBattleSpriteData.Position.Y > ScreenBattle.ArenaSize.Height)
             {
                 PokemonBattleSpriteData.Position -= new Vector2(0, SizeGrowthSpeed * 2);
             }

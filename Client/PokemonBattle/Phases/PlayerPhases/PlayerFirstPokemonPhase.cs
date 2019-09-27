@@ -34,7 +34,7 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
         public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
         {
             this.pokemonBattleSprite = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.25f, ScreenBattle.ArenaSize.Height * 0.95f), Color.White, $"{battleData.PlayerSide.Party[0].Number:000}-0", PokemonBattleSpriteData.PokemonFacings.Back));
-            this.pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.25f, ScreenBattle.ArenaSize.Height * 0.95f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSprite.GetPokemonBattleSpriteData()));
+            this.pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.25f, ScreenBattle.ArenaSize.Height * 0.95f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new GrowPokemonEnterBattleAnimation(pokemonBattleSprite.GetPokemonBattleSpriteData()));
 
             pokeballSprite.LoadContent(contentLoader);
             pokemonBattleSprite.LoadContent(contentLoader);
