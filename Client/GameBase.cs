@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Client.Inputs;
+using Client.PokemonBattle.Phases;
 using Client.PokemonBattle.Phases.TrainerPhases;
 using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
@@ -79,7 +80,7 @@ namespace Client
                 new ScreenTransitionEffectFadeIn(actualWidth, actualHeight, 3), contentLoader);
 
             //screenLoader.LoadScreen(new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, mainPlayer));
-            screenLoader.LoadScreen(new ScreenBattle(screenLoader, windowHandler, new TrainerStartPhase(), new Battle(playerSide, enemySide, null,null) ));
+            screenLoader.LoadScreen(new ScreenBattle(screenLoader, windowHandler, new BattleStartPhase(), new Battle(playerSide, enemySide, null,null) ));
             screenLoader.LoadContent(GraphicsDevice);
         }
 

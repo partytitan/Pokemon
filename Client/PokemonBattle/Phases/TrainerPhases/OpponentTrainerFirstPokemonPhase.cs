@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Client.PokemonBattle.Common;
 using Client.PokemonBattle.Common.PokeballEnterAnimations;
+using Client.PokemonBattle.Phases.PlayerPhases;
 using Client.PokemonBattle.PokemonSprites;
 using Client.PokemonBattle.PokemonSprites.PokemonEnterBattleAnimations;
 using Client.PokemonBattle.TrainerSprites;
@@ -43,11 +44,12 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
         public void Update(GameTime gameTime)
         {
             pokeballSprite.Update(gameTime);
+            IsDone = pokeballSprite.IsDone;
         }
 
         public IPhase GetNextPhase()
         {
-            return null;
+            return new PlayerOutPhase(trainerSprites, trainerPokemonStatuses);
         }
 
         public void Draw(SpriteBatch spriteBatch)

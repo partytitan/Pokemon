@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Client.PokemonBattle.TrainerSprites;
 using Client.PokemonBattle.UI;
 using Client.Services.Content;
@@ -10,7 +8,7 @@ using GameLogic.Battles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Client.PokemonBattle.Phases.TrainerPhases
+namespace Client.PokemonBattle.Phases.Shared
 {
     internal abstract class TrainerOutPhase<TTrainerSprite, TTrainerStatusSprite> : IPhase where TTrainerSprite : TrainerSprite where TTrainerStatusSprite : TrainerPokemonStatus
     {

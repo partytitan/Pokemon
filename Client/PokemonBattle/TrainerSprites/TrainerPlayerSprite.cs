@@ -21,7 +21,6 @@ namespace Client.PokemonBattle.TrainerSprites
             Position = new Vector2(ScreenBattle.ArenaSize.Width, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
             WantedPosition = new Vector2(ScreenBattle.ArenaSize.Width * 0.33f - TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
             speed = 3;
-            isMovingOut = false;
             frameIndex = 0;
         }
 
@@ -32,9 +31,8 @@ namespace Client.PokemonBattle.TrainerSprites
 
         public override void StartMoveOut()
         {
-            WantedPosition = new Vector2(-TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
-            speed = 15;
-            isMovingOut = true;
+            WantedPosition = new Vector2(0 - TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
+            speed = 1;
         }
     }
 }

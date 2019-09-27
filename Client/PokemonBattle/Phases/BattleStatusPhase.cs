@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using Client.PokemonBattle.Phases.TrainerPhases;
 using Client.PokemonBattle.TrainerSprites;
 using Client.PokemonBattle.UI;
 using Client.Services.Content;
@@ -9,15 +8,15 @@ using GameLogic.Battles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Client.PokemonBattle.Phases.TrainerPhases
+namespace Client.PokemonBattle.Phases
 {
-    class TrainerStatusPhase : IPhase
+    class BattleStatusPhase : IPhase
     {
         private readonly List<TrainerSprite> trainerSprites;
         private List<TrainerPokemonStatus> trainerPokemonStatuses;
         public bool IsDone { get; set; }
 
-        public TrainerStatusPhase(List<TrainerSprite> trainerSprites)
+        public BattleStatusPhase(List<TrainerSprite> trainerSprites)
         {
             this.trainerSprites = trainerSprites;
         }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Client.PokemonBattle.TrainerSprites;
 using Client.Services.Content;
 using Client.Services.Windows;
@@ -8,9 +6,9 @@ using GameLogic.Battles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Client.PokemonBattle.Phases.TrainerPhases
+namespace Client.PokemonBattle.Phases
 {
-    internal class TrainerStartPhase : IPhase
+    internal class BattleStartPhase : IPhase
     {
         private List<TrainerSprite> trainerSprites;
         public bool IsDone { get; set; }
@@ -34,7 +32,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
 
         public IPhase GetNextPhase()
         {
-            return new TrainerStatusPhase(trainerSprites);
+            return new BattleStatusPhase(trainerSprites);
         }
 
         public void Draw(SpriteBatch spriteBatch)
