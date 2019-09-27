@@ -23,7 +23,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
         private readonly List<TrainerSprite> trainerSprites;
         private readonly List<TrainerPokemonStatus> trainerPokemonStatuses;
         private PokeballSprite pokeballSprite;
-        private PokemonBattleSprite pokemonBattleSpriteTest;
+        private PokemonBattleSprite pokemonBattleSprite;
         public bool IsDone { get; private set; }
 
         public OpponentTrainerFirstPokemonPhase(List<TrainerSprite> trainerSprites, List<TrainerPokemonStatus> trainerPokemonStatuses)
@@ -34,11 +34,11 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
 
         public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
         {
-            this.pokemonBattleSpriteTest = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), Color.White, $"{battleData.OpponentSide.Party[0].Number:000}-2", PokemonBattleSpriteData.PokemonFacings.Front));
-            this.pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSpriteTest.GetPokemonBattleSpriteData()));
+            this.pokemonBattleSprite = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), Color.White, $"{battleData.OpponentSide.Party[0].Number:000}-2", PokemonBattleSpriteData.PokemonFacings.Front));
+            this.pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSprite.GetPokemonBattleSpriteData()));
         
             pokeballSprite.LoadContent(contentLoader);
-            pokemonBattleSpriteTest.LoadContent(contentLoader);
+            pokemonBattleSprite.LoadContent(contentLoader);
         }
 
         public void Update(GameTime gameTime)
@@ -49,7 +49,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
 
         public IPhase GetNextPhase()
         {
-            return new PlayerOutPhase(trainerSprites, trainerPokemonStatuses);
+            return new PlayerOutPhase(trainerSprites, trainerPokemonStatuses, pokemonBattleSprite);
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -57,7 +57,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
             pokeballSprite.Draw(spriteBatch);
             trainerSprites.ForEach(t => t.Draw(spriteBatch));
             trainerPokemonStatuses.ForEach(t => t.Draw(spriteBatch));
-            pokemonBattleSpriteTest.Draw(spriteBatch);
+            pokemonBattleSprite.Draw(spriteBatch);
         }
     }
 }

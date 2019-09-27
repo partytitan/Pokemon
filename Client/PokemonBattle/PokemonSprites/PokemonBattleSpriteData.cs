@@ -19,7 +19,7 @@ namespace Client.PokemonBattle.PokemonSprites
         public int Height { get; set; }
         public Vector2 Position { get; set; }
         public Rectangle Rectangle => new Rectangle((int)Position.X, (int)Position.Y, Width, Height);
-        public Rectangle DrawRectangle => new Rectangle(TextureWidth * (int)PokemonFacing, 0, TextureWidth, TextureHeight);
+        public Rectangle DrawRectangle => new Rectangle(0, 0, TextureWidth, TextureHeight);
         public PokemonFacings PokemonFacing { get; set; }
 
         public PokemonBattleSpriteData(int width, int height, Vector2 position, Color color, string textureName, PokemonFacings pokemonFacing)

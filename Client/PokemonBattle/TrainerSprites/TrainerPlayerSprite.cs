@@ -32,7 +32,7 @@ namespace Client.PokemonBattle.TrainerSprites
         public override void StartMoveOut()
         {
             WantedPosition = new Vector2(0 - TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
-            speed = 1;
+            speed = 3;
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Client.PokemonBattle.Phases.Shared;
 using Client.PokemonBattle.Phases.TrainerPhases;
+using Client.PokemonBattle.PokemonSprites;
 using Client.PokemonBattle.TrainerSprites;
 using Client.PokemonBattle.UI;
 using Client.Services.Content;
@@ -18,11 +19,13 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
     {
         private readonly List<TrainerSprite> TrainerSprites;
         private readonly List<TrainerPokemonStatus> TrainerPokemonStatuses;
+        private readonly PokemonBattleSprite opponentPokemonBattleSprite;
 
-        public PlayerOutPhase(List<TrainerSprite> trainerSprites, List<TrainerPokemonStatus> trainerPokemonStatuses) : base(trainerSprites, trainerPokemonStatuses)
+        public PlayerOutPhase(List<TrainerSprite> trainerSprites, List<TrainerPokemonStatus> trainerPokemonStatuses, PokemonBattleSprite opponentPokemonBattleSprite) : base(trainerSprites, trainerPokemonStatuses)
         {
             this.TrainerSprites = trainerSprites;
             this.TrainerPokemonStatuses = trainerPokemonStatuses;
+            this.opponentPokemonBattleSprite = opponentPokemonBattleSprite;
         }
 
         public override IPhase GetNextPhase()
@@ -33,8 +36,13 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
                 TrainerSprites.Remove(playerTrainerSprite);
             }
 
-            return null;
-            // return new OpponentTrainerFirstPokemonPhase(TrainerSprites, TrainerPokemonStatuses);
+            return new PlayerFirstPokemonPhase(TrainerPokemonStatuses, opponentPokemonBattleSprite);
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            opponentPokemonBattleSprite.Draw(spriteBatch);
+            base.Draw(spriteBatch);
         }
     }
 }
