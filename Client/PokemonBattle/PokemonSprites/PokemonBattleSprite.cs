@@ -1,4 +1,5 @@
-﻿using Client.Services.Content;
+﻿using System.IO;
+using Client.Services.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -21,7 +22,7 @@ namespace Client.PokemonBattle.PokemonSprites
 
         public void LoadContent(IContentLoader contentLoader)
         {
-            texture = contentLoader.LoadTexture(pokemonBattleSpriteDate.TextureName);
+            texture = contentLoader.LoadTexture(Path.Combine("Pokemon", pokemonBattleSpriteDate.PokemonFacing.ToString(), pokemonBattleSpriteDate.TextureName));
         }
 
         public void Draw(SpriteBatch spriteBatch)

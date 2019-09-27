@@ -9,6 +9,8 @@ namespace Client.PokemonBattle.Common
     {
         public const int PokeballWidth = 12;
         public const int PokeballHeight = 12;
+        public const int PokeballSpacing = 4;
+
 
         public Vector2 Position { get; set; }
         public Color Color { get; set; }

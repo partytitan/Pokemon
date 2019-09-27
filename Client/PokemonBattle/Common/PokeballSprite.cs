@@ -16,7 +16,6 @@ namespace Client.PokemonBattle.Common
         private const int TimeUntilOpen = 200;
         private const int TimeOpen = 1000;
 
-
         private readonly PokeballData pokeballData;
         private readonly IPokeballEnterAnimation pokeBallEnterAnimation;
         private readonly IPokemonEnterBattleAnimation pokemonEnterBattleAnimation;
@@ -84,6 +83,7 @@ namespace Client.PokemonBattle.Common
             for (int n = 0; n < EffectCount; n++)
             {
                 Vector2 direction;
+                //Only original directions
                 do
                 {
                     //Get a direction between -1 and 1.
@@ -99,7 +99,7 @@ namespace Client.PokemonBattle.Common
         {
             if (IsDone) return;
             spriteBatch.Draw(pokeballTexture, pokeballData.Position,
-                new Rectangle(PokeballData.PokeballWidth * (isOpen ? 1 : 0), 0, PokeballData.PokeballWidth, PokeballData.PokeballHeight), pokeballData.Color,
+                new Rectangle(PokeballData.PokeballWidth * (isOpen ? 1 : 0) + (isOpen ? PokeballData.PokeballSpacing : 0), 0, PokeballData.PokeballWidth, PokeballData.PokeballHeight + (isOpen ? 1 : 0)), pokeballData.Color,
                 pokeballData.Rotation, new Vector2(PokeballData.PokeballWidth / 2, PokeballData.PokeballHeight / 2), Vector2.One, SpriteEffects.None, 0);
             pokeballOpenEffects.ForEach(p => p.Draw(spriteBatch));
         }

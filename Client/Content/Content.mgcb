@@ -9994,6 +9994,30 @@
 /processorParam:TextureFormat=Color
 /build:Textures/Battle/gui/StatusPokemonBall/status.png
 
+#begin Textures/Battle/Pokeballs/pokeball_open_effect.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Battle/Pokeballs/pokeball_open_effect.png
+
+#begin Textures/Battle/Pokeballs/pokeball_regular.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Battle/Pokeballs/pokeball_regular.png
+
 #begin Textures/NPC/0.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -15789,6 +15813,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Textures/NPC/main_character.png
+
+#begin Textures/Pokemon/Front/001-2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Pokemon/Front/001-2.png
 
 #begin Textures/ScreenEffects/white_block.png
 /importer:TextureImporter

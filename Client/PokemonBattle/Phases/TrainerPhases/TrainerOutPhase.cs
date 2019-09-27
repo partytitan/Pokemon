@@ -41,7 +41,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
         {
             TrainerSprites.ForEach(t => t.Update(gameTime));
             TrainerPokemonStatuses.ForEach(t => t.Update(gameTime));
-            //IsDone = TrainerSprites.TrueForAll(t => t.IsDone);
+            IsDone = TrainerSprites.TrueForAll(t => t.IsDone);
         }
 
         public abstract IPhase GetNextPhase();

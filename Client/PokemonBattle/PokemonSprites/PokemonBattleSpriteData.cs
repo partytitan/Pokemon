@@ -4,8 +4,8 @@ namespace Client.PokemonBattle.PokemonSprites
 {
     class PokemonBattleSpriteData
     {
-        public const int TextureWidth = 64;
-        public const int TextureHeight = 64;
+        public const int TextureWidth = 80;
+        public const int TextureHeight = 80;
 
         public enum PokemonFacings
         {

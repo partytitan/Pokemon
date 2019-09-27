@@ -9,14 +9,13 @@ namespace Client.PokemonBattle.PokemonSprites.PokemonEnterBattleAnimations
     {
         protected const int SizeGrowthSpeed = 1;
         protected const int ColorAlphaGrowthSpeed = 4;
-        protected const int FinalWidthAndHeight = 64;
+        protected const int FinalWidthAndHeight = PokemonBattleSpriteData.TextureHeight;
         protected readonly PokemonBattleSpriteData PokemonBattleSpriteData;
         public bool IsDone { get; private set; }
 
         public TransparentPokemonEnterBattleAnimation(PokemonBattleSpriteData pokemonBattleSpriteData)
         {
             this.PokemonBattleSpriteData = pokemonBattleSpriteData;
-
         }
 
         public void StartBattleAnimation()

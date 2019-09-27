@@ -7,6 +7,7 @@ using Client.PokemonBattle.PokemonSprites;
 using Client.PokemonBattle.PokemonSprites.PokemonEnterBattleAnimations;
 using Client.PokemonBattle.TrainerSprites;
 using Client.PokemonBattle.UI;
+using Client.Screens;
 using Client.Services.Content;
 using Client.Services.Windows;
 using GameLogic.Battles;
@@ -28,8 +29,8 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
         {
             this.trainerSprites = trainerSprites;
             this.trainerPokemonStatuses = trainerPokemonStatuses;
-            this.pokemonBattleSpriteTest = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(165, 55), Color.White, "Pokemons/weedle_front", PokemonBattleSpriteData.PokemonFacings.Front));
-            pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(165, 55), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSpriteTest.GetPokemonBattleSpriteData()));
+            this.pokemonBattleSpriteTest = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), Color.White, "001-2", PokemonBattleSpriteData.PokemonFacings.Front));
+            pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSpriteTest.GetPokemonBattleSpriteData()));
         }
 
         public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
@@ -41,13 +42,11 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
         public void Update(GameTime gameTime)
         {
             pokeballSprite.Update(gameTime);
-            //IsDone = pokeballSprite.IsDone;
         }
 
         public IPhase GetNextPhase()
         {
             return null;
-            //return new PlayerTrainerOutPhase(trainerSprites, trainerPokemonStatuses, pokemonBattleSpriteTest);
         }
 
         public void Draw(SpriteBatch spriteBatch)
