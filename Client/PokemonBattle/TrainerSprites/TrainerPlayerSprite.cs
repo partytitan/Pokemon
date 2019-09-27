@@ -28,22 +28,12 @@ namespace Client.PokemonBattle.TrainerSprites
         protected override void Move(GameTime gameTime)
         {
             Position -= new Vector2(speed, 0);
-            if (isMovingOut && frameIndex < FrameCount)
-            {
-                counter += gameTime.ElapsedGameTime.Milliseconds;
-                if (counter > FrameTime)
-                {
-                    counter = 0;
-                    frameIndex++;
-                    DrawRectangle = new Rectangle(TrainerTextureWidth * frameIndex, 0, TrainerTextureWidth, TrainerTextureHeight);
-                }
-            }
         }
 
         public override void StartMoveOut()
         {
-            WantedPosition = new Vector2(-64, 48);
-            speed = 1;
+            WantedPosition = new Vector2(-TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
+            speed = 15;
             isMovingOut = true;
         }
     }

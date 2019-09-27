@@ -38,6 +38,7 @@
     <Folder Include="Content\obj\DesktopGL\Content\Textures\ScreenEffects\" />
     <Folder Include="Content\Textures\Pokemon\Back\" />
     <Folder Include="Content\Textures\Windows\" />
+    <Folder Include="PokemonBattle\Phases\PlayerPhases\" />
     <Folder Include="World\Interfaces\" />
   </ItemGroup>
 

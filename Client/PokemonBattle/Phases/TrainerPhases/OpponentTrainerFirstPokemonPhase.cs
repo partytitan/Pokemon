@@ -21,20 +21,21 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
     {
         private readonly List<TrainerSprite> trainerSprites;
         private readonly List<TrainerPokemonStatus> trainerPokemonStatuses;
-        private readonly PokeballSprite pokeballSprite;
-        private readonly PokemonBattleSprite pokemonBattleSpriteTest;
+        private PokeballSprite pokeballSprite;
+        private PokemonBattleSprite pokemonBattleSpriteTest;
         public bool IsDone { get; private set; }
 
         public OpponentTrainerFirstPokemonPhase(List<TrainerSprite> trainerSprites, List<TrainerPokemonStatus> trainerPokemonStatuses)
         {
             this.trainerSprites = trainerSprites;
             this.trainerPokemonStatuses = trainerPokemonStatuses;
-            this.pokemonBattleSpriteTest = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), Color.White, "001-2", PokemonBattleSpriteData.PokemonFacings.Front));
-            pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSpriteTest.GetPokemonBattleSpriteData()));
         }
 
         public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
         {
+            this.pokemonBattleSpriteTest = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), Color.White, $"{battleData.OpponentSide.Party[0].Number:000}-2", PokemonBattleSpriteData.PokemonFacings.Front));
+            this.pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSpriteTest.GetPokemonBattleSpriteData()));
+        
             pokeballSprite.LoadContent(contentLoader);
             pokemonBattleSpriteTest.LoadContent(contentLoader);
         }
