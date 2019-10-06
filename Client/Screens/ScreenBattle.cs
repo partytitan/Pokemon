@@ -46,6 +46,7 @@ namespace Client.Screens
 
         public override void Update(GameTime gameTime)
         {
+            battleData.Update();
             currentPhase.Update(gameTime);
             if (currentPhase.IsDone)
             {

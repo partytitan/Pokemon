@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace GameLogic.Battles
 {
@@ -8,6 +9,10 @@ namespace GameLogic.Battles
     /// </summary>
     public class Battle
     {
+        private bool busy = false;
+        private bool begun = false;
+
+
         public Side PlayerSide { get; }
         public Side OpponentSide { get; }
         private BattleActor PlayerActor;
@@ -41,6 +46,7 @@ namespace GameLogic.Battles
 
         protected virtual void OnBattleBegun()
         {
+            begun = true;
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             BattleBegun?.Invoke(this, args);
@@ -48,6 +54,7 @@ namespace GameLogic.Battles
 
         protected virtual void OnBattleOver()
         {
+            begun = false;
             BattleEventArgs args = new BattleEventArgs();
             args.thisBattle = this;
             BattleOver?.Invoke(this, args);
@@ -98,18 +105,29 @@ namespace GameLogic.Battles
             State = BattleState.Intro;
         }
 
-        public void Play()
+        public void Start()
         {
             OnBattleBegun();
-            while (State != BattleState.GameOver)
+        }
+
+        public void Update()
+        {
+            if(!begun)
+                return;
+
+            if (State == BattleState.GameOver)
+            {
+                OnBattleOver();
+            }
+            else if (!busy)
             {
                 ExecuteAndAdvanceState();
             }
-            OnBattleOver();
         }
 
-        private void ExecuteAndAdvanceState()
+        private async void ExecuteAndAdvanceState()
         {
+            busy = true;
             switch (State)
             {
                 case BattleState.Intro:
@@ -119,7 +137,7 @@ namespace GameLogic.Battles
                 case BattleState.SetSelections:
                     OnMakingSelections();
                     UpdateForEndOfTurn();
-                    ExecutionSetSelectionState();
+                    await ExecutionSetSelectionState();
                     State = BattleState.SetFirstAndSecond;
                     break;
 
@@ -199,9 +217,10 @@ namespace GameLogic.Battles
                     State = BattleState.SetSelections;
                     break;
             }
+            busy = false;
         }
 
-        private async void ExecutionSetSelectionState()
+        private async Task ExecutionSetSelectionState()
         {
             Selection playerSelection;
             Selection opponentSelection;

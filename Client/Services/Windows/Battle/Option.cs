@@ -9,12 +9,12 @@ namespace Client.Services.Windows.Battle
     class Option
     {
         public readonly string text;
-        public readonly Vector2 position;
+        public readonly bool isFolder;
 
-        public Option(string text, Vector2 position)
+        public Option(string text, bool isFolder = false)
         {
             this.text = text;
-            this.position = position;
+            this.isFolder = isFolder;
         }
     }
 }

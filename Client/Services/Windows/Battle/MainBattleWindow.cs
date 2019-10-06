@@ -11,48 +11,51 @@ using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Linq;
+using GameLogic.Battles;
 
 namespace Client.Services.Windows.Battle
 {
     class MainBattleWindow: Window
     {
-        private readonly Vector2 position;
-        private readonly int width;
-        private readonly int height;
+        private readonly Rectangle bounds;
+        private readonly Rectangle rightMenuBounds;
+        private readonly Rectangle leftMenuBounds;
+
         private readonly Input input;
+        private readonly Side actorSide;
         private SpriteFont font;
 
         private Color FontColor { get; set; }
-        private List<Option> display;
-        private MainMenuState selectedState;
+        private OptionList currentOptionList;
 
-        public MainBattleWindow(Vector2 position, int width, int height, Input input) : base(position, width, height)
+        private readonly WindowBattle rightWindowBattle;
+        private readonly WindowBattle leftWindowBattle;
+
+
+        public MainBattleWindow(Rectangle bounds, Input input, Side actorSide) : base(bounds.Location.ToVector2(), bounds.Width, bounds.Height)
         {
-            this.position = position;
-            this.width = width;
-            this.height = height;
+            this.bounds = bounds;
+            this.leftMenuBounds = new Rectangle(bounds.X, bounds.Y, (int)(bounds.Width * 0.6), bounds.Height);
+            this.rightMenuBounds = new Rectangle((int)(bounds.Width * 0.6), bounds.Y, (int)(bounds.Width * 0.4), bounds.Height);
+            this.actorSide = actorSide;
+
             this.input = input;
             this.input.NewInput += InputOnNewInput;
             this.input.ThrottleInput = true;
             FontColor = Color.Gray;
 
-            display = new List<Option>
-            {
-                new Option(MainMenuState.FIGHT.ToString(),
-                    new Vector2(position.X + width * 0.25f, position.Y + height * 0.25f)),
-                new Option(MainMenuState.BAG.ToString(),
-                    new Vector2(position.X + width * 0.75f, position.Y + height * 0.25f)),
-                new Option(MainMenuState.POKEMON.ToString(),
-                    new Vector2(position.X + width * 0.25f, position.Y + height * 0.75f)),
-                new Option(MainMenuState.RUN.ToString(),
-                    new Vector2(position.X + width * 0.75f, position.Y + height * 0.75f))
-            };
+            rightWindowBattle = new WindowBattle(rightMenuBounds);
+            leftWindowBattle = new WindowBattle(leftMenuBounds);
+
+            MainMenu();
         }
 
         public override void LoadContent(IContentLoader contentLoader)
         {
             Texture = contentLoader.LoadTexture("Windows/battleFrame");
             font = contentLoader.LoadFont("textBoxFont");
+            rightWindowBattle.LoadContent(contentLoader);
+            leftWindowBattle.LoadContent(contentLoader);
         }
 
         public override void Update(GameTime gameTime)
@@ -62,27 +65,55 @@ namespace Client.Services.Windows.Battle
 
         private void InputOnNewInput(object sender, NewInputEventArgs newInputEventArgs)
         {
-            switch (newInputEventArgs.Inputs)
+            if (newInputEventArgs.Inputs == GameLogic.Common.Inputs.A)
             {
-                case GameLogic.Common.Inputs.Left:
-                    
-                    break;
-                case GameLogic.Common.Inputs.Up:
-                    break;
-                case GameLogic.Common.Inputs.Right:
-                    break;
-                case GameLogic.Common.Inputs.Down:
-                    break;
+                if (currentOptionList.SelectedOption.isFolder)
+                {
+                    switch (Enum.Parse<MainMenuState>(currentOptionList.SelectedOption.text))
+                    {
+                        case MainMenuState.FIGHT:
+                            MoveSelectionMenu();
+                            break;
+                        case MainMenuState.POKEMON:
+                            PokemonSelectionMenu();
+                            break;
+                    }
+                }
+                else
+                {
+
+                }
             }
+            currentOptionList.MoveSelection(newInputEventArgs.Inputs);
+        }
+
+        private void MainMenu()
+        {
+            currentOptionList = new OptionList(new Rectangle(rightMenuBounds.Location, rightMenuBounds.Size), rightWindowBattle,
+                new Option(MainMenuState.FIGHT.ToString(), true), new Option(MainMenuState.BAG.ToString()),
+                new Option(MainMenuState.POKEMON.ToString(), true), new Option(MainMenuState.RUN.ToString()));
+        }
+        private void MoveSelectionMenu()
+        {
+            
+            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, new Option(actorSide.CurrentBattlePokemon.Move1.Name), new Option(actorSide.CurrentBattlePokemon.Move2.Name),
+                new Option(actorSide.CurrentBattlePokemon.Move3.Name), new Option(actorSide.CurrentBattlePokemon.Move4.Name));
+        }
+
+        private void PokemonSelectionMenu()
+        {
+            List<Option> options = new List<Option>();
+            foreach (var pokemon in actorSide.Party)
+            {
+                options.Add(new Option(pokemon.Nickname + " - " + pokemon.Status.ToString()));
+            }
+            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, options.ToArray());
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
             base.Draw(spriteBatch);
-            foreach (var option in display)
-            {
-                spriteBatch.DrawString(font, (false ? "> ": "") + option.text, option.position, Color.Gray);
-            }
+            currentOptionList.Draw(spriteBatch, font);
         }
     }
 }

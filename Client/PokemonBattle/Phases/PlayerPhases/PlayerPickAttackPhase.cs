@@ -43,11 +43,12 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
             playerPokemonStateBar = new PlayerPokemonStateBar(currentPokemon); //temporary
             playerPokemonStateBar.LoadContent(contentLoader);
 
-            windowQueuer.QueueWindow(new MainBattleWindow(new Vector2(200, ScreenBattle.Window.Y), 200, ScreenBattle.WindowSize.Height, new InputKeyboard()));
+            battleData.Start();
         }
 
         public void Update(GameTime gameTime)
         {
+            
             playerPokemonStateBar.Update(gameTime);
 
             //HEALTHBAR TEST
