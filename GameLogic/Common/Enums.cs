@@ -17,4 +17,18 @@
         Down,
         Left
     }
+
+    public enum Genders
+    {
+        Male,
+        Female
+    }
+
+    public enum MainMenuState
+    {
+        FIGHT,
+        BAG,
+        POKEMON,
+        RUN,
+    }
 }

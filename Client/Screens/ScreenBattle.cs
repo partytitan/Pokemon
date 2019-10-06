@@ -20,7 +20,7 @@ namespace Client.Screens
         private IContentLoader contentLoader;
         private readonly IWindowQueuer windowQueuer;
         private IPhase currentPhase;
-        private readonly Battle battleData;
+        public Battle battleData;
         private readonly WindowBattle windowBattle;
         private Texture2D backgroundTexture;
         public static Size WindowSize = new Size(GameBase.GameWidth, GameBase.GameHeight / 4);

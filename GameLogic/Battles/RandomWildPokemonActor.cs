@@ -1,11 +1,12 @@
 ﻿using GameLogic.Moves;
 using System;
+using System.Threading.Tasks;
 
 namespace GameLogic.Battles
 {
     public class RandomWildPokemonActor : BattleActor
     {
-        public Selection MakeBeginningOfTurnSelection(Battle battle, Side actorSide)
+        public async Task<Selection> MakeBeginningOfTurnSelection(Battle battle, Side actorSide)
         {
             if (actorSide.CurrentBattlePokemon.IsMultiTurnMoveActive())
             {
@@ -18,11 +19,11 @@ namespace GameLogic.Battles
             }
             else
             {
-                return MakeRandomFightSelection(battle, actorSide);
+                return await MakeRandomFightSelection(battle, actorSide);
             }
         }
 
-        private Selection MakeRandomFightSelection(Battle battle, Side actorSide)
+        private async Task<Selection> MakeRandomFightSelection(Battle battle, Side actorSide)
         {
             return Selection.MakeFight(actorSide.CurrentBattlePokemon,
                                        battle.PlayerSide.CurrentBattlePokemon,
@@ -61,12 +62,12 @@ namespace GameLogic.Battles
             return move;
         }
 
-        public Selection MakeForcedSwitchSelection(Battle battle, Side actorSide)
+        public Task<Selection> MakeForcedSwitchSelection(Battle battle, Side actorSide)
         {
             throw new NotImplementedException();
         }
 
-        public Move PickMoveToMimic(Side opponentSide)
+        public Task<Move> PickMoveToMimic(Side opponentSide)
         {
             throw new NotImplementedException();
         }

@@ -1,6 +1,7 @@
 ﻿using GameLogic.Moves;
 using System;
 using System.Collections.Generic;
+using GameLogic.Common;
 
 namespace GameLogic.PokemonData
 {
@@ -10,6 +11,8 @@ namespace GameLogic.PokemonData
     public sealed class Pokemon
     {
         public int Number { get; private set; }
+
+        public Genders Gender => Genders.Male;
 
         public string Species => SpeciesData.Names[Number];
         public Type Type1 => SpeciesData.Types[Number][0];

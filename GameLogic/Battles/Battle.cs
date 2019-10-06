@@ -201,14 +201,14 @@ namespace GameLogic.Battles
             }
         }
 
-        private void ExecutionSetSelectionState()
+        private async void ExecutionSetSelectionState()
         {
             Selection playerSelection;
             Selection opponentSelection;
             //check, for both players, if engaged in a two-turn move which will prevent choosing
             if (!PlayerSide.CurrentBattlePokemon.IsTwoTurnMoveActive())
             {
-                playerSelection = PlayerActor.MakeBeginningOfTurnSelection(this, PlayerSide);
+                playerSelection = await PlayerActor.MakeBeginningOfTurnSelection(this, PlayerSide);
             }
             else
             {
@@ -218,7 +218,7 @@ namespace GameLogic.Battles
             }
             if (!OpponentSide.CurrentBattlePokemon.IsTwoTurnMoveActive())
             {
-                opponentSelection = OpponentActor.MakeBeginningOfTurnSelection(this, OpponentSide);
+                opponentSelection = await OpponentActor.MakeBeginningOfTurnSelection(this, OpponentSide);
             }
             else
             {
@@ -287,16 +287,16 @@ namespace GameLogic.Battles
             SecondActor = PlayerActor;
         }
 
-        private void ExecuteForcedSwitchOnFirst()
+        private async void ExecuteForcedSwitchOnFirst()
         {
-            Selection selection = FirstActor.MakeForcedSwitchSelection(this, FirstSide);
+            Selection selection = await FirstActor.MakeForcedSwitchSelection(this, FirstSide);
             FirstSide.SetSelection(selection);
             FirstSide.ExecuteSelection();
         }
 
-        private void ExecuteForcedSwitchOnSecond()
+        private async void ExecuteForcedSwitchOnSecond()
         {
-            Selection selection = SecondActor.MakeForcedSwitchSelection(this, SecondSide);
+            Selection selection = await SecondActor.MakeForcedSwitchSelection(this, SecondSide);
             SecondSide.SetSelection(selection);
             SecondSide.ExecuteSelection();
         }

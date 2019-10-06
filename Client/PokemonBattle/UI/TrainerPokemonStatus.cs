@@ -45,7 +45,7 @@ namespace Client.PokemonBattle.UI
                 {
                     PokemonBallTextures.Add(
                         contentLoader.LoadTexture(
-                            $"Battle/gui/StatusPokemonBall/empty"));
+                            $"Battle/Gui/StatusPokemonBall/empty"));
                     continue;
                 }
                 switch (pokemons[i - 1].Status)
@@ -53,17 +53,17 @@ namespace Client.PokemonBattle.UI
                     case Status.Null:
                         PokemonBallTextures.Add(
                             contentLoader.LoadTexture(
-                                $"Battle/gui/StatusPokemonBall/normal"));
+                                $"Battle/Gui/StatusPokemonBall/normal"));
                         break;
                     case Status.Fainted:
                         PokemonBallTextures.Add(
                             contentLoader.LoadTexture(
-                                $"Battle/gui/StatusPokemonBall/fainted"));
+                                $"Battle/Gui/StatusPokemonBall/fainted"));
                         break;
                     default:
                         PokemonBallTextures.Add(
                             contentLoader.LoadTexture(
-                                $"Battle/gui/StatusPokemonBall/status"));
+                                $"Battle/Gui/StatusPokemonBall/status"));
                         break;
                 }
             }

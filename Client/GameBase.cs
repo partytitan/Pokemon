@@ -55,14 +55,28 @@ namespace Client
         protected override void LoadContent()
         {
             //Debug
-            var enemyPokemon = Pokemon.Builder.Init(1, 100)
+            var enemyPokemon = Pokemon.Builder.Init(4, 100)
                 .Move1(new RazorLeaf())
                 .Move2(new LeechSeed())
                 .Move3(new BodySlam())
                 .Move4(new Growth())
                 .Create();
-            
-            mainPlayer = new MainPlayer("Jordi", new List<Pokemon>() { enemyPokemon, enemyPokemon, enemyPokemon}, new WarpData(10, 18, 0, 0), Directions.Down);
+
+            var playerPokemon = Pokemon.Builder.Init(22, 100)
+                .Move1(new RazorLeaf())
+                .Move2(new LeechSeed())
+                .Move3(new BodySlam())
+                .Move4(new Growth())
+                .Create();
+
+            var playerPokemon2 = Pokemon.Builder.Init(12, 100)
+                .Move1(new RazorLeaf())
+                .Move2(new LeechSeed())
+                .Move3(new BodySlam())
+                .Move4(new Growth())
+                .Create();
+
+            mainPlayer = new MainPlayer("Jordi", new List<Pokemon>() { playerPokemon, playerPokemon2}, new WarpData(10, 18, 0, 0), Directions.Down);
 
             Side playerSide = new TrainerSide(mainPlayer);
             Side enemySide = new WildPokemonSide(enemyPokemon);

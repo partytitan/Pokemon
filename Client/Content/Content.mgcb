@@ -16,6 +16,13 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Fonts/battleFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/battleFont.spritefont
+
 #begin Fonts/guiFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
@@ -9934,7 +9941,7 @@
 /processorParam:TextureFormat=Color
 /build:Textures/Battle/Backgrounds/background.PNG
 
-#begin Textures/Battle/gui/BattleNumberOfPokemons.png
+#begin Textures/Battle/Gui/BattleNumberOfPokemons.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -9944,9 +9951,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Textures/Battle/gui/BattleNumberOfPokemons.png
+/build:Textures/Battle/Gui/BattleNumberOfPokemons.png
 
-#begin Textures/Battle/gui/StatusPokemonBall/empty.png
+#begin Textures/Battle/Gui/FemaleIcon.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -9956,9 +9963,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Textures/Battle/gui/StatusPokemonBall/empty.png
+/build:Textures/Battle/Gui/FemaleIcon.png
 
-#begin Textures/Battle/gui/StatusPokemonBall/fainted.png
+#begin Textures/Battle/Gui/HealthBar.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -9968,9 +9975,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Textures/Battle/gui/StatusPokemonBall/fainted.png
+/build:Textures/Battle/Gui/HealthBar.png
 
-#begin Textures/Battle/gui/StatusPokemonBall/normal.png
+#begin Textures/Battle/Gui/MaleIcon.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -9980,9 +9987,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Textures/Battle/gui/StatusPokemonBall/normal.png
+/build:Textures/Battle/Gui/MaleIcon.png
 
-#begin Textures/Battle/gui/StatusPokemonBall/status.png
+#begin Textures/Battle/Gui/PlayerStatusBox.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -9992,7 +9999,55 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Textures/Battle/gui/StatusPokemonBall/status.png
+/build:Textures/Battle/Gui/PlayerStatusBox.png
+
+#begin Textures/Battle/Gui/StatusPokemonBall/empty.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Battle/Gui/StatusPokemonBall/empty.png
+
+#begin Textures/Battle/Gui/StatusPokemonBall/fainted.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Battle/Gui/StatusPokemonBall/fainted.png
+
+#begin Textures/Battle/Gui/StatusPokemonBall/normal.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Battle/Gui/StatusPokemonBall/normal.png
+
+#begin Textures/Battle/Gui/StatusPokemonBall/status.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Battle/Gui/StatusPokemonBall/status.png
 
 #begin Textures/Battle/Pokeballs/pokeball_open_effect.png
 /importer:TextureImporter

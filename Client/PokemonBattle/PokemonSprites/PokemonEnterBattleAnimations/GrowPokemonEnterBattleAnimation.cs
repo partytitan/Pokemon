@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace Client.PokemonBattle.PokemonSprites.PokemonEnterBattleAnimations
 {
-    class GrowPokemonEnterBattleAnimation : TransparentPokemonEnterBattleAnimation
+    internal class GrowPokemonEnterBattleAnimation : TransparentPokemonEnterBattleAnimation
     {
         public GrowPokemonEnterBattleAnimation(PokemonBattleSpriteData pokemonBattleSpriteData) : base(pokemonBattleSpriteData)
         {

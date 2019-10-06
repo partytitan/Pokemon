@@ -43,13 +43,12 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
         public void Update(GameTime gameTime)
         {
             pokeballSprite.Update(gameTime);
-            //IsDone = pokeballSprite.IsDone;
+            IsDone = pokeballSprite.IsDone;
         }
 
         public IPhase GetNextPhase()
         {
-            return null;
-            //return new PickAttackPhase(pokemonBattleSprite, opponentPokemonBattleSprite);
+            return new PlayerPickAttackPhase(pokemonBattleSprite, opponentPokemonBattleSprite);
         }
 
         public void Draw(SpriteBatch spriteBatch)

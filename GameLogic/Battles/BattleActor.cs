@@ -1,13 +1,14 @@
-﻿using GameLogic.Moves;
+﻿using System.Threading.Tasks;
+using GameLogic.Moves;
 
 namespace GameLogic.Battles
 {
     public interface BattleActor
     {
-        Selection MakeBeginningOfTurnSelection(Battle battle, Side actorSide);
+        Task<Selection> MakeBeginningOfTurnSelection(Battle battle, Side actorSide);
 
-        Selection MakeForcedSwitchSelection(Battle battle, Side actorSide);
+        Task<Selection> MakeForcedSwitchSelection(Battle battle, Side actorSide);
 
-        Move PickMoveToMimic(Side opponentSide);
+        Task<Move> PickMoveToMimic(Side opponentSide);
     }
 }
