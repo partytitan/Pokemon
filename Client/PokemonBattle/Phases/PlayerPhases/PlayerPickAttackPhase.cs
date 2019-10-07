@@ -21,7 +21,11 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
         private readonly PokemonBattleSprite playerPokemonBattleSprite;
         private readonly PokemonBattleSprite opponentPokemonBattleSprite;
         private BattlePokemon currentPokemon;
+        private BattlePokemon opponentPokemon;
+
         private PokemonStateBar playerPokemonStateBar;
+        private PokemonStateBar opponentPokemonStateBar;
+
         public bool IsDone { get; }
 
         //FOR HEALTHBAR TEST
@@ -37,11 +41,16 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
             this.opponentPokemonBattleSprite = opponentPokemonBattleSprite;
         }
 
-        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
+        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData, Input input)
         {
             currentPokemon = battleData.PlayerSide.CurrentBattlePokemon;
-            playerPokemonStateBar = new PlayerPokemonStateBar(currentPokemon); //temporary
+            opponentPokemon = battleData.OpponentSide.CurrentBattlePokemon;
+
+            playerPokemonStateBar = new PlayerPokemonStateBar(currentPokemon);
             playerPokemonStateBar.LoadContent(contentLoader);
+
+            opponentPokemonStateBar = new TrainerPokemonStateBar(currentPokemon);
+            opponentPokemonStateBar.LoadContent(contentLoader);
 
             battleData.Start();
         }
@@ -50,12 +59,14 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
         {
             
             playerPokemonStateBar.Update(gameTime);
+            opponentPokemonStateBar.Update(gameTime);
 
             //HEALTHBAR TEST
             counter += gameTime.ElapsedGameTime.Milliseconds;
             if (counter > 1000)
             {
-                playerPokemonStateBar.HealthBar.UpdateHealth((float)rnd.NextDouble() * (currentPokemon.MaxHP - 0) + 0, currentPokemon.MaxHP);
+                playerPokemonStateBar.HealthBar.UpdateHealth(currentPokemon.HP, currentPokemon.MaxHP);
+                opponentPokemonStateBar.HealthBar.UpdateHealth(opponentPokemon.HP, currentPokemon.MaxHP);
                 counter = 0;
             }
         }
@@ -70,6 +81,7 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
             playerPokemonBattleSprite.Draw(spriteBatch);
             opponentPokemonBattleSprite.Draw(spriteBatch);
             playerPokemonStateBar.Draw(spriteBatch);
+            opponentPokemonStateBar.Draw(spriteBatch);
         }
     }
 }

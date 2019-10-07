@@ -2,7 +2,7 @@
 
 namespace Client.Services.Screens
 {
-    internal interface IScreenLoader
+    public interface IScreenLoader
     {
         void LoadScreen(Screen screen);
     }

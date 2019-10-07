@@ -14,7 +14,7 @@ namespace Client.PokemonBattle
 {
     class PlayerBattleActor : BattleActor
     {
-        private TaskCompletionSource<bool> selectionMade;
+        private TaskCompletionSource<Selection> selectionMade;
         private Selection playersSelection = null;
         private InputKeyboard input;
 
@@ -28,12 +28,12 @@ namespace Client.PokemonBattle
 
         public async Task<Selection> MakeBeginningOfTurnSelection(Battle battle, Side actorSide)
         {
-            windowQueuer.QueueWindow(new MainBattleWindow(ScreenBattle.Window, input, actorSide));
             // Wait for the user to click Continue.
-            selectionMade = new TaskCompletionSource<bool>();
-            await selectionMade.Task;
-            playersSelection = Selection.MakeEmptyFight();
-            return playersSelection;
+            selectionMade = new TaskCompletionSource<Selection>();
+
+            windowQueuer.QueueWindow(new MainBattleWindow(ScreenBattle.Window, input, actorSide, battle, selectionMade));
+
+            return await selectionMade.Task;
         }
         public Task<Selection> MakeForcedSwitchSelection(Battle battle, Side actorSide)
         {

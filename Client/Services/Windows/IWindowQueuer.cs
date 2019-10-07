@@ -1,6 +1,6 @@
 ﻿namespace Client.Services.Windows
 {
-    internal interface IWindowQueuer
+    public interface IWindowQueuer
     {
         void QueueWindow(Window window);
         bool WindowActive { get; }

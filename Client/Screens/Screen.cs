@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Screens
 {
-    internal abstract class Screen
+    public abstract class Screen
     {
         protected readonly IScreenLoader ScreenLoader;
 

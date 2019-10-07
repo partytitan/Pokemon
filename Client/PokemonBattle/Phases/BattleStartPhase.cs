@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Client.Inputs;
 using Client.PokemonBattle.TrainerSprites;
 using Client.Services.Content;
 using Client.Services.Windows;
@@ -13,7 +14,7 @@ namespace Client.PokemonBattle.Phases
         private List<TrainerSprite> trainerSprites;
         public bool IsDone { get; set; }
 
-        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
+        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData, Input input)
         {
             trainerSprites = new List<TrainerSprite>
             {

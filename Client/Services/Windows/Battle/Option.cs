@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -8,13 +9,13 @@ namespace Client.Services.Windows.Battle
 {
     class Option
     {
-        public readonly string text;
-        public readonly bool isFolder;
+        public readonly string Text;
+        public readonly MainMenuState State;
 
-        public Option(string text, bool isFolder = false)
+        public Option(string text, MainMenuState state)
         {
-            this.text = text;
-            this.isFolder = isFolder;
+            this.Text = text;
+            this.State = state;
         }
     }
 }

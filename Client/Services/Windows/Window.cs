@@ -5,7 +5,7 @@ using System;
 
 namespace Client.Services.Windows
 {
-    internal abstract class Window
+    public abstract class Window
     {
         private const int CornerWidth = 5;
         private const int CornerHeight = 5;

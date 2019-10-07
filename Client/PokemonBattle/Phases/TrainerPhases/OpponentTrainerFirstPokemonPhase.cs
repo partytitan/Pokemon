@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Client.Inputs;
 using Client.PokemonBattle.Common;
 using Client.PokemonBattle.Common.PokeballEnterAnimations;
 using Client.PokemonBattle.Phases.PlayerPhases;
@@ -32,7 +33,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
             this.trainerPokemonStatuses = trainerPokemonStatuses;
         }
 
-        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
+        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData, Input input)
         {
             this.pokemonBattleSprite = new PokemonBattleSprite(new PokemonBattleSpriteData(0, 0, new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), Color.White, $"{battleData.OpponentSide.Party[0].Number:000}-2", PokemonBattleSpriteData.PokemonFacings.Front));
             this.pokeballSprite = new PokeballSprite(new PokeballData(new Vector2(ScreenBattle.ArenaSize.Width * 0.75f, ScreenBattle.ArenaSize.Height * 0.5f), "Battle/Pokeballs/pokeball_regular"), new NoPokeballEnterAnimation(), new TransparentPokemonEnterBattleAnimation(pokemonBattleSprite.GetPokemonBattleSpriteData()));

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using Client.Inputs;
+using Client.PokemonBattle;
 using Client.PokemonBattle.Phases;
 using Client.Services.Content;
 using Client.Services.Screens;
@@ -18,9 +20,10 @@ namespace Client.Screens
     internal class ScreenBattle : Screen
     {
         private IContentLoader contentLoader;
-        private readonly IWindowQueuer windowQueuer;
-        private IPhase currentPhase;
+        public IWindowQueuer windowQueuer;
+        public IPhase currentPhase;
         public Battle battleData;
+        private Input input;
         private readonly WindowBattle windowBattle;
         private Texture2D backgroundTexture;
         public static Size WindowSize = new Size(GameBase.GameWidth, GameBase.GameHeight / 4);
@@ -32,15 +35,22 @@ namespace Client.Screens
         {
             this.windowQueuer = windowQueuer;
             this.battleData = battleData;
-            currentPhase = startPhase;
-            windowBattle = new WindowBattle(Window);
+            this.currentPhase = startPhase;
+            this.windowBattle = new WindowBattle(Window);
+            this.input = new InputKeyboard();
+            this.input.ThrottleInput = true;
+
+            BattleEventsHandler eventsHandler = new BattleEventsHandler(this);
+            eventsHandler.AttachMyBattlePokemonEventHandlers(battleData.PlayerSide.CurrentBattlePokemon);
+            eventsHandler.AttachOpponentBattlePokemonEventHandlers(battleData.OpponentSide.CurrentBattlePokemon);
+            eventsHandler.AttachBattleEventHandlers(battleData);
         }
 
         public override void LoadContent(IContentLoader contentLoader)
         {
             backgroundTexture = contentLoader.LoadTexture("Battle/Backgrounds/background");
             windowBattle.LoadContent(contentLoader);
-            currentPhase.LoadContent(contentLoader, windowQueuer, battleData);
+            currentPhase.LoadContent(contentLoader, windowQueuer, battleData, input);
             this.contentLoader = contentLoader;
         }
 
@@ -51,7 +61,7 @@ namespace Client.Screens
             if (currentPhase.IsDone)
             {
                 currentPhase = currentPhase.GetNextPhase();
-                currentPhase.LoadContent(contentLoader, windowQueuer, battleData);
+                currentPhase.LoadContent(contentLoader, windowQueuer, battleData, input);
             }
         }
 

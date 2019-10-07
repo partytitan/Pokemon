@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Client.Inputs;
 using Client.PokemonBattle.Phases.TrainerPhases;
 using Client.PokemonBattle.TrainerSprites;
 using Client.PokemonBattle.UI;
@@ -22,7 +23,7 @@ namespace Client.PokemonBattle.Phases
         }
 
 
-        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
+        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData, Input input)
         {
             trainerPokemonStatuses = new List<TrainerPokemonStatus>
             {

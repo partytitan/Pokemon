@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Client.Inputs;
 using Client.PokemonBattle.TrainerSprites;
 using Client.PokemonBattle.UI;
 using Client.Services.Content;
@@ -23,7 +24,7 @@ namespace Client.PokemonBattle.Phases.Shared
             this.TrainerPokemonStatuses = trainerPokemonStatuses;
         }
 
-        public virtual void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
+        public virtual void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData, Input input)
         {
             foreach (var trainerSprite in TrainerSprites.Where(t => t is TTrainerSprite))
             {

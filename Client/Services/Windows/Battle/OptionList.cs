@@ -54,7 +54,7 @@ namespace Client.Services.Windows.Battle
             this.windowBattle.Draw(spriteBatch);
             for (var i = 0; i < options.Length; i++)
             {
-                var text = (i == currentSelection ? "> " : "") + options[i].text;
+                var text = (i == currentSelection ? "> " : "") + options[i].Text;
                 var testSize = font.MeasureString(text);
                 
 

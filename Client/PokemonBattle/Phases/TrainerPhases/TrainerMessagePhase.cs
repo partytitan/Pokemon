@@ -27,7 +27,7 @@ namespace Client.PokemonBattle.Phases.TrainerPhases
             this.trainerPokemonStatuses = trainerPokemonStatuses;
         }
 
-        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData)
+        public void LoadContent(IContentLoader contentLoader, IWindowQueuer windowQueuer, Battle battleData, Input input)
         {
             this.windowQueuer = windowQueuer;
             windowQueuer.QueueWindow(new WindowBattleMessage($"{battleData.OpponentSide.Name} would like to battle! {Environment.NewLine} {battleData.OpponentSide.Name} sent out {battleData.OpponentSide.Party[0].Nickname}!", new InputKeyboard(), ScreenBattle.Window));
