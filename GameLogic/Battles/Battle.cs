@@ -182,7 +182,7 @@ namespace GameLogic.Battles
                     break;
 
                 case BattleState.FirstFaintsEarlySwitch:
-                    ExecuteForcedSwitchOnFirst();
+                    await ExecuteForcedSwitchOnFirst();
                     State = BattleState.SecondExecutes;
                     break;
 
@@ -202,18 +202,18 @@ namespace GameLogic.Battles
                     break;
 
                 case BattleState.FirstFaintsLateSwitch:
-                    ExecuteForcedSwitchOnFirst();
+                    await ExecuteForcedSwitchOnFirst();
                     State = BattleState.SetSelections;
                     break;
 
                 case BattleState.SecondSwitchesPokemon:
-                    ExecuteForcedSwitchOnSecond();
+                    await ExecuteForcedSwitchOnSecond();
                     State = BattleState.SetSelections;
                     break;
 
                 case BattleState.BothPokemonSwitch:
-                    ExecuteForcedSwitchOnFirst();
-                    ExecuteForcedSwitchOnSecond();
+                    await ExecuteForcedSwitchOnFirst();
+                    await ExecuteForcedSwitchOnSecond();
                     State = BattleState.SetSelections;
                     break;
             }
@@ -306,14 +306,14 @@ namespace GameLogic.Battles
             SecondActor = PlayerActor;
         }
 
-        private async void ExecuteForcedSwitchOnFirst()
+        private async Task ExecuteForcedSwitchOnFirst()
         {
             Selection selection = await FirstActor.MakeForcedSwitchSelection(this, FirstSide);
             FirstSide.SetSelection(selection);
             FirstSide.ExecuteSelection();
         }
 
-        private async void ExecuteForcedSwitchOnSecond()
+        private async Task ExecuteForcedSwitchOnSecond()
         {
             Selection selection = await SecondActor.MakeForcedSwitchSelection(this, SecondSide);
             SecondSide.SetSelection(selection);

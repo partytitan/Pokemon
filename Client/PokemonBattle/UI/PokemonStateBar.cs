@@ -14,7 +14,7 @@ namespace Client.PokemonBattle.UI
         private const int BarWidth = 110;
         private const int BarHeight = 40;
         private readonly BattlePokemon pokemonData;
-        private Texture2D barTexture;
+        protected Texture2D barTexture;
         private Texture2D genderTexture;
         private SpriteFont font;
         protected Vector2 BasePosition;
@@ -26,7 +26,7 @@ namespace Client.PokemonBattle.UI
             HealthBar = new HealthBar(pokemonData.HP, pokemonData.MaxHP);
         }
 
-        public void LoadContent(IContentLoader contentLoader)
+        public virtual void LoadContent(IContentLoader contentLoader)
         {
             barTexture = contentLoader.LoadTexture("Battle/Gui/PlayerStatusBox");
             font = contentLoader.LoadFont("battleFont");

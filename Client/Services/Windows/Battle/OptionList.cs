@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Inputs;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Services.Windows.Battle
 {
-    class OptionList
+    internal class OptionList
     {
-        private readonly Rectangle bounds;
-        private int currentSelection;
         private const int OptionsPerLine = 2;
+        private readonly Rectangle bounds;
+        private readonly Vector2 Margin;
         private readonly Option[] options;
         private readonly WindowBattle windowBattle;
-        private readonly Vector2 Margin;
+        private int currentSelection;
+        public Option SelectedOption => options[currentSelection];
 
         public OptionList(Rectangle bounds, WindowBattle windowBattle, params Option[] options)
         {
@@ -23,8 +20,18 @@ namespace Client.Services.Windows.Battle
             this.windowBattle = windowBattle;
             this.Margin = new Vector2(bounds.Width / OptionsPerLine, bounds.Height + (options.Length / OptionsPerLine));
         }
+        public void Draw(SpriteBatch spriteBatch, SpriteFont font)
+        {
+            this.windowBattle.Draw(spriteBatch);
+            for (var i = 0; i < options.Length; i++)
+            {
+                var text = (i == currentSelection ? "> " : "") + options[i].Text;
+                var testSize = font.MeasureString(text);
 
-        public Option SelectedOption => options[currentSelection];
+                var position = new Vector2((Margin.X / 2 - testSize.X / 2) + bounds.X + (i % OptionsPerLine) * Margin.X, testSize.Y + bounds.Y + (i / OptionsPerLine) * bounds.Height / (options.Length / OptionsPerLine));
+                spriteBatch.DrawString(font, text, position, i == currentSelection ? Color.Black : Color.Gray);
+            }
+        }
 
         public void MoveSelection(GameLogic.Common.Inputs input)
         {
@@ -34,32 +41,21 @@ namespace Client.Services.Windows.Battle
                     if (currentSelection % OptionsPerLine > 0)
                         currentSelection--;
                     break;
+
                 case GameLogic.Common.Inputs.Up:
                     if (currentSelection >= OptionsPerLine)
                         currentSelection -= OptionsPerLine;
                     break;
+
                 case GameLogic.Common.Inputs.Right:
                     if (currentSelection % OptionsPerLine < OptionsPerLine - 1)
                         currentSelection++;
                     break;
+
                 case GameLogic.Common.Inputs.Down:
                     if (currentSelection + OptionsPerLine < options.Length)
                         currentSelection += OptionsPerLine;
                     break;
-            }
-        }
-
-        public void Draw(SpriteBatch spriteBatch, SpriteFont font)
-        {
-            this.windowBattle.Draw(spriteBatch);
-            for (var i = 0; i < options.Length; i++)
-            {
-                var text = (i == currentSelection ? "> " : "") + options[i].Text;
-                var testSize = font.MeasureString(text);
-                
-
-                var position = new Vector2((Margin.X / 2 - testSize.X / 2) + bounds.X + (i % OptionsPerLine) * Margin.X,  testSize.Y + bounds.Y + (i / OptionsPerLine) * bounds.Height / (options.Length / OptionsPerLine));
-                spriteBatch.DrawString(font, text, position, i == currentSelection ? Color.Black : Color.Gray);
             }
         }
     }

@@ -49,7 +49,7 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
             playerPokemonStateBar = new PlayerPokemonStateBar(currentPokemon);
             playerPokemonStateBar.LoadContent(contentLoader);
 
-            opponentPokemonStateBar = new TrainerPokemonStateBar(currentPokemon);
+            opponentPokemonStateBar = new TrainerPokemonStateBar(opponentPokemon);
             opponentPokemonStateBar.LoadContent(contentLoader);
 
             battleData.Start();
@@ -66,7 +66,7 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
             if (counter > 1000)
             {
                 playerPokemonStateBar.HealthBar.UpdateHealth(currentPokemon.HP, currentPokemon.MaxHP);
-                opponentPokemonStateBar.HealthBar.UpdateHealth(opponentPokemon.HP, currentPokemon.MaxHP);
+                opponentPokemonStateBar.HealthBar.UpdateHealth(opponentPokemon.HP, opponentPokemon.MaxHP);
                 counter = 0;
             }
         }

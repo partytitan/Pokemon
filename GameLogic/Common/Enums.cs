@@ -30,15 +30,5 @@
         BAG,
         POKEMON,
         RUN,
-        POKEMON1,
-        POKEMON2,
-        POKEMON3,
-        POKEMON4,
-        POKEMON5,
-        POKEMON6,
-        MOVE1,
-        MOVE2,
-        MOVE3,
-        MOVE4,
     }
 }

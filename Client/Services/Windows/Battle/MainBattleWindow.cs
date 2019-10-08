@@ -1,41 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
-using System.Text;
-using Client.EventArg;
+﻿using Client.EventArg;
 using Client.Inputs;
 using Client.Services.Content;
-using Client.Services.Windows.Message;
+using GameLogic.Battles;
 using GameLogic.Common;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using GameLogic.Battles;
 
 namespace Client.Services.Windows.Battle
 {
-    class MainBattleWindow: Window
+    internal class MainBattleWindow : Window
     {
-        private readonly Rectangle bounds;
-        private readonly Rectangle rightMenuBounds;
-        private readonly Rectangle leftMenuBounds;
-
-        private readonly Input input;
         private readonly Side actorSide;
         private readonly GameLogic.Battles.Battle battle;
+        private readonly Rectangle bounds;
+        private readonly Input input;
+        private readonly Rectangle leftMenuBounds;
+        private readonly WindowBattle leftWindowBattle;
+        private readonly Rectangle rightMenuBounds;
+        private readonly WindowBattle rightWindowBattle;
         private readonly TaskCompletionSource<Selection> selectionMade;
+        private OptionList currentOptionList;
         private SpriteFont font;
 
         private Color FontColor { get; set; }
-        private OptionList currentOptionList;
-
-        private readonly WindowBattle rightWindowBattle;
-        private readonly WindowBattle leftWindowBattle;
-
-
-        public MainBattleWindow(Rectangle bounds, Input input, Side actorSide, GameLogic.Battles.Battle battle, TaskCompletionSource<Selection> selectionMade) : base(bounds.Location.ToVector2(), bounds.Width, bounds.Height)
+        public MainBattleWindow(Rectangle bounds, Input input, Side actorSide, GameLogic.Battles.Battle battle, TaskCompletionSource<Selection> selectionMade, bool makeForcedPokemonSwitch = false) : base(bounds.Location.ToVector2(), bounds.Width, bounds.Height)
         {
             this.bounds = bounds;
             this.leftMenuBounds = new Rectangle(bounds.X, bounds.Y, (int)(bounds.Width * 0.6), bounds.Height);
@@ -52,7 +43,20 @@ namespace Client.Services.Windows.Battle
             rightWindowBattle = new WindowBattle(rightMenuBounds);
             leftWindowBattle = new WindowBattle(leftMenuBounds);
 
-            MainMenu();
+            if (makeForcedPokemonSwitch)
+            {
+                PokemonSelectionMenu();
+            }
+            else
+            {
+                MainMenu();
+            }
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            base.Draw(spriteBatch);
+            currentOptionList.Draw(spriteBatch, font);
         }
 
         public override void LoadContent(IContentLoader contentLoader)
@@ -72,41 +76,60 @@ namespace Client.Services.Windows.Battle
         {
             if (newInputEventArgs.Inputs == GameLogic.Common.Inputs.A)
             {
+                var id = currentOptionList.SelectedOption.Id;
                 switch (currentOptionList.SelectedOption.State)
                 {
                     case MainMenuState.FIGHT:
-                        MoveSelectionMenu();
+                        if (id != 0)
+                        {
+                            IsDone = true;
+                            switch (id)
+                            {
+                                case 1:
+                                    selectionMade.TrySetResult(Selection.MakeFight(actorSide.CurrentBattlePokemon,
+                                        battle.OpponentSide.CurrentBattlePokemon, actorSide.CurrentBattlePokemon.Move1));
+                                    break;
+
+                                case 2:
+                                    selectionMade.TrySetResult(Selection.MakeFight(actorSide.CurrentBattlePokemon,
+                                        battle.OpponentSide.CurrentBattlePokemon, actorSide.CurrentBattlePokemon.Move2));
+                                    break;
+
+                                case 3:
+                                    selectionMade.TrySetResult(Selection.MakeFight(actorSide.CurrentBattlePokemon,
+                                        battle.OpponentSide.CurrentBattlePokemon, actorSide.CurrentBattlePokemon.Move3));
+                                    break;
+
+                                case 4:
+                                    selectionMade.TrySetResult(Selection.MakeFight(actorSide.CurrentBattlePokemon,
+                                        battle.OpponentSide.CurrentBattlePokemon, actorSide.CurrentBattlePokemon.Move4));
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            MoveSelectionMenu();
+                        }
                         break;
+
                     case MainMenuState.POKEMON:
-                        PokemonSelectionMenu();
+                        if (id != 0)
+                        {
+                            IsDone = true;
+                            selectionMade.TrySetResult(Selection.MakeSwitchOut(actorSide.CurrentBattlePokemon, battle.OpponentSide.CurrentBattlePokemon, actorSide.Party[id]));
+                        }
+                        else
+                        {
+                            PokemonSelectionMenu();
+                        }
                         break;
+
                     case MainMenuState.BAG:
                         break;
+
                     case MainMenuState.RUN:
                         break;
-                    case MainMenuState.POKEMON1:
-                        break;
-                    case MainMenuState.POKEMON2:
-                        break;
-                    case MainMenuState.POKEMON3:
-                        break;
-                    case MainMenuState.POKEMON4:
-                        break;
-                    case MainMenuState.POKEMON5:
-                        break;
-                    case MainMenuState.POKEMON6:
-                        break;
-                    case MainMenuState.MOVE1:
-                        IsDone = true;
-                        selectionMade.TrySetResult(Selection.MakeFight(actorSide.CurrentBattlePokemon,
-                            battle.OpponentSide.CurrentBattlePokemon, actorSide.CurrentBattlePokemon.Move1));
-                        break;
-                    case MainMenuState.MOVE2:
-                        break;
-                    case MainMenuState.MOVE3:
-                        break;
-                    case MainMenuState.MOVE4:
-                        break;
+
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
@@ -120,27 +143,16 @@ namespace Client.Services.Windows.Battle
                 new Option(MainMenuState.FIGHT.ToString(), MainMenuState.FIGHT), new Option(MainMenuState.BAG.ToString(), MainMenuState.BAG),
                 new Option(MainMenuState.POKEMON.ToString(), MainMenuState.POKEMON), new Option(MainMenuState.RUN.ToString(), MainMenuState.RUN));
         }
+
         private void MoveSelectionMenu()
         {
-            
-            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, new Option(actorSide.CurrentBattlePokemon.Move1.Name, MainMenuState.MOVE1), new Option(actorSide.CurrentBattlePokemon.Move2.Name, MainMenuState.MOVE2),
-                new Option(actorSide.CurrentBattlePokemon.Move3.Name, MainMenuState.MOVE3), new Option(actorSide.CurrentBattlePokemon.Move4.Name, MainMenuState.MOVE4));
+            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, new Option(actorSide.CurrentBattlePokemon.Move1.Name, MainMenuState.FIGHT, 1), new Option(actorSide.CurrentBattlePokemon.Move2.Name, MainMenuState.FIGHT, 2),
+                new Option(actorSide.CurrentBattlePokemon.Move3.Name, MainMenuState.FIGHT, 3), new Option(actorSide.CurrentBattlePokemon.Move4.Name, MainMenuState.FIGHT, 4));
         }
 
         private void PokemonSelectionMenu()
         {
-            List<Option> options = new List<Option>();
-            foreach (var pokemon in actorSide.Party)
-            {
-                options.Add(new Option(pokemon.Nickname + " - " + pokemon.Status.ToString(), MainMenuState.POKEMON1));
-            }
-            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, options.ToArray());
-        }
-
-        public override void Draw(SpriteBatch spriteBatch)
-        {
-            base.Draw(spriteBatch);
-            currentOptionList.Draw(spriteBatch, font);
+            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, actorSide.Party.Select((pokemon, index) => new Option(pokemon.Nickname + " - " + pokemon.Status.ToString(), MainMenuState.POKEMON, index)).ToArray());
         }
     }
 }

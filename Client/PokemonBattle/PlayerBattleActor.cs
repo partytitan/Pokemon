@@ -35,9 +35,13 @@ namespace Client.PokemonBattle
 
             return await selectionMade.Task;
         }
-        public Task<Selection> MakeForcedSwitchSelection(Battle battle, Side actorSide)
+        public async Task<Selection> MakeForcedSwitchSelection(Battle battle, Side actorSide)
         {
-            throw new NotImplementedException();
+            selectionMade = new TaskCompletionSource<Selection>();
+
+            windowQueuer.QueueWindow(new MainBattleWindow(ScreenBattle.Window, input, actorSide, battle, selectionMade, true));
+
+            return await selectionMade.Task;
         }
 
         public Task<Move> PickMoveToMimic(Side opponentSide)

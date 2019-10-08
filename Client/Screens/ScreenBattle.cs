@@ -1,56 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
-using Client.Inputs;
+﻿using Client.Inputs;
 using Client.PokemonBattle;
 using Client.PokemonBattle.Phases;
 using Client.Services.Content;
 using Client.Services.Screens;
 using Client.Services.Windows;
+using Client.Services.Windows.Message;
 using GameLogic.Battles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System.Drawing;
 using Color = Microsoft.Xna.Framework.Color;
-using Point = Microsoft.Xna.Framework.Point;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 
 namespace Client.Screens
 {
     internal class ScreenBattle : Screen
     {
-        private IContentLoader contentLoader;
-        public IWindowQueuer windowQueuer;
-        public IPhase currentPhase;
-        public Battle battleData;
-        private Input input;
-        private readonly WindowBattle windowBattle;
-        private Texture2D backgroundTexture;
         public static Size WindowSize = new Size(GameBase.GameWidth, GameBase.GameHeight / 4);
         public static Size ArenaSize = new Size(GameBase.GameWidth, GameBase.GameHeight - WindowSize.Height);
-        public static Rectangle Window = new Rectangle(0,ArenaSize.Height, GameBase.GameWidth, GameBase.GameHeight / 4);
+        public static Rectangle Window = new Rectangle(0, ArenaSize.Height, GameBase.GameWidth, GameBase.GameHeight / 4);
+
+        public readonly Input Input;
+        public readonly IWindowQueuer WindowQueuer;
+
+        private readonly Battle battleData;
+        private readonly WindowBattle windowBattle;
+        private readonly ScreenWorld world;
+
+        private Texture2D backgroundTexture;
+        private IContentLoader contentLoader;
+        private IPhase currentPhase;
 
         public ScreenBattle(IScreenLoader screenLoader, IWindowQueuer windowQueuer, IPhase startPhase,
-            Battle battleData) : base(screenLoader)
+            Battle battleData, ScreenWorld world) : base(screenLoader)
         {
-            this.windowQueuer = windowQueuer;
+            this.WindowQueuer = windowQueuer;
             this.battleData = battleData;
             this.currentPhase = startPhase;
             this.windowBattle = new WindowBattle(Window);
-            this.input = new InputKeyboard();
-            this.input.ThrottleInput = true;
+            this.Input = new InputKeyboard();
+            this.Input.ThrottleInput = true;
+            this.world = world;
 
-            BattleEventsHandler eventsHandler = new BattleEventsHandler(this);
+            BattleEventsHandler eventsHandler = new BattleEventsHandler(this, screenLoader);
             eventsHandler.AttachMyBattlePokemonEventHandlers(battleData.PlayerSide.CurrentBattlePokemon);
             eventsHandler.AttachOpponentBattlePokemonEventHandlers(battleData.OpponentSide.CurrentBattlePokemon);
             eventsHandler.AttachBattleEventHandlers(battleData);
+
+            battleData.BattleOver += BattleOverEventHandler;
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(backgroundTexture, new Rectangle(0, 0, ArenaSize.Width, ArenaSize.Height), Color.White);
+            currentPhase.Draw(spriteBatch);
+            windowBattle.Draw(spriteBatch);
         }
 
         public override void LoadContent(IContentLoader contentLoader)
         {
             backgroundTexture = contentLoader.LoadTexture("Battle/Backgrounds/background");
             windowBattle.LoadContent(contentLoader);
-            currentPhase.LoadContent(contentLoader, windowQueuer, battleData, input);
+            currentPhase.LoadContent(contentLoader, WindowQueuer, battleData, Input);
             this.contentLoader = contentLoader;
         }
 
@@ -61,15 +72,15 @@ namespace Client.Screens
             if (currentPhase.IsDone)
             {
                 currentPhase = currentPhase.GetNextPhase();
-                currentPhase.LoadContent(contentLoader, windowQueuer, battleData, input);
+                currentPhase.LoadContent(contentLoader, WindowQueuer, battleData, Input);
             }
         }
-
-        public override void Draw(SpriteBatch spriteBatch)
+        private void BattleOverEventHandler(object sender, BattleEventArgs args)
         {
-            spriteBatch.Draw(backgroundTexture, new Rectangle(0,0, ArenaSize.Width, ArenaSize.Height), Color.White);
-            currentPhase.Draw(spriteBatch);
-            windowBattle.Draw(spriteBatch);
+            var message = new WindowBattleMessage(args.thisBattle.IsPlayerDefeated ? "You lost!" : "You won!", Input,
+                ScreenBattle.Window);
+            message.OnClose += (o, eventArgs) => ScreenLoader.LoadScreen(world);
+            WindowQueuer.QueueWindow(message);
         }
     }
 }
