@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.World.Events
 {
-    internal class EventSpeek : IEvent
+    internal class EventSpeak : IEvent
     {
         private readonly IWindowQueuer windowQueuer;
         private readonly InputKeyboard inputKeyboard;
@@ -16,7 +16,7 @@ namespace Client.World.Events
         private readonly string lines;
 
         public bool IsDone { get; private set; }
-        public EventSpeek(string lines, IWindowQueuer windowQueuer, InputKeyboard inputKeyboard, IWorldData worldData)
+        public EventSpeak(string lines, IWindowQueuer windowQueuer, InputKeyboard inputKeyboard, IWorldData worldData)
         {
             this.lines = lines;
             this.windowQueuer = windowQueuer;

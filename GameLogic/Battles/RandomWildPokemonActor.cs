@@ -19,11 +19,11 @@ namespace GameLogic.Battles
             }
             else
             {
-                return await MakeRandomFightSelection(battle, actorSide);
+                return MakeRandomFightSelection(battle, actorSide);
             }
         }
 
-        private async Task<Selection> MakeRandomFightSelection(Battle battle, Side actorSide)
+        private Selection MakeRandomFightSelection(Battle battle, Side actorSide)
         {
             return Selection.MakeFight(actorSide.CurrentBattlePokemon,
                                        battle.PlayerSide.CurrentBattlePokemon,

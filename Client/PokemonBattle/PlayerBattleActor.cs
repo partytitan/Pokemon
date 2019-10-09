@@ -15,10 +15,9 @@ namespace Client.PokemonBattle
     class PlayerBattleActor : BattleActor
     {
         private TaskCompletionSource<Selection> selectionMade;
-        private Selection playersSelection = null;
-        private InputKeyboard input;
+        private readonly InputKeyboard input;
 
-        private IWindowQueuer windowQueuer;
+        private readonly IWindowQueuer windowQueuer;
 
         public PlayerBattleActor(IWindowQueuer windowQueuer)
         {

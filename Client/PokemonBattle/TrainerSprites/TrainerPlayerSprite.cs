@@ -11,17 +11,13 @@ namespace Client.PokemonBattle.TrainerSprites
         private const int FrameCount = 4;
         private const int FrameTime = 100;
 
-        private double counter;
-        private int frameIndex;
         private int speed;
-        private bool isMovingOut;
 
         public TrainerPlayerSprite(string textureName) : base(textureName)
         {
             Position = new Vector2(ScreenBattle.ArenaSize.Width, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
             WantedPosition = new Vector2(ScreenBattle.ArenaSize.Width * 0.33f - TrainerTextureWidth, ScreenBattle.ArenaSize.Height - TrainerTextureHeight);
             speed = 3;
-            frameIndex = 0;
         }
 
         protected override void Move(GameTime gameTime)

@@ -1,4 +1,5 @@
-﻿using Client.Data;
+﻿using System;
+using Client.Data;
 using Client.Services.Content;
 using Client.World;
 using Client.World.Components;
@@ -13,6 +14,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Client.Inputs;
 using Client.Services.Windows;
+using Client.Services.World.EventSwitches;
+using Client.World.Emotions;
 using Client.World.Events;
 using Client.World.EventTriggers;
 
@@ -21,6 +24,7 @@ namespace Client.Services.World
     internal class MapLoader : IMapLoader
     {
         private readonly IContentLoader contentLoader;
+        private readonly EventSwitchHandler eventSwitchHandler;
         public TiledMap CurrentMap { get; set; }
         public TiledMap MapUp { get; set; }
         public TiledMap MapDown { get; set; }
@@ -32,9 +36,10 @@ namespace Client.Services.World
         private TiledMapRenderer tiledMapRenderer;
         private readonly GraphicsDevice graphicsDevice;
 
-        public MapLoader(IContentLoader contentLoader, GraphicsDevice graphicsDevice)
+        public MapLoader(IContentLoader contentLoader, EventSwitchHandler eventSwitchHandler, GraphicsDevice graphicsDevice)
         {
             this.contentLoader = contentLoader;
+            this.eventSwitchHandler = eventSwitchHandler;
             this.graphicsDevice = graphicsDevice;
         }
 
@@ -52,7 +57,7 @@ namespace Client.Services.World
 
         public WorldObject BackgroundMapLayers(IWorldData worldData)
         {
-            var backgroundLayers = new WorldObject("map_background");
+            var backgroundLayers = new WorldObject("map_background", eventSwitchHandler);
             foreach (var tileLayer in CurrentMap.TileLayers.Where(n => !n.Name.Contains("WalkBehind")))
             {
                 backgroundLayers.AddComponent(new TileLayer(backgroundLayers, tileLayer, tiledMapRenderer, worldData));
@@ -63,7 +68,7 @@ namespace Client.Services.World
 
         public WorldObject ForeGoundMapLayers(IWorldData worldData)
         {
-            var foregroundLayers = new WorldObject("map_foreground");
+            var foregroundLayers = new WorldObject("map_foreground", eventSwitchHandler);
             foreach (var tileLayer in CurrentMap.TileLayers.Where(n => n.Name.Contains("WalkBehind")))
             {
                 foregroundLayers.AddComponent(new TileLayer(foregroundLayers, tileLayer, tiledMapRenderer, worldData));
@@ -74,7 +79,7 @@ namespace Client.Services.World
 
         public WorldObject LoadCollisionTiles(IWorldData worldData)
         {
-            var collisionObject = new WorldObject($"tile_collisions");
+            var collisionObject = new WorldObject($"tile_collisions", eventSwitchHandler);
             foreach (var tileLayer in CurrentMap.TileLayers.Where(n => n.Name.Contains("Collision")))
             {
                 foreach (var tile in tileLayer.Tiles)
@@ -99,7 +104,8 @@ namespace Client.Services.World
             var npcs = new List<WorldObject>();
             foreach (var npc in mapData.NpcList)
             {
-                var npcWorldObject = new WorldObject(npc.Name);
+                var id = Guid.NewGuid().ToString();
+                var npcWorldObject = new WorldObject(id, eventSwitchHandler);
 
                 npcWorldObject.AddComponent(new Sprite(npcWorldObject, new SpriteData
                 {
@@ -113,7 +119,12 @@ namespace Client.Services.World
                 if (npc.Speech.Count > 0)
                 {
                     var lines = npc.Speech.Aggregate("", (current, i) => current + mapSpeech[i] + " ");
-                    npcWorldObject.AddComponent(new EventTriggerPlayerInteract(npcWorldObject, eventRunner, new List<IEvent>{new EventSpeek(lines, windowQueuer, worldData.MainPlayer.Input, worldData)}, worldData.MainPlayer.Input, worldData));
+                    npcWorldObject.AddComponent(new EventTriggerPlayerInteract(npcWorldObject, eventRunner, new List<IEvent>{new EventSpeak(lines, windowQueuer, worldData.MainPlayer.Input, worldData)}, worldData.MainPlayer.Input, worldData));
+                }
+
+                if (npc.Pokemon != "NULL")
+                {
+                    npcWorldObject.AddComponent(new EventTriggerEyeContact(npcWorldObject, eventRunner, new List<IEvent> { new EventEmotion(npcWorldObject, new EmotionTrainer(eventSwitchHandler))}, worldData));
                 }
                 npcWorldObject.AddComponent(new Collision(npcWorldObject, worldData));
                 npcWorldObject.AddComponent(new Animation(npcWorldObject));

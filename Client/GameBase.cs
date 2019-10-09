@@ -10,6 +10,7 @@ using Client.Services.Screens;
 using Client.Services.Windows;
 using Client.Services.Windows.Message;
 using Client.Services.World;
+using Client.Services.World.EventSwitches;
 using Client.World;
 using Client.World.Components;
 using GameLogic.Battles;
@@ -79,12 +80,14 @@ namespace Client
 
             mainPlayer = new MainPlayer("Jordi", new List<Pokemon>() { playerPokemon, playerPokemon2}, new WarpData(10, 18, 0, 0), Directions.Down);
 
-            Side playerSide = new TrainerSide(mainPlayer);
-            Side enemySide = new WildPokemonSide(enemyPokemon);
             //Debug end
             backBuffer = new RenderTarget2D(GraphicsDevice, GameWidth, GameHeight);
             var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, GameWidth, GameHeight);
-            var cameraWorldObject = new WorldObject("camera");
+
+            var eventSwitchHandler = new EventSwitchHandler();
+            eventSwitchHandler.AddEventSwitch(new EventSwitch { Id = 1, Name = "Test", On = false });
+
+            var cameraWorldObject = new WorldObject("camera", eventSwitchHandler);
             camera = new Camera(null, GraphicsDevice, viewportAdapter);
             cameraWorldObject.AddComponent(camera);
 
@@ -94,8 +97,10 @@ namespace Client
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(actualWidth, actualHeight, 5),
                 new ScreenTransitionEffectFadeIn(actualWidth, actualHeight, 3), contentLoader);
 
-            var world = new ScreenWorld(screenLoader, new MapLoader(contentLoader, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, cameraWorldObject, mainPlayer);
-            screenLoader.LoadScreen(new ScreenBattle(screenLoader, windowHandler, new BattleStartPhase(), new Battle(playerSide, enemySide, new PlayerBattleActor(windowHandler), new RandomWildPokemonActor()), world));
+            //new ScreenBattle(screenLoader, windowHandler, new BattleStartPhase(), new Battle(playerSide, enemySide, new PlayerBattleActor(windowHandler), new RandomWildPokemonActor()), world)
+
+            var world = new ScreenWorld(screenLoader, new MapLoader(contentLoader, eventSwitchHandler, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, eventSwitchHandler, cameraWorldObject, mainPlayer);
+            screenLoader.LoadScreen(world);
             screenLoader.LoadContent(GraphicsDevice);
         }
 

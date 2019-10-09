@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Client.Services.Windows.Battle
 {
-    class Option
+    internal class Option
     {
         public readonly int Id;
         public readonly MainMenuState State;

@@ -13,8 +13,8 @@ namespace Client.PokemonBattle.Phases.Shared
 {
     internal abstract class TrainerOutPhase<TTrainerSprite, TTrainerStatusSprite> : IPhase where TTrainerSprite : TrainerSprite where TTrainerStatusSprite : TrainerPokemonStatus
     {
-        protected readonly List<TrainerSprite> TrainerSprites;
-        protected readonly List<TrainerPokemonStatus> TrainerPokemonStatuses;
+        protected List<TrainerSprite> TrainerSprites;
+        protected List<TrainerPokemonStatus> TrainerPokemonStatuses;
         public bool IsDone { get; protected set; }
 
 

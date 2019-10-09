@@ -34,7 +34,6 @@ namespace Client.Services.World
                 currentEvent.LoadContent(contentLoader);
             }
             currentEvents[currentIndex].Initialize(worldData);
-            Input.LockInput = true;
         }
 
         public void Update(GameTime gameTime)
@@ -48,7 +47,6 @@ namespace Client.Services.World
                 if (currentIndex >= currentEvents.Count)
                 {
                     currentEvents = null;
-                    Input.LockInput = false;
                 }
                 else
                 {

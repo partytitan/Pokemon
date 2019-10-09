@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using System.Linq;
 using Client.Services.Windows;
+using Client.Services.World.EventSwitches;
 
 namespace Client.Screens
 {
@@ -20,9 +21,10 @@ namespace Client.Screens
         private readonly IWindowQueuer windowQueuer;
         private readonly List<WorldObject> worldObjects;
         private readonly WorldObject camera;
+        private readonly EventSwitchHandler eventSwitchHandler;
         public MainPlayer MainPlayer { get; set; }
 
-        public ScreenWorld(IScreenLoader screenLoader, IMapLoader mapLoader, IEntityLoader entityLoader, EventRunner eventRunner, IWindowQueuer windowQueuer, WorldObject camera, MainPlayer mainPlayer) : base(screenLoader)
+        public ScreenWorld(IScreenLoader screenLoader, IMapLoader mapLoader, IEntityLoader entityLoader, EventRunner eventRunner, IWindowQueuer windowQueuer, EventSwitchHandler eventSwitch, WorldObject camera, MainPlayer mainPlayer) : base(screenLoader)
         {
             this.MapLoader = mapLoader;
             this.entityLoader = entityLoader;
@@ -30,6 +32,7 @@ namespace Client.Screens
             this.windowQueuer = windowQueuer;
             this.MainPlayer = mainPlayer;
             this.camera = camera;
+            this.eventSwitchHandler = eventSwitch;
 
             worldObjects = new List<WorldObject>();
         }
@@ -37,7 +40,7 @@ namespace Client.Screens
         public void ChangeMap(WarpData warpData)
         {
             MainPlayer.WarpData = warpData;
-            var screen = new ScreenWorld(ScreenLoader, MapLoader, entityLoader, eventRunner, windowQueuer, camera, MainPlayer);
+            var screen = new ScreenWorld(ScreenLoader, MapLoader, entityLoader, eventRunner, windowQueuer, eventSwitchHandler, camera, MainPlayer);
             ScreenLoader.LoadScreen(screen);
         }
 
@@ -63,7 +66,7 @@ namespace Client.Screens
             worldObjects.Add(MapLoader.BackgroundMapLayers(this));
             worldObjects.Add(MapLoader.LoadCollisionTiles(this));
             worldObjects.AddRange(MapLoader.LoadNpcs(this, eventRunner, windowQueuer));
-            worldObjects.AddRange(entityLoader.LoadEntities(this));
+            worldObjects.AddRange(entityLoader.LoadEntities(this, eventRunner, eventSwitchHandler, MainPlayer));
             worldObjects.Add(MapLoader.ForeGoundMapLayers(this));
             GetComponents<ILoadContentComponent>().ForEach(c => c.LoadContent(contentLoader));
             eventRunner.LoadContent(this);
@@ -77,8 +80,8 @@ namespace Client.Screens
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            GetComponents<IDrawComponent>().ForEach(c => c.Draw(spriteBatch));
             eventRunner.Draw(spriteBatch);
+            GetComponents<IDrawComponent>().ForEach(c => c.Draw(spriteBatch));
         }
     }
 }

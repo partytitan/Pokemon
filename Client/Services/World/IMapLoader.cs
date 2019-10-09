@@ -3,6 +3,7 @@ using GameLogic.Data;
 using MonoGame.Extended.Tiled;
 using System.Collections.Generic;
 using Client.Services.Windows;
+using Client.Services.World.EventSwitches;
 
 namespace Client.Services.World
 {

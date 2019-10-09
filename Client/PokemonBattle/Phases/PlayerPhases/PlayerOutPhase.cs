@@ -17,8 +17,6 @@ namespace Client.PokemonBattle.Phases.PlayerPhases
 {
     class PlayerOutPhase : TrainerOutPhase<TrainerPlayerSprite, TrainerPlayerPokemonStatus>
     {
-        private readonly List<TrainerSprite> TrainerSprites;
-        private readonly List<TrainerPokemonStatus> TrainerPokemonStatuses;
         private readonly PokemonBattleSprite opponentPokemonBattleSprite;
 
         public PlayerOutPhase(List<TrainerSprite> trainerSprites, List<TrainerPokemonStatus> trainerPokemonStatuses, PokemonBattleSprite opponentPokemonBattleSprite) : base(trainerSprites, trainerPokemonStatuses)
