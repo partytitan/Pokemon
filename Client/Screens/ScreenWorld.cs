@@ -8,8 +8,13 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using System.Linq;
+using Client.PokemonBattle;
+using Client.PokemonBattle.Phases;
 using Client.Services.Windows;
 using Client.Services.World.EventSwitches;
+using Client.World.Components;
+using GameLogic.Battles;
+using MonoGame.Extended;
 
 namespace Client.Screens
 {
@@ -44,6 +49,13 @@ namespace Client.Screens
             ScreenLoader.LoadScreen(screen);
         }
 
+        public void StartBattle(Side opponentSide, BattleActor opponentActor)
+        {
+            camera.GetComponent<Camera>().Position = Vector2.Zero;
+            var screen = new ScreenBattle(ScreenLoader, windowQueuer, new BattleStartPhase(), new Battle(new TrainerSide(MainPlayer), opponentSide, new PlayerBattleActor(windowQueuer), opponentActor), this);
+            ScreenLoader.LoadScreen(screen);
+        }
+
         public WorldObject GetWorldObject(string id)
         {
             return worldObjects.FirstOrDefault(w => w.Id == id);
@@ -61,13 +73,16 @@ namespace Client.Screens
 
         public override void LoadContent(IContentLoader contentLoader)
         {
+            if(worldObjects.Count > 0)
+                return;
+
             worldObjects.Add(camera);
             MapLoader.LoadMap(MainPlayer.WarpData, this);
             worldObjects.Add(MapLoader.BackgroundMapLayers(this));
             worldObjects.Add(MapLoader.LoadCollisionTiles(this));
             worldObjects.AddRange(MapLoader.LoadNpcs(this, eventRunner, windowQueuer));
             worldObjects.AddRange(entityLoader.LoadEntities(this, eventRunner, eventSwitchHandler, MainPlayer));
-            worldObjects.Add(MapLoader.ForeGoundMapLayers(this));
+            worldObjects.Add(MapLoader.ForegroundMapLayers(this));
             GetComponents<ILoadContentComponent>().ForEach(c => c.LoadContent(contentLoader));
             eventRunner.LoadContent(this);
         }

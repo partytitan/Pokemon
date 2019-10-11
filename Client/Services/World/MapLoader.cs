@@ -18,6 +18,8 @@ using Client.Services.World.EventSwitches;
 using Client.World.Emotions;
 using Client.World.Events;
 using Client.World.EventTriggers;
+using GameLogic.Battles;
+using GameLogic.Trainers;
 
 namespace Client.Services.World
 {
@@ -25,34 +27,21 @@ namespace Client.Services.World
     {
         private readonly IContentLoader contentLoader;
         private readonly EventSwitchHandler eventSwitchHandler;
-        public TiledMap CurrentMap { get; set; }
-        public TiledMap MapUp { get; set; }
-        public TiledMap MapDown { get; set; }
-        public TiledMap MapRight { get; set; }
-        public TiledMap MapLeft { get; set; }
-
-        private string[] mapSpeech;
-        private MapData mapData;
-        private TiledMapRenderer tiledMapRenderer;
         private readonly GraphicsDevice graphicsDevice;
+        private MapData mapData;
+        private string[] mapSpeech;
+        private TiledMapRenderer tiledMapRenderer;
 
+        public TiledMap CurrentMap { get; set; }
+        public TiledMap MapDown { get; set; }
+        public TiledMap MapLeft { get; set; }
+        public TiledMap MapRight { get; set; }
+        public TiledMap MapUp { get; set; }
         public MapLoader(IContentLoader contentLoader, EventSwitchHandler eventSwitchHandler, GraphicsDevice graphicsDevice)
         {
             this.contentLoader = contentLoader;
             this.eventSwitchHandler = eventSwitchHandler;
             this.graphicsDevice = graphicsDevice;
-        }
-
-        public void LoadMap(WarpData warpData, IWorldData worldData)
-        {
-            mapData = contentLoader.LoadMapData($"{warpData.XMapId}.{warpData.YMapId}");
-            CurrentMap = contentLoader.LoadMap($"{warpData.XMapId}.{warpData.YMapId}");
-            mapSpeech = contentLoader.LoadMapSpeech($"{warpData.XMapId}.{warpData.YMapId}");
-            tiledMapRenderer = new TiledMapRenderer(graphicsDevice, CurrentMap);
-            var camera = worldData.GetComponents<Camera>().FirstOrDefault();
-            camera?.SetScreenBounds(new Rectangle(0, 0, CurrentMap.WidthInPixels, CurrentMap.HeightInPixels));
-
-            LoadSurroundingMaps(warpData.XMapId, warpData.YMapId);
         }
 
         public WorldObject BackgroundMapLayers(IWorldData worldData)
@@ -66,7 +55,7 @@ namespace Client.Services.World
             return backgroundLayers;
         }
 
-        public WorldObject ForeGoundMapLayers(IWorldData worldData)
+        public WorldObject ForegroundMapLayers(IWorldData worldData)
         {
             var foregroundLayers = new WorldObject("map_foreground", eventSwitchHandler);
             foreach (var tileLayer in CurrentMap.TileLayers.Where(n => n.Name.Contains("WalkBehind")))
@@ -99,6 +88,17 @@ namespace Client.Services.World
             return collisionObject;
         }
 
+        public void LoadMap(WarpData warpData, IWorldData worldData)
+        {
+            mapData = contentLoader.LoadMapData($"{warpData.XMapId}.{warpData.YMapId}");
+            CurrentMap = contentLoader.LoadMap($"{warpData.XMapId}.{warpData.YMapId}");
+            mapSpeech = contentLoader.LoadMapSpeech($"{warpData.XMapId}.{warpData.YMapId}");
+            tiledMapRenderer = new TiledMapRenderer(graphicsDevice, CurrentMap);
+            var camera = worldData.GetComponents<Camera>().FirstOrDefault();
+            camera?.SetScreenBounds(new Rectangle(0, 0, CurrentMap.WidthInPixels, CurrentMap.HeightInPixels));
+
+            LoadSurroundingMaps(warpData.XMapId, warpData.YMapId);
+        }
         public List<WorldObject> LoadNpcs(IWorldData worldData, IEventRunner eventRunner, IWindowQueuer windowQueuer)
         {
             var npcs = new List<WorldObject>();
@@ -122,9 +122,10 @@ namespace Client.Services.World
                     npcWorldObject.AddComponent(new EventTriggerPlayerInteract(npcWorldObject, eventRunner, new List<IEvent>{new EventSpeak(lines, windowQueuer, worldData.MainPlayer.Input, worldData)}, worldData.MainPlayer.Input, worldData));
                 }
 
-                if (npc.Pokemon != "NULL")
+                if (npc.Party.Count > 0)
                 {
-                    npcWorldObject.AddComponent(new EventTriggerEyeContact(npcWorldObject, eventRunner, new List<IEvent> { new EventEmotion(npcWorldObject, new EmotionTrainer(eventSwitchHandler))}, worldData));
+                    var trainer = new Trainer(npc.Name, npc.Party);
+                    npcWorldObject.AddComponent(new EventTriggerEyeContact(npcWorldObject, eventRunner, new List<IEvent> { new EventEmotion(npcWorldObject, new EmotionTrainer(eventSwitchHandler)), new EventBattle(new TrainerSide(trainer))}, worldData));
                 }
                 npcWorldObject.AddComponent(new Collision(npcWorldObject, worldData));
                 npcWorldObject.AddComponent(new Animation(npcWorldObject));

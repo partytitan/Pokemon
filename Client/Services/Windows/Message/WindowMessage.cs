@@ -69,6 +69,7 @@ namespace Client.Services.Windows.Message
 
         private void CreatePages(SpriteFont font)
         {
+            font.LineSpacing = 12;
             var words = text.Split(' ');
             var rowText = new StringBuilder();
             var index = 0;

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Client.Services.Content;
+﻿using Client.Services.Content;
 using Client.Services.World;
 using Client.World.Components;
 using Client.World.Emotions;

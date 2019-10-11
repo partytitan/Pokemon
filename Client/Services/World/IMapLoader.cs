@@ -19,7 +19,7 @@ namespace Client.Services.World
 
         WorldObject BackgroundMapLayers(IWorldData worldData);
 
-        WorldObject ForeGoundMapLayers(IWorldData worldData);
+        WorldObject ForegroundMapLayers(IWorldData worldData);
 
         WorldObject LoadCollisionTiles(IWorldData worldData);
 

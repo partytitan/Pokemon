@@ -9,7 +9,7 @@ namespace GameLogic.Battles
     /// </summary>
     public class Battle
     {
-        private bool busy = false;
+        public static bool busy = false;
         private bool begun = false;
 
 
@@ -132,6 +132,7 @@ namespace GameLogic.Battles
             {
                 case BattleState.Intro:
                     State = BattleState.SetSelections;
+                    busy = false;
                     break;
 
                 case BattleState.SetSelections:
@@ -139,11 +140,13 @@ namespace GameLogic.Battles
                     UpdateForEndOfTurn();
                     await ExecutionSetSelectionState();
                     State = BattleState.SetFirstAndSecond;
+                    busy = false;
                     break;
 
                 case BattleState.SetFirstAndSecond:
                     ExecuteSetFirstAndSecondState();
                     State = BattleState.FirstExecutes;
+                    busy = false;
                     break;
 
                 case BattleState.FirstExecutes:
@@ -179,26 +182,31 @@ namespace GameLogic.Battles
                 case BattleState.FirstFaintsEarly:
                     if (IsGameOver) State = BattleState.GameOver;
                     else State = BattleState.FirstFaintsEarlySwitch;
+                    busy = false;
                     break;
 
                 case BattleState.FirstFaintsEarlySwitch:
                     await ExecuteForcedSwitchOnFirst();
                     State = BattleState.SecondExecutes;
+                    busy = false;
                     break;
 
                 case BattleState.BothFaint:
                     if (IsGameOver) State = BattleState.GameOver;
                     else State = BattleState.BothPokemonSwitch;
+                    busy = false;
                     break;
 
                 case BattleState.SecondFaints:
                     if (IsGameOver) State = BattleState.GameOver;
                     else State = BattleState.SecondSwitchesPokemon;
+                    busy = false;
                     break;
 
                 case BattleState.FirstFaintsLate:
                     if (IsGameOver) State = BattleState.GameOver;
                     else State = BattleState.FirstFaintsLateSwitch;
+                    busy = false;
                     break;
 
                 case BattleState.FirstFaintsLateSwitch:
@@ -217,7 +225,6 @@ namespace GameLogic.Battles
                     State = BattleState.SetSelections;
                     break;
             }
-            busy = false;
         }
 
         private async Task ExecutionSetSelectionState()

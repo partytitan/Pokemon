@@ -6,7 +6,7 @@ using GameLogic.PokemonData;
 
 namespace GameLogic.Battles
 {
-    public class RandomWildPokemonActor : BattleActor
+    public class TrainerPokemonActor : BattleActor
     {
         Random rng = new Random();
         public async Task<Selection> MakeBeginningOfTurnSelection(Battle battle, Side actorSide)
@@ -67,7 +67,8 @@ namespace GameLogic.Battles
 
         public async Task<Selection> MakeForcedSwitchSelection(Battle battle, Side actorSide)
         {
-            throw new NotImplementedException();
+            var availablePokemon = actorSide.Party.Where(p => p.Status != Status.Fainted).ToList();
+            return Selection.MakeSwitchOut(actorSide.CurrentBattlePokemon, battle.OpponentSide.CurrentBattlePokemon, availablePokemon[rng.Next(availablePokemon.Count())]);
         }
 
         public Task<Move> PickMoveToMimic(Side opponentSide)

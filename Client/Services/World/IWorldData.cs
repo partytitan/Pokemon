@@ -2,6 +2,7 @@
 using Client.World.Interfaces;
 using GameLogic.Data;
 using System.Collections.Generic;
+using GameLogic.Battles;
 
 namespace Client.Services.World
 {
@@ -11,6 +12,7 @@ namespace Client.Services.World
         MainPlayer MainPlayer { get; set; }
 
         void ChangeMap(WarpData warpData);
+        void StartBattle(Side opponentSide, BattleActor opponentActor);
 
         WorldObject GetWorldObject(string id);
 

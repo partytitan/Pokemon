@@ -15,6 +15,7 @@ namespace Client
         public bool CanMove { get; set; }
         public bool IsInteracting { get; set; }
 
+
         public MainPlayer(string name, List<Pokemon> pokemon, WarpData warpData, Directions currentDirection) : base(name, pokemon, warpData, currentDirection)
         {
             this.Input = new InputKeyboard();

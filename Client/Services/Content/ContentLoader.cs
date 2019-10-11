@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using GameLogic;
+using GameLogic.PokemonData;
 
 namespace Client.Services.Content
 {
@@ -115,7 +117,15 @@ namespace Client.Services.Content
                             int.TryParse(input[i++], out npc.XTilePosition);
                             int.TryParse(input[i++], out npc.YTilePosition);
                             npc.OriginalDirection = npc.Direction;
-                            npc.Pokemon = input[i++];
+                            var pokemon = input[i++];
+                            if (pokemon != "NULL")
+                            {
+                                var pokemonlist = pokemon.Split(",");
+                                for (var j = 0; j < pokemonlist.Length; j+=2)
+                                {
+                                    npc.Party.Add(PokemonFactory.PokemonMaker(pokemonlist[j], int.Parse(pokemonlist[j+1])));
+                                }
+                            }
                             int.TryParse(input[i++], out npc.PartySize);
                             int.TryParse(input[i++], out npc.Badge);
                             // TODO speech
