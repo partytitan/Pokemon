@@ -75,6 +75,7 @@ namespace Client.World.Components.Movements
             animation.StopAnimation();
 
             worldData.MainPlayer.CurrentDirection = sprite.CurrentDirection;
+
             CheckWarp((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
             CheckMapChange((int)(wantedPosition.X / Tile.Width), (int)(wantedPosition.Y / Tile.Height));
         }

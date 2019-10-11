@@ -9,6 +9,7 @@ using GameLogic.Battles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Drawing;
+using Client.World.Components;
 using Color = Microsoft.Xna.Framework.Color;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 
@@ -48,6 +49,8 @@ namespace Client.Screens
             eventsHandler.AttachBattleEventHandlers(battleData);
 
             battleData.BattleOver += BattleOverEventHandler;
+
+            world.camera.GetComponent<Camera>().Position = Vector2.Zero;
         }
 
         public override void Draw(SpriteBatch spriteBatch)

@@ -123,7 +123,15 @@ namespace Client.Services.Content
                                 var pokemonlist = pokemon.Split(",");
                                 for (var j = 0; j < pokemonlist.Length; j+=2)
                                 {
-                                    npc.Party.Add(PokemonFactory.PokemonMaker(pokemonlist[j], int.Parse(pokemonlist[j+1])));
+                                    try
+                                    {
+                                        npc.Party.Add(PokemonFactory.PokemonMaker(pokemonlist[j],
+                                            int.Parse(pokemonlist[j + 1])));
+                                    }
+                                    catch
+                                    {
+                                        // ignored
+                                    }
                                 }
                             }
                             int.TryParse(input[i++], out npc.PartySize);

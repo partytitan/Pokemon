@@ -13,6 +13,7 @@ using Client.PokemonBattle.Phases;
 using Client.Services.Windows;
 using Client.Services.World.EventSwitches;
 using Client.World.Components;
+using Client.World.Components.Tiles;
 using GameLogic.Battles;
 using MonoGame.Extended;
 
@@ -25,7 +26,7 @@ namespace Client.Screens
         private readonly EventRunner eventRunner;
         private readonly IWindowQueuer windowQueuer;
         private readonly List<WorldObject> worldObjects;
-        private readonly WorldObject camera;
+        public readonly WorldObject camera;
         private readonly EventSwitchHandler eventSwitchHandler;
         public MainPlayer MainPlayer { get; set; }
 
@@ -51,7 +52,6 @@ namespace Client.Screens
 
         public void StartBattle(Side opponentSide, BattleActor opponentActor)
         {
-            camera.GetComponent<Camera>().Position = Vector2.Zero;
             var screen = new ScreenBattle(ScreenLoader, windowQueuer, new BattleStartPhase(), new Battle(new TrainerSide(MainPlayer), opponentSide, new PlayerBattleActor(windowQueuer), opponentActor), this);
             ScreenLoader.LoadScreen(screen);
         }
@@ -73,8 +73,11 @@ namespace Client.Screens
 
         public override void LoadContent(IContentLoader contentLoader)
         {
-            if(worldObjects.Count > 0)
+            if (worldObjects.Count > 0)
+            {
+                camera.GetComponent<Camera>().LookAt(new Vector2(MainPlayer.WarpData.XWarpPosition, MainPlayer.WarpData.YWarpPosition));
                 return;
+            }
 
             worldObjects.Add(camera);
             MapLoader.LoadMap(MainPlayer.WarpData, this);

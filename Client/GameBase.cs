@@ -1,27 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using Client.Inputs;
-using Client.PokemonBattle;
-using Client.PokemonBattle.Phases;
-using Client.PokemonBattle.Phases.TrainerPhases;
 using Client.Screens;
 using Client.Screens.ScreenTransitionEffects;
 using Client.Services.Content;
 using Client.Services.Screens;
 using Client.Services.Windows;
-using Client.Services.Windows.Message;
 using Client.Services.World;
 using Client.Services.World.EventSwitches;
 using Client.World;
 using Client.World.Components;
-using GameLogic.Battles;
 using GameLogic.Common;
 using GameLogic.Data;
-using GameLogic.Moves.Reflexive;
-using GameLogic.Moves.Transitive.Attack.OneTurnOneHit;
-using GameLogic.Moves.Transitive.Status;
 using GameLogic.PokemonData;
-using GameLogic.Trainers;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.ViewportAdapters;
@@ -59,12 +49,12 @@ namespace Client
         {
             var pokemon = new List<Pokemon>();
             var rnd = new Random();
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 4), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 4), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 4), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 4), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
 
-            mainPlayer = new MainPlayer("Jordi", pokemon, new WarpData(14, 22, -1, -1), Directions.Down);
+            mainPlayer = new MainPlayer("Jordi", pokemon, new WarpData(19, 19, -3, -2), Directions.Down);
 
             //Debug end
             backBuffer = new RenderTarget2D(GraphicsDevice, GameWidth, GameHeight);
