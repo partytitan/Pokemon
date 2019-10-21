@@ -69,7 +69,7 @@ namespace Client.Services.World
         public WorldObject LoadCollisionTiles(IWorldData worldData)
         {
             var collisionObject = new WorldObject($"tile_collisions", eventSwitchHandler);
-            foreach (var tileLayer in CurrentMap.TileLayers.Where(n => n.Name.Contains("Collision")))
+            foreach (var tileLayer in CurrentMap.TileLayers.Where(n => n.Name.Contains("Collision") || n.Name.Contains("Water")))
             {
                 foreach (var tile in tileLayer.Tiles)
                 {

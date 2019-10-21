@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using GameLogic.PokemonData;
 
 namespace Client.Services.Windows.Battle
 {
@@ -152,7 +153,7 @@ namespace Client.Services.Windows.Battle
 
         private void PokemonSelectionMenu()
         {
-            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, actorSide.Party.Select((pokemon, index) => new Option(pokemon.Nickname + " - " + pokemon.Status.ToString(), MainMenuState.POKEMON, index)).ToArray());
+            currentOptionList = new OptionList(new Rectangle(leftMenuBounds.Location, leftMenuBounds.Size), leftWindowBattle, actorSide.Party.Select((pokemon, index) => new Option(pokemon.Nickname + " - " + pokemon.Level + (pokemon.Status != Status.Null ? " - " + pokemon.Status.ToString() : ""), MainMenuState.POKEMON, index)).ToArray());
         }
     }
 }

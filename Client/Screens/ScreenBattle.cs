@@ -49,8 +49,6 @@ namespace Client.Screens
             eventsHandler.AttachBattleEventHandlers(battleData);
 
             battleData.BattleOver += BattleOverEventHandler;
-
-            world.camera.GetComponent<Camera>().Position = Vector2.Zero;
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -66,6 +64,8 @@ namespace Client.Screens
             windowBattle.LoadContent(contentLoader);
             currentPhase.LoadContent(contentLoader, WindowQueuer, battleData, Input);
             this.contentLoader = contentLoader;
+
+            world.camera.GetComponent<Camera>().Position = Vector2.Zero;
         }
 
         public override void Update(GameTime gameTime)

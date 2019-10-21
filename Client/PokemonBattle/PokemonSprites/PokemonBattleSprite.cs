@@ -27,8 +27,11 @@ namespace Client.PokemonBattle.PokemonSprites
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, pokemonBattleSpriteDate.Rectangle, pokemonBattleSpriteDate.DrawRectangle,
-                pokemonBattleSpriteDate.Color, 0f, new Vector2(PokemonBattleSpriteData.TextureWidth / 2, PokemonBattleSpriteData.TextureHeight / 2), SpriteEffects.None, 0);
+            if (texture != null)
+                spriteBatch.Draw(texture, pokemonBattleSpriteDate.Rectangle, pokemonBattleSpriteDate.DrawRectangle,
+                    pokemonBattleSpriteDate.Color, 0f,
+                    new Vector2(PokemonBattleSpriteData.TextureWidth / 2, PokemonBattleSpriteData.TextureHeight / 2),
+                    SpriteEffects.None, 0);
         }
     }
 }

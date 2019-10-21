@@ -31,6 +31,7 @@
     <Folder Include="Content\bin\DesktopGL\Content\Textures\Battle\Gui\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\Battle\Gui\StatusPokemonBall\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\Battle\Pokeballs\" />
+    <Folder Include="Content\bin\DesktopGL\Content\Textures\Emotions\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\NPC\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\Pokemon\" />
     <Folder Include="Content\bin\DesktopGL\Content\Textures\Pokemon\Back\" />
@@ -45,6 +46,7 @@
     <Folder Include="Content\obj\DesktopGL\Content\Textures\Battle\Gui\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\Battle\Gui\StatusPokemonBall\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\Battle\Pokeballs\" />
+    <Folder Include="Content\obj\DesktopGL\Content\Textures\Emotions\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\NPC\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\Pokemon\" />
     <Folder Include="Content\obj\DesktopGL\Content\Textures\Pokemon\Back\" />

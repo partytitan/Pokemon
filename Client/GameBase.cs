@@ -49,10 +49,10 @@ namespace Client
         {
             var pokemon = new List<Pokemon>();
             var rnd = new Random();
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(0, 3), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
 
             mainPlayer = new MainPlayer("Jordi", pokemon, new WarpData(19, 19, -3, -2), Directions.Down);
 
