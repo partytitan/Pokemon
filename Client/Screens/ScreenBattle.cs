@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Drawing;
 using Client.World.Components;
+using Microsoft.Xna.Framework.Media;
 using Color = Microsoft.Xna.Framework.Color;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 
@@ -60,6 +61,9 @@ namespace Client.Screens
 
         public override void LoadContent(IContentLoader contentLoader)
         {
+            var song = contentLoader.LoadSong("18-GSBattle_PvNPC");
+            MediaPlayer.Play(song);
+
             backgroundTexture = contentLoader.LoadTexture("Battle/Backgrounds/background");
             windowBattle.LoadContent(contentLoader);
             currentPhase.LoadContent(contentLoader, WindowQueuer, battleData, Input);

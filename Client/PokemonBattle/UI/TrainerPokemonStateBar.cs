@@ -18,7 +18,7 @@ namespace Client.PokemonBattle.UI
         public override void LoadContent(IContentLoader contentLoader)
         {
             base.LoadContent(contentLoader);
-            barTexture = contentLoader.LoadTexture("Battle/Gui/PlayerStatusBox");
+            barTexture = contentLoader.LoadTexture("Battle/Gui/SingleEnemyBox");
         }
     }
 }

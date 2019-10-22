@@ -55,7 +55,6 @@
     <Folder Include="Content\obj\DesktopGL\Content\Textures\Trainers\" />
     <Folder Include="Content\Textures\Pokemon\Back\" />
     <Folder Include="Content\Textures\Windows\" />
-    <Folder Include="World\Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>

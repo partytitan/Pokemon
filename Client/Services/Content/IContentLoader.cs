@@ -1,5 +1,6 @@
 ﻿using GameLogic.Data;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using MonoGame.Extended.Tiled;
 
 namespace Client.Services.Content
@@ -15,5 +16,6 @@ namespace Client.Services.Content
         MapData LoadMapData(string mapName);
 
         string[] LoadMapSpeech(string mapName);
+        Song LoadSong(string songName);
     }
 }

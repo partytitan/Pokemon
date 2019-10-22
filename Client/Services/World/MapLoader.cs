@@ -19,6 +19,7 @@ using Client.World.Emotions;
 using Client.World.Events;
 using Client.World.EventTriggers;
 using GameLogic.Battles;
+using GameLogic.Common;
 using GameLogic.Trainers;
 
 namespace Client.Services.World
@@ -76,6 +77,17 @@ namespace Client.Services.World
                     if (!tile.IsBlank)
                     {
                         collisionObject.AddComponent(new TileCollision(collisionObject, tile.X, tile.Y));
+                    }
+                }
+            }
+
+            foreach (var tileLayer in CurrentMap.TileLayers.Where(n => n.Name.Contains("Ledges")))
+            {
+                foreach (var tile in tileLayer.Tiles)
+                {
+                    if (!tile.IsBlank)
+                    {
+                        collisionObject.AddComponent(new LedgeCollision(collisionObject, tile.X, tile.Y, Enum.Parse<Directions>(tileLayer.Name.Remove(0, 6))));
                     }
                 }
             }

@@ -15,6 +15,7 @@ using Client.Services.World.EventSwitches;
 using Client.World.Components;
 using Client.World.Components.Tiles;
 using GameLogic.Battles;
+using Microsoft.Xna.Framework.Media;
 using MonoGame.Extended;
 
 namespace Client.Screens
@@ -78,6 +79,9 @@ namespace Client.Screens
                 camera.GetComponent<Camera>().LookAt(new Vector2(MainPlayer.WarpData.XWarpPosition, MainPlayer.WarpData.YWarpPosition));
                 return;
             }
+
+            var song = contentLoader.LoadSong("1-New_Bark");
+            MediaPlayer.Play(song);
 
             worldObjects.Add(camera);
             MapLoader.LoadMap(MainPlayer.WarpData, this);

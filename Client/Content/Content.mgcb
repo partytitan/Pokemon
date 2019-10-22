@@ -16,6 +16,18 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Audio/18-GSBattle_PvNPC.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/18-GSBattle_PvNPC.ogg
+
+#begin Audio/1-New_Bark.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/1-New_Bark.ogg
+
 #begin Fonts/battleFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor

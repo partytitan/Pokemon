@@ -18,6 +18,7 @@ namespace Client.World.Components.Movements
         private readonly AnimationWalking animationWalking;
 
         private readonly Camera camera;
+        private IWorldData worldData;
 
         protected Movement(IComponentOwner owner, float speed, IWorldData worldData) : base(owner)
         {
@@ -25,6 +26,7 @@ namespace Client.World.Components.Movements
             InMovement = false;
             animationWalking = new AnimationWalking(41, 51, 2, Directions.Down);
             this.camera = worldData.GetComponents<Camera>().FirstOrDefault();
+            this.worldData = worldData;
 
             var sprite = Owner.GetComponent<Sprite>();
             this.camera?.LookAt(sprite.CurrentPosition);
@@ -35,7 +37,7 @@ namespace Client.World.Components.Movements
             var sprite = Owner.GetComponent<Sprite>();
             var wantedTilePosition = sprite.TilePosition + UtilityService.ConvertDirectionToVector(direction);
 
-            if (Collision((int) (wantedTilePosition.X), (int) (wantedTilePosition.Y)))
+            if (Collision((int)(wantedTilePosition.X), (int)(wantedTilePosition.Y)))
             {
                 sprite.DrawFrame = new Rectangle(0, (int)direction * sprite.DrawFrame.Height, sprite.DrawFrame.Width, sprite.DrawFrame.Height);
                 wantedPosition = new Vector2(sprite.TilePosition.X * Tile.Width, sprite.TilePosition.Y * Tile.Height);
@@ -49,8 +51,18 @@ namespace Client.World.Components.Movements
             var animation = Owner.GetComponent<Animation>();
             animationWalking.ChangeDirection(direction);
             animation.PlayAnimation(animationWalking);
-        }
 
+            if (CheckLedges((int)(wantedTilePosition.X), (int)(wantedTilePosition.Y), sprite.CurrentDirection))
+            {
+                wantedTilePosition += UtilityService.ConvertDirectionToVector(direction);
+                wantedPosition = new Vector2(wantedTilePosition.X * Tile.Width, wantedTilePosition.Y * Tile.Height);
+            }
+        }
+        private bool CheckLedges(int wantedXTilePosition, int wantedYTilePosition, Directions direction)
+        {
+            var collisionObjects = worldData.GetComponents<ILedgeCollisionComponent>();
+            return collisionObjects != null && collisionObjects.Any(c => c.CheckLedgeDirection(wantedXTilePosition, wantedYTilePosition, direction));
+        }
         private bool Collision(int wantedXTilePosition, int wantedYTilePostion)
         {
             var collision = Owner.GetComponent<Collision>();

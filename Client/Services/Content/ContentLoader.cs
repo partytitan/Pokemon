@@ -8,11 +8,13 @@ using System.IO;
 using System.Linq;
 using GameLogic;
 using GameLogic.PokemonData;
+using Microsoft.Xna.Framework.Media;
 
 namespace Client.Services.Content
 {
     internal class ContentLoader : IContentLoader
     {
+        private const string SongNotFoundName = "1-New_Bark";
         private const string TextureNotFoundName = "NotFoundTexture";
         private const string FontNotFoundName = "NotFoundFont";
         private const string MapNotFoundName = "0.0";
@@ -23,6 +25,7 @@ namespace Client.Services.Content
         private readonly Dictionary<string, Texture2D> textureByName;
         private readonly Dictionary<string, SpriteFont> fontByName;
         private readonly Dictionary<string, TiledMap> mapByName;
+        private readonly Dictionary<string, Song> songByName;
         private readonly Dictionary<string, MapData> mapDataByName;
         private readonly Dictionary<string, string[]> mapSpeechByName;
 
@@ -32,10 +35,29 @@ namespace Client.Services.Content
             textureByName = new Dictionary<string, Texture2D>();
             fontByName = new Dictionary<string, SpriteFont>();
             mapByName = new Dictionary<string, TiledMap>();
+            songByName = new Dictionary<string, Song>();
             mapDataByName = new Dictionary<string, MapData>();
             mapSpeechByName = new Dictionary<string, string[]>();
         }
 
+        public Song LoadSong(string songName)
+        {
+            if (!songByName.ContainsKey(songName))
+            {
+                try
+                {
+                    var song = contentManager.Load<Song>(Path.Combine("Audio", songName));
+                    songByName.Add(songName, song);
+                    return song;
+                }
+                catch (Exception) when (songName != SongNotFoundName)
+                {
+                    return LoadSong(songName);
+                }
+            }
+
+            return songByName[songName];
+        }
         public Texture2D LoadTexture(string textureName)
         {
             if (!textureByName.ContainsKey(textureName))

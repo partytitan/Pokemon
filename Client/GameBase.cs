@@ -14,6 +14,7 @@ using GameLogic.Data;
 using GameLogic.PokemonData;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using MonoGame.Extended.ViewportAdapters;
 
 namespace Client
@@ -49,14 +50,13 @@ namespace Client
         {
             var pokemon = new List<Pokemon>();
             var rnd = new Random();
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
-            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), 100));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), rnd.Next(1, 50)));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), rnd.Next(1, 50)));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), rnd.Next(1, 50)));
+            pokemon.Add(Pokemon.GenerateWildPokemon(rnd.Next(1, 5), rnd.Next(1, 50)));
 
             mainPlayer = new MainPlayer("Jordi", pokemon, new WarpData(19, 19, -3, -2), Directions.Down);
 
-            //Debug end
             backBuffer = new RenderTarget2D(GraphicsDevice, GameWidth, GameHeight);
             var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, GameWidth, GameHeight);
 
@@ -70,17 +70,14 @@ namespace Client
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            MediaPlayer.IsRepeating = true;
+
             screenLoader = new ScreenLoader(new ScreenTransitionEffectFadeOut(actualWidth, actualHeight, 5),
                 new ScreenTransitionEffectFadeIn(actualWidth, actualHeight, 3), contentLoader);
 
             var world = new ScreenWorld(screenLoader, new MapLoader(contentLoader, eventSwitchHandler, GraphicsDevice), new EntityTestLoader(), new EventRunner(contentLoader), windowHandler, eventSwitchHandler, cameraWorldObject, mainPlayer);
             screenLoader.LoadScreen(world);
             screenLoader.LoadContent(GraphicsDevice);
-        }
-
-        protected override void UnloadContent()
-        {
-            // TODO: Unload any non ContentManager content here
         }
 
         protected override void Update(GameTime gameTime)
